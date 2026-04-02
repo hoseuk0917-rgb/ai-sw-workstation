@@ -33,7 +33,7 @@
 - [x] Git 저장소 초기화
 - [x] GitHub 원격 저장소 연결
 - [x] 초기 커밋 및 push
-- [ ] 권한 실습
+- [x] 권한 실습
 - [x] Docker 설치 확인
 - [x] Docker 기본 운영 명령 수행
 - [x] hello-world 실행
@@ -42,7 +42,7 @@
 - [x] 포트 매핑 접속 확인
 - [x] 바인드 마운트 반영 확인
 - [x] Docker 볼륨 영속성 확인
-- [ ] GitHub/VSCode 연동 증거 정리
+- [x] GitHub/VSCode 연동 증거 정리
 
 ---
 
@@ -465,6 +465,11 @@ git status
 - 첫 커밋을 생성하고 `main` 브랜치로 push를 완료했다.
 - `git status`에서 working tree clean 상태를 확인했다.
 
+추가 확인:
+- VS Code에서 저장소가 Source Control에 정상 인식되는 것을 확인했다.
+- GitHub 로그인/연동 상태를 확인했다.
+- 증거 이미지: `screenshots/vscode-github.png`
+
 ---
 
 ## 14. 트러블슈팅
@@ -553,4 +558,5 @@ ls -l perm_lab/file_a.txt
 대응:
 - 제출용 권한 실습은 `/mnt/d` 대신 WSL 홈 디렉토리(`~/perm_lab`)에서 다시 수행했다.
 - 그 결과를 권한 실습 증거로 사용했다.
+
 

@@ -4,7 +4,7 @@ Codyssey 과제 자동 수집기
 GitHub Actions에서 매주 일요일 오후 9시(KST)에 실행됩니다.
 과정 기간: 2026년 3월 30일 ~ 2027년 9월 30일
 
-v2: 후보 8명, 전체 주차 스캔, 단일 레포 폴더 패턴 지원
+v3: 후보 15명 (검증된 60명 중 선별), 전체 주차 스캔, 단일 레포 폴더 패턴 지원
 """
 
 import os
@@ -23,16 +23,28 @@ KST = timezone(timedelta(hours=9))
 # 과정 종료일 (이 날짜 이후 실행 시 경고 출력)
 COURSE_END = datetime(2027, 9, 30, tzinfo=KST)
 
-# 추적할 후보 수강생 목록 (8명)
+# 추적할 후보 수강생 목록 (15명)
+# 89명 검색 → 60명 IA 2026 확인 → 주차 수·README 품질 기준 선별
 # 중도 포기자가 생기면 해당 항목의 active를 False로 변경하세요
 CANDIDATES = [
-    # ── 최우선 후보 (★★★) ──
+    # ── 최우선 후보: 3주차 이상 + README 상세 (★★★) ──
     {
         "username": "I-nkamanda",
         "display_name": "I-nkamanda",
-        "type": "single_repo",  # 단일 레포 안에 폴더로 구분
+        "type": "single_repo",
         "repo_name": "codyssey2026",
-        "folder_pattern": r"[Pp]roblem(\d+)",  # Problem1, Problem2, ...
+        "folder_pattern": r"[Pp]roblem[_]?(\d+)",
+        "priority": 1,
+        "active": True,
+    },
+    {
+        "username": "0-hu",
+        "display_name": "0-hu",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]?e\d+[_\-](\d+)",
+            r"codyssey[_\-]?work",
+        ],
         "priority": 1,
         "active": True,
     },
@@ -52,20 +64,52 @@ CANDIDATES = [
         "type": "multi_repo",
         "repo_patterns": [
             r"codyssey[_\-]?[Ee]\d+[_\-](\d+)",
-            r"codyssey[_\-]?[Ww]eek[_\-]?(\d+)",
         ],
         "priority": 1,
         "active": True,
     },
+    {
+        "username": "codewhite7777",
+        "display_name": "codewhite7777",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]?[Ee][_\-]?(\d+)",
+            r"codyssey[_\-]?[Ee]\d+[_\-](\d+)",
+        ],
+        "priority": 1,
+        "active": True,
+    },
+    {
+        "username": "mov-hyun",
+        "display_name": "mov-hyun",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"e\d+[_\-](\d+)",
+            r"ia[_\-]codyssey",
+        ],
+        "priority": 1,
+        "active": True,
+    },
+    {
+        "username": "sonjehyun123-maker",
+        "display_name": "sonjehyun123-maker",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"[Cc]odyssey[_\-]?w\d+[_\-]?[Ee](\d+)",
+            r"[Cc]odyssey",
+        ],
+        "priority": 1,
+        "active": True,
+    },
+    # ── 우수 후보: 2주차 + README 상세 (★★☆) ──
     {
         "username": "xifoxy-ru",
         "display_name": "xifoxy-ru",
         "type": "multi_repo",
         "repo_patterns": [
             r"codyssey[_\-]?week[_\-]?(\d+)",
-            r"codyssey[_\-]?e\d+[_\-](\d+)",
         ],
-        "priority": 1,
+        "priority": 2,
         "active": True,
     },
     {
@@ -74,9 +118,8 @@ CANDIDATES = [
         "type": "multi_repo",
         "repo_patterns": [
             r"[Cc]odyssey[_\-]?[Ee]\d+[_\-](\d+)",
-            r"[Cc]odyssey[_\-]?[Ww]eek[_\-]?(\d+)",
         ],
-        "priority": 1,
+        "priority": 2,
         "active": True,
     },
     {
@@ -85,30 +128,57 @@ CANDIDATES = [
         "type": "multi_repo",
         "repo_patterns": [
             r"[Cc]odyssey[Ww]eek([Oo]ne|[Tt]wo|[Tt]hree|[Ff]our|[Ff]ive|[Ss]ix|[Ss]even|[Ee]ight|[Nn]ine|[Tt]en|\d+)",
-            r"[Cc]odyssey[_\-]?[Ww]eek[_\-]?(\d+)",
         ],
-        "priority": 1,
+        "priority": 2,
         "active": True,
     },
-    # ── 보조 후보 (★★) ──
     {
         "username": "coding-monkey-326",
         "display_name": "coding-monkey-326",
         "type": "multi_repo",
         "repo_patterns": [
             r"codyssey[_\-]?e\d+[_\-](\d+)",
-            r"codyssey[_\-]?week[_\-]?(\d+)",
         ],
         "priority": 2,
         "active": True,
     },
     {
-        "username": "0-hu",
-        "display_name": "0-hu",
+        "username": "Opdata",
+        "display_name": "Opdata",
         "type": "multi_repo",
         "repo_patterns": [
-            r"codyssey[_\-]?e\d+[_\-](\d+)",
-            r"codyssey[_\-]?week[_\-]?(\d+)",
+            r"codyssey[_\-]?(\w+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "mulloc1",
+        "display_name": "mulloc1",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]?(\w+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "whdals006",
+        "display_name": "whdals006",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"[Cc]odyssey[_\-]?[Ee]\d+[_\-](\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "dolphin1404",
+        "display_name": "dolphin1404",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"[Cc]odyssey[_\-]?[Ee][_\-]?(\d+)",
+            r"[Cc]odyssey",
         ],
         "priority": 2,
         "active": True,

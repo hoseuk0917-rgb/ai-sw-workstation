@@ -9,6 +9,12 @@ v4: 보고서 구조 전면 개편
     - 수강생 레포에서 코드 구조, 트러블슈팅, 학습 자료 추출
     - 주차 감지 버그 수정 (python, docker 등 잘못된 주차명 필터링)
     - 후보 22명, 전체 주차 스캔, 단일 레포 폴더 패턴 지원
+
+v5: 후보 대폭 확충 + 과제별 레포 패턴 보완
+    - GitHub 검색으로 70명 신규 후보 발견, 우수 후보 25명 추가 (총 47명)
+    - 과제마다 레포를 새로 파는 수강생 패턴 대응 (mission, m, workspace 등)
+    - 단일 레포 + 폴더 패턴 수강생 대응 (week, problem, mission, e1, c01-p0N 등)
+    - leehnmn: 2025 파일럿 + 2026 본과정 동시 추적
 """
 
 import os
@@ -36,9 +42,11 @@ COURSE_END = datetime(2027, 9, 30, tzinfo=KST)
 # 유효한 주차 범위 (숫자만 허용, 1~52)
 VALID_WEEK_RANGE = range(1, 53)
 
-# 추적할 후보 수강생 목록 (22명)
+# 추적할 후보 수강생 목록 (47명)
 CANDIDATES = [
+    # ══════════════════════════════════════════════════════════════════════
     # ── 최우선 후보: 3주차 이상 + README 상세 (★★★) ──
+    # ══════════════════════════════════════════════════════════════════════
     {
         "username": "I-nkamanda",
         "display_name": "I-nkamanda",
@@ -109,7 +117,9 @@ CANDIDATES = [
         "priority": 1,
         "active": True,
     },
+    # ══════════════════════════════════════════════════════════════════════
     # ── 우수 후보: 2주차 + README 상세 (★★☆) ──
+    # ══════════════════════════════════════════════════════════════════════
     {
         "username": "xifoxy-ru",
         "display_name": "xifoxy-ru",
@@ -261,6 +271,247 @@ CANDIDATES = [
         "priority": 2,
         "active": True,
     },
+    # ══════════════════════════════════════════════════════════════════════
+    # ── v5 신규 후보: GitHub 검색으로 발견 (★★☆ ~ ★☆☆) ──
+    # ══════════════════════════════════════════════════════════════════════
+    #
+    # --- 과제마다 레포를 새로 파는 수강생 (multi-repo) ---
+    {
+        "username": "jhkr1",
+        "display_name": "jhkr1",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"[Cc]odyssey[_\-]?mission[_\-]?(\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "junhnno",
+        "display_name": "junhnno",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"[Cc]odyssey[_\-]?[Ww]ork[Ss]pace[_\-]?[Ww]eek[_\-]?(\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "sungho255",
+        "display_name": "sungho255",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-](\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # 과제별 레포: codyssey-m1, codyssey-m2
+        "username": "yejoo0310",
+        "display_name": "yejoo0310",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]m(\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey11-E1 → E 뒤 번호 추출
+        "username": "peachily",
+        "display_name": "peachily",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey\d*[_\-]?[Ee][_\-]?(\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey-e1-1 패턴
+        "username": "ikasoon",
+        "display_name": "ikasoon",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]?e\d+[_\-](\d+)",
+        ],
+        "priority": 3,
+        "active": True,
+    },
+    #
+    # --- 단일 레포 + 폴더 패턴 수강생 (single-repo) ---
+    {
+        # codyssey → 1week, 2week, 3week, 4week
+        "username": "park-soo-hyeon",
+        "display_name": "park-soo-hyeon",
+        "type": "single_repo",
+        "repo_name": "codyssey",
+        "folder_pattern": r"(\d+)week",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey → problem_1, problem_2, problem_3, problem_4
+        "username": "dldnsgkr",
+        "display_name": "dldnsgkr",
+        "type": "single_repo",
+        "repo_name": "codyssey",
+        "folder_pattern": r"problem[_\-]?(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey → e1_1, e1_2
+        "username": "ntt65",
+        "display_name": "ntt65",
+        "type": "single_repo",
+        "repo_name": "codyssey",
+        "folder_pattern": r"e\d+[_\-](\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # ia-codyssey → 2week, 3week, 4week, 5week
+        "username": "kwonhee1",
+        "display_name": "kwonhee1",
+        "type": "single_repo",
+        "repo_name": "ia-codyssey",
+        "folder_pattern": r"(\d+)week",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # ia-codyssey → mars_mission, mars_mission2 등
+        "username": "kwung0206",
+        "display_name": "kwung0206",
+        "type": "single_repo",
+        "repo_name": "ia-codyssey",
+        "folder_pattern": r"(?:mars[_\-]?)?mission[_\-]?(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey-mission → mission1, mission2, mission3, mission4
+        "username": "sebin1103",
+        "display_name": "sebin1103",
+        "type": "single_repo",
+        "repo_name": "codyssey-mission",
+        "folder_pattern": r"mission[_\-]?(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey-ai-sw → c01-p01-*, c01-p06-*, c01-p07-*
+        "username": "jyaniee",
+        "display_name": "jyaniee",
+        "type": "single_repo",
+        "repo_name": "codyssey-ai-sw",
+        "folder_pattern": r"c\d+[_\-]p(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey_ai → missions 폴더
+        "username": "OliverJoo",
+        "display_name": "OliverJoo",
+        "type": "single_repo",
+        "repo_name": "codyssey_ai",
+        "folder_pattern": r"mission[_\-]?(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # Codyssey-Assignments → Assignment-1-Docker, Assignment-2-Python
+        "username": "js910",
+        "display_name": "js910",
+        "type": "single_repo",
+        "repo_name": "Codyssey-Assignments",
+        "folder_pattern": r"[Aa]ssignment[_\-]?(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    {
+        # codyssey-workstation → assignment1, assignment2
+        "username": "mackerel07",
+        "display_name": "mackerel07",
+        "type": "single_repo",
+        "repo_name": "codyssey-workstation",
+        "folder_pattern": r"assignment[_\-]?(\d+)",
+        "priority": 3,
+        "active": True,
+    },
+    {
+        # codyssey-project → curriculum, docker, scripts
+        "username": "gkrtod4477",
+        "display_name": "gkrtod4477",
+        "type": "single_repo",
+        "repo_name": "codyssey-project",
+        "folder_pattern": r"(?:curriculum|docker|scripts)",
+        "priority": 3,
+        "active": True,
+    },
+    #
+    # --- 2025 파일럿 + 2026 본과정 동시 참여 ---
+    {
+        # codyssey (2025 파일럿, 1016파일) + codyssey_2026 (본과정)
+        "username": "leehnmn",
+        "display_name": "leehnmn",
+        "type": "single_repo",
+        "repo_name": "codyssey_2026",
+        "folder_pattern": r"project[_\-]?(\d+)",
+        "priority": 2,
+        "active": True,
+    },
+    #
+    # --- 활발한 단일 레포 수강생 (폴더 패턴 범용) ---
+    {
+        "username": "hodoon",
+        "display_name": "hodoon",
+        "type": "single_repo",
+        "repo_name": "codyssey",
+        "folder_pattern": r"(?:problem|mission|week|assignment|e\d+)[_\-]?(\d+)",
+        "priority": 3,
+        "active": True,
+    },
+    {
+        "username": "hyunn9799",
+        "display_name": "hyunn9799",
+        "type": "single_repo",
+        "repo_name": "codyssey",
+        "folder_pattern": r"(?:problem|mission|week|assignment|e\d+)[_\-]?(\d+)",
+        "priority": 3,
+        "active": True,
+    },
+    {
+        "username": "1anminJ",
+        "display_name": "1anminJ",
+        "type": "single_repo",
+        "repo_name": "Codyssey",
+        "folder_pattern": r"(?:essential[_\-]?step|problem|mission|week)[_\-]?(\d+)",
+        "priority": 3,
+        "active": True,
+    },
+    {
+        "username": "yejibaek12",
+        "display_name": "yejibaek12",
+        "type": "single_repo",
+        "repo_name": "Codyssey",
+        "folder_pattern": r"(?:task|problem|mission|week)[_\-]?(\d+)",
+        "priority": 3,
+        "active": True,
+    },
+    {
+        # 계정명 자체가 sangwoo-codyssey, 레포명은 01-infra-basics-study
+        "username": "sangwoo-codyssey",
+        "display_name": "sangwoo-codyssey",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"(\d+)[_\-]",
+        ],
+        "priority": 3,
+        "active": True,
+    },
 ]
 
 WORD_TO_NUM = {
@@ -271,6 +522,7 @@ WORD_TO_NUM = {
 # 주차로 오인될 수 있는 키워드 매핑 (레포 이름에 주차 번호 대신 키워드가 있는 경우)
 KEYWORD_TO_WEEK = {
     "workstation": "1",
+    "infra": "1",
     "python": "2",
     "first_python": "2",
     "quiz": "2",
@@ -279,6 +531,8 @@ KEYWORD_TO_WEEK = {
     "python_with_npu": "3",
     "mini_npu": "3",
     "docker": "1",  # 1주차 Docker 실습
+    "curriculum": "1",
+    "scripts": "1",
 }
 
 

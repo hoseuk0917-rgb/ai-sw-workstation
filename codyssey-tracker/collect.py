@@ -12,7 +12,7 @@ import base64
 from datetime import datetime, timezone, timedelta
 
 import requests
-from openai import OpenAI
+import google.generativeai as genai
 
 # ─── 설정 ────────────────────────────────────────────────────────────────────
 
@@ -124,7 +124,16 @@ def summarize(readme: str, week: str) -> str:
     if not readme.strip():
         return "_README 내용 없음_"
 
-    client = OpenAI()
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+    if not api_key:
+        print("  [경고] GEMINI_API_KEY 없음 — README 원문으로 대체")
+        return readme[:800] + "\n\n_*(API 키 없음 — 원문 일부)*_"
+
+    genai.configure(api_key=api_key)
+    # gemini-2.5-flash-lite: 무료 티어 기준 RPM 15, RPD 1,000으로 가장 넉넉
+    # 매주 1회 실행 시 최대 8회 호출 → 무료 한도 내 충분히 동작
+    model = genai.GenerativeModel("gemini-2.5-flash-lite")
+
     prompt = f"""다음은 Codyssey 프로그램 {week}주차 과제 레포의 README.md입니다.
 학습자가 이 과제 내용을 자신의 학습 자료로 내재화할 수 있도록 아래 형식으로 정리해 주세요.
 
@@ -150,13 +159,8 @@ README 내용:
 한국어로 작성해 주세요."""
 
     try:
-        resp = client.chat.completions.create(
-            model="gpt-4.1-mini",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=1500,
-            temperature=0.3,
-        )
-        return resp.choices[0].message.content.strip()
+        resp = model.generate_content(prompt)
+        return resp.text.strip()
     except Exception as e:
         print(f"  [오류] AI 요약 실패: {e}")
         return readme[:800] + "\n\n_*(AI 요약 실패 — 원문 일부)*_"

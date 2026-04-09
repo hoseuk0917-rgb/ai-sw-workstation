@@ -18,7 +18,7 @@ GitHub 레포 → **Settings** → **Secrets and variables** → **Actions** →
 
 | 이름 | 값 |
 |------|----|
-| `OPENAI_API_KEY` | OpenAI API 키 (`sk-...`) |
+| `GEMINI_API_KEY` | Google AI Studio API 키 (`AIza...`) |
 
 ## 후보 수강생 관리
 

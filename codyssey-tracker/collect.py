@@ -15,6 +15,13 @@ v5: 후보 대폭 확충 + 과제별 레포 패턴 보완
     - 과제마다 레포를 새로 파는 수강생 패턴 대응 (mission, m, workspace 등)
     - 단일 레포 + 폴더 패턴 수강생 대응 (week, problem, mission, e1, c01-p0N 등)
     - leehnmn: 2025 파일럿 + 2026 본과정 동시 추적
+
+v6: 추가 자료 수집 + 지문 기반 자동 발견
+    - README 외 추가 자료 수집: .md, Dockerfile, docker-compose.yml, .yml/.yaml, .pdf
+    - codyssey 과제 지문(fingerprint) 기반 미등록 레포 자동 발견
+      (mars_mission_computer.py, mars_base_inventory_list.csv 등 과제 특유 파일 감지)
+    - 보고서에 추가 자료 유형 및 지문 발견 레포 반영
+    - AI 프롬프트에 추가 자료 내용도 포함하여 학습 문서 품질 향상
 """
 
 import os
@@ -42,7 +49,79 @@ COURSE_END = datetime(2027, 9, 30, tzinfo=KST)
 # 유효한 주차 범위 (숫자만 허용, 1~52)
 VALID_WEEK_RANGE = range(1, 53)
 
-# 추적할 후보 수강생 목록 (47명)
+# ─── 추가 자료 수집 설정 ─────────────────────────────────────────────────────
+
+# 수집 대상 파일 패턴 (README 외)
+ARTIFACT_PATTERNS = {
+    "학습노트": [
+        r".*(?:study|학습|정리|note|memo|summary).*\.md$",
+        r".*(?:command[_\-]?log|troubleshoot).*\.md$",
+        r".*(?:insight|discussion|guideline|checklist).*\.md$",
+    ],
+    "분석보고서": [
+        r".*(?:log_analysis|report|분석).*\.md$",
+        r".*(?:eval\d*|review|assessment).*\.md$",
+    ],
+    "인프라설정": [
+        r"(?:.*/)?[Dd]ockerfile(?:\.\w+)?$",
+        r"(?:.*/)?docker[_\-]?compose\.ya?ml$",
+        r"(?:.*/)?\.?[Dd]ockerfile$",
+    ],
+    "설정파일": [
+        r"(?:.*/)?(?:k8s|kubernetes|deploy|service|pod).*\.ya?ml$",
+        r"(?:.*/)?(?:nginx|apache|config).*\.(?:conf|ya?ml)$",
+    ],
+    "과제명세": [
+        r".*\.pdf$",
+    ],
+    "마크다운": [
+        r".*\.md$",  # 위 카테고리에 안 잡힌 나머지 md
+    ],
+}
+
+# 수집 제외 패턴
+ARTIFACT_EXCLUDE = [
+    r"(?:^|/)README\.md$",
+    r"(?:^|/)\.github/",
+    r"(?:^|/)node_modules/",
+    r"(?:^|/)__pycache__/",
+    r"(?:^|/)\.git/",
+    r"(?:^|/)venv/",
+    r"(?:^|/)\.vscode/",
+]
+
+# ─── 지문(Fingerprint) 설정 ─────────────────────────────────────────────────
+
+# Tier 1: 이 파일이 하나라도 있으면 codyssey 과제 레포 확정 (score 10)
+FINGERPRINT_TIER1 = [
+    "mars_mission_computer.py",
+    "mission_computer_main.log",
+    "mars_base_inventory_list.csv",
+    "mars_base_inventory_danger.csv",
+    "mars_base_inventory_list.bin",
+    "log_analysis.md",
+    "quiz_game.py",
+]
+
+# Tier 2: 2개 이상 조합이면 확정 (score 5 each)
+FINGERPRINT_TIER2 = [
+    "main.py",
+    "state.json",
+    "sth.sh",
+]
+
+# Tier 3: README 키워드 (score 3 each)
+FINGERPRINT_KEYWORDS = [
+    "codyssey", "코디세이", "화성", "mars mission",
+    "미션컴퓨터", "mission_computer", "인화물질", "flammable",
+    "log_analysis", "mars_base_inventory",
+]
+
+# 지문 확정 임계값
+FINGERPRINT_THRESHOLD = 10
+
+# ─── 추적할 후보 수강생 목록 (47명) ──────────────────────────────────────────
+
 CANDIDATES = [
     # ══════════════════════════════════════════════════════════════════════
     # ── 최우선 후보: 3주차 이상 + README 상세 (★★★) ──
@@ -578,13 +657,40 @@ def get_readme(username: str, repo: str, path: str = "") -> str:
         return ""
 
 
+def get_file_content(username: str, repo: str, path: str) -> str:
+    """특정 파일의 텍스트 내용을 가져옴. 바이너리(PDF 등)는 건너뜀."""
+    url = f"https://api.github.com/repos/{username}/{repo}/contents/{path}"
+    try:
+        r = requests.get(url, headers=github_headers(), timeout=15)
+        if r.status_code != 200:
+            return ""
+        data = r.json()
+        # 100KB 이상이면 건너뜀 (API 제한 + 과도한 파일)
+        if data.get("size", 0) > 100_000:
+            return f"[파일 크기 초과: {data['size']:,}B — 내용 생략]"
+        content_b64 = data.get("content", "")
+        if not content_b64:
+            return ""
+        try:
+            return base64.b64decode(content_b64).decode("utf-8", errors="replace")
+        except Exception:
+            return "[바이너리 파일 — 텍스트 변환 불가]"
+    except Exception as e:
+        print(f"  [오류] {username}/{repo}/{path} 파일 조회 실패: {e}")
+        return ""
+
+
 def get_repo_tree(username: str, repo: str) -> list:
     """레포 전체 파일 트리 조회 (코드 구조 파악용)."""
     url = f"https://api.github.com/repos/{username}/{repo}/git/trees/main?recursive=1"
     try:
         r = requests.get(url, headers=github_headers(), timeout=15)
         if r.status_code != 200:
-            return []
+            # master 브랜치 시도
+            url2 = url.replace("/main?", "/master?")
+            r = requests.get(url2, headers=github_headers(), timeout=15)
+            if r.status_code != 200:
+                return []
         return [item["path"] for item in r.json().get("tree", []) if item["type"] == "blob"]
     except Exception:
         return []
@@ -650,6 +756,169 @@ def detect_week(name: str, patterns: list) -> str | None:
     return None
 
 
+# ─── 추가 자료 수집 ──────────────────────────────────────────────────────────
+
+def classify_artifact(path: str) -> str | None:
+    """파일 경로를 자료 유형으로 분류. 해당 없으면 None."""
+    path_lower = path.lower()
+    # 제외 패턴 확인
+    for excl in ARTIFACT_EXCLUDE:
+        if re.search(excl, path, re.IGNORECASE):
+            return None
+    # 카테고리별 매칭 (순서 중요: 구체적 패턴 먼저)
+    for category in ["학습노트", "분석보고서", "인프라설정", "설정파일", "과제명세"]:
+        for pattern in ARTIFACT_PATTERNS[category]:
+            if re.search(pattern, path_lower):
+                return category
+    # 마지막으로 일반 마크다운
+    if path_lower.endswith(".md"):
+        return "마크다운"
+    return None
+
+
+def collect_artifacts(username: str, repo: str, file_tree: list,
+                      folder_prefix: str = "") -> list:
+    """
+    파일 트리에서 추가 자료를 식별하고 내용을 수집.
+    반환: [{"type": "학습노트", "path": "docs/study.md", "content": "..."}]
+    API 호출 절약을 위해 최대 10개까지만 수집.
+    """
+    artifacts = []
+    candidates = []
+
+    for path in file_tree:
+        if folder_prefix and not path.startswith(folder_prefix):
+            continue
+        category = classify_artifact(path)
+        if category:
+            candidates.append((category, path))
+
+    # 우선순위: 학습노트 > 분석보고서 > 인프라설정 > 설정파일 > 과제명세 > 마크다운
+    priority_order = ["학습노트", "분석보고서", "인프라설정", "설정파일", "과제명세", "마크다운"]
+    candidates.sort(key=lambda x: priority_order.index(x[0]) if x[0] in priority_order else 99)
+
+    # 최대 10개 수집 (API 호출 절약)
+    for category, path in candidates[:10]:
+        if category == "과제명세":
+            # PDF는 내용을 가져올 수 없으므로 메타데이터만
+            artifacts.append({
+                "type": category,
+                "path": path,
+                "content": f"[PDF 파일: {path}]",
+            })
+        else:
+            content = get_file_content(username, repo, path)
+            if content and len(content) > 10:  # 빈 파일 제외
+                artifacts.append({
+                    "type": category,
+                    "path": path,
+                    "content": content[:3000],  # 최대 3KB
+                })
+
+    return artifacts
+
+
+# ─── 지문 기반 자동 발견 ──────────────────────────────────────────────────────
+
+def compute_fingerprint_score(file_tree: list, readme: str = "") -> int:
+    """파일 트리와 README 내용으로 codyssey 과제 지문 점수를 계산."""
+    score = 0
+    filenames = {path.split("/")[-1].lower() for path in file_tree}
+
+    # Tier 1: 확정 지문 (하나만 있어도 10점)
+    for fp in FINGERPRINT_TIER1:
+        if fp.lower() in filenames:
+            score += 10
+            break  # 하나만 있으면 충분
+
+    # Tier 2: 강한 지문 (각 5점)
+    for fp in FINGERPRINT_TIER2:
+        if fp.lower() in filenames:
+            score += 5
+
+    # Tier 3: README 키워드 (각 3점)
+    readme_lower = readme.lower()
+    for kw in FINGERPRINT_KEYWORDS:
+        if kw.lower() in readme_lower:
+            score += 3
+
+    return score
+
+
+def discover_new_repos(known_users: set) -> list:
+    """
+    등록된 후보 목록에 없는 수강생의 레포를 지문으로 발견.
+    GitHub 코드 검색 API로 codyssey 특유 파일을 검색하여 미등록 레포를 찾는다.
+    반환: [{"username": ..., "repo": ..., "score": ..., "evidence": [...]}]
+    """
+    discovered = []
+    seen_repos = set()
+
+    # 핵심 지문 파일로 GitHub 코드 검색
+    search_queries = [
+        "mars_mission_computer.py",
+        "mars_base_inventory_list.csv",
+        "mission_computer_main.log",
+    ]
+
+    for query in search_queries:
+        url = "https://api.github.com/search/code"
+        params = {"q": f"filename:{query}", "per_page": 30}
+        try:
+            r = requests.get(url, headers=github_headers(), params=params, timeout=15)
+            if r.status_code != 200:
+                continue
+            items = r.json().get("items", [])
+            for item in items:
+                repo_full = item.get("repository", {}).get("full_name", "")
+                if not repo_full:
+                    continue
+                username = repo_full.split("/")[0]
+                repo_name = repo_full.split("/")[1] if "/" in repo_full else ""
+
+                # 이미 등록된 후보이거나 이미 발견한 레포는 건너뜀
+                if username.lower() in known_users or repo_full in seen_repos:
+                    continue
+                seen_repos.add(repo_full)
+
+                # 파일 트리 가져와서 지문 점수 계산
+                file_tree = get_repo_tree(username, repo_name)
+                readme = get_readme(username, repo_name)
+                score = compute_fingerprint_score(file_tree, readme)
+
+                if score >= FINGERPRINT_THRESHOLD:
+                    evidence = []
+                    filenames = {p.split("/")[-1].lower() for p in file_tree}
+                    for fp in FINGERPRINT_TIER1:
+                        if fp.lower() in filenames:
+                            evidence.append(f"[Tier1] {fp}")
+                    for fp in FINGERPRINT_TIER2:
+                        if fp.lower() in filenames:
+                            evidence.append(f"[Tier2] {fp}")
+                    readme_lower = readme.lower()
+                    for kw in FINGERPRINT_KEYWORDS:
+                        if kw.lower() in readme_lower:
+                            evidence.append(f"[키워드] {kw}")
+
+                    discovered.append({
+                        "username": username,
+                        "repo_name": repo_name,
+                        "repo_url": f"https://github.com/{repo_full}",
+                        "score": score,
+                        "evidence": evidence,
+                        "file_count": len(file_tree),
+                        "readme_length": len(readme),
+                    })
+                    print(f"  [지문 발견] {repo_full} (점수: {score}, 증거: {', '.join(evidence[:3])})")
+
+        except Exception as e:
+            print(f"  [오류] 지문 검색 실패 ({query}): {e}")
+        time.sleep(1)  # 검색 API rate limit 대응
+
+    discovered.sort(key=lambda x: -x["score"])
+    return discovered
+
+
 # ─── AI 요약 ──────────────────────────────────────────────────────────────────
 
 def init_genai():
@@ -692,8 +961,8 @@ def call_genai(client, prompt: str) -> str:
 
 def summarize_week(client, readmes: list[dict], week: str) -> str:
     """
-    같은 주차의 여러 수강생 README를 종합하여 학습 문서를 생성한다.
-    readmes: [{"username": ..., "readme": ..., "repo_url": ..., "file_tree": [...]}]
+    같은 주차의 여러 수강생 README + 추가 자료를 종합하여 학습 문서를 생성한다.
+    readmes: [{"username": ..., "readme": ..., "repo_url": ..., "file_tree": [...], "artifacts": [...]}]
     """
     if not client:
         # API 키 없으면 가장 긴 README 원문 반환
@@ -708,6 +977,13 @@ def summarize_week(client, readmes: list[dict], week: str) -> str:
     for i, r in enumerate(selected, 1):
         readme_text = r["readme"][:4000]
         tree_text = "\n".join(r.get("file_tree", [])[:30]) if r.get("file_tree") else "(파일 트리 없음)"
+
+        # 추가 자료 내용 포함
+        artifacts_text = ""
+        for art in r.get("artifacts", [])[:5]:
+            art_content = art["content"][:1500]
+            artifacts_text += f"\n**[{art['type']}] {art['path']}:**\n{art_content}\n"
+
         combined_sources += f"""
 ---
 ### 수강생 {i}: {r['username']}
@@ -720,8 +996,13 @@ def summarize_week(client, readmes: list[dict], week: str) -> str:
 
 **README 내용:**
 {readme_text}
----
 """
+        if artifacts_text:
+            combined_sources += f"""
+**추가 자료:**
+{artifacts_text}
+"""
+        combined_sources += "---\n"
 
     prompt = f"""당신은 AI/SW 교육 과정의 학습 자료를 정리하는 전문가입니다.
 아래는 Codyssey 프로그램 {week}주차 과제에 대한 여러 수강생의 GitHub 레포 정보입니다.
@@ -755,7 +1036,7 @@ def summarize_week(client, readmes: list[dict], week: str) -> str:
 각 포인트마다 왜 중요한지, 어떻게 접근해야 하는지 포함하세요.
 
 ## 7. 트러블슈팅 & 팁
-수강생들의 README에서 발견된 트러블슈팅 사례, 주의사항, 실습 팁을 정리하세요.
+수강생들의 README와 학습 노트에서 발견된 트러블슈팅 사례, 주의사항, 실습 팁을 정리하세요.
 실제 에러 메시지나 해결 과정이 있으면 포함하세요.
 
 ## 8. 추가 학습 자료
@@ -769,6 +1050,7 @@ def summarize_week(client, readmes: list[dict], week: str) -> str:
 중요 지침:
 - 한국어로 작성하세요.
 - 수강생 개인의 답안을 그대로 복사하지 말고, 여러 수강생의 정보를 종합하여 정리하세요.
+- 추가 자료(학습 노트, 트러블슈팅 로그 등)가 있으면 적극 활용하세요.
 - 실제 과제 PDF에 나올 법한 체계적이고 전문적인 문서를 작성하세요.
 - 코드 블록, 표, 체크리스트 등 마크다운 서식을 적극 활용하세요.
 - 트러블슈팅이나 팁이 README에 없으면 일반적으로 자주 발생하는 이슈를 추가하세요.
@@ -797,6 +1079,9 @@ def collect_single_repo(c: dict) -> list:
         print(f"  [경고] 레포 {repo_name}을 찾을 수 없습니다.")
         return results
 
+    # 전체 파일 트리 한 번만 가져옴
+    full_tree = get_repo_tree(username, repo_name)
+
     folders = get_repo_folders(username, repo_name)
     for folder in folders:
         m = re.search(folder_pattern, folder, re.IGNORECASE)
@@ -808,9 +1093,13 @@ def collect_single_repo(c: dict) -> list:
         print(f"  → 폴더 {folder} ({week}주차)")
 
         readme = get_readme(username, repo_name, folder)
-        file_tree = get_repo_tree(username, repo_name)
         # 해당 폴더의 파일만 필터
-        folder_tree = [f for f in file_tree if f.startswith(folder + "/")]
+        folder_tree = [f for f in full_tree if f.startswith(folder + "/")]
+
+        # v6: 추가 자료 수집
+        artifacts = collect_artifacts(username, repo_name, full_tree, folder + "/")
+        if artifacts:
+            print(f"    추가 자료 {len(artifacts)}건: {', '.join(a['type'] for a in artifacts)}")
 
         results.append({
             "username": username,
@@ -822,6 +1111,7 @@ def collect_single_repo(c: dict) -> list:
             "readme_length": len(readme),
             "readme": readme,
             "file_tree": folder_tree,
+            "artifacts": artifacts,
             "priority": c["priority"],
         })
 
@@ -847,6 +1137,11 @@ def collect_multi_repo(c: dict) -> list:
         readme = get_readme(username, name)
         file_tree = get_repo_tree(username, name)
 
+        # v6: 추가 자료 수집
+        artifacts = collect_artifacts(username, name, file_tree)
+        if artifacts:
+            print(f"    추가 자료 {len(artifacts)}건: {', '.join(a['type'] for a in artifacts)}")
+
         results.append({
             "username": username,
             "display_name": c["display_name"],
@@ -857,6 +1152,7 @@ def collect_multi_repo(c: dict) -> list:
             "readme_length": len(readme),
             "readme": readme,
             "file_tree": file_tree,
+            "artifacts": artifacts,
             "priority": c["priority"],
         })
 
@@ -889,7 +1185,8 @@ def collect() -> list:
 
 # ─── 보고서 생성 ──────────────────────────────────────────────────────────────
 
-def make_report(assignments: list, now: datetime, genai_client) -> str:
+def make_report(assignments: list, now: datetime, genai_client,
+                discovered: list = None) -> str:
     date_str = now.strftime("%Y년 %m월 %d일")
     active_count = sum(1 for c in CANDIDATES if c.get("active", True))
 
@@ -922,6 +1219,8 @@ def make_report(assignments: list, now: datetime, genai_client) -> str:
     for week in sorted(by_week.keys(), key=lambda x: int(x) if x.isdigit() else 99):
         count = len(by_week[week])
         lines.append(f"- [{week}주차 과제](#week-{week}) ({count}명 제출)")
+    if discovered:
+        lines.append(f"- [지문 발견 레포](#fingerprint-discovery) ({len(discovered)}건)")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -940,6 +1239,7 @@ def make_report(assignments: list, now: datetime, genai_client) -> str:
                 "readme": a["readme"],
                 "repo_url": a["repo_url"],
                 "file_tree": a.get("file_tree", []),
+                "artifacts": a.get("artifacts", []),
             }
             for a in items if a["readme"]
         ]
@@ -949,6 +1249,12 @@ def make_report(assignments: list, now: datetime, genai_client) -> str:
             summary = summarize_week(genai_client, readmes_for_ai, week)
         else:
             summary = "_이 주차에 README가 작성된 레포가 없습니다._"
+
+        # 추가 자료 통계
+        artifact_stats = {}
+        for a in items:
+            for art in a.get("artifacts", []):
+                artifact_stats[art["type"]] = artifact_stats.get(art["type"], 0) + 1
 
         lines += [
             f'<a id="week-{week}"></a>',
@@ -960,14 +1266,46 @@ def make_report(assignments: list, now: datetime, genai_client) -> str:
             "",
             f"### 참고 레포 목록 ({len(items)}명)",
             "",
-            "| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 |",
-            "|--------|------|:------------:|:-----------:|:-------:|",
+            "| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |",
+            "|--------|------|:------------:|:-----------:|:-------:|:---------:|",
         ]
         for a in sorted(items, key=lambda x: (-x["readme_length"], x["priority"])):
             length = f"{a['readme_length']:,}자" if a["readme_length"] > 0 else "없음"
             file_count = len(a.get("file_tree", []))
+            art_count = len(a.get("artifacts", []))
+            art_types = ", ".join(sorted(set(art["type"] for art in a.get("artifacts", []))))
+            art_str = f"{art_count}건 ({art_types})" if art_count > 0 else "-"
             lines.append(
-                f"| {a['display_name']} | [{a['repo_name']}]({a['repo_url']}) | {a['updated_at']} | {length} | {file_count}개 |"
+                f"| {a['display_name']} | [{a['repo_name']}]({a['repo_url']}) "
+                f"| {a['updated_at']} | {length} | {file_count}개 | {art_str} |"
+            )
+
+        # 추가 자료 요약
+        if artifact_stats:
+            lines += ["", f"**이 주차 추가 자료 현황**: ", ""]
+            for art_type, count in sorted(artifact_stats.items(), key=lambda x: -x[1]):
+                lines.append(f"- {art_type}: {count}건")
+
+        lines += ["", "---", ""]
+
+    # 지문 발견 레포 섹션
+    if discovered:
+        lines += [
+            '<a id="fingerprint-discovery"></a>',
+            "## 지문 기반 신규 발견 레포",
+            "",
+            "아래 레포들은 후보 목록에 없지만, codyssey 과제 특유의 파일(지문)이 감지되어 자동 발견되었습니다.",
+            "다음 수집 주기에 후보로 추가할지 검토가 필요합니다.",
+            "",
+            "| 사용자 | 레포 | 지문 점수 | 파일 수 | README | 증거 |",
+            "|--------|------|:---------:|:-------:|:------:|------|",
+        ]
+        for d in discovered[:20]:  # 최대 20건
+            evidence_str = ", ".join(d["evidence"][:3])
+            readme_str = f"{d['readme_length']:,}자" if d["readme_length"] > 0 else "없음"
+            lines.append(
+                f"| {d['username']} | [{d['repo_name']}]({d['repo_url']}) "
+                f"| {d['score']} | {d['file_count']}개 | {readme_str} | {evidence_str} |"
             )
         lines += ["", "---", ""]
 
@@ -994,9 +1332,20 @@ def main():
     # 수집
     assignments = collect()
 
+    # v6: 지문 기반 자동 발견
+    print(f"\n{'='*60}")
+    print("  지문 기반 미등록 레포 탐색 중...")
+    print(f"{'='*60}")
+    known_users = {c["username"].lower() for c in CANDIDATES}
+    discovered = discover_new_repos(known_users)
+    if discovered:
+        print(f"  → {len(discovered)}건의 미등록 codyssey 레포 발견!")
+    else:
+        print("  → 새로 발견된 레포 없음")
+
     # 보고서 생성
     os.makedirs("reports", exist_ok=True)
-    report = make_report(assignments, now, genai_client)
+    report = make_report(assignments, now, genai_client, discovered)
 
     dated_path = f"reports/{now.strftime('%Y-%m-%d')}.md"
     with open(dated_path, "w", encoding="utf-8") as f:
@@ -1005,20 +1354,28 @@ def main():
     with open("reports/latest.md", "w", encoding="utf-8") as f:
         f.write(report)
 
-    # JSON 저장 (readme 원문은 제외하여 용량 절약)
+    # JSON 저장 (readme/artifact 원문은 제외하여 용량 절약)
     json_data = []
     for a in assignments:
-        entry = {k: v for k, v in a.items() if k not in ("readme", "file_tree")}
+        entry = {k: v for k, v in a.items() if k not in ("readme", "file_tree", "artifacts")}
         entry["file_count"] = len(a.get("file_tree", []))
+        entry["artifact_count"] = len(a.get("artifacts", []))
+        entry["artifact_types"] = list(set(art["type"] for art in a.get("artifacts", [])))
         json_data.append(entry)
 
-    with open(f"reports/{now.strftime('%Y-%m-%d')}.json", "w", encoding="utf-8") as f:
-        json.dump(
-            {"collected_at": now.isoformat(), "assignments": json_data},
-            f, ensure_ascii=False, indent=2,
-        )
+    json_output = {
+        "collected_at": now.isoformat(),
+        "assignments": json_data,
+    }
+    if discovered:
+        json_output["discovered_repos"] = [
+            {k: v for k, v in d.items()} for d in discovered
+        ]
 
-    print(f"\n완료! 총 {len(assignments)}건 수집 → {dated_path}")
+    with open(f"reports/{now.strftime('%Y-%m-%d')}.json", "w", encoding="utf-8") as f:
+        json.dump(json_output, f, ensure_ascii=False, indent=2)
+
+    print(f"\n완료! 총 {len(assignments)}건 수집, {len(discovered)}건 신규 발견 → {dated_path}")
 
 
 if __name__ == "__main__":

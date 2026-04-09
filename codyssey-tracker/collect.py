@@ -4,7 +4,7 @@ Codyssey 과제 자동 수집기
 GitHub Actions에서 매주 일요일 오후 9시(KST)에 실행됩니다.
 과정 기간: 2026년 3월 30일 ~ 2027년 9월 30일
 
-v3: 후보 15명 (검증된 60명 중 선별), 전체 주차 스캔, 단일 레포 폴더 패턴 지원
+v3: 후보 22명 (검증된 60명 중 2주차 이상+README 성실한 후보 전체 선별), 전체 주차 스캔, 단일 레포 폴더 패턴 지원
 """
 
 import os
@@ -23,8 +23,8 @@ KST = timezone(timedelta(hours=9))
 # 과정 종료일 (이 날짜 이후 실행 시 경고 출력)
 COURSE_END = datetime(2027, 9, 30, tzinfo=KST)
 
-# 추적할 후보 수강생 목록 (15명)
-# 89명 검색 → 60명 IA 2026 확인 → 주차 수·README 품질 기준 선별
+# 추적할 후보 수강생 목록 (22명)
+# 89명 검색 → 60명 IA 2026 확인 → 2주차 이상 + README 있는 성실한 후보 전체 선별
 # 중도 포기자가 생기면 해당 항목의 active를 False로 변경하세요
 CANDIDATES = [
     # ── 최우선 후보: 3주차 이상 + README 상세 (★★★) ──
@@ -179,6 +179,79 @@ CANDIDATES = [
         "repo_patterns": [
             r"[Cc]odyssey[_\-]?[Ee][_\-]?(\d+)",
             r"[Cc]odyssey",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "yeowon083",
+        "display_name": "yeowon083",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"python[_\-]?quiz[_\-]?game",
+            r"quiz[_\-]?game",
+            r"ia[_\-]codyssey",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "clae-dev",
+        "display_name": "clae-dev",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"ia[_\-]codyssey[_\-]?(\w+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "jhj9109",
+        "display_name": "jhj9109",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey(\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "waz6432",
+        "display_name": "waz6432",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"[Cc]odyssey[Ee]\d+[_\-](\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "whitecy01",
+        "display_name": "whitecy01",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey(\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "wilderif",
+        "display_name": "wilderif",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]?e\d+[_\-](\d+)",
+        ],
+        "priority": 2,
+        "active": True,
+    },
+    {
+        "username": "yacheahobbang",
+        "display_name": "yacheahobbang",
+        "type": "multi_repo",
+        "repo_patterns": [
+            r"codyssey[_\-]?[Ee]\d+[_\-](\d+)",
+            r"ia[_\-]codyssey",
         ],
         "priority": 2,
         "active": True,

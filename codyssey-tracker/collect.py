@@ -14,7 +14,12 @@ import base64
 from datetime import datetime, timezone, timedelta
 
 import requests
-import google.generativeai as genai
+try:
+    from google import genai
+    USE_NEW_GENAI = True
+except ImportError:
+    import google.generativeai as genai
+    USE_NEW_GENAI = False
 
 # ─── 설정 ────────────────────────────────────────────────────────────────────
 
@@ -335,8 +340,16 @@ def detect_week(name: str, patterns: list) -> str | None:
     for pattern in patterns:
         m = re.search(pattern, name, re.IGNORECASE)
         if m:
-            val = m.group(1).lower()
-            return WORD_TO_NUM.get(val, val.lstrip("0") or "0")
+            # 캡처 그룹이 있으면 그룹 값 사용, 없으면 None 반환하고 다음 패턴 시도
+            if m.lastindex and m.lastindex >= 1:
+                val = m.group(1).lower()
+                return WORD_TO_NUM.get(val, val.lstrip("0") or "0")
+            else:
+                # 캡처 그룹 없는 패턴 (예: r"[Cc]odyssey") — 레포 이름에서 숫자 추출 시도
+                nums = re.findall(r'(\d+)', name)
+                if nums:
+                    return nums[-1].lstrip("0") or "0"
+                continue
     return None
 
 
@@ -351,8 +364,10 @@ def summarize(readme: str, week: str) -> str:
         print("  [경고] GEMINI_API_KEY 없음 — README 원문으로 대체")
         return readme[:800] + "\n\n_*(API 키 없음 — 원문 일부)*_"
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.5-flash-lite")
+    if USE_NEW_GENAI:
+        client = genai.Client(api_key=api_key)
+    else:
+        genai.configure(api_key=api_key)
 
     prompt = f"""다음은 Codyssey 프로그램 {week}주차 과제 레포의 README.md입니다.
 학습자가 이 과제 내용을 자신의 학습 자료로 내재화할 수 있도록 아래 형식으로 정리해 주세요.
@@ -379,8 +394,16 @@ README 내용:
 한국어로 작성해 주세요."""
 
     try:
-        resp = model.generate_content(prompt)
-        return resp.text.strip()
+        if USE_NEW_GENAI:
+            resp = client.models.generate_content(
+                model="gemini-2.5-flash-lite",
+                contents=prompt,
+            )
+            return resp.text.strip()
+        else:
+            model = genai.GenerativeModel("gemini-2.5-flash-lite")
+            resp = model.generate_content(prompt)
+            return resp.text.strip()
     except Exception as e:
         print(f"  [오류] AI 요약 실패: {e}")
         return readme[:800] + "\n\n_*(AI 요약 실패 — 원문 일부)*_"

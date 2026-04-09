@@ -1,6 +1,6 @@
 # 2025 코디세이 AI 올인원 과정 (파일럿) 전체 정리
 
-> 출처: I-nkamanda GitHub 레포 + 2025년 모집공고문 대조
+> 출처: I-nkamanda, jonghwan159, clae-dev, doji-kr GitHub 레포 + 2025년 모집공고문 대조
 
 ---
 
@@ -40,18 +40,18 @@ Term-Project (최소 3주, 선택과정과 병행)
 
 ## 3. 과제별 상세 내용
 
-각 과제의 상세 내용은 아래 파일에서 확인할 수 있습니다.
+각 과제의 상세 내용은 아래 파일에서 확인할 수 있습니다. 모든 문서는 **8개 섹션 형식**(미션 개요, 학습 목표, 기능 요구사항, 핵심 기술 스택, 프로젝트 구조, 구현 핵심 포인트, 트러블슈팅, 추가 학습 자료)으로 구성되어 있습니다.
 
-| 파일 | 내용 |
-|------|------|
-| [01_공통과정_Python_Git.md](01_공통과정_Python_Git.md) | 단원1: Python 기초 + Git 협업 (1-1 ~ 1-8) |
-| [02_공통과정_화성미션.md](02_공통과정_화성미션.md) | 화성 미션 시리즈 (Mars_1, Mars-1_2, Mars-2) |
-| [03_AI기초_Docker.md](03_AI기초_Docker.md) | 단원5: Docker/컨테이너 (5-1 ~ 5-7) |
-| [04_AI기초_Kubernetes.md](04_AI기초_Kubernetes.md) | 단원6: Kubernetes/오케스트레이션 (6-1 ~ 6-8) |
-| [05_AI고급_경로추천.md](05_AI고급_경로추천.md) | AI 고급 트랙: 실시간 경로 추천 시스템 |
-| [06_Term_Project.md](06_Term_Project.md) | Term-Project: PopPins II (어딧세이) |
-| [07_공유자료실.md](07_공유자료실.md) | 수강생 공유 자료실 목록 |
-| [커버리지_분석.md](커버리지_분석.md) | 공고문 vs 레포 커버리지 분석 |
+| 파일 | 내용 | 상태 |
+|------|------|------|
+| [01_공통과정_Python_Git.md](01_공통과정_Python_Git.md) | 단원1: Python 기초 + Git 협업 (1-1 ~ 1-8) | 완료 |
+| [02_공통과정_화성미션.md](02_공통과정_화성미션.md) | 화성 미션 시리즈 (Mars_1, Mars-1_2, Mars-2) | 완료 |
+| [03_AI기초_Docker.md](03_AI기초_Docker.md) | 단원5: Docker/컨테이너 (5-1 ~ 5-8) | 완료 |
+| [04_AI기초_Kubernetes.md](04_AI기초_Kubernetes.md) | 단원6: Kubernetes/오케스트레이션 (6-1 ~ 6-8) | 완료 |
+| [05_AI고급_경로추천.md](05_AI고급_경로추천.md) | AI 고급 트랙: 실시간 경로 추천 시스템 | 완료 |
+| [06_Term_Project.md](06_Term_Project.md) | Term-Project: PopPins II (어딧세이) | 완료 |
+| [07_공유자료실.md](07_공유자료실.md) | 수강생 공유 자료실 목록 | 기본 |
+| [커버리지_분석.md](커버리지_분석.md) | 공고문 vs 레포 커버리지 분석 | 완료 |
 
 ---
 
@@ -67,3 +67,7 @@ Term-Project (최소 3주, 선택과정과 병행)
 | [poppins](https://github.com/I-nkamanda/poppins) | I-nkamanda | Term-Project 코드 |
 | [termproj_plans](https://github.com/I-nkamanda/termproj_plans) | I-nkamanda | Term-Project 기획 문서 |
 | [Codyssey_Mariners_Storage](https://github.com/I-nkamanda/Codyssey_Mariners_Storage) | I-nkamanda | 수강생 공유 자료실 |
+| [Codyssey](https://github.com/jonghwan159/Codyssey) | jonghwan159 | 과정 1/5/6 상세 task.md (8개 과제 전체) |
+| [ia-codyssey-Docker](https://github.com/clae-dev/ia-codyssey-Docker) | clae-dev | Docker 상세 실습 보고서 |
+| [ia-codyssey-Python](https://github.com/clae-dev/ia-codyssey-Python) | clae-dev | Python 과정 자료 |
+| [docker](https://github.com/doji-kr/docker) | doji-kr | Docker 보충 자료 |

@@ -1,6 +1,94 @@
 {
-  "collected_at": "2026-04-09T14:34:22.988883+09:00",
+  "collected_at": "2026-04-09T15:52:09.407324+09:00",
   "assignments": [
+    {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem1_AI_SW_Setup",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup",
+      "week": "1",
+      "updated_at": "2026-04-08",
+      "readme_length": 1707,
+      "summary": "## 과제 주제\nAI/SW 개발 워크스테이션 환경 구축 및 기본 도구 활용\n\n## 학습 목표\n1.  터미널 기본 조작 및 파일/폴더 관리에 능숙해진다.\n2.  Docker를 활용하여 일관적인 개발 환경을 구축하고 컨테이너를 이해한다.\n3.  Dockerfile을 작성하여 커스텀 Docker 이미지를 생성하고 실행한다.\n4.  Git 및 GitHub를 설정하고 연동하여 코드 버전 관리를 시작한다.\n5.  CLI 환경에서 필수적인 명령어들을 활용할 수 있게 된다.\n\n## 주요 내용 요약\n본 과제는 어디서든 동일한 개발 환경을 구축하는 것을 목표로 합니다. 터미널 기본 조작, 권한 관리, Docker 설치 및 활용 (hello-world, Dockerfile 빌드/실행, 포트 매핑, 바인드 마운트, 볼륨 영속성), Git 설정 및 VSCode GitHub 연동을 포함합니다. 추가적으로 Docker Compose를 활용한 멀티 컨테이너 환경 구축과 환경 변수 활용을 다룹니다.\n\n## 핵심 기술 및 개념\n*   **운영체제 (OS)**: MacOS\n*   **Shell**: zsh\n*   **Containerization**: Docker, Docker Compose\n*   **Command Line Interface (CLI)**: 터미널 (ls, cd, mkdir, cp, mv, rm, cat, touch), chmod, docker, docker-compose\n*   **Version Control**: Git, GitHub\n*   **Dockerfile**: 이미지 빌드, FROM, RUN, COPY, CMD, EXPOSE\n*   **Docker Networking**: 포트 매핑 (Port Mapping)\n*   **Docker Storage**: 바인드 마운트 (Bind Mount), 볼륨 (Volume)\n*   **IDE 연동**: VSCode, GitHub 연동\n\n## 과제 요구사항\n*   [x] 터미널 기본 조작 및 폴더 구성\n*   [x] 권한 변경 실습\n*   [x] Docker 설치 / 점검\n*   [x] hello-world 실행\n*   [x] Dockerfile 빌드 / 실행\n*   [x] 포트 매핑 접속\n*   [x] 바인드 마운트 반영\n*   [x] 볼륨 영속성\n*   [x] Git 설정 + VSCode GitHub 연동\n\n### 보너스 과제\n*   [x] Docker Compose 기초\n*   [x] Docker Compose 멀티 컨테이너\n*   [x] Docker Compose 운영 명령어 및 루틴\n*   [x] 환경 변수 활용\n*   [ ] Github SSH 키 설정",
+      "priority": 1
+    },
+    {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-1",
+      "week": "1",
+      "updated_at": "2026-04-06",
+      "readme_length": 13870,
+      "summary": "## 과제 주제\n터미널, Docker, Git/GitHub 활용 기본기 다지기\n\n## 학습 목표\n1.  터미널(CLI) 환경에서의 파일 및 디렉토리 조작 능력 향상\n2.  리눅스 파일 권한 관리(chmod)의 기본 원리 이해 및 실습\n3.  Docker 이미지 및 컨테이너의 기본 개념 이해와 명령어 실습\n4.  Dockerfile을 이용한 커스텀 Docker 이미지 생성 및 관리\n5.  Git/GitHub를 활용한 버전 관리 및 협업 기초 습득\n\n## 주요 내용 요약\n이번 과제는 터미널 기본 조작, 파일 권한 변경, Docker 설치 및 기본 명령어, Dockerfile을 활용한 커스텀 이미지 빌드, 포트 매핑 및 볼륨 영속성 검증, 그리고 GitHub SSH 인증 설정 및 연동까지 다룹니다. 학습자는 CLI 환경에 익숙해지고, Docker를 활용하여 애플리케이션 환경을 구축하며, Git을 통해 코드 변경 이력을 관리하는 방법을 배우게 됩니다. (198자)\n\n## 핵심 기술 및 개념\n*   **터미널 (CLI):** `pwd`, `ls`, `touch`, `cp`, `mv`, `rm`, `cat`, `echo`, `chmod`\n*   **파일 권한:** owner, group, others, r(read), w(write), x(execute), 8진수 표기법 (644, 755)\n*   **Docker:** 이미지(Image), 컨테이너(Container), Dockerfile, `docker build`, `docker run`, `docker info`, `docker ps`, `docker stop`, `docker rm`, 포트 매핑 (-p), 볼륨 영속성\n*   **Git/GitHub:** 버전 관리, SSH 인증, GitHub 연동 (Bonus)\n*   **경로:** 절대 경로, 상대 경로\n\n## 과제 요구사항\n*   [x] 터미널 기본 조작 및 폴더 구성\n*   [x] 파일 권한 변경 실습 (chmod)\n*   [x] Docker 설치 및 기본 명령어 수행\n*   [x] Dockerfile 기반 커스텀 이미지 제작 및 배포\n*   [x] 포트 매핑 및 볼륨 영속성 검증\n*   [ ] *(Bonus)* Docker Compose 단일/멀티 서비스 운영\n*   [ ] *(Bonus)* 환경 변수를 활용한 설정 분리\n*   [ ] *(Bonus)* GitHub SSH 인증 설정 및 연동",
+      "priority": 1
+    },
+    {
+      "username": "kimch0612",
+      "display_name": "kimch0612",
+      "repo_name": "Codyssey_Week1",
+      "repo_url": "https://github.com/kimch0612/Codyssey_Week1",
+      "week": "1",
+      "updated_at": "2026-03-31",
+      "readme_length": 7624,
+      "summary": "## 과제 주제\nAI/SW 개발을 위한 로컬 개발 환경 구축 및 재현 가능한 실행 환경 만들기\n\n## 학습 목표\n*   터미널의 기본 조작 및 파일/디렉토리 관리를 능숙하게 다룬다.\n*   Docker의 설치, 기본 운영, 이미지 빌드 및 컨테이너 실행 방법을 이해한다.\n*   Dockerfile을 활용하여 커스텀 Docker 이미지를 생성하고 활용한다.\n*   포트 매핑, 바인드 마운트, Docker 볼륨의 개념과 사용법을 익힌다.\n*   Git의 기본 설정과 GitHub 연동을 통해 버전 관리 및 협업 준비를 한다.\n\n## 주요 내용 요약\n본 과제는 터미널, Docker, Git/GitHub를 활용하여 AI/SW 개발을 위한 로컬 환경을 구축하고, 재현 가능한 실행 환경을 만드는 것을 목표로 합니다. 터미널 기본 조작, 파일 권한 설정, Docker 설치 및 운영, Dockerfile을 이용한 커스텀 이미지 제작, 포트 매핑, 바인드 마운트, 볼륨 사용법을 실습하고, Git 설정 및 GitHub 연동까지 다룹니다.\n\n## 핵심 기술 및 개념\n*   **터미널:** `pwd`, `ls`, `cd`, `touch`, `cp`, `mv`, `rm`, `cat`, `chmod`, `ssh`\n*   **Docker:** 설치, `docker --version`, `docker info`, `docker images`, `docker ps -a`, `docker logs`, `docker stats`, `docker run`, `docker build`, `docker volume create`\n*   **Dockerfile:** `FROM`, `RUN`, `WORKDIR`, `COPY`, `CMD`, `EXPOSE`, `ENTRYPOINT`\n*   **네트워킹:** 포트 매핑 (`-p`), 바인드 마운트 (`-v`), 볼륨 (`-v`)\n*   **Git/GitHub:** `git config`, `git init`, `git add`, `git commit`, `git push`, `ssh -T git@github.com`\n*   **파일 권한:** `rwx`, 숫자 표기 (755, 644 등)\n*   **경로:** 절대 경로, 상대 경로\n*   **컨테이너 vs 이미지:** 개념 및 차이점\n\n## 과제 요구사항\n*   [x] 터미널 기본 조작 기록\n*   [x] 파일/디렉토리 권한 변경 실습\n*   [x] Docker 설치 및 데몬 동작 점검\n*   [x] `hello-world` 컨테이너 실행\n*   [x] `ubuntu` 컨테이너 실행 및 내부 명령 확인\n*   [x] Docker 기본 운영 명령 실행 기록\n*   [x] Dockerfile 기반 커스텀 이미지 빌드\n*   [x] 포트 매핑 후 접속 확인\n*   [x] 바인드 마운트 반영 확인\n*   [x] Docker 볼륨 영속성 확인\n*   [x] Git 설정 및 GitHub 연동 기록\n*   [x] 트러블슈팅 기록 (별도 문서)\n*   [x] 실습 결과물 디렉토리 구조 설계 및 기준 명시\n*   [x] 포트/볼륨 재현 기준 명시",
+      "priority": 1
+    },
+    {
+      "username": "JungSaeYoung",
+      "display_name": "JungSaeYoung",
+      "repo_name": "codyssey_E1-1",
+      "repo_url": "https://github.com/JungSaeYoung/codyssey_E1-1",
+      "week": "1",
+      "updated_at": "2026-04-04",
+      "readme_length": 17817,
+      "summary": "# codyssey_jsy\n\n## 미션 요약: 개발 워크스테이션 구축\n\n### 목표\n\n터미널 + Docker + Git/GitHub를 직접 세팅하고, 재현 가능한 개발 환경을 만드는 경험\n\n### 제출물\n\nGitHub 저장소 하나에 모든 결과물 포함\n\n| # | 항목 | 핵심 내용 |\n|---|------|-----------|\n| 1 | 터미널 조작 로그 | pwd, ls -a, mkdir, cp, mv, rm, cat, touch 등 명령어 + 출력 기록 |\n| 2 | 권한 실습 | chmod로 파일/디렉토리 권한 변경 전/후 비교 (최소 각 1개) |\n| 3 | Docker 설치 점검 | docker --version, docker info 결과 기록 |\n| 4 | Docker 기본 운영 | images, ps, logs, stats + hello-world 실행 + ubuntu 컨테이너 진입 |\n| 5 | 커스텀 Dockerfile 및 바인드 마운트 테스트 | (A) nginx 등 웹서버 베이스 또는 (B) ubuntu/alpine 베이스로 커스텀 이미지 빌드 |\n| 6 | 포트 매핑 + 볼륨 | -p 포트 매핑 접속 증거 + Docker 볼륨 영속성 증명 (컨테이너 삭제 후 데이터 유지) |\n| 7 | Git/GitHub 연동 및 동작 | git config 설정 + GitHub 저장소 연동 증거 및 push 과정 |\n| 8 | 트러블슈팅 | 진행했던 것 중 마주한 문제 |\n| 9 | 보너스 문제 | Docker Compose 단일 서비스 및 멀티 컨테이너 |\n\n### README.md 필수 포함 사\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E1-3",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E1-3",
+      "week": "1",
+      "updated_at": "2026-04-06",
+      "readme_length": 2122,
+      "summary": "# Mini NPU Simulator\n\n---\n\n## 1. 실행 방법\n\n```\npython3 main.py\n```\n\n- 실행 후 모드 선택: `1` (사용자 입력 3×3) 또는 `2` (data.json 분석) 또는 `3` (종료)\n- `data_v2.json` 파일은 `main.py`와 같은 디렉토리에 위치해야 합니다.\n\n---\n\n## 2. 구현 요약\n\n### 2-1. 라벨 정규화\n\n| 입력 값 | 변환 결과 | 출처 |\n|---------|----------|------|\n| `\"+\"` | `Cross` | expected 값 |\n| `\"cross\"` | `Cross` | filter 키 |\n| `\"x\"` | `X` | expected 값 / filter 키 |\n\n- 프로그램 내부에서는 `Cross`, `X` 두 가지 표준 라벨만 사용합니다.\n- 비교 및 출력은 모두 정규화된 라벨 기준으로 수행됩니다.\n\n### 2-2. MAC 연산\n\n- 두 배열(패턴, 필터)의 같은 위치 값을 곱한 뒤 전부 합산합니다.\n- 이중 for문으로 직접 구현하였으며, NumPy 등 외부 라이브러리는 사용하지 않았습니다.\n- 반환 타입은 `float`이며, 소수 입력도 처리 가능합니다.\n\n### 2-3. 동점 처리 정책 (epsilon)\n\n- 기준: `abs(score_a - score_b) < 1e-9` 이면 동점으로 간주합니다.\n- 동점 시 판정 결과: `UNDECIDED`\n- 사유: 컴퓨터의 부동소수점 연산에서 발생하는 미세한 오차로 인한 오판을 방지하기 위함입니다.\n\n---\n\n## 3. 결과 리포트\n\n### 3-1. FAI\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E-1",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E-1",
+      "week": "1",
+      "updated_at": "2026-03-30",
+      "readme_length": 28643,
+      "summary": "# AI/SW 개발 워크스테이션 구축\n\n## 1. 프로젝트 개요\n\n코딧세이(Codyssey) 과정의 첫 번째 미션으로, 개발자의 기본 도구인 **터미널(CLI)**, **Docker(컨테이너)**, **Git/GitHub(버전 관리)**를 직접 세팅하고 검증하는 프로젝트입니다.\n\n\"내 컴퓨터에서만 돌아가는\" 문제를 없애고, 누구나 같은 환경에서 실행·배포·디버깅할 수 있는 **재현 가능한 개발 워크스테이션**을 구축하는 것이 목표입니다.\n\n---\n\n## 2. 실행 환경\n\n| 항목 | 버전/정보 |\n|------|-----------|\n| OS | macOS 15.7.4 |\n| Shell | zsh |\n| Terminal | Terminal.app |\n| Docker | Docker version 28.5.2, build ecc6942 |\n| Docker Runtime | OrbStack |\n| Git | git version 2.53.0 |\n| Editor | Visual Studio Code |\n\n---\n\n## 3. 수행 항목 체크리스트\n\n- [ ] 터미널 기본 조작 (pwd, ls, mkdir, cp, mv, rm, cat, touch)\n- [ ] 파일/디렉토리 권한 변경 실습 (chmod)\n- [ ] Docker 설치 확인 및 기본 점검 (version, info)\n- [ ] Docker 기본 운영 명령 수행 (images, ps, logs, stats)\n- [ ] hello-world 컨테이너 실행\n- [ ] ubuntu 컨테이너 실행 및 내부 진입\n- [ ] attach/exec 차이 관찰 및 정리\n\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-1-workstation-setup",
+      "repo_url": "https://github.com/mov-hyun/e1-1-workstation-setup",
+      "week": "1",
+      "updated_at": "2026-04-05",
+      "readme_length": 28398,
+      "summary": "# E1-1. AI/SW 개발 워크스테이션 구축\n\n\n\n\n## 프로젝트 개요\n\n- [1. 터미널 기본 명령어 & 권한 부여](#1-터미널-기본-명령어--권한-부여)\n- [2. Docker 기본 명령어 & 실습](#2-docker-기본-명령어--실습)\n- [3. Dockerfile 기반 커스텀 이미지 제작](#3-dockerfile-기반-커스텀-이미지-제작)\n- [4. 포트 매핑](#4-포트-매핑)\n- [5. 바인드 마운트 및 볼륨 영속성](#5-바인드-마운트-및-볼륨-영속성)\n- [6. Git 설정 및 연동](#6-git-설정-및-연동)\n- [7. Docker Compose](#7-docker-compose)\n- [8. 트러블 슈팅](#8-트러블-슈팅)\n\n------\n\n### 프로젝트 디렉토리 구조\n\ne1-1-workstation-setup/\n├── README.md\n├── Dockerfile\n├── docker-compose.yml\n└── src/\n     └── index.html\n\n### 실행 환경\n\n- OS: macOS Sequoia 15.7.4\n- Shell: zsh, bash\n- Docker version: 28.5.2\n- Git version: 2.53.0\n\n### 수행항목 체크리스트\n\n- [x] 터미널 기본 조작 및 폴더 구성\n- [x] 권한 변경 실습\n- [x] Docker 설치/점검\n- [x] hello-world 실행\n- [x] Dockerfile 빌드/실행\n- [x] 포트 매핑 접속(2회)\n- [x] 바인드 마운트 반영\n- [x] 볼륨 영속성\n- [x] Git 설정 + VSCode GitH\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "sonjehyun123-maker",
+      "display_name": "sonjehyun123-maker",
+      "repo_name": "Codyssey-w1-E1",
+      "repo_url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 10846,
+      "summary": "# Codyssey-w1-E1\nWeek 1 / E1\n\n## 제출 저장소 및 기술 문서\n### 프로젝트 개요\n    스스로 개발환경 구성 및 docker에 대한 이해\n\n### 실행환경 (OS/쉘/터미널, docker, git 버전)\n    명령어\n    ```terminal\n    uname\n    echo $SHELL\n    echo $TERM\n    docker --version\n    git --version\n    ```\n    결과\n    ```terminal\n    Linux\n    /bin/bash\n    xterm-256color\n    Docker version 28.5.1-1, build e180ab8ab82d22b7895a3e6e110cf6dd5c45f1d7\n    git version 2.52.0\n    ```\n\n### 수행목록 체크 리스트\n#### [v] 터미널 기본 조작 및 폴더 구성\n    명령어\n    ```terminal\n    pwd\n    mkdir test test0\n    ls\n    ls -l\n    rm -r test0\n    cd test\n    pwd\n    ```\n    \n    결과\n    ```terminal\n    /workspaces/Codyssey-w1-E1\n    README.md  test  test0\n    total 12\n    -rw-rw-rw-  1 codespace root      1124 Apr  3 07:37 README.md\n    drwxrwxrwx+ 2 codespace codespace 4096 Apr  3 07:40 test\n  \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
     {
       "username": "xifoxy-ru",
       "display_name": "xifoxy-ru",
@@ -9,8 +97,8 @@
       "week": "1",
       "updated_at": "2026-04-08",
       "readme_length": 20267,
-      "summary": "## 과제 주제\n개발 워크스테이션 구축 및 핵심 기술 실습\n\n## 학습 목표\n1.  터미널 기본 명령어 활용 능력 습득\n2.  파일 시스템 권한의 개념 이해 및 조작 실습\n3.  Docker 기본 개념 이해 및 컨테이너/이미지 관리 능력 함양\n4.  Git/GitHub를 활용한 버전 관리 및 협업 기초 다지기\n5.  (보너스) Docker Compose를 활용한 다중 컨테이너 관리 및 GitHub SSH 인증 설정\n\n## 주요 내용 요약\n본 과제는 터미널 기본 조작, 파일 권한 실습, Docker 기본 기능 점검 및 실습, Git/GitHub 연동을 통해 개발 워크스테이션 환경을 직접 구축하는 것을 목표로 합니다. Dockerfile을 이용한 커스텀 이미지 제작, 포트 매핑, 바인드 마운트, 볼륨을 통한 데이터 영속성 관리 등을 실습합니다. 또한, Docker Compose를 활용한 다중 컨테이너 구성과 GitHub SSH 인증 설정 등의 보너스 항목도 다룹니다.\n\n## 핵심 기술 및 개념\n*   **터미널:** `pwd`, `mkdir`, `ls`, `touch`, `cp`, `mv`, `rm`, `chmod`, `stat`, `cat`\n*   **파일 권한:** 사용자(u), 그룹(g), 기타(o) 권한 (읽기-r, 쓰기-w, 실행-x), 8진수 권한 표기법 (예: 600, 644, 700)\n*   **Docker:** Docker 설치, 데몬, 컨테이너, 이미지, Dockerfile, `docker run`, `docker ps`, `docker images`, `docker build`, `docker stop`, `docker rm`, `docker exec`, `docker logs`, 포트 매핑 (`-p`), 바인드 마운트 (`-v`), 볼륨 (`--mount type=volume`)\n*   **Git/GitHub:** Git 설치, `git config`, 원격 저장소 연결, `git init`, `git add`, `git commit`, `git push`, `git pull`, SSH 키 생성 및 등록\n*   **Docker Compose:** `docker-compose.yaml`, 다중 컨테이너 오케스트레이션\n\n## 과제 요구사항\n- [x] 터미널 기본 조작 및 폴더 구성\n- [x] 파일 권한 실습\n- [x] Docker 설치 및 기본 점검\n- [x] hello-world 컨테이너 실행\n- [x] ubuntu 컨테이너 실행 및 내부 명령 확인\n- [x] Docker 기본 운영 명령 확인\n- [x] Dockerfile 기반 커스텀 이미지 제작\n- [x] 포트 매핑 검증\n- [x] 바인드 마운트 검증\n- [x] 볼륨 영속성 검증\n- [x] Git 설정 확인\n- [x] GitHub / VS Code 연동 확인\n- [x] 트러블슈팅 2건 이상 정리\n- [x] **(Bonus)** Docker Compose\n- [x] **(Bonus)** GitHub SSH",
-      "priority": 1
+      "summary": "# 개발 워크스테이션 구축 미션\n\n> 이 문서는 프로젝트 루트 디렉토리에서 작업한 내용을 기준으로 정리하였다.  \n> 본 문서는 **터미널 기본 조작**, **파일 권한 실습**, **Docker 기본 점검 및 실습**, **Git/GitHub 연동**, 그리고 **Bonus 항목(Docker Compose, GitHub SSH)** 까지 포함하여 재현 가능한 형태로 정리하는 것을 목표로 한다.\n\n---\n\n## 1. 프로젝트 개요\n\n이 과제의 목표는 터미널, Docker, Git/GitHub를 활용하여 개발 워크스테이션 환경을 직접 구성하고, 그 과정과 결과를 기술 문서 형태로 정리하는 것이다.\n\n이번 미션에서는 다음 항목을 중심으로 작업을 진행하였다.\n\n- 터미널로 작업 디렉토리 및 파일을 다루는 기본 조작 수행\n- 파일과 디렉토리의 권한 확인 및 변경 실습\n- Docker 설치 및 데몬 동작 여부 점검\n- hello-world 및 ubuntu 컨테이너 실행과 기본 운영 명령 확인\n- Dockerfile 기반 커스텀 이미지 제작\n- 포트 매핑을 통한 브라우저 접속 확인\n- 바인드 마운트로 호스트 변경 사항이 컨테이너에 즉시 반영되는지 검증\n- Docker 볼륨을 이용한 데이터 영속성 확인\n- Git 사용자 설정 및 원격 저장소 연결 상태 확인\n- Bonus: Docker Compose 기반 다중 컨테이너 구성\n- Bonus: GitHub SSH 키 생성 및 SSH 방식 원격 저장소 전환 점검\n\n---\n\n## 2. 실행 환경\n\n- OS: macOS\n- Shell: zsh\n- Terminal: iTerm2 또는\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
     },
     {
       "username": "LimJongHan",
@@ -20,8 +108,8 @@
       "week": "1",
       "updated_at": "2026-04-03",
       "readme_length": 34992,
-      "summary": "## Codyssey 1주차 과제 (E1-1): AI/SW 개발 워크스페이스 구축\n\n## 과제 주제\n터미널, Docker, Git을 활용한 재현 가능한 개발 환경 구축\n\n## 학습 목표\n1.  **터미널 기본 명령어 활용 능력** 향상 (파일/디렉터리 관리, 권한 설정)\n2.  **Docker의 핵심 개념 이해** (이미지, 컨테이너, 포트 매핑, 볼륨)\n3.  **Docker를 이용한 개발 환경 구축 및 재현** 방법 습득\n4.  **Git을 활용한 버전 관리 및 원격 저장소 연동** 기본기 다지기\n\n## 주요 내용 요약\n본 과제는 터미널, Docker, Git을 사용하여 개발 환경을 재현 가능하게 구축하는 것을 목표로 합니다. 파일 시스템 조작, 권한 설정, Docker 이미지 빌드 및 컨테이너 실행, 포트 매핑, 바인드 마운트, 볼륨 관리, Git 저장소 초기화 및 원격 연동 등의 실습을 통해 각 기능의 동작 원리를 직접 검증하고 기록합니다.\n\n## 핵심 기술 및 개념\n*   **터미널 명령어:** `pwd`, `mkdir`, `cd`, `ls`, `touch`, `echo`, `cat`, `cp`, `mv`, `rm`, `chmod`, `uname`\n*   **Docker:** `docker run`, `docker build`, `docker ps`, `docker images`, `docker port`, `docker volume`, `docker exec`\n*   **Docker 개념:** 이미지, 컨테이너, 포트 매핑, 바인드 마운트, 명명된 볼륨\n*   **Git:** `git init`, `git add`, `git commit`, `git remote add`, `git push`\n*   **기타:** Dockerfile, `.gitignore`, 권한 숫자 (rwx: 4, 2, 1)\n\n## 과제 요구사항\n\n### 수행 체크리스트\n*   [x] 1. 터미널 기본 조작 및 로그 기록\n*   [x] 2. 권한 변경 실습 (`chmod`)\n*   [x] 3. Docker 설치/점검\n*   [x] 4. Docker 기본 운영 명령 수행\n*   [x] 5. 컨테이너 실행 실습\n*   [x] 6. Dockerfile 빌드/실행 및 포트 매핑 접속\n*   [x] 7. 바인드 마운트 반영\n*   [x] 8. 볼륨 영속성\n*   [x] 9. Git 설정 및 원격 저장소 연동\n\n---",
-      "priority": 1
+      "summary": "# Codyssey E1-1 · AI/SW 개발 워크스페이스 구축\n\n실습 목표는 **터미널·Docker·Git**을 사용해 개발 환경을 재현 가능하게 만드는 것이다. 포트 매핑, 바인드 마운트, 명명된 볼륨 등 컨테이너 운영의 핵심을 **명령과 출력으로 직접 검증**한다.\n\n## 이 문서를 읽는 순서\n\n1. **저장소 구조** — 어떤 파일이 무엇인지 파악한다.\n2. **체크리스트** — 과제 진행도를 본다.\n3. **상세 검증 기록** — 터미널/퍼미션/Docker/Git 순 실습 로그(증빙)이다.\n4. **핵심 원리 및 구조 설명** — 디렉터리 기준, 포트·볼륨 재현, 이미지/컨테이너, 권한 숫자, 경로 선택, 인터뷰형 트러블슈팅 순서.\n\n## 목차\n\n- [저장소 구조](#저장소-구조)\n- [사전 요구사항 · 환경 스냅샷](#사전-요구사항-및-실행-환경)\n- [수행 체크리스트](#수행-체크리스트)\n- [상세 검증 기록](#상세-검증-기록)\n- [핵심 원리 및 구조 설명](#핵심-원리-및-구조-설명)\n- [트러블슈팅](#트러블슈팅)\n\n## 저장소 구조\n\n대략적인 트리는 다음과 같다.\n\n```text\nE1-1/\n├── README.md              # 기술 문서(실습·트러블슈팅)\n├── .gitignore             # Git 추적 제외 규칙\n├── test1.txt              # 터미널·chmod 실습 샘플\n├── images/\n│   ├── image.png          # 커스텀 웹 컨테이너 접속 증빙\n│   ├── BindMountTest0.png # 바인드 마운\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
     },
     {
       "username": "sourcreamsource",
@@ -31,8 +119,8 @@
       "week": "1",
       "updated_at": "2026-04-08",
       "readme_length": 5289,
-      "summary": "## 과제 주제\nAI/SW 개발 워크스테이션 구축을 위한 필수 도구 학습\n\n## 학습 목표\n1.  **재현 가능한 개발 환경 구축**: 터미널, Docker, Git/GitHub를 활용하여 일관된 개발 환경을 설정하고 관리하는 방법을 익힙니다.\n2.  **Linux 기본 명령어 및 권한 이해**: 터미널 환경에서 기본적인 파일 및 디렉토리 조작, 그리고 Linux 파일 권한(rwx)의 개념과 중요성을 이해하고 실습합니다.\n3.  **Docker 핵심 개념 및 활용**: Docker 이미지와 컨테이너의 개념을 이해하고, Dockerfile을 이용한 커스텀 이미지 생성, 포트 매핑, 데이터 관리(volume, bind mount) 방법을 학습합니다.\n4.  **Docker Compose를 활용한 다중 컨테이너 관리**: 여러 컨테이너를 정의하고 관리하는 Docker Compose의 필요성과 사용법을 익힙니다.\n5.  **Git/GitHub를 활용한 협업 및 코드 관리**: Git의 기본 명령어와 GitHub와의 연동을 통해 코드 버전 관리 및 협업의 기초를 다집니다.\n\n## 주요 내용 요약\n이번 과제는 AI/SW 개발에 필수적인 터미널, Docker, Git/GitHub를 학습하여 재현 가능한 개발 환경을 구축하는 것을 목표로 합니다. Linux 기본 명령어 및 권한 실습, Dockerfile을 이용한 커스텀 이미지 생성, 포트 매핑, 볼륨/바인드 마운트를 통한 데이터 관리, Docker Compose를 활용한 다중 컨테이너 관리, 그리고 Git/GitHub를 이용한 코드 버전 관리 및 협업 방법을 다룹니다. 또한, 학습 과정에서 발생한 트러블슈팅 경험을 기록합니다.\n\n## 핵심 기술 및 개념\n*   **터미널**: zsh (Shell)\n*   **Docker**: Docker 설치/점검, hello-world, nginx, Dockerfile, Container Layer, Writable Layer, Volume, Bind Mount, Docker Compose\n*   **Git/GitHub**: Git 명령, GitHub 연동, SSH\n*   **Linux**: 권한 변경 (rwx), 절대 경로, 상대 경로\n*   **기타**: 포트 매핑, 트러블슈팅\n\n## 과제 요구사항\n*   [ ] 요구사항 분석 문서 작성\n*   [ ] Linux 권한 변경 실습 및 정리\n*   [ ] Git 기본 명령어 및 GitHub 연동 증거 정리\n*   [ ] Docker 설치 및 점검, hello-world, nginx 실행/포트 매핑 실습 및 정리\n*   [ ] Dockerfile 개념 학습 및 실습\n*   [ ] Container Layer / Writable Layer 개념 정리\n*   [ ] Volume / Bind Mount 개념 정리\n*   [ ] Docker Compose 학습 문서 작성 및 실습 (단일, 멀티, 네트워크, 환경 변수)\n*   [ ] GitHub 연동 증거 자료 정리\n*   [ ] 트러블슈팅 2건 이상 문서 작성",
-      "priority": 1
+      "summary": "# 🟩 1주차: AI/SW 개발 워크스테이션 구축  \n\n## 📜 프로젝트 개요  \n- 이번 과제의 목표는 터미널, Docker, Git/GitHub를 직접 다루면서 **재현 가능한 개발 환경**을 만드는 것이다.  \n- README는 단순 소개 문서가 아니라, **평가자가 이 저장소만 보고 수행 내용을 확인할 수 있게 하는 제출 문서** 역할을 한다.  \n- 문서 정리는 `docs`, 실습 파일 정리는 `playground` 기준으로 구성했다.  \n\n\n\n<br><br>\n\n## 🖥️ 실행 환경  \n- OS: macOS Tahoe 26.4  \n- Shell: zsh  \n- Docker: 29.3.1  \n- Git: 2.51.0  \n\n\n\n<br><br>\n\n## ✅ 필수 수행 체크리스트  \n- [x] 요구사항 분석  \n- [x] 권한 변경 실습  \n- [x] Git 명령 정리  \n- [x] Docker 설치/점검 정리  \n- [x] hello-world 실행 정리  \n- [x] nginx 실행 및 포트매핑 정리  \n- [x] Dockerfile 개념 및 실습 정리  \n- [x] container layer / writable layer 정리  \n- [x] volume / bind mount 정리  \n- [x] Docker Compose 학습 문서 작성  \n- [x] GitHub 연동 증거 정리  \n- [x] 트러블슈팅 2건 이상 문서 작성  \n\n\n\n<br><br>\n\n## 📋 Contents  \n\n\n### 🟡 1. Docs  \n\n#### ⚫️ 1-1. 요구사항 / 분석  \n- [01_codyssey_요구사항.md](.\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
     },
     {
       "username": "coding-monkey-326",
@@ -42,8 +130,151 @@
       "week": "1",
       "updated_at": "2026-03-31",
       "readme_length": 17258,
-      "summary": "## 과제 주제\nAI/SW 개발을 위한 필수 개발 환경 구축 및 검증\n\n## 학습 목표\n*   Linux CLI 기반의 터미널 기본 조작 및 파일/디렉토리 관리 능력 습득\n*   Docker 설치 및 기본 명령어(이미지, 컨테이너 관리) 이해\n*   Dockerfile을 활용한 이미지 빌드 및 컨테이너 실행 방법 숙지\n*   Git 및 GitHub를 이용한 버전 관리 및 협업 환경 설정\n\n## 주요 내용 요약\n본 과제는 AI/SW 개발에 필수적인 터미널(Linux CLI), Docker, Git/GitHub 환경을 직접 구축하고 검증하는 것을 목표로 합니다. 각 도구의 기본적인 사용법을 익히고, \"내 컴퓨터에서만\" 돌아가는 코드를 넘어 팀원 모두가 동일한 환경에서 개발, 실행, 배포, 디버깅할 수 있는 기반을 마련합니다.\n\n## 핵심 기술 및 개념\n*   **터미널 (Linux CLI)**: `pwd`, `ls`, `mkdir`, `touch`, `cat`, `cp`, `mv`, `rm`, `chmod`\n*   **Docker**: 설치, `docker version`, `docker info`, `docker run hello-world`, `docker images`, `docker ps`, `docker build`, `Dockerfile`, 포트 매핑, 바인드 마운트, 볼륨\n*   **Git/GitHub**: 설정, 연동\n\n## 과제 요구사항\n- [x] 터미널 기본 조작 및 폴더 구성\n- [x] 권한 변경 실습\n- [x] Docker 설치/점검\n- [x] hello-world 실행\n- [x] 이미지/컨테이너 목록 확인 및 정리\n- [x] Dockerfile 빌드/실행\n- [x] 포트 매핑 접속\n- [x] 바인드 마운트 반영\n- [x] 볼륨 영속성 검증\n- [x] Git 설정 + GitHub 연동",
+      "summary": "# AI/SW 개발 워크스테이션 구축\n\n## 1. 프로젝트 개요\n\n터미널(Linux CLI), Docker, Git/GitHub 세 가지 핵심 도구를 직접 세팅하고 검증하는 미션입니다.\n코드가 \"내 컴퓨터에서만\" 돌아가는 문제를 줄이고, 팀원 누구나 같은 방식으로 실행/배포/디버깅할 수 있는 환경 구성을 목표로 합니다.\n\n---\n\n## 2. 실행 환경\n\n| 항목 | 내용 |\n|------|------|\n| OS | macOS (Darwin 24.6.0, x86_64) |\n| Shell | zsh |\n| Docker | 28.5.2 |\n| Git | 2.53.0 |\n\n---\n\n## 3. 수행 항목 체크리스트\n\n- [ ] 터미널 기본 조작 및 폴더 구성\n- [ ] 권한 변경 실습\n- [ ] Docker 설치/점검\n- [ ] hello-world 실행\n- [ ] 이미지/컨테이너 목록 확인 및 정리\n- [ ] Dockerfile 빌드/실행\n- [ ] 포트 매핑 접속\n- [ ] 바인드 마운트 반영\n- [ ] 볼륨 영속성 검증\n- [ ] Git 설정 + GitHub 연동\n\n---\n\n## 4. 터미널 조작 로그\n\n### 4-1. 기본 명령어\n\n```bash\n# 현재 위치 확인\n$ pwd\n/Users/sungminchoidev3025\n\n# 목록 확인 (숨김 파일 포함)\n$ ls -la\ntotal 64\ndrwxr-x---+ 26 sungminchoidev3025  sungminchoidev3025    832 Mar 31 02:50 .\ndrwxr-xr-x   6 root                admin          \n\n_*(AI 요약 실패 — 원문 일부)*_",
       "priority": 2
+    },
+    {
+      "username": "whdals006",
+      "display_name": "whdals006",
+      "repo_name": "Codyssey_E1-1",
+      "repo_url": "https://github.com/whdals006/Codyssey_E1-1",
+      "week": "1",
+      "updated_at": "2026-04-07",
+      "readme_length": 20211,
+      "summary": "# E1-1 AI/SW 개발 워크스테이션 구축\n\n## 1. 프로젝트 개요\n\n  이번 프로젝트는 AI/SW 개발 워크스테이션 구축을 목표로 한다. 개발은 단순히 코드를 작성하는 순간이 아니라, 환경을 세팅하는 순간부터 시작된다. 따라서 학습자는 로컬 개발 환경을 구성하고, 재현 가능한 실행 환경을 만들며, 협업 가능한 상태로 프로젝트를 관리할 수 있어야 한다.\n\n주요 목표는 다음과 같다.\n\n1. 터미널 환경 이해 및 활용\n- 디렉토리 구조 생성, 권한 설정, 파일/폴더 관리 등 기본 CLI 조작\n2. Docker 기반 컨테이너 환경 구축\n- Docker 설치 및 점검\n- 컨테이너 실행/관리\n- 포트 매핑을 통해 호스트-컨테이너 간 접근 확인\n- 바인드 마운트와 볼륨을 활용한 변경 반영과 데이터 영속성 검증\n4. Git/GitHub를 통한 관리 및 협업 환경 구성\n- Git 사용자 정보 설정, 기본 브랜치 구성\n- VSCode와 GitHub 연동\n5. 문제 해결과 트러블슈팅 경험\n- 환경 구성 과정에서 발생할 수 있는 문제 발견\n- 문제 원인 가설 수립, 확인, 해결 방법 기록\n\n<br>\n\n## 2. 실행 환경\n\n- OS : MacOS\n- Shell : zsh\n\n```bash\n$ echo $SHELL\n/bin/zsh\n```\n\n- Terminal : Terminal.app\n\n```bash\n$ echo $TERM_PROGRAM\nApple_Terminal\n```\n\n- Docker 버전 : Docker version 28.5.2\n\n```bash\n$ docker --version\nDocker version 28.5.2, \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "dolphin1404",
+      "display_name": "dolphin1404",
+      "repo_name": "Codyssey_E_1_2",
+      "repo_url": "https://github.com/dolphin1404/Codyssey_E_1_2",
+      "week": "1",
+      "updated_at": "2026-04-07",
+      "readme_length": 2038,
+      "summary": "# Python 퀴즈 게임\n\n## 프로젝트 개요\n\nPython으로 만든 콘솔 기반 퀴즈 게임입니다. 터미널에서 실행하여 퀴즈를 풀고, 새로운 퀴즈를 추가하며, 최고 점수를 관리할 수 있습니다. 프로그램을 종료해도 데이터가 유지됩니다.\n\n## 퀴즈 주제 선정 이유\n\n**Python 프로그래밍**을 주제로 선정했습니다. 이 과제를 수행하면서 Python 문법을 직접 사용하고 있기 때문에, 퀴즈 내용과 학습 내용이 자연스럽게 연결되어 복습 효과를 얻을 수 있습니다.\n\n## 실행 방법\n\n```bash\npython main.py\n```\n\n- Python 3.10 이상 필요\n- 외부 라이브러리 불필요 (표준 라이브러리만 사용)\n\n## 기능 목록\n\n| 번호 | 기능 | 설명 |\n|------|------|------|\n| 1 | 퀴즈 풀기 | 랜덤 출제, 문제 수 선택, 힌트 사용 가능, 결과 표시 |\n| 2 | 퀴즈 추가 | 새로운 퀴즈(문제, 선택지 4개, 정답, 힌트)를 등록 |\n| 3 | 퀴즈 목록 | 등록된 모든 퀴즈의 문제를 목록으로 확인 |\n| 4 | 퀴즈 삭제 | 등록된 퀴즈를 선택하여 삭제 |\n| 5 | 점수 확인 | 최고 점수 확인 |\n| 6 | 점수 기록 | 전체 게임 기록(날짜, 점수, 힌트 사용) 확인 |\n| 7 | 종료 | 데이터 저장 후 프로그램 종료 |\n\n## 파일 구조\n\n```\nCodyssey_E_1_2/\n├── main.py          # 프로그램 진입점\n├── quiz.py          # Quiz 클래스 (개별 퀴즈 표현)\n├── quiz_game.py     # QuizGam\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "jhj9109",
+      "display_name": "jhj9109",
+      "repo_name": "codyssey1",
+      "repo_url": "https://github.com/jhj9109/codyssey1",
+      "week": "1",
+      "updated_at": "2026-04-01",
+      "readme_length": 15746,
+      "summary": "# 개발 워크스테이션 구축 미션\n\n## 1. 프로젝트 개요\n로컬 개발 환경 세팅, Docker 컨테이너 실행, Git 버전 관리를 결합하여 재현 가능한 개발 워크스테이션을 구축합니다.\n\n### 프로젝트 구조\n- 루트경로에 너무 많은 파일이 있는것을 막기 위해, images & basic & bonus 폴더를 두었습니다.\n- images는 README.md를 구성하기 위한 이미지 파일을 두었습니다.\n- basic은 도커파일로 기본이미지를 커스텀하여 실행합니다.\n- bonus에서는 yaml로 도커컴포즈로서 3가지 서비스를 구동합니다.\n- 루트에는 시현중 도움이 되는 몇가지 sh파일과 깃이그노어 파일이 있습니다.\n\n## 2. 실행 환경\n* OS:  macOS  15.7.4 24G517\n* Shell: zsh 5.9 (x86_64-apple-darwin24.0)\n* Docker: Docker version 28.5.2, build ecc6942\n* Git: git version 2.53.0\n\n## 3. 수행 항목 체크리스트\n- [O] 4. 터미널\n- [O] 5. 권한\n- [O] 6-1. Docker\n- [O] 6-2. Dockerfile\n- [O] 6-3. 포트\n- [O] 6-4. 볼륨\n- [O] 7-1. Git\n- [O] 7-2. GitHub\n\n## 4. 터미널\n```bash\n# 1. 현재 위치 확인\npwd\n\n# 2. 실습용 디렉토리 생성 및 이동\nmkdir -p test\ncd test\npwd\n\n# 3. 빈 파일 생성 및 목록 확인 (숨김 파일 포함)\ntouch origin .hide\nls -al\n\n# 5. 파일 \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "waz6432",
+      "display_name": "waz6432",
+      "repo_name": "CodysseyE1-1",
+      "repo_url": "https://github.com/waz6432/CodysseyE1-1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 12437,
+      "summary": "# 개발 워크스테이션 세팅 미션\n\n## 미션 목표\n> 본 미션은 개발자로서 갖춰야 할 가장 기본적인 기반인 **터미널, Docker, Git**을 직접 세팅하며, \"내 컴퓨터에서만 돌아가는\" 문제를 해결하고 팀원 모두가 동일한 환경에서 실행·배포·디버깅할 수 있는 **재현 가능한 개발 환경** 구성을 목표로 합니다.\n\n---\n\n## 1. 실행 환경\n![macOS](https://img.shields.io/badge/macOS_15.7.4-000000?style=flat-square&logo=apple&logoColor=white)\n![Zsh](https://img.shields.io/badge/Shell-zsh-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)\n![Docker](https://img.shields.io/badge/Docker_28.5.2-2496ED?style=flat-square&logo=docker&logoColor=white)\n![Git](https://img.shields.io/badge/Git_2.53.0-F05032?style=flat-square&logo=git&logoColor=white)\n\n---\n\n## ✅ 2. 수행 체크리스트\n- [x] 터미널 기본 조작 및 폴더 구성\n- [x] 권한 변경 실습\n- [x] Docker 설치/점검\n- [x] `hello-world` 실행\n- [x] Dockerfile 빌드/실행\n- [x] 포트 매핑 접속 (2회)\n- [x] 바인드 마운트 반영\n- [x] 볼륨 영속성\n- [x] Git 설정 + V\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "whitecy01",
+      "display_name": "whitecy01",
+      "repo_name": "codyssey1",
+      "repo_url": "https://github.com/whitecy01/codyssey1",
+      "week": "1",
+      "updated_at": "2026-04-02",
+      "readme_length": 21139,
+      "summary": "# 개발 워크스테이션 구축\n\n## 목차\n1. [프로젝트 개요](#1-프로젝트-개요)\n2. [실행 환경](#2-실행-환경)\n3. [수행 항목 체크리스트](#3-수행-항목-체크리스트)\n4. [터미널 조작 로그](#4-터미널-조작-로그)\n5. [권한 실습](#5-권한-실습)\n6. [Docker 설치 및 기본 점검](#6-docker-설치-및-기본-점검)\n7. [Docker 기본 운영 명령](#7-docker-기본-운영-명령)\n8. [컨테이너 실행 실습](#8-컨테이너-실행-실습)\n9. [커스텀 이미지 제작 (Dockerfile)](#9-커스텀-이미지-제작-dockerfile)\n10. [포트 매핑 및 접속 증거](#10-포트-매핑-및-접속-증거)\n11. [Docker 볼륨 영속성 검증](#11-docker-볼륨-영속성-검증)\n12. [Git 설정 및 GitHub 연동](#12-git-설정-및-github-연동)\n13. [트러블슈팅](#13-트러블슈팅)\n\n\n## 1. 프로젝트 개요\n\n이 프로젝트는 개발 워크스테이션 구축 미션의 결과물이다.\n\n터미널(CLI), Docker(컨테이너), Git/GitHub(버전 관리)를 직접 세팅하고 검증하는 과정을 기록한다.\n\n**주요 목표:**\n- 터미널로 디렉토리·권한을 직접 조작한다.\n- OrbStack 기반 Docker 환경에서 컨테이너를 실행·관리한다.\n- nginx 베이스 이미지를 커스터마이징한 Dockerfile을 작성하고 빌드한다.\n- 포트 매핑, 바인드 마운트, Docker 볼륨을 통해 네트워크·스토리지 연결 방식을 검증한다.\n- Git 설정과 GitHub 연동을 완료하\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "wilderif",
+      "display_name": "wilderif",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/wilderif/codyssey-e1-1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 957,
+      "summary": "# AI/SW 개발 워크스페이스 구축\n\n## 실행 환경\n- OS: macOS (Apple Silicon)\n- Shell: zsh\n- Docker: Docker version 29.2.1\n- Git: git version 2.53.0\n\n## 수행 체크리스트\n- [x] 터미널 기본 조작 및 폴더 구성\n- [x] 권한 변경 실습\n- [x] Docker 설치 및 기본 운영 명령\n- [x] 컨테이너 실행 실습\n- [x] Dockerfile 빌드/실행\n- [x] 포트 매핑 접속\n- [x] 볼륨 영속성\n- [x] 바인드 마운트 반영\n- [x] Docker Compose 기초\n- [x] Docker Compose 멀티 컨테이너\n- [x] Compose 운영 명령어 습득\n- [x] Docker 환경 변수 활용\n- [x] 트러블슈팅\n- [x] Git 설정 + GitHub 연동\n- [x] GitHub SSH 키 설정\n\n## Terminal\n[Terminal 실습](./docs/terminal-basics.md)\n\n## Permission\n[Permission 실습](./docs/permission.md)\n\n## Docker 1\n[Docker 실습 1](./docs/docker-basics.md)\n\n## Docker 2\n[Docker 실습 2](./docs/docker-basics-2.md)\n\n## Docker Compose\n[Docker Compose 실습](./docs/docker-compose-basics.md)\n\n## Troubleshooting\n[트러블슈팅 기록](./docs/troubleshooting.md)\n\n## G\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem2_Python_with_git",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 158,
+      "summary": "## 과제 주제\nPython 개발 환경 설정 및 Git 기초 다지기\n\n## 학습 목표\n1.  Python 설치 및 개발 환경 설정 방법 숙지\n2.  Git의 기본적인 명령어(add, commit, push) 사용법 익히기\n3.  `state.json` 파일의 역할과 사용법 이해하기\n4.  Markdown 문법을 활용하여 README 파일 작성 및 관리 방법 학습\n\n## 주요 내용 요약\n본 과제는 Python 개발을 위한 환경을 구축하고, Git을 사용하여 프로젝트를 관리하는 방법을 익힙니다. Python 설치 및 IDE 설정, Git의 기본 명령어 사용법을 배우고, JSON 데이터 파일의 역할을 이해하며, README 파일을 작성하는 실습을 통해 개발 초기 단계를 경험합니다.\n\n## 핵심 기술 및 개념\n*   Python\n*   IDE (통합 개발 환경)\n*   Git\n*   `git add`\n*   `git commit`\n*   `git push`\n*   JSON (`state.json`)\n*   Markdown\n\n## 과제 요구사항\n*   Python 설치 및 개발 환경 설정 완료\n*   `git add`, `git commit`, `git push` 명령어 사용하여 코드 변경 사항 원격 저장소에 푸시\n*   `state.json` 파일의 역할을 이해하고 필요시 수정\n*   README.md 파일 작성 및 Git을 통해 최종 푸시",
+      "priority": 1
+    },
+    {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-2",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 5469,
+      "summary": "## 과제 주제\nPython 객체 지향 프로그래밍과 파일 입출력, Git/GitHub 워크플로우를 활용한 터미널 퀴즈 게임 개발\n\n## 학습 목표\n1.  Python의 객체 지향 프로그래밍(OOP) 개념을 이해하고 클래스 설계에 적용하는 방법을 익힙니다.\n2.  파일 입출력(JSON)을 활용하여 프로그램 데이터를 영구적으로 저장하고 관리하는 방법을 배웁니다.\n3.  Git과 GitHub의 기본적인 워크플로우(브랜치 관리, 커밋 규칙)를 이해하고 실습합니다.\n4.  예외 처리 및 오류 관리를 통해 안정적인 프로그램 구조를 설계하는 방법을 학습합니다.\n5.  추가 기능 구현을 통해 문제 해결 능력과 확장성을 향상시킵니다.\n\n## 주요 내용 요약\n본 프로젝트는 Python의 OOP, 파일 입출력(JSON), Git/GitHub 워크플로우를 종합적으로 학습하기 위한 터미널 퀴즈 게임입니다. `Quiz`와 `QuizGame` 클래스로 역할을 분리하고, JSON 파일에 퀴즈와 점수를 저장하며, 예외 처리와 Git 브랜치 관리 등을 통해 실제 개발 프로세스를 경험합니다. 힌트 기능, 퀴즈 관리, 점수 기록 등 추가 기능도 구현합니다.\n\n## 핵심 기술 및 개념\n*   **프로그래밍 언어**: Python\n*   **프로그래밍 패러다임**: 객체 지향 프로그래밍 (OOP), 절차적 프로그래밍\n*   **데이터 저장/처리**: 파일 입출력, JSON (`json` 모듈), Dictionary, List\n*   **라이브러리**: `random`\n*   **버전 관리**: Git, GitHub\n*   **Git 워크플로우**: 브랜치(branch) 생성 및 병합(merge), 커밋 메시지 컨벤션 (Conventional Commits)\n*   **주요 개념**: 클래스(Class), 객체(Object), 멤버 변수(Attribute), 메서드(Method), 생성자(`__init__`), 상속(Inheritance - 간접적으로), 캡슐화(Encapsulation - SRP, 책임 분리), 예외 처리(Exception Handling - `try`, `except`), 파일 직렬화/역직렬화\n*   **터미널 인터페이스**: 콘솔 입출력 (`input()`, `print()`)\n\n## 과제 요구사항\n*   **필수 기능**:\n    *   퀴즈 풀기 기능 (랜덤 순서, 문제 수 선택)\n    *   정답/오답 판별\n    *   점수 계산 및 최고 점수 갱신\n    *   퀴즈 데이터 영구 저장 및 로드 (JSON 파일 사용)\n    *   안전한 프로그램 종료 (Ctrl+C, EOF)\n*   **추가 기능 (보너스)**:\n    *   힌트 기능 (정답 입력 시 0 입력)\n    *   퀴즈 관리 (목록 확인, 삭제)\n    *   점수 히스토리 관리 (플레이 타임스탬프 포함)\n    *   문제 출제 순서 무작위 섞기 (`random.sample()`)\n*   **코드 설계**:\n    *   클래스 기반 설계 (책임 분리 - SRP)\n    *   전역 변수 대신 멤버 변수 활용\n    *   `Quiz` 클래스: 문제, 선택지, 정답, 힌트 관리 및 정답 체크\n    *   `QuizGame` 클래스: 게임 흐름, 데이터 관리, 입출력 처리\n    *   `get_valid_input()` 공통 메서드를 활용한 입력 유효성 검증\n*   **Git/GitHub**:\n    *   별도 브랜치(`feature/play-quiz`)에서 개발 후 `main` 브랜치로 병합\n    *   의미 있는 단위로 커밋 분할 (Conventional Commits 형식 준수)\n    *   GitHub 저장소에 프로젝트 관리",
+      "priority": 1
+    },
+    {
+      "username": "kimch0612",
+      "display_name": "kimch0612",
+      "repo_name": "Codyssey_Week2",
+      "repo_url": "https://github.com/kimch0612/Codyssey_Week2",
+      "week": "2",
+      "updated_at": "2026-04-01",
+      "readme_length": 12248,
+      "summary": "## 과제 주제\nGit과 함께하는 Python 콘솔 퀴즈 게임 구현 및 Git 워크플로우 학습\n\n## 학습 목표\n* Python 클래스 기반 객체 지향 프로그래밍 이해\n* 사용자 입력 처리 및 예외 처리 기법 학습\n* JSON 파일을 이용한 데이터 저장 및 복구 방법 습득\n* Git 브랜치 생성, 병합, push/pull을 포함한 협업 워크플로우 적용\n* Git을 이용한 코드 변경 이력 관리 방법 숙지\n\n## 주요 내용 요약\n터미널 기반 Python 퀴즈 게임을 구현하고, Git 및 GitHub를 사용하여 개발 과정을 관리합니다. 클래스 기반 구조 설계, 메뉴 선택형 퀴즈, 퀴즈 추가/목록/점수 확인 기능, `state.json`을 활용한 데이터 영속성, 예외 처리 및 안전 종료 기능을 포함합니다. Git 브랜치 전략, clone, commit, push/pull 과정을 통해 협업 및 코드 관리 능력을 향상시키는 것을 목표로 합니다.\n\n## 핵심 기술 및 개념\n* Python (클래스, 함수, 자료형, 조건문, 반복문)\n* Git (init, add, commit, branch, checkout, merge, push, pull, clone, status)\n* GitHub\n* JSON\n* 객체 지향 프로그래밍 (OOP)\n* 데이터 영속성\n* 예외 처리 (KeyboardInterrupt, EOFError)\n* 콘솔 애플리케이션\n\n## 과제 요구사항\n* [x] `Quiz`, `QuizGame` 2개 클래스 구성\n* [x] 메뉴 출력 및 선택 처리\n* [x] 기본 퀴즈 5개 이상 구성\n* [x] 퀴즈 풀기 기능 구현\n* [x] 퀴즈 추가 기능 구현\n* [x] 퀴즈 삭제 기능 구현\n* [x] 퀴즈 목록 조회 기능 구현\n* [x] 최고 점수 확인 기능 구현\n* [x] `state.json` 저장 및 불러오기 구현\n* [x] 파일 없음/손상 시 복구 처리 구현\n* [x] `KeyboardInterrupt`, `EOFError` 안전 종료 처리\n* [x] 브랜치 생성 및 병합 기록 반영\n* [x] 별도 디렉토리에서 `git clone` 실행\n* [x] 다른 작업 디렉토리에서 commit 후 `push`\n* [x] 원래 로컬 저장소에서 변경 이력 반영 확인\n* [x] 랜덤 출제 기능 구현\n* [x] 문제 수 선택 기능 구현\n* [x] 힌트 기능 및 점수 차감 구현\n* [x] 점수 기록 히스토리 저장 구현",
+      "priority": 1
+    },
+    {
+      "username": "JungSaeYoung",
+      "display_name": "JungSaeYoung",
+      "repo_name": "codyssey_E1-2",
+      "repo_url": "https://github.com/JungSaeYoung/codyssey_E1-2",
+      "week": "2",
+      "updated_at": "2026-04-06",
+      "readme_length": 9957,
+      "summary": "## 과제 주제\nPython으로 퀴즈 게임 만들기\n\n## 학습 목표\n*   Python 프로젝트의 기본적인 구조와 환경 설정을 이해합니다.\n*   Git의 브랜치 전략과 커밋 메시지 컨벤션을 실습합니다.\n*   퀴즈 게임의 핵심 로직(퀴즈 생성, 풀이, 결과 처리)을 구현합니다.\n*   데이터의 영속성을 위해 파일 입출력(JSON)을 활용하는 방법을 배웁니다.\n*   프로그램 전반에 걸친 사용자 입력 처리 및 예외 처리를 익힙니다.\n\n## 주요 내용 요약\n본 과제는 Python을 활용하여 퀴즈 게임을 개발하는 과정을 담고 있습니다. `uv`를 이용한 환경 설정, Git 브랜치 전략에 따른 단계별 기능 구현, 퀴즈 클래스 정의, 퀴즈 풀이 및 추가 기능 구현, 그리고 `state.json` 파일을 통한 데이터 저장 및 불러오기 기능을 학습합니다. 사용자 입력 처리와 예외 처리 방안도 상세히 다룹니다.\n\n## 핵심 기술 및 개념\n*   **Python:** 프로그래밍 언어\n*   **uv:** Python 환경 관리 및 패키지 설치 도구\n*   **Git:** 버전 관리 시스템\n    *   브랜치 전략 (main, feature)\n    *   커밋 메시지 컨벤션 (`feat:`, `init:`, `docs:`)\n*   **JSON:** 데이터 저장 형식 (state.json)\n*   **객체 지향 프로그래밍 (OOP):** Quiz, QuizGame 클래스\n*   **파일 입출력:** `json` 모듈\n*   **예외 처리:** `try-except`, `KeyboardInterrupt`, `EOFError`\n*   **명령줄 인터페이스 (CLI):** 사용자 입력 및 출력\n\n## 과제 요구사항\n*   [ ] `uv`를 이용한 프로젝트 초기 설정 완료\n*   [ ] Git 저장소 생성 및 `main`, `feature` 브랜치 활용\n*   [ ] `README.md` 파일 작성 및 최신 상태 유지\n*   [ ] `Quiz` 클래스 정의 (question, choices, answer, display, check)\n*   [ ] 직접 만든 퀴즈 5개 이상 포함\n*   [ ] 메뉴 기능 구현 (퀴즈 풀기, 추가, 삭제, 목록, 기록 확인, 종료)\n*   [ ] 퀴즈 풀이 기능 구현 (문제 수 선택, 랜덤 출제, 정답/오답 판별, 점수/정답률/시간 계산, 최고 점수 갱신)\n*   [ ] 퀴즈 추가 기능 구현 (문제, 선택지, 정답, 힌트 입력)\n*   [ ] 퀴즈 목록 출력 기능 구현\n*   [ ] `state.json` 파일을 통한 퀴즈 데이터 및 플레이 기록 저장/불러오기 기능 구현\n*   [ ] 공통 입력/예외 처리 기준 준수 (숫자 입력, Ctrl+C, EOF 등)\n*   [ ] 각 기능별 Git 커밋 및 `main` 브랜치로의 병합 완료",
+      "priority": 1
+    },
+    {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E-2",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E-2",
+      "week": "2",
+      "updated_at": "2026-04-02",
+      "readme_length": 1032,
+      "summary": "나만의 퀴즈 게임\n프로젝트 개요\nPython 콘솔 기반의 퀴즈 게임 프로젝트입니다.\n퀴즈 프로그램을 직접 만들며 Python 문법을 학습하고, 클래스 설계와 리팩토링을 통해 게임 형태의 작은 프로젝트를 완성했습니다.\n퀴즈 주제 및 선정 이유\n\n주제: 볼링\n선정 이유: 볼링에 대해 잘 알고 있는 분야이기 때문에 정확한 문제와 선택지를 구성할 수 있어 선택했습니다.\n\n실행 방법\nbashpython3 main.py\n기능 목록\n\n퀴즈 풀기 - 등록된 퀴즈를 순차적으로 출제하고 정답을 확인합니다.\n퀴즈 추가 - 새로운 퀴즈(문제, 선택지, 정답)를 등록합니다.\n퀴즈 목록 - 현재 등록된 퀴즈의 목록을 확인합니다.\n점수 확인 - 최고 점수를 확인합니다.\n종료 - 데이터를 저장하고 프로그램을 종료합니다.\n\n파일 구조\ncodyssey_E1-2/\n├── main.py        # 메인 실행 파일 (Quiz, QuizGame 클래스 포함)\n├── state.json     # 퀴즈 데이터 및 최고 점수 저장 파일\n├── .gitignore     # Git 추적 제외 파일 목록\n├── doc            # 프로젝트에서 요구한 실행, 환경화면 스크린샷\n└── README.md      # 프로젝트 설명 문서\n데이터 파일 설명\n\n경로: 프로젝트 루트의 state.json\n역할: 최고 점수와 퀴즈 데이터를 저장하여, 프로그램을 종료하고 다시 실행해도 데이터가 유지됩니다.\n구조:\n\nquizzes: 퀴즈의 데이터 정보 (문제, 선택지, 정답 번호)\nbest_score: 최고 점수 (null이면 아직 미플레이 상태)\n\n\n예시\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-2-python-basics-quiz-game",
+      "repo_url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game",
+      "week": "2",
+      "updated_at": "2026-04-06",
+      "readme_length": 829,
+      "summary": "# E1-2. Git과 함께하는 Python 첫 발자국\n---\n## 1.프로젝트 개요\n\n- Python 기반 CLI 퀴즈 게임 구현     \n- 객체지향 설계       \n- JSON 기반 데이터 파일 사용       \n- Git을 활용한 프로젝트 관리       \n\n[1. 프로젝트 개요](#1-프로젝트-개요)   \n[2. 퀴즈 주제와 선정 이유](#2-퀴즈-주제와-선정-이유)   \n[3. 실행 방법](#3-실행-방법)   \n[4. 기능 목록](#4-기능-목록)   \n[5. 파일 구조](#5-파일-구조)   \n[6. 데이터 파일 설명](#6-데이터-파일-설명)   \n[7. 퀴즈 보너스 기능](#7-퀴즈-보너스-기능)   \n[8. Python 기본 정리](#8-python-기본-정리)   \n[9. 트러블 슈팅](#9-트러블-슈팅)   \n\n### 프로젝트 구조\n\n```\ne1-2-python-basics-quiz-game/  \n├── .gitignore     \n├── README.md      \n├──    \n├──    \n└── src/      \n     └──   \n```\n\n### 수행항목 체크리스트\n\n- [ ] 프로젝트 개요\n- [ ] 퀴즈 주제와 선정 이유\n- [ ] 실행 방법\n- [ ] 기능 목록\n- [ ] 파일 구조\n- [ ] 데이터 파일 설명\n- [ ] 퀴즈 보너스 기능\n- [ ] Python 기본 정리\n- [ ] 트러블 슈팅\n\n## 2. 퀴즈 주제와 선정 이유\n\n## 3. 실행 방법\n\n## 4. 기능 목록\n\n## 5. 파일 구조\n\n## 6. 데이터 파일 설명\n\n## 7. 퀴즈 보너스 기능\n\n## \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "sonjehyun123-maker",
+      "display_name": "sonjehyun123-maker",
+      "repo_name": "Codyssey-w1-E2",
+      "repo_url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E2",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 4082,
+      "summary": "## Codyssey 2주차 과제 정리\n\n## 과제 주제\nPython 기초를 활용한 퀴즈 게임 개발\n\n## 학습 목표\n1.  Python의 기본 문법(변수, 자료형, 조건문, 반복문, 함수) 이해 및 활용\n2.  클래스와 객체의 개념을 이해하고, `__init__`, `self`를 활용한 객체지향 프로그래밍 구현\n3.  파일 입출력(JSON)을 통해 데이터를 저장하고 불러오는 방법 학습\n4.  Git을 활용하여 프로젝트를 관리하고 협업하는 기초적인 방법 익히기\n5.  프로그램의 안정성을 높이기 위한 예외 처리 개념 이해\n\n## 주요 내용 요약\n본 과제는 Python 기초 문법을 활용하여 사용자가 퀴즈를 풀고, 퀴즈를 추가하며, 점수를 확인할 수 있는 퀴즈 게임 프로그램을 개발하는 것을 목표로 합니다. `Quiz.py`에는 퀴즈 데이터와 관련된 클래스가, `QuizGame.py`에는 게임의 전체 로직이 구현됩니다. `main.py`를 통해 게임을 실행하며, `state.json` 파일에 퀴즈 데이터와 최고 점수를 저장하고 불러와 데이터의 영속성을 확보합니다. 또한 Git을 이용한 버전 관리와 기본적인 예외 처리에 대한 학습도 포함됩니다.\n\n## 핵심 기술 및 개념\n*   **Python 기초:** 변수, `int`, `str`, `bool`, `list`, `dict` 자료형, `if/elif/else` 조건문, `for`/`while` 반복문, 함수 정의 및 활용\n*   **객체 지향 프로그래밍 (OOP):** 클래스, 객체, `__init__` 메서드, `self`\n*   **파일 입출력:** 파일 열기, 읽기 (`read`), 쓰기 (`write`), 추가 (`append`), `json` 모듈 (데이터 저장/불러오기)\n*   **Git:** `init`, `add`, `commit`, `push`, `pull`, `clone`, `branch`, `merge`\n*   **데이터 구조:** JSON 형식, 리스트, 딕셔너리\n*   **예외 처리:** `try/except`, `KeyboardInterrupt`, `EOFError`\n*   **프로젝트 구조:** 모듈화 (여러 파일로 기능 분리)\n\n## 과제 요구사항\n*   [ ] GitHub에 코드가 업로드되어 있고 10개 이상의 의미 있는 커밋이 존재\n*   [ ] 커밋 메시지 규칙을 정의하고 준수했는지 설명 가능\n*   [ ] `Quiz`와 `QuizGame` 클래스의 책임 분담을 설명할 수 있음\n*   [ ] `state.json` 데이터 구조 설계 이유를 설명할 수 있음\n*   [ ] 퀴즈 데이터가 1000개 이상으로 늘어났을 때 JSON 저장 방식의 한계를 인지하고 설명할 수 있음\n*   [ ] `state.json` 파일 손상 시 복구/백업/초기화 대응 방안을 설명할 수 있음\n*   [ ] 요구사항 변경 시 수정할 파일/클래스/메서드를 인지하고 설명할 수 있음\n*   [ ] `clone`/`pull` 스크린샷을 첨부 (README 내 명시)",
+      "priority": 1
     },
     {
       "username": "xifoxy-ru",
@@ -53,8 +284,8 @@
       "week": "2",
       "updated_at": "2026-04-08",
       "readme_length": 6631,
-      "summary": "## 과제 주제\nGit과 함께하는 Python 콘솔 퀴즈 게임 개발\n\n## 학습 목표\n* Python 기본 문법을 활용한 콘솔 애플리케이션 개발 능력 향상\n* 객체지향 프로그래밍(OOP) 개념을 적용한 클래스 기반 설계 능력 함양\n* JSON 파일을 이용한 데이터 지속성(Persistence) 구현 및 데이터 관리 능력 습득\n* Git/GitHub를 활용한 효과적인 버전 관리 및 협업 프로세스 이해\n\n## 주요 내용 요약\n본 과제는 Python으로 콘솔 기반 퀴즈 게임을 개발하며 Git/GitHub를 활용한 버전 관리를 연습합니다. 사용자는 퀴즈 풀기, 추가, 목록 확인, 점수 확인, 삭제 등의 기능을 이용할 수 있으며, `state.json` 파일을 통해 게임 상태를 저장하고 복구합니다. 객체지향 설계를 위해 `Quiz`와 `QuizGame` 클래스를 사용하고, 문제 순서 랜덤 출제, 힌트 기능 등 보너스 기능 구현을 통해 학습 경험을 확장합니다.\n\n## 핵심 기술 및 개념\n*   **프로그래밍 언어:** Python\n*   **데이터 저장:** JSON (state.json)\n*   **객체지향 프로그래밍 (OOP):** 클래스 (`Quiz`, `QuizGame`), 객체, 속성, 역할 분리\n*   **콘솔 입출력:** `input()`, `print()`\n*   **파일 처리:** JSON 파일 읽기/쓰기\n*   **예외 처리:** `try-except` 블록 (InputError, KeyboardInterrupt, EOFError 등)\n*   **버전 관리:** Git (commit, branch, merge), GitHub\n*   **기타:** 표준 라이브러리, 메뉴 기반 인터페이스, 데이터 지속성\n\n## 과제 요구사항\n*   [ ] 프로그램이 정상 실행되는가?\n*   [ ] 메뉴 기능을 통해 모든 항목(퀴즈 풀기, 퀴즈 추가, 퀴즈 목록, 점수 확인, 퀴즈 삭제, 종료)을 접근할 수 있는가?\n*   [ ] 퀴즈 풀기 기능이 올바르게 동작하며, 정답/오답 처리가 되는가?\n*   [ ] 퀴즈 추가 기능을 통해 새로운 퀴즈를 등록할 수 있는가?\n*   [ ] 퀴즈 목록 기능으로 현재 등록된 퀴즈를 확인할 수 있는가?\n*   [ ] 최고 점수 확인 기능이 동작하며, 점수 기록 히스토리(보너스)가 저장 및 표시되는가?\n*   [ ] 퀴즈 삭제 기능이 정상적으로 동작하며, `state.json` 파일에 반영되는가?\n*   [ ] 프로그램 종료 후 재실행 시 `state.json` 파일을 통해 데이터가 유지되는가?\n*   [ ] (보너스) 문제 순서 랜덤 출제 기능이 구현되었는가?\n*   [ ] (보너스) 퀴즈 풀 때 문제 수를 선택할 수 있는가?\n*   [ ] (보너스) 힌트 기능이 구현되었으며, 사용 시 점수 차감이 되는가?\n*   [ ] (보너스) 점수 기록 히스토리가 날짜/시간, 푼 문제 수, 점수를 포함하여 저장되는가?\n*   [ ] `Quiz` 클래스와 `QuizGame` 클래스를 활용한 객체지향 설계가 적용되었는가?\n*   [ ] `state.json` 파일의 예상 데이터 구조와 일치하는가?\n*   [ ] Git을 사용하여 기능별로 커밋이 분리되어 있고, 의미 있는 커밋 메시지를 사용했는가?\n*   [ ] `main` 브랜치 외 별도의 브랜치에서 개발 후 병합하는 Git 작업 방식이 적용되었는가?\n*   [ ] README.md 파일에 프로젝트 설명, 사용법, Git 작업 방식 등이 명확하게 작성되었는가?\n*   [ ] `.gitignore` 파일이 설정되어 있는가?\n*   [ ] 제시된 파일 구조를 따랐는가?\n*   [ ] 예외 처리가 적절하게 구현되어 프로그램의 안정성을 확보했는가?\n*   [ ] Python 3.10 이상 환경에서 외부 라이브러리 없이 표준 라이브러리만 사용하여 실행 가능한가?",
-      "priority": 1
+      "summary": "# 미션: Git과 함께하는 Python 첫 발자국\n\n## 1. 프로젝트 개요\n\n이 프로젝트는 Python으로 만든 콘솔 기반 퀴즈 게임입니다.\n사용자는 메뉴를 통해 퀴즈를 풀고, 새로운 퀴즈를 추가하고, 등록된 퀴즈 목록을 확인하고, 최고 점수를 확인할 수 있습니다.\n또한 프로그램을 종료한 뒤 다시 실행해도 퀴즈 데이터와 점수 기록이 유지되도록 `state.json` 파일을 사용해 데이터를 저장합니다.\n\n이 프로젝트는 단순히 동작하는 프로그램을 만드는 데 그치지 않고, 다음 내용을 함께 연습하는 것을 목표로 합니다.\n\n* Python 기본 문법을 이용한 콘솔 프로그램 구현\n* 클래스 기반 설계와 역할 분리\n* JSON 파일을 통한 데이터 저장과 복구\n* Git/GitHub를 활용한 기능 단위 개발과 버전 관리\n\n추가로 보너스 과제도 함께 반영하여, 기본 기능 외에 문제 순서 랜덤 출제, 문제 수 선택, 힌트 기능, 퀴즈 삭제 기능, 점수 기록 히스토리 저장까지 구현하는 것을 목표로 합니다.\n\n---\n\n## 2. 퀴즈 주제 선정 이유\n\n이 프로젝트의 퀴즈 주제는 **[생물]** 입니다.\n\n퀴즈 주제는 단순히 문제를 만들기 쉬운 분야보다, 객체의 속성과 역할을 설계하기 좋은 방향으로 정하고 싶었다. 생물 주제는 동물, 인간, 서식 환경, 분류 체계, 특징 등 다양한 정보를 문제 데이터에 반영할 수 있어 객체지향 구조를 연습하기에 적합하다고 보았습니다.\n\n---\n\n## 3. 주요 기능\n\n### 기본 기능\n\n* 퀴즈 풀기\n* 퀴즈 추가\n* 퀴즈 목록 확인\n* 최고 점수 확인\n* 프로그램 종료\n* `state.jso\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
     },
     {
       "username": "LimJongHan",
@@ -64,8 +295,8 @@
       "week": "2",
       "updated_at": "2026-04-08",
       "readme_length": 2187,
-      "summary": "## 과제 주제\nPython 기본 문법과 객체 지향을 활용한 나만의 퀴즈 게임 개발 및 Git 활용 연습\n\n## 학습 목표\n1. Python 기본 문법 (변수, 자료형, 조건문, 반복문, 함수) 이해 및 활용\n2. 클래스와 객체를 이용한 객체 지향 프로그래밍(OOP) 개념 습득\n3. 파일 입출력 (JSON)을 통한 데이터 영속성 구현\n4. Git의 핵심 기능 (커밋, 브랜치, 병합) 실습을 통한 버전 관리 능력 향상\n5. 콘솔 애플리케이션 개발 경험 쌓기\n\n## 주요 내용 요약\n터미널에서 동작하는 퀴즈 게임을 Python으로 개발합니다. 퀴즈 추가, 풀기, 목록 확인, 최고 점수 확인 기능을 구현하며, `state.json` 파일을 사용하여 프로그램 종료 후에도 퀴즈 데이터와 최고 점수가 유지되도록 합니다. Git을 활용하여 기능 단위 커밋, 브랜치 생성 및 병합 실습을 목표로 합니다.\n\n## 핵심 기술 및 개념\n*   **프로그래밍 언어**: Python 3.10+\n*   **프로그래밍 패러다임**: 절차 지향, 객체 지향 (클래스, 객체)\n*   **데이터 저장**: JSON (`state.json`), UTF-8 인코딩\n*   **데이터 구조**: 리스트, 딕셔너리\n*   **표준 라이브러리**: `json` (JSON 파일 처리)\n*   **콘솔 입출력**: `print()`, `input()`\n*   **버전 관리 시스템**: Git\n    *   `git init`, `git add`, `git commit`\n    *   `git branch`, `git checkout`, `git merge`\n    *   `git clone`, `git pull`, `git push`\n*   **주요 파일**: `main.py`, `Quiz.py`, `QuizGame.py`, `state_store.py`, `input_util.py`, `state.json`\n*   **개념**: 프로그램 영속성, 예외 처리 (파일 손상, 빈 입력)\n\n## 과제 요구사항\n*   **기능 구현**:\n    *   [x] 퀴즈 풀기 (저장된 퀴즈 순서대로 출제, 정답/오답 표시, 결과 출력)\n    *   [x] 퀴즈 추가 (문제, 4개 선택지, 정답 번호 입력받아 저장)\n    *   [x] 퀴즈 목록 확인 (등록된 퀴즈의 \"문제\"만 목록으로 표시)\n    *   [x] 점수 확인 (최고 점수 표시, 기록 없으면 안내)\n    *   [x] 프로그램 종료\n*   **데이터 관리**:\n    *   [x] `state.json` 파일 생성 및 UTF-8 인코딩 사용\n    *   [x] 프로그램 종료 시 퀴즈 목록 및 최고 점수 저장\n    *   [x] 프로그램 실행 시 `state.json`에서 데이터 로드\n    *   [x] `state.json` 파일이 없거나 비어있을 경우 기본 데이터로 생성\n    *   [x] `state.json` 파일 손상 시 안내 메시지 출력 후 기본 데이터로 복구\n*   **Git 활용**:\n    *   [x] 의미 있는 커밋 10개 이상 (기능 단위 커밋 권장)\n    *   [x] 브랜치 생성 및 병합 기록 포함 (`git log --oneline --graph --decorate` 캡처)\n    *   [x] `git clone` 및 `git pull` 실습 (다른 폴더에 복제 후 변경 사항 pull)\n*   **기타**:\n    *   [x] 퀴즈 주제: 기초 산수 (덧셈, 뺄셈, 곱셈, 나눗셈)\n    *   [x] 기본 포함 문제 수: 5문제 이상\n    *   [x] 입력 유효성 검사 (빈 입력, 비숫자, 범위 밖 재입력)",
-      "priority": 1
+      "summary": "# Codyssey E1-2 · Git과 함께하는 Python 첫 발자국\n\n터미널에서 동작하는 **나만의 퀴즈 게임**입니다. Python 기본 문법과 클래스(객체 지향)로 역할을 나누고, `state.json`(UTF-8)에 저장해 **프로그램을 종료해도 퀴즈와 최고 점수가 유지**되도록 만들었습니다. Git으로 기능 단위 커밋·브랜치 생성·병합을 연습하는 것을 목표로 합니다.\n\n## 프로젝트 개요\n\n- **언어/버전**: Python 3.10+\n- **실행 형태**: 콘솔 프로그램\n- **데이터 저장**: 프로젝트 루트의 `state.json` (UTF-8)\n- **외부 라이브러리**: 사용하지 않음(표준 라이브러리만)\n\n## 퀴즈 주제 선정 이유\n\n- **주제**: 기초 산수(덧셈/뺄셈/곱셈/나눗셈)\n- **이유**: 정답이 명확해서 로직 검증이 쉽고, 4지선다 + 정답 번호(1~4) 규칙을 일관되게 적용하기 좋습니다.\n- **기본 포함 문제 수**: 5문제 이상\n\n## 실행 방법\n\n프로젝트 루트에서:\n\n```bash\npython main.py\n```\n\n## 기능 목록\n\n- **퀴즈 풀기(메뉴 1)**: 저장된 퀴즈를 순서대로 출제하고 정답/오답을 표시한 뒤 결과를 출력합니다.\n- **퀴즈 추가(메뉴 2)**: 문제/선택지 4개/정답(1~4)을 입력받아 저장합니다.\n- **퀴즈 목록(메뉴 3)**: 등록된 퀴즈의 “문제(질문)”만 목록으로 확인합니다.\n- **점수 확인(메뉴 4)**: 최고 점수(`best_score`)를 확인합니다. 기록이 없으면 안내합니다.\n- **종료(메뉴 5)**: 프로그램을 종료\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
     },
     {
       "username": "sourcreamsource",
@@ -75,8 +306,8 @@
       "week": "2",
       "updated_at": "2026-04-09",
       "readme_length": 1882,
-      "summary": "## 과제 주제\nGit으로 기록하며 배우는 Python 콘솔 퀴즈 게임 개발\n\n## 학습 목표\n*   Python 기본 문법을 활용한 콘솔 애플리케이션 개발 경험\n*   MVC (Model-View-Controller) 디자인 패턴 이해 및 적용\n*   Git을 활용한 버전 관리 및 협업 기초 다지기\n*   데이터 직렬화(JSON)를 통한 상태 저장 및 불러오기 구현\n*   콘솔 기반 사용자 인터페이스 설계 및 구현\n\n## 주요 내용 요약\n이번 과제는 Python으로 콘솔 기반 퀴즈 게임을 개발하며 Git 사용법을 익히는 것을 목표로 합니다. MVC 패턴을 적용하여 `Quiz` 모델, `QuizGame` 컨트롤러, 콘솔 뷰를 분리하고, `state.json` 파일을 사용하여 퀴즈 데이터와 최고 점수를 저장하고 불러오는 기능을 구현합니다.\n\n## 핵심 기술 및 개념\n*   **Python:** 프로그래밍 언어\n*   **Git:** 버전 관리 시스템 (commit, push, pull 등)\n*   **MVC 패턴:** Model-View-Controller 디자인 패턴\n*   **JSON:** 데이터 직렬화 형식 (state.json)\n*   **콘솔 애플리케이션:** 터미널 기반 프로그램\n*   **uv:** Python 패키지 매니저 및 실행 도구\n*   **macOS, zsh:** 실행 환경 (OS, Shell)\n\n## 과제 요구사항\n*   [x] 프로젝트 기본 구조 정리\n*   [x] MVC 폴더 구조 생성 (`app/models`, `app/views`, `app/controllers`, `app/services`, `app/utils`)\n*   [x] README.md 문서 작성 및 정비\n*   [x] `Quiz` 모델 구현 (퀴즈 데이터 구조 및 직렬화)\n*   [x] `QuizGame` 컨트롤러 구현 (게임 로직, 메뉴 흐름)\n*   [x] 콘솔 메뉴 뷰 구현 (사용자 인터페이스, 입력/출력)\n*   [x] `state.json` 파일을 이용한 퀴즈 및 최고 점수 저장/불러오기 기능 구현\n*   [x] 퀴즈 플레이 기능 구현\n*   [x] 퀴즈 추가, 목록 보기, 점수 보기 기능 구현\n*   [x] `.gitignore` 파일 설정",
-      "priority": 1
+      "summary": "# 🟩 2주차: Git과 함께하는 Python 첫 발자국  \n\n## 📜 프로젝트 개요  \n- Python 콘솔 퀴즈 게임을 만드는 프로젝트  \n- Python과 Git은 \"내가 만든 프로그램이 왜 이렇게 동작하는지\"를 설명하고, 그 과정을 기록하며 성장하기 위한 핵심 도구  \n- 구조는 문서 중심이 아니라 MVC 패턴 기준으로 잡는다.  \n- `Quiz`, `QuizGame` 역할을 분리하고, `state.json`으로 퀴즈와 최고 점수를 저장한다.  \n\n<br><br>\n\n## 🖥️ 실행 환경  \n- OS: macOS  \n- Shell: zsh  \n- Python: 3.11  \n    - uv 설치  \n        - brew install uv  \n    - 환경 셋팅  \n        - uv sync  \n    - 실행  \n        - uv run main.py  \n- Git: 2.51.0  \n\n<br><br>\n\n## ✅ 진행 체크리스트  \n- [ ] 프로젝트 기본 구조 정리  \n- [ ] MVC 폴더 구조 생성  \n- [ ] README 정비  \n- [ ] Quiz 모델 구현  \n- [ ] QuizGame 컨트롤러 구현  \n- [ ] 콘솔 메뉴 뷰 구현  \n- [ ] 파일 저장/불러오기 구현  \n- [ ] 퀴즈 플레이 구현  \n- [ ] 퀴즈 추가 / 목록 / 점수 기능 구현  \n\n<br><br>\n\n## 📋 주요 구조  \n\n### 🟡 1. Application  \n- [main.py](./main.py)  \n- [app/models](./app/models)  \n- [app/views](./ap\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
     },
     {
       "username": "coding-monkey-326",
@@ -86,7 +317,194 @@
       "week": "2",
       "updated_at": "2026-04-09",
       "readme_length": 4052,
-      "summary": "## 과제 주제\nPython과 Git을 활용한 나만의 퀴즈 게임 개발\n\n## 학습 목표\n*   Python 클래스 기반 설계 및 객체 지향 프로그래밍 이해\n*   Git을 활용한 버전 관리 및 협업 방식 실습 (clone, pull, commit, push, branch)\n*   JSON 파일을 이용한 데이터 영속성 처리 및 파일 입출력\n*   프로그램 안정성 확보를 위한 예외 처리 (try-except)\n*   명확한 코드 구조 및 설계 원칙 학습\n\n## 주요 내용 요약\nPython과 Git을 이용하여 터미널 기반 퀴즈 게임을 개발합니다. 퀴즈 풀기, 추가, 목록 확인, 점수 관리 기능을 구현하며, `state.json` 파일을 통해 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다. 클래스를 활용하여 코드의 유지보수성과 확장성을 높이고, Git 브랜치 전략 및 커밋 메시지 규칙을 적용합니다.\n\n## 핵심 기술 및 개념\n*   **프로그래밍 언어**: Python 3.10+\n*   **버전 관리**: Git (clone, pull, commit, push, branch, merge, log)\n*   **데이터 저장**: JSON (`state.json`, `json` 모듈)\n*   **프로그래밍 패러다임**: 객체 지향 프로그래밍 (OOP), 클래스 설계 (Quiz, QuizGame)\n*   **모듈/파일**: `main.py`, `game.py`, `quiz.py`, `problems.py`\n*   **기타**: 터미널 인터페이스, 예외 처리 (`try-except`, `KeyboardInterrupt`, `EOFError`), 함수, 메서드, 데이터 영속성, 디렉토리 구조\n\n## 과제 요구사항\n*   [x] Python 3.10 이상 환경에서 실행 가능해야 합니다.\n*   [x] `main.py`를 실행하여 게임을 시작할 수 있어야 합니다.\n*   [x] 퀴즈 풀기, 퀴즈 추가, 퀴즈 목록 확인, 점수 확인, 종료 기능을 구현해야 합니다.\n*   [x] `state.json` 파일을 사용하여 퀴즈 데이터와 최고 점수를 저장하고 로드해야 합니다.\n*   [x] Git을 사용하여 프로젝트를 관리하고, `clone/pull` 실습 기록을 포함해야 합니다.\n*   [x] 클래스를 활용하여 코드의 역할 분리를 명확히 해야 합니다.\n*   [x] `try-except`를 사용하여 파일 입출력 등의 예외 상황을 처리해야 합니다.\n*   [x] Ctrl+C (KeyboardInterrupt) 또는 EOF 발생 시 안전하게 종료하고 데이터를 저장해야 합니다.\n*   [x] Git 커밋 메시지 규칙을 준수해야 합니다.\n*   [x] README.md 파일에 프로젝트 개요, 실행 방법, 기능 목록, 파일 구조, 설계 설명 등을 포함해야 합니다.\n*   [x] (권장) Git 브랜치를 분리하여 개발하고 병합하는 과정을 실습해야 합니다.",
+      "summary": "# 🎯 나만의 퀴즈 게임\n\n## 프로젝트 개요\nPython과 Git을 활용하여 터미널에서 동작하는 퀴즈 게임입니다.\n퀴즈 풀기, 추가, 목록 확인, 점수 관리 기능을 제공하며\nJSON 파일을 통해 데이터를 영속적으로 저장합니다.\n\n---\n\n## 퀴즈 주제 선정 이유\n**Python/프로그래밍 기초 상식**을 주제로 선정했습니다.\n이 과제 자체가 Python과 Git을 배우는 과정이기 때문에,\n퀴즈 주제도 학습 내용과 연결하면 학습 효과가 높아질 것이라 판단했습니다.\n퀴즈를 풀면서 자연스럽게 Python 개념을 복습할 수 있습니다.\n\n---\n\n## 실행 방법\n\nPython 3.10 이상이 설치되어 있어야 합니다.\n```bash\npython main.py\n```\n\n---\n\n## 기능 목록\n\n| 번호 | 기능 | 설명 |\n|---|---|---|\n| 1 | 퀴즈 풀기 | 저장된 퀴즈를 순서대로 풀고 결과를 확인 |\n| 2 | 퀴즈 추가 | 새로운 퀴즈를 직접 등록 |\n| 3 | 퀴즈 목록 | 등록된 전체 퀴즈 목록 확인 |\n| 4 | 점수 확인 | 최고 점수 확인 |\n| 5 | 종료 | 데이터 저장 후 프로그램 종료 |\n\n---\n\n## 파일 구조\n```\nthe-first-step-git-python/\n├── main.py        # 진입점, 메뉴 루프 및 예외 처리\n├── game.py        # QuizGame 클래스 (게임 전체 관리)\n├── quiz.py        # Quiz 클래스 (개별 퀴즈 정의)\n├── problems.py    # 기본 퀴즈 데이터 5개\n├── state.json    \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "whdals006",
+      "display_name": "whdals006",
+      "repo_name": "Codyssey_E1-2",
+      "repo_url": "https://github.com/whdals006/Codyssey_E1-2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 0,
+      "summary": "_README 내용 없음_",
+      "priority": 2
+    },
+    {
+      "username": "jhj9109",
+      "display_name": "jhj9109",
+      "repo_name": "codyssey2",
+      "repo_url": "https://github.com/jhj9109/codyssey2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 6685,
+      "summary": "# 💡 나만의 콘솔 퀴즈 게임 (Python Quiz Game)\n\n## 📌 프로젝트 개요\nPython 기본 문법과 객체 지향 프로그래밍(OOP) 개념을 적용하여 만든 터미널 기반의 퀴즈 게임입니다. \n사용자가 직접 퀴즈를 풀고, 새로운 문제를 추가하며, 최고 점수를 관리할 수 있습니다. `json` 모듈을 활용한 데이터 영속성(Persistence)을 구현하여 프로그램을 종료해도 데이터가 유지되며, Git을 통한 버전 관리와 브랜치 전략을 실습한 프로젝트입니다.\n\n## 🎵 퀴즈 주제 선정 이유\n이번 퀴즈 게임의 주제는 **'(여자)아이들((G)I-DLE)'**입니다.\n단순히 테스트용 더미 데이터가 아닌, 평소 즐겨듣고 관심 있는 K-Pop 아티스트를 주제로 선정하여 개발 과정의 흥미를 높이고자 했습니다. 멤버들의 정보나 타이틀곡 등 실질적인 팬심을 담아 기본 문제를 구성했습니다.\n\n```python\ninitial_quizzes = [\n    Quiz(\"(여자)아이들의 데뷔곡은 무엇인가요?\", [\"LATATA\", \"한(HANN)\", \"Senorita\", \"덤디덤디\"], 1),\n    Quiz(\"(여자)아이들의 리더는 누구인가요?\", [\"미연\", \"민니\", \"소연\", \"우기\"], 3),\n    Quiz(\"다음 중 멤버 미연의 생일은 언제인가요?\", [\"1월 21일\", \"1월 31일\", \"2월 14일\", \"3월 9일\"], 2),\n    Quiz(\"앨범 '2'의 타이틀 곡은 무엇인가요?\", [\"Queencard\", \"TOMBOY\", \"Nxde\", \"Super Lady\"], 4),\n    Quiz(\"(여자)아이들의 공\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "waz6432",
+      "display_name": "waz6432",
+      "repo_name": "CodysseyE1-2",
+      "repo_url": "https://github.com/waz6432/CodysseyE1-2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 1700,
+      "summary": "# 💡 파이썬 콘솔 퀴즈 게임\n계층형 아키텍처(Layered Architecture)를 적용하여 설계된 사용자 참여형 퀴즈 프로그램입니다.\n\n## 1. 프로젝트 개요\n이 프로젝트는 Python을 기반으로 제작된 콘솔 인터페이스 퀴즈 게임입니다. 사용자는 등록된 문제를 풀거나 새로운 문제를 직접 등록할 수 있으며, 모든 데이터는 로컬 파일 시스템을 통해 영구적으로 보존됩니다.\n\n## 2. 퀴즈 주제 선정 이유\n* **주제:** [예: IT 상식 및 프로그래밍 기초 / 일본어 단어 / 일반 상식]\n* **이유:** [예: 평소 관심 있는 분야의 지식을 체계적으로 복습하고, 단순한 코딩을 넘어 유지보수가 용이한 소프트웨어 구조를 실습해 보기 위해 선정하였습니다.]\n\n## 3. 실행 방법\n프로젝트는 별도의 외부 라이브러리 설치 없이 Python 3 환경에서 즉시 실행 가능합니다.\n\n1.  **저장소 클론**\n    ```bash\n    git clone [본인의 저장소 URL]\n    cd [저장소 폴더명]\n    ```\n2.  **프로그램 실행**\n    ```bash\n    # 프로젝트 루트에서 실행 (패키지 모드)\n    python3 -m src.main\n    ```\n\n## 4. 데이터 관리\n\n`state.json` 파일을 사용하여 애플리케이션의 모든 데이터를 통합 관리합니다. 별도의 복잡한 데이터베이스 설정 없이도 프로그램의 영속성(Persistence)을 보장합니다.\n\n* **주요 역할:**\n  * 기본 제공 퀴즈 및 사용자가 추가한 커스텀 퀴즈 데이터 보관\n  * 사용자의 최고 점수 및 게임 플레이 히\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "whitecy01",
+      "display_name": "whitecy01",
+      "repo_name": "codyssey2",
+      "repo_url": "https://github.com/whitecy01/codyssey2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 3062,
+      "summary": "# 🎯 나만의 퀴즈 게임 — 한국 역사 퀴즈\n\n## 프로젝트 개요\n터미널에서 동작하는 한국 역사 주제의 퀴즈 게임입니다. Python 표준 라이브러리만 사용하며, 퀴즈 데이터와 최고 점수는 `state.json` 파일에 저장되어 프로그램을 재시작해도 유지됩니다.\n\n\n## 실행 환경\nPython 3.11.7\ngit version 2.50.1 (Apple Git-155)\n\n## 퀴즈 주제 선정 이유\n한국 역사와 우리나라 상식은 많은 사람이 한 번쯤 접해 본 친숙한 주제이기 때문에 퀴즈 게임에 잘 어울린다고 생각했습니다. 완전히 낯선 분야보다 접근하기 쉬워서 누구나 부담 없이 참여할 수 있고, 문제를 풀면서 자연스럽게 기본 상식도 다시 떠올릴 수 있습니다.\n\n또한 역사와 문화 요소를 함께 담을 수 있어 문제를 다양하게 구성하기 좋았습니다. 수도, 국기, 한글, 무궁화처럼 비교적 쉬운 문제부터 시작해 점차 더 다양한 주제로 확장할 수 있어서, 학습성과 재미를 함께 줄 수 있다는 점에서 이 주제를 선택했습니다.\n\n\n## 실행 방법\n```bash\n# 실행\npython main.py\n```\n\n`state.json` 파일이 없으면 기본 퀴즈 10개가 자동으로 로드됩니다.\n\n\n## 기능 목록\n\n| 번호 | 기능 | 설명 |\n|------|------|------|\n| 1 | 퀴즈 풀기 | 문제 수 선택 후 랜덤 순서로 출제, 힌트 사용 가능 |\n| 2 | 퀴즈 추가 | 문제·선택지 4개·정답 번호·힌트를 입력해 등록 |\n| 3 | 퀴즈 목록 | 등록된 퀴즈 번호와 제목 일람 |\n| 4 | 점수 확인 | 최고 점수 및 게임 기\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "wilderif",
+      "display_name": "wilderif",
+      "repo_name": "codyssey-e1-2",
+      "repo_url": "https://github.com/wilderif/codyssey-e1-2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 2229,
+      "summary": "# Console Quiz Game\n\nPython 3.10+ 표준 라이브러리만 사용해 만든 콘솔 기반 퀴즈 게임입니다.  \n기본 Docker 기초 퀴즈를 제공하며, 사용자가 직접 퀴즈를 추가하고 최고 점수를 저장할 수 있습니다.\n\n## 프로젝트 개요\n\n- 콘솔 메뉴를 통해 퀴즈를 풀고 관리하는 프로그램입니다.\n- 핵심 클래스는 `Quiz`, `QuizGame` 두 개로 나누어 구현했습니다.\n- 프로젝트 루트의 `state.json`에 퀴즈, 최고 점수, 플레이 기록을 저장합니다.\n- 프로그램을 종료한 뒤 다시 실행해도 저장된 데이터가 유지됩니다.\n\n## 퀴즈 주제와 선정 이유\n\n- 기본 퀴즈 주제는 Docker 기초입니다.\n- `Dockerfile`, `docker-compose.yml`, 이미지, 컨테이너, 포트 매핑처럼 실무에서 자주 접하는 개념을 문제로 구성했습니다.\n- Docker 개념을 복습하기 위해 선정했습니다.\n\n## 실행 방법\n\n로컬에서는 아래 두 가지 방식 중 하나로 프로그램을 실행할 수 있습니다.\n\n`Python` 실행:\n\n```bash\n$ python3 src/main.py\n```\n\n`uv` 실행:\n\n```bash\n$ uv run python src/main.py\n```\n\n`Docker` 실행:\n\nDocker 이미지 빌드\n\n```bash\n$ docker build -t python-console-quiz-game:1.0 .\n```\n\n컨테이너 실행\n\n데이터 변경 내용을 유지하려면 `state.json`을 바인드 마운트해서 실행합니다.\n\n```bash\n$ touch state.json # st\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "yacheahobbang",
+      "display_name": "yacheahobbang",
+      "repo_name": "codyssey-E1-2",
+      "repo_url": "https://github.com/yacheahobbang/codyssey-E1-2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 125,
+      "summary": "# 🐍 나만의 파이썬 퀴즈 게임 프로젝트\n\n## 1. 프로젝트 개요\n터미널에서 동작하는 파이썬 기반의 퀴즈 프로그램입니다.\n\n## 2. 퀴즈 주제\n* 주제: 파이썬 기초 지식\n* 선정 이유: 내가 배운 문법을 복습하기 위해!\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem3_Mini_NPU_Simulator",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem3_Mini_NPU_Simulator",
+      "week": "3",
+      "updated_at": "2026-04-08",
+      "readme_length": 0,
+      "summary": "_README 내용 없음_",
+      "priority": 1
+    },
+    {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-3",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-3",
+      "week": "3",
+      "updated_at": "2026-04-07",
+      "readme_length": 0,
+      "summary": "_README 내용 없음_",
+      "priority": 1
+    },
+    {
+      "username": "kimch0612",
+      "display_name": "kimch0612",
+      "repo_name": "Codyssey_Week3",
+      "repo_url": "https://github.com/kimch0612/Codyssey_Week3",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 10408,
+      "summary": "## 과제 주제\nNPU 시뮬레이터를 통한 MAC 연산 및 패턴 판별 원리 학습\n\n## 학습 목표\n*   MAC(Multiply-Accumulate) 연산의 기본 원리 이해\n*   패턴 판별 로직 구현 및 성능 분석\n*   JSON 데이터 파싱 및 스키마 검증\n*   부동소수점 오차 처리 및 동점 판별 전략 학습\n*   효율적인 라벨 정규화 로직 설계 및 구현\n\n## 주요 내용 요약\n본 과제는 MAC 연산과 패턴 판별 원리를 이해하기 위해 3x3 필터 2개와 패턴을 활용한 NPU 시뮬레이터를 개발하는 것을 목표로 합니다. 사용자 직접 입력 모드와 JSON 파일 분석 모드를 지원하며, 라벨 정규화, 부동소수점 오차를 고려한 동점 처리, 성능 분석 및 결과 리포트 기능을 포함합니다.\n\n## 핵심 기술 및 개념\n*   **프로그래밍 언어**: Python\n*   **데이터 구조**: 2차원 배열 (list[list[float]]), JSON\n*   **알고리즘**: MAC 연산, 반복문, 패턴 매칭, 라벨 정규화, 시간 복잡도(`O(N^2)`)\n*   **라이브러리/모듈**: `sys`, `json`, `time`\n*   **개념**: NPU (Neural Processing Unit), MAC 연산, 필터, 패턴, 라벨 정규화, 부동소수점 오차, epsilon, 동점 처리, 성능 분석 (평균 시간, 연산 횟수)\n*   **명령어**: `python main.py`\n\n## 과제 요구사항\n*   [x] 3x3 사용자 입력 모드 구현\n*   [x] 행/열 개수 및 숫자 파싱 검증 구현\n*   [x] 반복문 기반 MAC 연산 구현\n*   [x] epsilon 기반 동점 처리 구현\n*   [x] 라벨 정규화(`+`, `cross`, `x` -> `Cross`, `X`) 구현\n*   [x] `data.json` 스키마 검증 및 케이스 단위 FAIL 처리 구현\n*   [x] 케이스별 PASS/FAIL 출력 구현\n*   [x] 성능 분석 표 출력 구현\n*   [x] 전체 결과 요약 출력 구현\n*   [x] 실제 과제용 `data.json` 데이터 채우기 및 최종 실측 결과 반영",
+      "priority": 1
+    },
+    {
+      "username": "JungSaeYoung",
+      "display_name": "JungSaeYoung",
+      "repo_name": "codyssey_E1-3",
+      "repo_url": "https://github.com/JungSaeYoung/codyssey_E1-3",
+      "week": "3",
+      "updated_at": "2026-04-08",
+      "readme_length": 4373,
+      "summary": "# Mini NPU Simulator\n\n## 이론적 배경 및 과제 목표\n\n### MINI NPU 시뮬레이터 개발 \n\n컴퓨터는 우리가 보는 시각의 직관이 없다. 컴퓨터는 이미지를 보고도 어떤 사진인지, 그런 것들을 판단할 수 없다.(모델이 없이는)\n우리는 시각으로 사물을 볼 때 전기신호로 특징을 보고 나서 학습된 기억 중 유사한 사물을 인지할 수 있다.\n컴퓨터도 이러한 접근법을 통해 사물을 인식시키면 된다.\n바로 패턴을 학습시켜 사물을 인식하는 것이다.\n우리는 그 과정 중 가장 기초적이고 간단한 MAC 연산을 통해 입력 패턴과 필터로 입력값을 추론하는 간단한 프로그램을 구현한다.\n\n### MAC 연산이 무엇인가?\n\nMAC = Multiply-Accumulate (곱셈-누산)\n\n```\nresult += A[i] × B[i]\n```\n\n수식적으로는 위와 같다. 두 배열의 같은 위치를 곱하고, 그걸 전부 더하는 것이 전부인 연산이다.\n\n사실 이 간단한 연산이 모든 신호 처리의 핵심이라고 할 수 있다.\n\n### MAC 연산은 그래서 어디에 쓰이는가?\n\n이미지 분류 분야에서 2012년 ILSVRC(ImageNet Large Scale Visual Recognition Challenge) 대회의 우승을 차지한 컨볼루션 신경망(CNN) 모델 중 유명한 AlexNet 또한 이 MAC 연산을 연속적으로 수행하는 MATMUL 연산을 사용한다.(MATMUL은 MAC 연산을 K번 수행하는 것과 같다.)\n\n실제 예시를 보면 다음과 같다.\n\n```이미지 필터링(Convolution)\n패턴(이미지 조각):        필터(커널):\n1  \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 1
+    },
+    {
+      "username": "Opdata",
+      "display_name": "Opdata",
+      "repo_name": "codyssey-python-with-git",
+      "repo_url": "https://github.com/Opdata/codyssey-python-with-git",
+      "week": "python",
+      "updated_at": "2026-04-08",
+      "readme_length": 308,
+      "summary": "### 프로젝트 개요\n\n터미널에서 동작하는 나만의 퀴즈 게임 구현\n기본 문법을 사용하여 입/출력 흐름을 만들고, 클래스(객체지향)로 코드를 역학별로 구조화 한다.\nJSON 파일 저장을 통해 프호그램을 종료해도 퀴즈와 점수가 유지되도록 데이터 영속성을 경험한다.\nGit을 통한 변경 이력을 관리\n기능 단위로 커밋하며, 브랜치를 나누어 작업한 뒤 병합하며 GitHub에 저장소를 공개한다.\n\n### 퀴즈 주제와 선정 이유\n\n### 실행 방법\n\n### 기능 목록\n\n### 파일 구조\n\n### 데이터 파일 설명(state.json 경로 / 역할 / 스키마)\n\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "Opdata",
+      "display_name": "Opdata",
+      "repo_name": "codyssey-workstation",
+      "repo_url": "https://github.com/Opdata/codyssey-workstation",
+      "week": "workstation",
+      "updated_at": "2026-04-08",
+      "readme_length": 19310,
+      "summary": "## 1. 프로젝트 개요\n\n누구나 동일한 방식으로 실행/배포/디버그할 수 있는 환경을 구성하기 위해 워크스테이션을 구축한다.</br>\n이 과정에서 CLI, Docker, Git/GitHub를 사용한다.\n이 미션은 터미널로 디렉토리 권한 정리 / Docker를 설치, 실행, 운영/관리 한다.</br>\n커스텀 Docker 이미지 제작, 포트 매핑, 볼륨 영속성 검증까지 CLI 기반으로 전 과정을 수행한다.</br>\n이 경험은 이후 리눅스 트러블슈팅, CI/CD 파이프라인, 클라우드 배포/운영 등으로 자연스럽게 확장된다.</br>\n\n---\n\n## 2. 실행 환경\n\n| 항목     | 버전 / 값            |\n| -------- | -------------------- |\n| OS       | macOS 26.3           |\n| Shell    | zsh                  |\n| Terminal | 기본 터미널          |\n| Docker   | 9.3.1, build c2be9cc |\n| Git      | 2.33.0               |\n\n---\n\n## 3. 터미널 조작 로그\n\n```zsh\n# cd, pwd, ls -al, mkdir, cp, mv, rm, cat, touch 등\n\n$ cd ..\n$ pwd # 현재 작업 중인 디렉토리의 절대 경로를 출력\n/Users/jun/Documents/GitHub/codyssey-work/workstation\n\n$ ls -al # 목록 확인(숨김 파일, 디렉토리 포함)\ntotal 16\ndrwxr-xr-x  4 jun  sta\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_python_with_npu",
+      "repo_url": "https://github.com/mulloc1/codyssey_python_with_npu",
+      "week": "python_with_npu",
+      "updated_at": "2026-04-08",
+      "readme_length": 0,
+      "summary": "_README 내용 없음_",
+      "priority": 2
+    },
+    {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_first_python",
+      "repo_url": "https://github.com/mulloc1/codyssey_first_python",
+      "week": "first_python",
+      "updated_at": "2026-04-06",
+      "readme_length": 8903,
+      "summary": "# Quiz Game\n\n터미널에서 실행하는 파이썬 객관식 퀴즈 게임입니다. 기본 퀴즈를 불러와 진행하고, 게임 중/추가된 퀴즈와 최고 점수를 `state.json`에 저장합니다.\n\n## 퀴즈 주제와 선정 이유\n\n기본 퀴즈는 파이썬 기초 개념을 확인하는 내용으로 구성되어 있습니다. 예를 들어 `int` 타입, 분기(`if/elif/else`), 길이(`len`), 함수 정의(`def`), 클래스 초기화(`__init__`) 같은 주제를 다뤄서 초보 학습자가 핵심 문법을 빠르게 점검할 수 있도록 했습니다.\n\n## 실행 방법\n\n프로젝트 디렉터리 `first_python`에서 다음을 실행합니다.\n\n```bash\npython main.py\n```\n\n## 기능 목록\n\n1. 기본 퀴즈 로드 및 시작\n2. 퀴즈 풀기(`play_quiz`)\n3. 퀴즈 추가(`add_quiz`) 및 상태 저장\n4. 퀴즈 목록 출력(`list_quizzes`)\n5. 최고 점수 확인(`show_best_score`)\n6. 퀴즈 삭제(`delete_quiz`) 및 상태 저장\n7. 상태 파일 저장/불러오기(`save_state`, `load_state`)\n8. 문제 수 선택 및 랜덤 출제\n9. 풀이 중 힌트 보기와 힌트 사용 시 점수 차감\n10. 입력 오류 방지(비어 있는 입력, 숫자 범위 등 재입력 처리)\n\n메인 메뉴: 1 퀴즈 풀기, 2 퀴즈 추가, 3 퀴즈 목록, 4 점수 확인, 5 퀴즈 삭제, 6 종료.\n\n## 파일 구조\n\n```text\nfirst_python/\n├─ main.py\n├─ README.md\n├─ .gitignore\n├─ src/\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_workstation",
+      "repo_url": "https://github.com/mulloc1/codyssey_workstation",
+      "week": "workstation",
+      "updated_at": "2026-03-31",
+      "readme_length": 2092,
+      "summary": "# 개발 워크스테이션 구축 과제\n\n## 1. 프로젝트 개요\n\n이 프로젝트는 터미널, Docker(OrbStack), Git/GitHub를 활용해 재현 가능한 개발 워크스테이션을 구축하고 검증하는 것을 목표로 한다.\n\n핵심 목표:\n\n- 터미널 기본 조작 및 권한 이해\n- Docker 이미지/컨테이너 운영\n- Dockerfile 기반 커스텀 이미지 제작\n- 포트 매핑, 바인드 마운트, 볼륨 영속성 검증\n- Git 설정 및 GitHub 연동 기반 협업 환경 준비\n\n---\n\n## 2. 실행 환경\n\n- OS: `macOS 15.6.1 (24G90)`\n- Shell: `/bin/zsh`\n- Terminal: `Cursor Integrated Terminal`\n- Docker Version: `28.5.2`\n- Git Version: `2.39.5 (Apple Git-154)`\n\n## 3. 수행 항목 체크리스트\n\n- [ ] 터미널 조작 로그 기록 완료\n- [ ] 파일/디렉토리 권한 실습(변경 전/후) 완료\n- [ ] Docker 설치/기본 점검 완료\n- [ ] Docker 기본 운영 명령 검증 완료\n- [ ] `hello-world`, `ubuntu` 컨테이너 실습 완료\n- [ ] Dockerfile 기반 커스텀 이미지 빌드/실행 완료\n- [ ] 포트 매핑 접속 검증 완료\n- [ ] 바인드 마운트 반영 검증 완료\n- [ ] Docker 볼륨 영속성 검증 완료\n- [ ] Git 설정 및 GitHub/VSCode 연동 완료\n- [ ] 트러블슈팅 2건 이상 정리 완료\n- [ ] 민감정보 마스킹 점검 완료\n\n---\n\n## 4. \n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Python",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Python",
+      "week": "python",
+      "updated_at": "2026-04-08",
+      "readme_length": 7552,
+      "summary": "# 🎯 나만의 퀴즈 게임\n\nPython으로 만든 콘솔 기반 퀴즈 게임입니다.  \n터미널에서 퀴즈를 풀고, 새로운 퀴즈를 추가하고, 점수를 기록할 수 있습니다.  \n프로그램을 종료해도 데이터가 `state.json` 파일에 저장되어 다음 실행 시 그대로 유지됩니다.\n\n- **GitHub 저장소**: https://github.com/clae-dev/ia-codyssey-Python\n\n---\n\n## 📌 퀴즈 주제 및 선정 이유\n\n**주제: Python 프로그래밍 기초**\n\nPython을 처음 배우면서 학습한 내용을 퀴즈로 만들면 복습 효과가 있다고 생각했습니다.  \n변수, 자료형, 함수, 주석 등 기본 문법을 자연스럽게 반복 학습할 수 있도록 구성했습니다.\n\n---\n\n## 🚀 실행 방법\n\n### 요구 사항\n- Python 3.10 이상\n\n### 실행\n```bash\npython main.py\n```\n\n외부 라이브러리 설치가 필요 없습니다. Python 표준 라이브러리만 사용합니다.\n\n---\n\n## 📋 기능 목록\n\n| 번호 | 기능 | 설명 |\n|------|------|------|\n| 1 | 퀴즈 풀기 | 등록된 퀴즈를 랜덤 순서로 출제, 힌트 사용 가능 (감점 적용) |\n| 2 | 퀴즈 추가 | 문제, 선택지 4개, 정답 번호, 힌트(선택)를 입력하여 새 퀴즈 등록 |\n| 3 | 퀴즈 삭제 | 등록된 퀴즈를 번호로 선택하여 삭제 |\n| 4 | 퀴즈 목록 | 등록된 모든 퀴즈의 문제 텍스트를 번호와 함께 표시 |\n| 5 | 점수 확인 | 최고 점수와 전체 게임 기록(날짜, 문제 수, 점수) 표시 |\n| 6 | 종\n\n_*(AI 요약 실패 — 원문 일부)*_",
+      "priority": 2
+    },
+    {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Docker",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Docker",
+      "week": "docker",
+      "updated_at": "2026-04-02",
+      "readme_length": 17674,
+      "summary": "# Docker 기반 개발 환경 구축 실습\n\n## 1. 프로젝트 개요\n본 실습에서는 Docker를 활용하여 컨테이너 기반 개발 환경을 구축하였습니다.  \nDocker 설치 및 실행 확인, Ubuntu 컨테이너 실행, Dockerfile을 이용한 이미지 생성,  \n웹 서버 컨테이너 실행 및 포트 매핑, Bind Mount 실습, Docker Volume 영속성 실습을 진행하였습니다.  \n추가로 Docker Compose, 환경 변수 활용, GitHub SSH 키 설정 보너스 과제도 수행하였습니다.  \n실습 과정 전체를 GitHub Repository와 README 문서를 통해 정리하였습니다.\n\nDocker를 이용하면 프로그램 실행 환경을 컨테이너로 관리할 수 있으며  \n개발 환경을 동일하게 유지할 수 있다는 장점이 있습니다.  \n이번 실습을 통해 Docker의 기본 구조와 동작 방식을 이해하는 것을 목표로 하였습니다.\n\n---\n\n## 2. 실행 환경\n\n| 항목 | 내용 |\n|------|------|\n| OS | Windows 11 |\n| Shell / Terminal | PowerShell 7.6.0 |\n| Docker | Docker Desktop |\n| Git | 2.x |\n| Web Server | Nginx (alpine) |\n| Language | HTML |\n\n---\n\n## 3. 수행 항목 체크리스트\n\n**필수 항목**\n- [x] 터미널 기본 조작 및 디렉토리 구성\n- [x] 파일 / 디렉토리 권한 변경 실습\n- [x] Docker 설치 및 점검 (`docker --version`, `docker \n\n_*(AI 요약 실패 — 원문 일부)*_",
       "priority": 2
     }
   ]

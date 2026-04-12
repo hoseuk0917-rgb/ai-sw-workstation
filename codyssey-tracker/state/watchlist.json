@@ -1,5 +1,146 @@
 {
   "version": 1,
   "description": "Repositories or users to re-check in future runs before promotion to confirmed course membership.",
-  "watch": []
+  "watch": [
+    {
+      "repo_key": "ntt65/codyssey/e1_2",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "ntt65",
+        "display_name": "ntt65",
+        "type": "single_repo",
+        "priority": 6,
+        "repo_name": "codyssey",
+        "folder_pattern": "e1_2"
+      },
+      "evidence": [
+        "repo:codyssey",
+        "tier2:main.py"
+      ],
+      "last_seen_at": "2026-04-13"
+    },
+    {
+      "repo_key": "codewhite7777/codyssey_E1-3",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "codewhite7777",
+        "display_name": "codewhite7777",
+        "type": "multi_repo",
+        "priority": 6,
+        "repo_patterns": [
+          "codyssey_E1-3"
+        ]
+      },
+      "evidence": [
+        "repo:codyssey",
+        "readme:npu",
+        "readme:mac",
+        "tier2:main.py"
+      ],
+      "last_seen_at": "2026-04-13"
+    },
+    {
+      "repo_key": "junhnno/Codyssey_WorkSpace_Week2",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "junhnno",
+        "display_name": "junhnno",
+        "type": "multi_repo",
+        "priority": 6,
+        "repo_patterns": [
+          "Codyssey_WorkSpace_Week2"
+        ]
+      },
+      "evidence": [
+        "week-readme:quiz",
+        "week-readme:state.json",
+        "repo:codyssey",
+        "readme:quiz"
+      ],
+      "last_seen_at": "2026-04-13"
+    },
+    {
+      "repo_key": "sungho255/codyssey_2",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "sungho255",
+        "display_name": "sungho255",
+        "type": "multi_repo",
+        "priority": 6,
+        "repo_patterns": [
+          "codyssey_2"
+        ]
+      },
+      "evidence": [
+        "repo:codyssey",
+        "tier2:state.json"
+      ],
+      "last_seen_at": "2026-04-13"
+    },
+    {
+      "repo_key": "sungho255/codyssey_1",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "sungho255",
+        "display_name": "sungho255",
+        "type": "multi_repo",
+        "priority": 6,
+        "repo_patterns": [
+          "codyssey_1"
+        ]
+      },
+      "evidence": [
+        "week-readme:docker",
+        "repo:codyssey",
+        "readme:docker",
+        "readme:mac"
+      ],
+      "last_seen_at": "2026-04-13"
+    },
+    {
+      "repo_key": "peachily/codyssey11-E1",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "peachily",
+        "display_name": "peachily",
+        "type": "multi_repo",
+        "priority": 6,
+        "repo_patterns": [
+          "codyssey11-E1"
+        ]
+      },
+      "evidence": [
+        "repo:codyssey",
+        "tier2:main.py",
+        "tier2:Dockerfile"
+      ],
+      "last_seen_at": "2026-04-13"
+    },
+    {
+      "repo_key": "I-nkamanda/codyssey2026/Problem2_Python_with_git",
+      "course_guess": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "I-nkamanda",
+        "display_name": "I-nkamanda",
+        "type": "single_repo",
+        "priority": 6,
+        "repo_name": "codyssey2026",
+        "folder_pattern": "Problem2_Python_with_git"
+      },
+      "evidence": [
+        "week-repo:python_with_git",
+        "week-readme:state.json",
+        "repo:codyssey",
+        "repo:python_with_git"
+      ],
+      "last_seen_at": "2026-04-13"
+    }
+  ]
 }

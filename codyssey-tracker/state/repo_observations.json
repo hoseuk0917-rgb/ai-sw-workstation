@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Per-repository observation history across runs. Keeps week/course/status snapshots so overwritten repos do not erase prior evidence.",
+  "observations": {}
+}

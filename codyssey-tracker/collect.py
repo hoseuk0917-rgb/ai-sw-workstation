@@ -1087,7 +1087,21 @@ def collect_single_repo(c: dict) -> list:
         m = re.search(folder_pattern, folder, re.IGNORECASE)
         if not m:
             continue
-        week = m.group(1).lstrip("0") or "0"
+        # 캡처 그룹이 있으면 그룹 값 사용, 없으면 KEYWORD_TO_WEEK 매핑
+        if m.lastindex and m.lastindex >= 1:
+            week = m.group(1).lstrip("0") or "0"
+        else:
+            # 캡처 그룹 없는 패턴 (예: curriculum|docker|scripts)
+            matched_text = m.group(0).lower()
+            week = KEYWORD_TO_WEEK.get(matched_text)
+            if not week:
+                # 폴더 이름에서 키워드 매핑 시도
+                for kw, wk in KEYWORD_TO_WEEK.items():
+                    if kw in folder.lower():
+                        week = wk
+                        break
+            if not week:
+                continue
         if not week.isdigit() or int(week) not in VALID_WEEK_RANGE:
             continue
         print(f"  → 폴더 {folder} ({week}주차)")

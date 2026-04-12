@@ -1,949 +1,633 @@
-# Codyssey 주간 학습 자료
+# Codyssey 주간 과제 수집 보고서 (2026-04-12)
 
-> **수집 일시**: 2026년 04월 12일 21:45 KST  
-> **추적 후보**: 45명  
-> **수집 레포**: 97건
+- 총 수집 건수: 37건
+- 신규 발견 레포: 16건
+- 소요 시간: 86초
 
-이 문서는 Codyssey 프로그램 수강생들의 공개 GitHub 레포를 자동 수집하여,
-주차별 과제 내용을 학습 자료 형태로 정리한 것입니다.
+## 1. 주차별 학습 문서
 
----
+### 1주차 과제 종합
 
-## 목차
+# Codyssey AI/SW 교육 과정 - 1주차 학습 문서: 재현 가능한 개발 워크스테이션 구축
 
-- [1주차 과제](#week-1) (39명 제출)
-- [2주차 과제](#week-2) (36명 제출)
-- [3주차 과제](#week-3) (13명 제출)
-- [4주차 과제](#week-4) (4명 제출)
-- [5주차 과제](#week-5) (2명 제출)
-- [6주차 과제](#week-6) (1명 제출)
-- [7주차 과제](#week-7) (1명 제출)
-- [8주차 과제](#week-8) (1명 제출)
-- [지문 발견 레포](#fingerprint-discovery) (54건)
+## 1. 미션 개요
 
----
+본 미션은 AI/SW 개발자로서 필수적인 세 가지 도구, 즉 **터미널(CLI)**, **Docker(컨테이너)**, **Git/GitHub(버전 관리)**를 직접 설정하고 활용하는 경험을 통해 **재현 가능한 개발 워크스테이션**을 구축하는 것을 목표로 합니다. "내 컴퓨터에서만 돌아가는" 문제를 해결하고, 언제 어디서든 동일한 개발 환경을 구성하며, 프로젝트를 효과적으로 관리하는 능력을 키웁니다.
 
-<a id="week-1"></a>
-## 1주차 과제
+## 2. 학습 목표
 
-## Codyssey AI/SW 개발 워크스페이스 구축: 1주차 학습 문서
+*   **터미널(CLI) 활용 능력 향상:** 파일 및 디렉토리 관리, 권한 설정 등 기본적인 터미널 명령어를 능숙하게 사용합니다.
+*   **Docker 기초 이해 및 활용:** Docker 설치, 이미지 빌드, 컨테이너 실행 및 관리, 볼륨 및 마운트의 개념과 활용법을 익힙니다.
+*   **Dockerfile 작성 및 이미지 빌드:** 간단한 웹 서버 이미지를 Dockerfile을 통해 직접 생성합니다.
+*   **Git & GitHub 기초:** Git의 기본 설정과 VS Code 연동을 통해 소스 코드의 버전 관리를 시작합니다.
+*   **재현 가능한 개발 환경 구축:** 위 도구들을 조합하여 환경에 구애받지 않는 개발 환경의 중요성을 이해하고 구축합니다.
 
-### 1. 미션 개요
-본 주차 과제는 AI/SW 개발자로서 필수적인 **개발 환경 구축 및 관리 능력**을 기르는 것을 목표로 합니다. 터미널, Docker, Git/GitHub의 기본적인 사용법을 익히고, 이를 통해 **재현 가능하고 효율적인 개발 워크스테이션 환경**을 구성하는 실습을 진행합니다. 이는 실제 개발 프로젝트에서 협업 및 배포 과정의 기반이 됩니다.
+## 3. 기능 요구사항
 
-### 2. 학습 목표
-이 과제를 완료하면 다음의 핵심 개념을 설명할 수 있어야 합니다.
+*   **터미널:**
+    *   `pwd`, `ls`, `cd`, `mkdir`, `touch`, `cat`, `echo`, `cp`, `mv`, `rm` 등 기본 명령어 사용
+    *   파일 및 디렉토리 권한 변경 (`chmod`) 실습
+*   **Docker:**
+    *   Docker 설치 및 정상 작동 확인 (`docker version`, `docker info`)
+    *   기본 이미지 실행 (`hello-world`, `ubuntu`)
+    *   컨테이너 실행 및 관리 (`docker run`, `docker ps`, `docker logs`, `docker stats`)
+    *   컨테이너 내부 진입 (`docker attach`, `docker exec`) 차이 이해
+    *   Dockerfile을 이용한 커스텀 Nginx 웹 서버 이미지 빌드
+    *   이미지 빌드 및 컨테이너 실행 시 포트 매핑 (`-p`) 실습 (최소 2회)
+    *   바인드 마운트 (`-v`)를 이용한 호스트 파일 시스템 동기화 실습
+    *   Docker 볼륨을 이용한 데이터 영속성(persistence) 실습
+*   **Git & GitHub:**
+    *   Git 사용자 설정 (`git config`)
+    *   VS Code와 GitHub 연동 및 기본적인 GitHub 사용
+*   **문서화:**
+    *   수행 과정 및 결과를 README.md 파일에 상세히 기록
+    *   트러블슈팅 내용을 정리
 
-1.  **터미널 기본 명령어의 활용:** 파일 및 디렉터리 관리, 내용 확인 등 기본 조작 방법을 설명할 수 있습니다.
-2.  **파일 및 디렉터리 권한 관리:** `chmod` 명령어를 사용하여 사용자, 그룹, 기타에 대한 읽기, 쓰기, 실행 권한을 설정하는 원리를 이해하고 적용할 수 있습니다.
-3.  **Docker의 핵심 개념:** 이미지(Image)와 컨테이너(Container)의 차이, Dockerfile을 이용한 이미지 빌드 과정을 설명할 수 있습니다.
-4.  **Docker 컨테이너 운영:** `docker run`, `docker ps`, `docker stop`, `docker rm` 등 컨테이너의 생성, 실행, 관리 명령어를 숙지하고 활용할 수 있습니다.
-5.  **네트워크 및 스토리지 기능:** 포트 매핑, 바인드 마운트, Docker 볼륨의 개념과 활용법을 이해하고 실제 환경에 적용할 수 있습니다.
-6.  **Git/GitHub 기본 활용:** Git의 초기 설정, 원격 저장소 연동, 코드 푸시(push) 과정을 설명하고 수행할 수 있습니다.
+## 4. 핵심 기술 스택
 
-### 3. 기능 요구사항
+*   **운영체제(OS):** macOS (Windows, Linux 환경에서도 유사하게 적용 가능)
+*   **Shell:** Bash, Zsh 등 (터미널 환경)
+*   **Docker:** 컨테이너 기반 가상화 도구
+*   **Git:** 버전 관리 시스템
+*   **VS Code:** 코드 에디터 (GitHub 연동)
+*   **Nginx:** 웹 서버 (Docker 이미지 활용)
 
-**필수 항목:**
+## 5. 권장 프로젝트 구조
 
-*   [x] 터미널 기본 조작 (pwd, ls, cd, mkdir, touch, cp, mv, rm, cat 등) 및 작업 디렉터리 구성
-*   [x] 파일 및 디렉터리 권한 변경 실습 (`chmod`)
-*   [x] Docker 설치 및 버전 확인 (`docker --version`)
-*   [x] Docker 기본 명령어 실습 (`docker pull`, `docker images`, `docker run`, `docker ps`, `docker ps -a`, `docker stop`, `docker rm`, `docker logs`)
-*   [x] `hello-world` 컨테이너 실행 및 결과 확인
-*   [x] `ubuntu` 컨테이너 실행 및 내부 진입 (`docker run -it ubuntu /bin/bash`)
-*   [x] `attach` vs `exec` (또는 `-it` 옵션 활용) 차이점 이해 및 실습
-*   [x] Dockerfile을 이용한 커스텀 Nginx 이미지 빌드
-    *   `FROM nginx:latest`
-    *   `COPY index.html /usr/share/nginx/html/`
-    *   `EXPOSE 80`
-*   [x] 커스텀 이미지로 컨테이너 실행 및 포트 매핑 (예: `docker run -d -p 8080:80 my-web`)
-*   [x] 포트 매핑을 통한 호스트에서 컨테이너 접속 확인 (브라우저 또는 `curl`)
-*   [x] 바인드 마운트(Bind Mount)를 사용하여 호스트 파일 변경 시 컨테이너에 즉시 반영되는 것 확인
-    *   예: `docker run -v $(pwd)/html:/usr/share/nginx/html ...`
-*   [x] Docker 볼륨(Volume)을 사용하여 컨테이너 삭제 후 데이터 영속성 확인
-    *   예: `docker volume create mydata` → `docker run -v mydata:/data ...`
-*   [x] Git 기본 설정 (`git config --global user.name`, `git config --global user.email`)
-*   [x] Git 원격 저장소 연동 (`git remote add origin <URL>`) 및 코드 푸시 (`git push -u origin main`)
+수강생들의 레포지토리를 종합하여 다음과 같은 구조를 권장합니다.
 
-**보너스 항목:**
-
-*   [ ] `docker stats`를 이용한 리소스 사용량 확인
-*   [ ] `docker info`를 통한 Docker 데몬 상태 점검
-*   [ ] Dockerfile 내 `ARG`, `ENV`, `HEALTHCHECK`, `CMD` 등 추가 지시어 활용
-*   [ ] Docker Compose를 이용한 다중 컨테이너 관리 (본 과제 범위 외)
-
-### 4. 핵심 기술 스택
-
-| 기술           | 용도                                                       | 핵심 명령어/개념                                                                                                                                  |
-| :------------- | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **터미널**     | 명령줄 인터페이스(CLI) 기반 작업 환경                        | `pwd`, `ls`, `cd`, `mkdir`, `rm`, `cp`, `mv`, `cat`, `echo`, `touch`, `head`, `tail`, `less`, `chmod`, `chown`                                               |
-| **Docker**     | 애플리케이션 배포 및 실행을 위한 컨테이너화 기술             | **이미지(Image):** 애플리케이션 실행을 위한 템플릿<br>**컨테이너(Container):** 이미지의 실행 인스턴스<br>**Dockerfile:** 이미지를 만들기 위한 스크립트<br>**포트 매핑:** 호스트와 컨테이너 간 네트워크 통신<br>**바인드 마운트:** 호스트 디렉터리를 컨테이너에 연결<br>**볼륨:** 컨테이너 데이터 영속성 관리 |
-|                |                                                            | `docker pull`, `docker images`, `docker build`, `docker run`, `docker ps`, `docker stop`, `docker rm`, `docker logs`, `docker exec`, `docker volume create` |
-| **Git/GitHub** | 분산 버전 관리 시스템 및 코드 호스팅 서비스                 | **버전 관리:** 코드 변경 이력 추적<br>**커밋(Commit):** 코드 변경 사항 저장<br>**브랜치(Branch):** 독립적인 개발 라인<br>**푸시(Push):** 로컬 변경 사항을 원격 저장소에 업로드<br>**풀(Pull):** 원격 저장소 변경 사항을 로컬로 가져오기 |
-|                |                                                            | `git init`, `git config`, `git add`, `git commit`, `git status`, `git log`, `git remote add`, `git push`, `git pull`                                       |
-
-### 5. 권장 프로젝트 구조
-
-수강생들의 레포지토리 구조를 종합하여 다음과 같은 구조를 권장합니다.
-
-```text
-.
-├── README.md               # 프로젝트 개요, 학습 내용, 트러블슈팅 등 문서화
-├── .gitignore              # Git 추적에서 제외할 파일/폴더 목록
-├── app/                    # Dockerfile 및 웹 서버 관련 파일 (선택 사항, 더 명확하게 구분 가능)
-│   ├── Dockerfile          # 커스텀 Nginx 이미지 빌드를 위한 Dockerfile
-│   └── index.html          # 웹 서버로 제공할 정적 HTML 파일
-├── screenshots/            # 실습 과정을 증빙하는 스크린샷 이미지 (선택 사항)
-│   ├── terminal/
-│   │   ├── pwd.png
-│   │   └── ls_al.png
-│   ├── docker/
-│   │   ├── run.png
-│   │   └── port_mapping.png
-│   ├── permissions/
-│   │   └── chmod.png
-│   └── git/
-│       └── push.png
-└── data/                   # Docker 볼륨 또는 바인드 마운트로 사용할 데이터 (선택 사항)
+```
+codyssey-m1/
+├── README.md             # 프로젝트 설명, 진행 과정, 트러블슈팅 기록
+├── app/                  # Dockerfile, 웹 서버 소스 코드 등 애플리케이션 관련 파일
+│   ├── Dockerfile
+│   └── index.html
+├── practice/             # 터미널 명령어 실습 파일 (선택 사항)
+│   ├── permission_test.sh
+│   └── test.txt
+├── screenshots/          # 실습 과정을 증빙하는 이미지 파일 (선택 사항)
+│   ├── ...
+├── .git/                 # Git 설정 파일 (자동 생성)
+└── .gitignore            # Git에서 무시할 파일 설정 (선택 사항)
 ```
 
-**설명:**
+**핵심:** `README.md`에 모든 내용을 상세하게 기록하고, `Dockerfile`과 웹 서버 소스 코드를 잘 정리하는 것이 중요합니다.
 
-*   `.gitignore`: macOS의 `.DS_Store`, IDE 관련 파일 등 불필요한 파일이 Git에 올라가는 것을 방지합니다.
-*   `app/` 디렉터리: Dockerfile과 웹 서비스 관련 파일을 모아두어 프로젝트 구조를 명확히 합니다. (수강생 2, 3의 구조 참고)
-*   `screenshots/`: 각 실습 단계별 증빙 스크린샷을 넣어 학습 과정을 시각적으로 기록합니다. (수강생 3의 구조 참고)
-*   `data/`: Docker 볼륨이 생성되거나 바인드 마운트될 호스트 경로를 명시적으로 두는 것도 좋습니다.
+## 6. 구현 핵심 포인트
 
-### 6. 구현 핵심 포인트
+### 6.1 터미널 기본 조작 및 권한
 
-1.  **Dockerfile 작성 원리:**
-    *   **왜 중요한가:** Dockerfile은 이미지를 생성하는 "설계도"와 같습니다. 효율적인 Dockerfile은 이미지 크기를 줄이고 빌드 시간을 단축하며, 환경의 재현 가능성을 높입니다.
-    *   **어떻게 접근해야 하는가:** `FROM`으로 시작하여 기반 이미지를 명확히 하고, `COPY` 또는 `ADD`로 필요한 파일을 이미지 안으로 넣습니다. `EXPOSE`로 컨테이너가 사용할 포트를 명시하고, `CMD` 또는 `ENTRYPOINT`로 컨테이너 실행 시 기본적으로 수행할 명령을 정의합니다. 수강생 1, 2, 3 모두 `nginx` 이미지를 기반으로 `index.html`을 복사하고 `EXPOSE 80`을 설정하는 기본적인 구조를 따랐습니다.
+*   **경로 이해:** 절대 경로와 상대 경로의 차이를 이해하고 상황에 맞게 사용합니다.
+    *   `pwd`: 현재 작업 디렉토리의 절대 경로 출력
+    *   `ls -alh`: 숨김 파일 포함 모든 파일의 상세 목록을 보기 좋은 형식으로 출력
+    *   `cd`, `mkdir`, `touch`, `cat`, `echo` 등을 활용하여 파일/디렉토리를 생성, 이동, 확인합니다.
+*   **파일/디렉토리 관리:**
+    *   `cp`: 파일 또는 디렉토리 복사
+    *   `mv`: 파일 또는 디렉토리 이동 또는 이름 변경
+    *   `rm`: 파일 또는 디렉토리 삭제 (`-r` 옵션 필수)
+*   **권한 변경 (`chmod`):**
+    *   `chmod 755 script.sh`: 소유자는 모든 권한(rwx=4+2+1=7), 그룹과 기타 사용자는 읽기 및 실행 권한(r-x=4+0+1=5) 부여. 스크립트 파일 실행에 필수적입니다.
+    *   파일 권한의 `rwx` (읽기, 쓰기, 실행)와 숫자(4, 2, 1)의 조합을 이해하는 것이 중요합니다.
 
-2.  **포트 매핑 (`-p` 옵션):**
-    *   **왜 중요한가:** 컨테이너 내부에서 실행되는 애플리케이션에 호스트 머신에서 접근할 수 있게 해주는 핵심적인 기능입니다. 웹 서버, 데이터베이스 등 네트워크 서비스 컨테이너를 운영할 때 필수적입니다.
-    *   **어떻게 접근해야 하는가:** `docker run -p <호스트_포트>:<컨테이너_포트> ...` 형식으로 사용합니다. 예를 들어, Nginx 컨테이너는 기본적으로 80번 포트를 사용하므로, 호스트의 8080번 포트와 매핑하려면 `-p 8080:80`을 사용합니다. 이를 통해 `http://localhost:8080`으로 접속 가능하게 됩니다. (수강생 1, 2, 3 모두 성공적으로 사용)
+### 6.2 Docker 핵심 개념
 
-3.  **바인드 마운트 (`-v` 옵션):**
-    *   **왜 중요한가:** 호스트 머신의 특정 디렉터리를 컨테이너 내부의 디렉터리에 연결하여, 호스트에서 파일을 수정하면 컨테이너 내부에서도 즉시 반영되도록 합니다. 개발 환경에서 코드 수정 후 컨테이너 재빌드 없이 변경 사항을 바로 확인할 때 매우 유용합니다.
-    *   **어떻게 접근해야 하는가:** `docker run -v <호스트_경로>:<컨테이너_경로> ...` 형식으로 사용합니다. 예를 들어, 로컬의 `~/my-app/public` 디렉터리를 컨테이너 내부의 `/usr/share/nginx/html`에 연결하려면 `-v $(pwd)/public:/usr/share/nginx/html`과 같이 사용합니다. (수강생 1, 2, 3 모두 실습)
+*   **Dockerfile:**
+    ```dockerfile
+    # 베이스 이미지: Nginx의 가벼운 Alpine 버전 사용
+    FROM nginx:alpine
 
-4.  **Docker 볼륨 (`-v` 또는 `docker volume`):**
-    *   **왜 중요한가:** 컨테이너가 삭제되어도 데이터가 유지되도록 하는 컨테이너 관리 기능입니다. 데이터베이스의 데이터 파일, 로그 파일 등 영속성이 필요한 데이터를 저장하는 데 사용됩니다. 호스트 파일 시스템에 직접 의존하는 바인드 마운트와 달리, Docker에서 관리하는 독립적인 스토리지입니다.
-    *   **어떻게 접근해야 하는가:** `docker volume create <볼륨_이름>`으로 먼저 생성하거나, `docker run` 시 `-v <볼륨_이름>:<컨테이너_경로>` 형식으로 지정하면 Docker가 자동으로 볼륨을 생성합니다. (수강생 1, 2, 3 모두 실습)
+    # 컨테이너 내부에 복사할 파일 설정
+    # src/index.html 파일을 nginx 기본 웹 서버 경로로 복사
+    COPY src/index.html /usr/share/nginx/html/index.html
 
-5.  **Git 기본 설정 및 Push:**
-    *   **왜 중요한가:** Git은 협업 및 코드 관리에 필수적인 도구이며, GitHub는 이를 위한 대표적인 호스팅 플랫폼입니다. 올바른 Git 설정은 커밋 기록을 명확하게 하고, GitHub 연동은 코드 공유 및 백업의 기반이 됩니다.
-    *   **어떻게 접근해야 하는가:** `git config --global user.name "Your Name"`과 `git config --global user.email "your.email@example.com"`으로 전역 설정을 합니다. 이후 `git init`으로 저장소를 초기화하고, `git remote add origin <GitHub_Repo_URL>`로 원격 저장소를 연결한 뒤, `git add .` 및 `git commit -m "Initial commit"`으로 변경 사항을 저장하고, `git push -u origin main`으로 GitHub에 업로드합니다. (수강생 1, 2, 3 모두 성공적으로 진행)
+    # 컨테이너가 사용할 포트 명시 (빌드 결과물 아님, 문서화 목적)
+    EXPOSE 80
+    ```
+    *   `FROM`: 어떤 이미지로부터 시작할지 지정
+    *   `COPY`: 로컬 파일을 컨테이너 이미지 안으로 복사
+    *   `EXPOSE`: 컨테이너가 어떤 포트를 사용할지 명시 (실제 포트 개방은 `docker run -p`에서 수행)
+*   **Docker 이미지 빌드:**
+    ```bash
+    docker build -t my-custom-nginx .
+    ```
+    *   `-t`: 이미지 이름 지정
+    *   `.`: Dockerfile이 있는 현재 디렉토리를 빌드 컨텍스트로 지정
+*   **컨테이너 실행:**
+    *   **포트 매핑 (`-p`):**
+        ```bash
+        docker run -d -p 8080:80 my-custom-nginx
+        ```
+        *   `-d`: 백그라운드 실행
+        *   `-p 8080:80`: 호스트 머신의 8080번 포트를 컨테이너의 80번 포트로 연결. `http://localhost:8080`으로 접속 가능.
+        *   **2회 실행:** 다양한 포트 조합 (`8081:80` 등)으로 실행하여 포트 매핑의 유연성을 확인합니다.
+    *   **바인드 마운트 (`-v`):**
+        ```bash
+        docker run -d -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html my-custom-nginx
+        ```
+        *   `-v $(pwd)/html:/usr/share/nginx/html`: 호스트 머신의 현재 디렉토리 아래 `html` 폴더를 컨테이너 내부의 `/usr/share/nginx/html`로 연결. 호스트에서 `html` 폴더의 `index.html` 파일을 수정하면 컨테이너 안의 웹 페이지도 즉시 변경됩니다.
+    *   **볼륨 (Volume):**
+        ```bash
+        docker run -d -p 8080:80 -v my-nginx-data:/usr/share/nginx/html my-custom-nginx
+        ```
+        *   `-v my-nginx-data:/usr/share/nginx/html`: Docker가 관리하는 'my-nginx-data'라는 이름의 볼륨을 컨테이너 내부 경로에 연결. 컨테이너가 삭제되어도 볼륨에 저장된 데이터는 유지됩니다. 데이터를 영속적으로 관리할 때 사용합니다.
+*   **컨테이너 관리:**
+    *   `docker ps`: 실행 중인 컨테이너 목록 확인
+    *   `docker ps -a`: 모든 컨테이너 목록 확인 (종료된 컨테이너 포함)
+    *   `docker logs [container_id]`: 컨테이너 로그 확인
+    *   `docker attach [container_id]`: 컨테이너의 메인 프로세스 STDIN/STDOUT/STDERR에 연결 (Ctrl+C로 종료될 수 있음)
+    *   `docker exec -it [container_id] /bin/bash`: 실행 중인 컨테이너 내부에 새로운 쉘로 접속 (`-it` 옵션 중요)
 
-### 7. 트러블슈팅 & 팁
+### 6.3 Git & GitHub 연동
 
-*   **`docker: command not found` 오류:**
-    *   **증상:** Docker 명령어를 실행했을 때 발생하는 가장 흔한 오류입니다.
-    *   **원인:** Docker가 시스템에 설치되지 않았거나, PATH 환경 변수에 Docker 실행 파일 경로가 제대로 설정되지 않았을 경우 발생합니다.
-    *   **해결 방안:**
-        *   Docker Desktop (macOS, Windows) 또는 Docker Engine (Linux)이 올바르게 설치되었는지 확인합니다.
-        *   설치 후 터미널을 재시작하거나, 시스템 환경 변수 설정을 확인합니다.
-        *   **팁:** OrbStack과 같은 Docker 대체 도구를 사용하는 경우, 해당 도구가 정상적으로 실행 중인지 확인하세요. (수강생 2의 환경 스냅샷 참고)
+*   **Git 기본 설정:**
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+    ```
+    *   `--global` 옵션으로 시스템 전체에 적용
+*   **VS Code 연동:**
+    *   VS Code의 Source Control 뷰를 통해 Git 저장소를 초기화하고, 변경 사항을 Staging, Commit합니다.
+    *   GitHub Extension을 설치하면 VS Code 내에서 Push, Pull, Branch 관리 등을 편리하게 할 수 있습니다.
 
-*   **`port is already allocated` 오류:**
-    *   **증상:** Docker 컨테이너를 실행할 때 포트 충돌로 인해 발생합니다.
-    *   **원인:** 지정한 호스트 포트(`-p 8080:80`에서 `8080`)가 이미 다른 프로세스(다른 Docker 컨테이너, 웹 서버 등)에 의해 사용 중일 때 발생합니다.
-    *   **해결 방안:**
-        *   `sudo lsof -i :<포트번호>` (macOS/Linux) 또는 `netstat -ano | findstr :<포트번호>` (Windows) 명령어로 해당 포트를 사용 중인 프로세스를 확인하고 종료합니다.
-        *   Docker 컨테이너 실행 시, 충돌하지 않는 다른 호스트 포트를 사용하도록 `-p` 옵션을 수정합니다 (예: `-p 8081:80`).
-        *   **팁:** `docker ps` 명령어로 현재 실행 중인 컨테이너와 사용 중인 포트를 확인하는 습관을 들이세요.
+## 7. 트러블슈팅 & 팁
 
-*   **`index.html`이 보이지 않거나 기본 Nginx 페이지가 보일 때:**
-    *   **증상:** 커스텀 `index.html`이 정상적으로 복사/마운트되지 않아 기본 Nginx 환영 페이지가 보입니다.
-    *   **원인:**
-        *   Dockerfile에서 `COPY` 명령이 잘못되었거나, `index.html` 파일이 Dockerfile과 같은 경로 또는 지정된 상대 경로에 없을 경우.
-        *   바인드 마운트 시 경로 지정이 잘못되었거나, 호스트에 `index.html` 파일이 없을 경우.
-        *   컨테이너가 Nginx의 기본 경로(`/usr/share/nginx/html`)가 아닌 다른 경로에서 파일을 읽으려고 할 때.
-    *   **해결 방안:**
-        *   `Dockerfile`에서 `COPY index.html /usr/share/nginx/html/` 경로를 정확히 확인하고, `index.html` 파일이 Dockerfile과 같은 디렉터리에 있는지 확인합니다.
-        *   바인드 마운트 시 `docker run -v $(pwd)/html:/usr/share/nginx/html ...`와 같이 호스트의 `html` 디렉터리를 컨테이너의 `/usr/share/nginx/html`로 정확히 연결했는지 확인합니다.
-        *   **팁:** `docker exec -it <컨테이너ID> ls /usr/share/nginx/html` 명령어로 컨테이너 내부의 웹 루트 디렉터리에 `index.html` 파일이 실제로 존재하는지 확인해 볼 수 있습니다.
+*   **`echo` 명령어 사용 시 따옴표 주의:** `echo "hello!" > file.txt` 와 같이 큰따옴표(`"`) 안에서 `!` 와 같은 특수 문자가 쉘 히스토리 확장으로 잘못 해석될 수 있습니다. 이 경우 작은따옴표(`'`)를 사용하거나, 역슬래시(`\`)로 이스케이프 처리합니다. (예: `echo 'hello!' > file.txt` 또는 `echo "hello\!" > file.txt`)
+*   **권한 문제:** 스크립트 파일을 실행할 때 `permission denied` 에러가 발생하면, `chmod +x script.sh` 또는 `chmod 755 script.sh` 명령어로 실행 권한을 부여해야 합니다.
+*   **Docker 실행 관련:**
+    *   Docker Desktop이 제대로 실행 중인지 확인합니다.
+    *   `docker` 명령어가 인식되지 않으면 PATH 환경변수 설정이 올바른지 확인합니다.
+    *   포트가 이미 사용 중일 경우 (`port is already allocated`) 다른 포트를 사용합니다.
+*   **VS Code GitHub 연동:**
+    *   SSH 키 생성 및 GitHub 등록이 올바르게 되었는지 확인합니다.
+    *   Repository 권한이 있는지 확인합니다.
+*   **Dockerfile 빌드 오류:** 각 명령어의 오타, 파일 경로 오류 등을 꼼꼼히 확인합니다.
 
-*   **Git Push 시 인증 실패:**
-    *   **증상:** `git push` 명령 실행 시 사용자 이름/비밀번호 또는 Personal Access Token(PAT) 오류가 발생합니다.
-    *   **원인:** GitHub 계정 인증 정보가 잘못되었거나, PAT가 만료/회수되었거나, PAT에 필요한 권한(repo)이 부여되지 않았을 경우 발생합니다.
-    *   **해결 방안:**
-        *   GitHub 설정에서 Personal Access Token을 새로 생성하고, `repo` 스코프를 포함하여 발급받습니다.
-        *   `git remote -v` 명령으로 원격 저장소 URL을 확인하고, 필요하다면 `git remote set-url origin <새로운_URL>`로 수정합니다.
-        *   GitHub 웹사이트에서 새로운 PAT를 사용하여 푸시를 시도합니다.
-        *   **팁:** 2021년 8월부터 GitHub는 HTTPS 통신 시 비밀번호 대신 Personal Access Token(PAT) 사용을 권장하며, 최근에는 PAT 사용도 점진적으로 제한하고 있어 SSH 키 기반 인증을 사용하는 것이 장기적으로 안정적입니다.
+## 8. 추가 학습 자료
 
-*   **권한 오류 (`chmod` 관련):**
-    *   **증상:** 특정 파일이나 디렉터리에 대한 접근(읽기, 쓰기, 실행)이 거부될 때 발생합니다.
-    *   **원인:** 파일/디렉터리의 소유자, 그룹, 기타 권한 설정이 현재 작업을 수행하려는 사용자에게 허용되지 않았기 때문입니다.
-    *   **해결 방안:** `chmod` 명령어를 사용하여 필요한 권한을 부여합니다. 예를 들어, 실행 권한이 없는 스크립트 파일은 `chmod +x script.sh`로 실행 권한을 추가할 수 있습니다. 디렉터리에 대한 접근 권한이 필요하다면 `chmod +rwx directory_name`과 같이 설정합니다.
-    *   **팁:** `ls -l` 명령어로 현재 권한을 항상 확인하는 습관을 들이세요. 숫자로 권한을 지정할 때는 (읽기=4, 쓰기=2, 실행=1) 각 권한의 합으로 표현됩니다 (예: `755`는 소유자 rwx, 그룹 rx, 기타 rx).
+*   **터미널 명령어 Cheat Sheet:** [https://devhints.io/bash](https://devhints.io/bash)
+*   **Docker 공식 문서:**
+    *   Get Started: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
+    *   Dockerfile Reference: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+*   **Git 공식 문서:** [https://git-scm.com/doc](https://git-scm.com/doc)
+*   **VS Code GitHub Extension:** [https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions) (GitHub Extension Pack 등)
 
-### 8. 추가 학습 자료
+이 학습 문서를 바탕으로 1주차 미션을 성공적으로 완수하시길 바랍니다! 궁금한 점은 언제든지 커뮤니티나 멘토에게 질문해주세요.
 
-*   **터미널 및 Linux 명령어:**
-    *   [Linux Command Line Basics](https://www.youtube.com/watch?v=pvZ83WbO8zI) (YouTube, 영어)
-    *   [리눅스 명령어 기초 - 생활코딩](https://opentutorials.org/course/1762/10987) (생활코딩, 한국어)
-    *   `man <명령어>`: 각 명령어의 상세 도움말 (터미널에서 직접 실행)
-
-*   **Docker:**
-    *   [Docker Get Started](https://docs.docker.com/get-started/) (공식 문서, 영어)
-    *   [Docker Tutorial - FreeCodeCamp](https://www.youtube.com/watch?v=3c-i735jVvM) (YouTube, 영어)
-    *   [Docker 초보자를 위한 공식 튜토리얼](https://www.docker.com/blog/docker-korean-introduction-for-beginners/) (Docker 공식 블로그, 한국어)
-    *   **키워드:** `Containerization`, `Image Layers`, `Docker Hub`, `Docker Daemon`, `Docker CLI`
-
-*   **Git & GitHub:**
-    *   [Git - 공식 Document](https://git-scm.com/doc) (영어)
-    *   [Git & GitHub 시작하기 - 생활코딩](https://opentutorials.org/course/1762/10988) (생활코딩, 한국어)
-    *   [Learn Git Branching](https://learngitbranching.js.org/) (Git 브랜치 개념 시각화 학습)
-    *   **키워드:** `Version Control System (VCS)`, `Commit History`, `Repository (Repo)`, `Remote Repository`, `Branching Strategy`, `Merge Conflict`
-
-*   **파일 권한:**
-    *   [Linux File Permissions Explained](https://www.youtube.com/watch?v=6z1FpP5xQ1A) (YouTube, 영어)
-    *   **키워드:** `rwx`, `User (u)`, `Group (g)`, `Others (o)`, `Octal Notation`
-
----
-
-### 참고 레포 목록 (39명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| yejoo0310 | [codyssey-m1](https://github.com/yejoo0310/codyssey-m1) | 2026-04-05 | 36,093자 | 9개 | 1건 (인프라설정) |
-| LimJongHan | [Codyssey-E1-1](https://github.com/LimJongHan/Codyssey-E1-1) | 2026-04-03 | 34,992자 | 8개 | 1건 (인프라설정) |
-| sangwoo-codyssey | [01-infra-basics-study](https://github.com/sangwoo-codyssey/01-infra-basics-study) | 2026-04-08 | 33,034자 | 34개 | 2건 (인프라설정) |
-| codewhite7777 | [codyssey_E-1](https://github.com/codewhite7777/codyssey_E-1) | 2026-03-30 | 28,643자 | 9개 | 1건 (인프라설정) |
-| mov-hyun | [e1-1-workstation-setup](https://github.com/mov-hyun/e1-1-workstation-setup) | 2026-04-05 | 28,398자 | 9개 | 2건 (인프라설정) |
-| xifoxy-ru | [codyssey_week_01](https://github.com/xifoxy-ru/codyssey_week_01) | 2026-04-09 | 23,802자 | 27개 | 2건 (설정파일, 인프라설정) |
-| ntt65 | [codyssey/e1_1](https://github.com/ntt65/codyssey/tree/main/e1_1) | 2026-04-12 | 21,218자 | 23개 | 9건 (마크다운, 분석보고서, 인프라설정, 학습노트) |
-| whitecy01 | [codyssey1](https://github.com/whitecy01/codyssey1) | 2026-04-02 | 21,139자 | 7개 | 2건 (설정파일, 인프라설정) |
-| whdals006 | [Codyssey_E1-1](https://github.com/whdals006/Codyssey_E1-1) | 2026-04-07 | 20,211자 | 6개 | 1건 (인프라설정) |
-| Opdata | [codyssey-workstation](https://github.com/Opdata/codyssey-workstation) | 2026-04-11 | 19,588자 | 8개 | 2건 (마크다운, 인프라설정) |
-| JungSaeYoung | [codyssey_E1-1](https://github.com/JungSaeYoung/codyssey_E1-1) | 2026-04-04 | 17,817자 | 11개 | 1건 (인프라설정) |
-| clae-dev | [ia-codyssey-Docker](https://github.com/clae-dev/ia-codyssey-Docker) | 2026-04-02 | 17,674자 | 18개 | 1건 (인프라설정) |
-| coding-monkey-326 | [codyssey-e1-1](https://github.com/coding-monkey-326/codyssey-e1-1) | 2026-03-31 | 17,258자 | 4개 | 1건 (인프라설정) |
-| jhkr1 | [Codyssey_mission1](https://github.com/jhkr1/Codyssey_mission1) | 2026-04-07 | 16,206자 | 10개 | 1건 (인프라설정) |
-| mackerel07 | [codyssey-workstation/assignment1](https://github.com/mackerel07/codyssey-workstation/tree/main/assignment1) | 2026-04-09 | 14,627자 | 3개 | 1건 (인프라설정) |
-| 0-hu | [codyssey-e1-1](https://github.com/0-hu/codyssey-e1-1) | 2026-04-06 | 13,870자 | 5개 | 3건 (마크다운, 인프라설정) |
-| waz6432 | [CodysseyE1-1](https://github.com/waz6432/CodysseyE1-1) | 2026-04-03 | 12,437자 | 3개 | 1건 (인프라설정) |
-| junhnno | [Codyssey_WorkSpace_Week1](https://github.com/junhnno/Codyssey_WorkSpace_Week1) | 2026-04-09 | 12,329자 | 4개 | 1건 (인프라설정) |
-| sungho255 | [codyssey_1](https://github.com/sungho255/codyssey_1) | 2026-04-07 | 12,027자 | 2개 | - |
-| sonjehyun123-maker | [Codyssey-w1-E1](https://github.com/sonjehyun123-maker/Codyssey-w1-E1) | 2026-04-03 | 10,846자 | 4개 | 1건 (인프라설정) |
-| js910 | [Codyssey-Assignments/Assignment-1-Docker](https://github.com/js910/Codyssey-Assignments/tree/main/Assignment-1-Docker) | 2026-04-10 | 7,689자 | 22개 | 2건 (인프라설정) |
-| kimch0612 | [Codyssey_Week1](https://github.com/kimch0612/Codyssey_Week1) | 2026-03-31 | 7,624자 | 15개 | 10건 (마크다운, 인프라설정) |
-| sourcreamsource | [codysseyWeekOne](https://github.com/sourcreamsource/codysseyWeekOne) | 2026-04-08 | 5,289자 | 48개 | 10건 (마크다운, 분석보고서, 인프라설정, 학습노트) |
-| codewhite7777 | [codyssey_E1-3](https://github.com/codewhite7777/codyssey_E1-3) | 2026-04-06 | 2,122자 | 3개 | - |
-| mulloc1 | [codyssey_workstation](https://github.com/mulloc1/codyssey_workstation) | 2026-03-31 | 2,092자 | 16개 | 10건 (마크다운, 인프라설정, 학습노트) |
-| dolphin1404 | [Codyssey_E_1_2](https://github.com/dolphin1404/Codyssey_E_1_2) | 2026-04-07 | 2,038자 | 5개 | - |
-| leehnmn | [codyssey_2026/project-1](https://github.com/leehnmn/codyssey_2026/tree/main/project-1) | 2026-04-08 | 2,029자 | 3개 | 1건 (인프라설정) |
-| I-nkamanda | [codyssey2026/Problem1_AI_SW_Setup](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup) | 2026-04-09 | 1,707자 | 49개 | 10건 (마크다운, 설정파일, 인프라설정) |
-| ikasoon | [codyssey-e1-1](https://github.com/ikasoon/codyssey-e1-1) | 2026-04-06 | 1,477자 | 12개 | 6건 (마크다운, 인프라설정, 학습노트) |
-| wilderif | [codyssey-e1-1](https://github.com/wilderif/codyssey-e1-1) | 2026-04-03 | 957자 | 32개 | 10건 (인프라설정, 학습노트) |
-| peachily | [codyssey11-E1](https://github.com/peachily/codyssey11-E1) | 2026-04-09 | 없음 | 41개 | 2건 (인프라설정) |
-| park-soo-hyeon | [codyssey/1week](https://github.com/park-soo-hyeon/codyssey/tree/main/1week) | 2026-04-12 | 없음 | 4개 | 1건 (분석보고서) |
-| dldnsgkr | [codyssey/problem_1](https://github.com/dldnsgkr/codyssey/tree/main/problem_1) | 2026-04-08 | 없음 | 2개 | - |
-| sebin1103 | [codyssey-mission/mission1](https://github.com/sebin1103/codyssey-mission/tree/main/mission1) | 2026-04-09 | 없음 | 4개 | 1건 (분석보고서) |
-| jyaniee | [codyssey-ai-sw/c01-p01-mission-log-analysis](https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p01-mission-log-analysis) | 2026-04-12 | 없음 | 5개 | 1건 (마크다운) |
-| gkrtod4477 | [codyssey-project/curriculum](https://github.com/gkrtod4477/codyssey-project/tree/main/curriculum) | 2026-04-09 | 없음 | 17개 | 1건 (분석보고서) |
-| gkrtod4477 | [codyssey-project/docker](https://github.com/gkrtod4477/codyssey-project/tree/main/docker) | 2026-04-09 | 없음 | 1개 | 1건 (인프라설정) |
-| gkrtod4477 | [codyssey-project/scripts](https://github.com/gkrtod4477/codyssey-project/tree/main/scripts) | 2026-04-09 | 없음 | 1개 | - |
-| 1anminJ | [Codyssey/essential-step-1](https://github.com/1anminJ/Codyssey/tree/main/essential-step-1) | 2026-04-09 | 없음 | 14개 | 2건 (마크다운, 분석보고서) |
-
-**이 주차 추가 자료 현황**: 
-
-- 인프라설정: 48건
-- 마크다운: 32건
-- 학습노트: 10건
-- 분석보고서: 9건
-- 설정파일: 3건
+#### 참여 수강생 및 자료
+| 수강생 | 레포 | 업데이트 | 추가 자료 |
+| --- | --- | --- | --- |
+| kimch0612 | [Codyssey_Week1](https://github.com/kimch0612/Codyssey_Week1) | 2026-03-31 | 마크다운, 인프라설정 |
+| sonjehyun123-maker | [Codyssey-w1-E1](https://github.com/sonjehyun123-maker/Codyssey-w1-E1) | 2026-04-03 | 인프라설정 |
+| mulloc1 | [codyssey_workstation](https://github.com/mulloc1/codyssey_workstation) | 2026-03-31 | 학습노트, 마크다운, 인프라설정 |
+| ntt65 | [codyssey/e1_1](https://github.com/ntt65/codyssey/tree/main/e1_1) | 2026-04-12 | 학습노트, 분석보고서, 마크다운, 인프라설정 |
+| codewhite7777 | [codyssey_E1-3](https://github.com/codewhite7777/codyssey_E1-3) | 2026-04-06 | - |
+| codewhite7777 | [codyssey_E-1](https://github.com/codewhite7777/codyssey_E-1) | 2026-03-30 | 인프라설정 |
+| mov-hyun | [e1-1-workstation-setup](https://github.com/mov-hyun/e1-1-workstation-setup) | 2026-04-05 | 인프라설정 |
+| jhkr1 | [Codyssey_mission1](https://github.com/jhkr1/Codyssey_mission1) | 2026-04-07 | 인프라설정 |
+| junhnno | [Codyssey_WorkSpace_Week1](https://github.com/junhnno/Codyssey_WorkSpace_Week1) | 2026-04-09 | 인프라설정 |
+| sungho255 | [codyssey_1](https://github.com/sungho255/codyssey_1) | 2026-04-07 | - |
+| yejoo0310 | [codyssey-m1](https://github.com/yejoo0310/codyssey-m1) | 2026-04-05 | 인프라설정 |
+| clae-dev | [ia-codyssey-Docker](https://github.com/clae-dev/ia-codyssey-Docker) | 2026-04-02 | 인프라설정 |
+| leehnmn | [codyssey_2026/project-1](https://github.com/leehnmn/codyssey_2026/tree/main/project-1) | 2026-04-08 | 인프라설정 |
+| I-nkamanda | [codyssey2026/Problem1_AI_SW_Setup](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup) | 2026-04-09 | 마크다운, 설정파일, 인프라설정 |
+| peachily | [codyssey11-E1](https://github.com/peachily/codyssey11-E1) | 2026-04-09 | 인프라설정 |
+| ikasoon | [codyssey-e1-1](https://github.com/ikasoon/codyssey-e1-1) | 2026-04-06 | 학습노트, 마크다운, 인프라설정 |
+| doji-kr | [codyssey_day1_bear1](https://github.com/doji-kr/codyssey_day1_bear1) | 2025-07-11 | 마크다운 |
 
 ---
 
-<a id="week-2"></a>
-## 2주차 과제
+### 2주차 과제 종합
 
-## Codyssey 2주차: 나만의 퀴즈 게임 개발
+## Codyssey 2주차 AI/SW 교육 과정 학습 문서: 나만의 퀴즈 게임
+
+본 문서는 Codyssey 프로그램 2주차 과제로 진행된 "나만의 퀴즈 게임" 프로젝트를 학습자가 완벽히 이해하고 내재화할 수 있도록 돕기 위해 작성되었습니다. 여러 수강생의 GitHub 레포지토리 정보를 종합하여 프로젝트의 개요, 목표, 요구사항, 핵심 기술, 구현 팁 등을 상세히 다룹니다.
+
+---
 
 ### 1. 미션 개요
-이번 주 과제는 Python의 기본 문법과 객체지향 프로그래밍 개념을 활용하여 사용자 정의 퀴즈 게임을 개발하는 것입니다. 실제 소프트웨어 개발에서 요구되는 기획, 구현, 테스트, 문서화 과정을 간접적으로 경험하며, 데이터를 영구적으로 저장하고 불러오는 파일 입출력 개념까지 익히는 것을 목표로 합니다.
+
+이번 2주차 미션은 Python을 활용하여 콘솔 기반의 퀴즈 게임을 개발하는 것입니다. 사용자는 퀴즈를 풀고, 새로운 퀴즈를 추가하며, 등록된 퀴즈 목록을 확인하고, 최고 점수를 조회하는 등 다양한 기능을 수행할 수 있습니다. 특히, 프로그램 종료 후에도 퀴즈 데이터와 최고 점수가 유지될 수 있도록 데이터를 파일에 저장하고 불러오는 기능을 구현해야 합니다. 이 과정을 통해 Python의 기본 문법, 객체지향 프로그래밍 개념, 파일 입출력, 예외 처리 등 AI/SW 개발에 필수적인 기초 역량을 다지는 것을 목표로 합니다.
+
+---
 
 ### 2. 학습 목표
-이 과제를 통해 다음 핵심 개념을 설명할 수 있어야 합니다.
 
-*   **객체지향 프로그래밍 (OOP)의 기본 원리**: 클래스, 객체, 인스턴스, `self`, `__init__` 메서드의 역할
-*   **데이터 구조화**: `list`와 `dict`를 활용한 데이터 관리 및 JSON 파일 입출력
-*   **파일 입출력**: 텍스트 파일 및 JSON 파일 읽기/쓰기 방법
-*   **예외 처리**: `try-except` 구문을 이용한 프로그램 안정성 확보
-*   **모듈화**: 함수와 클래스를 활용한 코드의 재사용성 및 가독성 향상
+*   **Python 기본 문법 심화:** 변수, 자료형, 조건문, 반복문, 함수, 클래스 등 Python의 핵심 문법을 실제 프로젝트에 적용하며 복습하고 이해도를 높입니다.
+*   **객체지향 프로그래밍(OOP) 이해:** `클래스`와 `객체`의 개념을 이해하고, `Quiz`와 `QuizGame`과 같이 관련된 데이터와 기능을 묶어 설계하는 경험을 쌓습니다. `__init__` 메서드와 `self`의 역할을 명확히 이해합니다.
+*   **파일 입출력 및 데이터 관리:** `JSON` 형식을 활용하여 데이터를 파일에 저장하고 불러오는 방법을 익힙니다. 프로그램 종료 후에도 데이터가 유지되는 경험을 통해 데이터 관리의 중요성을 인지합니다.
+*   **예외 처리:** `try-except` 구문을 사용하여 프로그램 실행 중 발생할 수 있는 오류(예: 잘못된 입력, 파일 손상)를 안전하게 처리하는 방법을 배웁니다.
+*   **모듈화 및 코드 구조화:** 관련 기능을 함수나 클래스로 분리하고, `main.py`, `quiz_app/game.py`, `quiz_app/models.py`와 같이 논리적인 파일 구조를 설계하는 연습을 합니다.
+*   **Git 활용:** Git의 기본적인 명령어(`init`, `add`, `commit`, `push`, `branch`, `checkout`, `merge` 등)를 사용하여 버전 관리 및 협업의 기초를 다집니다.
+
+---
 
 ### 3. 기능 요구사항
 
-#### 필수 기능
-*   [x] **메인 메뉴 제공**: 퀴즈 풀기, 퀴즈 추가, 퀴즈 목록 확인, 최고 점수 확인, 종료 등 기능 선택 메뉴
-*   [x] **퀴즈 풀기**: 저장된 퀴즈를 랜덤 순서로 출제하고 정답/오답 처리
-*   [x] **퀴즈 추가**: 사용자가 직접 문제, 선택지, 정답을 입력하여 퀴즈를 추가하는 기능
-*   [x] **퀴즈 목록 확인**: 현재 저장된 모든 퀴즈 목록을 출력하는 기능
-*   [x] **최고 점수 확인**: 퀴즈 풀이를 통해 얻은 최고 점수를 보여주는 기능
-*   [x] **데이터 영구 저장**: 프로그램 종료 후에도 퀴즈 데이터와 최고 점수가 유지되도록 파일에 저장 (JSON 형식 권장)
-*   [x] **데이터 불러오기**: 프로그램 시작 시 저장된 데이터를 불러와 게임 상태 복구
-*   [x] **잘못된 입력 처리**: 사용자의 잘못된 입력(숫자가 아닌 입력, 범위를 벗어난 입력 등)에 대한 예외 처리
-*   [x] **안전 종료**: `KeyboardInterrupt` (Ctrl+C) 및 `EOFError` (Ctrl+D) 발생 시 데이터를 저장하고 안전하게 프로그램 종료
+*   **메인 메뉴 제공:** 사용자가 게임을 시작할 때 선택할 수 있는 메뉴(퀴즈 풀기, 퀴즈 추가, 퀴즈 목록, 최고 점수 확인, 종료 등)를 제공합니다.
+*   **퀴즈 풀기:**
+    *   저장된 퀴즈 목록에서 문제를 랜덤으로 선택하여 출제합니다.
+    *   사용자는 선택지를 보고 답을 입력합니다.
+    *   정답 여부를 판별하고 점수를 누적합니다.
+    *   (선택 사항) 문제별 힌트 기능을 제공합니다.
+    *   (선택 사항) 출제될 문제 개수를 사용자가 선택할 수 있도록 합니다.
+    *   (선택 사항) 문제의 선택지 순서를 랜덤으로 섞습니다.
+*   **퀴즈 추가:** 사용자가 직접 새로운 퀴즈(문제, 선택지 4개, 정답 번호, (선택 사항) 힌트)를 입력하여 게임에 추가할 수 있어야 합니다.
+*   **퀴즈 목록 확인:** 현재 게임에 등록된 모든 퀴즈의 목록을 보여줍니다.
+*   **최고 점수 확인:** 게임 플레이를 통해 얻은 최고 점수와 해당 점수를 얻었을 때의 맞힌 문제 수, 전체 문제 수를 표시합니다.
+*   **데이터 저장 및 불러오기:**
+    *   퀴즈 데이터와 최고 점수 정보는 `state.json` 파일에 저장되어야 합니다.
+    *   프로그램 시작 시 `state.json` 파일이 존재하면 해당 데이터를 불러와 게임에 반영해야 합니다.
+    *   파일이 없거나 손상되었을 경우, 기본 퀴즈 데이터로 초기화하고 저장해야 합니다.
+*   **예외 처리:**
+    *   숫자 입력이 필요한 곳에 숫자가 아닌 값이 입력되었을 경우, 재입력을 요청하거나 오류 메시지를 출력합니다.
+    *   `Ctrl+C` 또는 `Ctrl+D`(`EOFError`)와 같은 키보드 인터럽트 시 안전하게 프로그램을 종료하고 데이터를 저장합니다.
+*   **Git 활용:** 프로젝트의 개발 과정에서 Git을 사용하여 코드 변경 이력을 관리하고, 필요하다면 브랜치 전략을 활용합니다.
 
-#### 보너스 기능 (선택 사항)
-*   [ ] 퀴즈 삭제 기능
-*   [ ] 퀴즈 문제의 보기 순서를 섞어서 출제하는 기능
-*   [ ] 힌트 기능 (예: 문제의 정답 선택지 하나를 보여주거나, 오답 하나를 제거)
-*   [ ] 점수 계산 로직 개선 (예: 힌트 사용 여부에 따라 점수 차등 지급)
-*   [ ] 퀴즈 카테고리 분류 기능
+---
 
 ### 4. 핵심 기술 스택
 
-| 기술        | 용도                                                                 | 핵심 명령어/개념                                                                                                |
-| :---------- | :------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
-| **Python**  | 프로그래밍 언어                                                      | 변수, 자료형 (int, str, list, dict, bool), 조건문 (if/elif/else), 반복문 (for/while), 함수, 클래스, 모듈           |
-| **OOP**     | 객체지향 프로그래밍                                                  | `class`, `object`, `instance`, `self`, `__init__`, 메서드, 속성                                                  |
-| **JSON**    | 데이터 직렬화/역직렬화                                               | `json` 모듈, `json.dump()`, `json.load()`, `dict`/`list` <-> JSON 변환                                         |
-| **File I/O**| 파일 읽기/쓰기                                                       | `open()`, `read()`, `write()`, `close()`, `with open(...) as f:` (자동 close)                                   |
-| **Error Handling** | 프로그램 오류 발생 시 대처                                           | `try`, `except`, `KeyboardInterrupt`, `EOFError`, `ValueError`, `IndexError`                                  |
-| **Git**     | 버전 관리 시스템                                                     | `git init`, `git add`, `git commit`, `git push`, `git pull`, `git branch`, `git checkout`, `git merge`        |
+*   **프로그래밍 언어:** Python 3.10 이상 권장
+*   **주요 라이브러리:** Python 표준 라이브러리 (별도의 외부 라이브러리 설치 없이 구현 가능)
+    *   `json`: JSON 데이터 처리
+    *   `random`: 문제 랜덤 선택, 선택지 섞기 등
+    *   `os`: (선택 사항) 파일 경로 관리 등
+*   **데이터 저장 형식:** JSON (`state.json`)
+*   **버전 관리:** Git
+
+---
 
 ### 5. 권장 프로젝트 구조
 
-수강생들의 레포지토리를 종합하여 제안하는 이상적인 프로젝트 구조는 다음과 같습니다.
+수강생들의 레포지토리를 종합하여 다음과 같은 프로젝트 구조를 권장합니다.
 
-```text
-my_quiz_game/
-├── .gitignore          # Git에서 무시할 파일 목록
-├── README.md           # 프로젝트 설명, 사용법, 학습 내용 정리
-├── main.py             # 프로그램 실행 진입점, QuizGame 객체 생성 및 실행
-├── state.json          # 퀴즈 데이터 및 최고 점수 저장 파일
-├── src/                # 소스 코드 디렉토리
-│   ├── __init__.py     # src 디렉토리를 Python 패키지로 인식
-│   ├── quiz.py         # 퀴즈 문제 하나를 표현하는 Quiz 클래스 정의
-│   ├── quiz_game.py    # 게임 전체 로직을 관리하는 QuizGame 클래스 정의
-│   └── utils.py        # 입력 검증, 랜덤 처리 등 보조 함수 정의 (선택 사항)
-└── docs/               # (선택 사항) 스크린샷, 설계 문서 등
+```
+your_repository_name/
+├── .gitignore         # Git 추적에서 제외할 파일 목록
+├── README.md          # 프로젝트 설명 및 학습 내용 기록
+├── main.py            # 프로그램 실행 진입점
+├── quiz_app/          # 퀴즈 게임 관련 모듈을 담는 패키지
+│   ├── __init__.py    # 패키지 초기화 파일
+│   ├── models.py      # 데이터 모델 (예: Quiz 클래스)
+│   ├── game.py        # 게임 로직 관리 (예: QuizGame 클래스)
+│   └── utils.py       # (선택 사항) 범용 유틸리티 함수 (예: 입력 처리)
+└── state.json         # 퀴즈 데이터 및 최고 점수 저장 파일
+└── docs/              # (선택 사항) 스크린샷, 문서 등
     └── screenshots/
 ```
 
-**구조 설명:**
-*   `main.py`: 프로그램의 시작점 역할을 하며, `QuizGame` 객체를 생성하고 게임 루프를 시작합니다.
-*   `src/` 디렉토리: 관련 소스 코드를 모아 관리하여 코드의 체계성을 높입니다.
-    *   `quiz.py`: 퀴즈 문제의 속성(질문, 선택지, 정답)과 관련 동작(출력, 정답 확인)을 캡슐화하는 `Quiz` 클래스를 정의합니다.
-    *   `quiz_game.py`: 게임의 전반적인 흐름(메뉴, 퀴즈 풀이, 추가, 저장/불러오기 등)을 관리하는 `QuizGame` 클래스를 정의합니다.
-    *   `utils.py` (선택 사항): 반복적으로 사용되는 입력값 검증 함수나 기타 유틸리티 함수를 모아두어 `quiz_game.py`의 가독성을 높일 수 있습니다.
-*   `state.json`: 프로그램의 상태(퀴즈 목록, 최고 점수 등)를 저장하여 영속성을 확보합니다.
+*   **`main.py`**: 프로그램의 시작점으로서 `QuizGame` 객체를 생성하고 게임 실행(`run()`)을 담당합니다. 예외 처리를 위한 `try-except` 블록을 포함하는 것이 좋습니다.
+*   **`quiz_app/` 패키지**:
+    *   **`models.py`**: 퀴즈 문제 자체를 나타내는 `Quiz` 클래스 등 데이터 구조를 정의합니다.
+    *   **`game.py`**: 게임 전체의 흐름을 관리하는 `QuizGame` 클래스를 정의합니다. 메뉴 표시, 퀴즈 진행, 데이터 로드/저장, 퀴즈 추가/삭제 등의 로직을 포함합니다.
+    *   **`utils.py`**: (선택 사항) 사용자 입력 처리, 메뉴 출력 등 반복적으로 사용되는 함수들을 모아놓는 곳입니다.
+*   **`state.json`**: JSON 형식으로 퀴즈 목록(`quizzes` 배열)과 최고 점수(`best_score`, `best_correct_count`, `best_total_count` 등)를 저장합니다.
+
+---
 
 ### 6. 구현 핵심 포인트
 
-1.  **`Quiz` 클래스와 `QuizGame` 클래스의 분리**:
-    *   **중요성**: 객체지향 프로그래밍의 핵심은 '응집성'과 '결합도'입니다. 퀴즈 문제 자체의 데이터와 동작(문제 출력, 정답 확인)은 `Quiz` 클래스에, 게임 전체의 흐름, 데이터 관리, 상태 유지(최고 점수) 등은 `QuizGame` 클래스에 분리하여 각 클래스가 하나의 책임만 가지도록 하는 것이 중요합니다. 이는 코드의 가독성을 높이고 유지보수를 용이하게 합니다.
-    *   **접근 방법**: `Quiz` 클래스는 `question`, `choices`, `answer`와 같은 속성을 가집니다. `QuizGame` 클래스는 `Quiz` 객체들의 리스트(`quizzes`)와 `best_score`와 같은 속성을 가지며, `Quiz` 객체를 생성하거나 `Quiz` 객체들과 상호작용하는 메서드(`play_quiz`, `add_quiz` 등)를 구현합니다.
+#### 6.1 데이터 모델링 (`models.py`)
 
-2.  **JSON 파일 입출력을 통한 데이터 영속성 확보**:
-    *   **중요성**: 게임을 종료해도 데이터가 사라지지 않고 다시 실행했을 때 그대로 유지되도록 하려면 데이터를 파일에 저장해야 합니다. JSON은 Python의 `dict`와 `list` 구조를 그대로 표현할 수 있어 Python 데이터 구조를 저장하고 불러오기에 매우 편리하고 직관적입니다.
-    *   **접근 방법**: `json` 모듈을 사용합니다.
-        *   **저장**: `QuizGame` 클래스 내에 `save_state()` 메서드를 구현합니다. `self.quizzes` 리스트를 딕셔너리 리스트로 변환하고, `best_score`와 함께 딕셔너리로 묶어 `json.dump()` 함수를 사용하여 `state.json` 파일에 `indent=4` 옵션을 주어 사람이 읽기 쉽게 저장합니다.
-        *   **불러오기**: `QuizGame` 클래스의 `__init__` 메서드나 별도의 `load_state()` 메서드에서 `try-except` 블록을 사용하여 `state.json` 파일을 엽니다. `json.load()` 함수로 데이터를 읽어와 `Quiz` 객체 리스트와 `best_score`를 복원합니다. 파일이 없거나 손상된 경우를 대비하여 기본 데이터로 초기화하는 로직도 포함해야 합니다.
+*   **`Quiz` 클래스:**
+    *   **속성:** `question` (str), `choices` (list of str), `answer` (int, 1-based index).
+    *   **메서드:**
+        *   `display()`: 문제와 선택지를 보기 좋게 출력합니다.
+        *   `is_correct(user_answer)`: 사용자가 입력한 답과 실제 정답을 비교하여 boolean 값을 반환합니다.
+        *   `to_dict()`: `Quiz` 객체를 JSON 저장을 위한 딕셔너리 형태로 변환합니다.
+        *   `from_dict(data)`: 딕셔너리 데이터를 받아 `Quiz` 객체를 생성합니다. (클래스 메서드 또는 별도 함수로 구현)
 
-3.  **예외 처리 (`try-except`) 를 통한 프로그램 안정성 강화**:
-    *   **중요성**: 사용자의 예상치 못한 입력(문자열 입력, 범위 초과 등)이나 파일 접근 오류, JSON 파싱 오류 등은 프로그램 비정상 종료를 유발할 수 있습니다. `try-except` 구문을 적절히 사용하면 이러한 오류 발생 시 프로그램을 즉시 종료하는 대신, 오류를 감지하고 사용자에게 알리거나 복구하는 등의 처리를 할 수 있어 프로그램의 안정성과 사용자 경험을 크게 향상시킵니다.
-    *   **접근 방법**:
-        *   **입력 처리**: `input()`으로 받은 문자열을 `int()`로 변환할 때 `ValueError`를 처리합니다. 메뉴 선택이나 정답 입력 시 유효 범위(예: 1~4)를 벗어나는 경우 `IndexError` 또는 사용자 정의 예외를 발생시키거나 `while` 루프를 통해 재입력을 유도합니다.
-        *   **파일/JSON 처리**: `state.json` 파일을 열 때 `FileNotFoundError`를 처리하고, `json.load()` 시 `json.JSONDecodeError` (파일 손상 등)를 처리합니다.
-        *   **프로그램 종료**: `main.py` 파일에서 `game.run()` 호출 부분을 `try-except (KeyboardInterrupt, EOFError)`로 감싸 안전 종료 시 `game.save()`를 호출하도록 합니다.
+#### 6.2 게임 로직 (`game.py`)
+
+*   **`QuizGame` 클래스:**
+    *   **속성:** `quizzes` (list of Quiz objects), `best_score` (int), `best_correct_count` (int), `best_total_count` (int), `state_path` (str).
+    *   **메서드:**
+        *   `__init__()`: `quizzes` 리스트와 `best_score` 등을 초기화하고, `load_state()`를 호출하여 데이터를 불러옵니다.
+        *   `load_state()`: `state.json` 파일을 읽어 퀴즈 데이터와 최고 점수를 불러옵니다. 파일이 없거나 오류 발생 시 `_initialize_data()`를 호출합니다.
+        *   `save_state()`: 현재 `quizzes` 리스트와 `best_score` 등을 `state.json` 파일에 저장합니다. `Quiz` 객체를 딕셔너리 리스트로 변환하는 과정이 필요합니다.
+        *   `_initialize_data()`: 프로그램 시작 시 기본 퀴즈 데이터를 설정하고 `state.json`에 저장합니다.
+        *   `run()`: 메인 메뉴를 반복적으로 보여주고 사용자 입력을 받아 해당 기능을 실행합니다.
+        *   `show_menu()`: 메뉴 옵션을 출력합니다.
+        *   `play_quiz()`: 퀴즈 풀이 로직을 담당합니다. `random.sample`로 문제 선택, `Quiz.display()` 호출, 사용자 입력 처리, `Quiz.is_correct()`로 정답 판별, 점수 계산 및 최고 점수 갱신 등의 과정을 수행합니다.
+        *   `add_quiz()`: 사용자로부터 새로운 퀴즈 정보를 입력받아 `Quiz` 객체를 생성하고 `quizzes` 리스트에 추가합니다.
+        *   `show_quiz_list()`: `quizzes` 리스트를 순회하며 모든 퀴즈를 출력합니다.
+        *   `show_best_score()`: 저장된 최고 점수 정보를 출력합니다.
+        *   `delete_quiz()`: (선택 사항) 사용자가 추가한 퀴즈를 삭제하는 기능을 구현합니다.
+        *   `prompt_number(prompt_message, min_val, max_val)`: (utils.py 또는 game.py) 숫자 입력을 받고 유효성을 검사하는 함수. 잘못된 입력 시 재시도하도록 합니다.
+        *   `prompt_text(prompt_message)`: (utils.py 또는 game.py) 문자열 입력을 받는 함수.
+
+#### 6.3 데이터 관리
+
+*   **JSON 활용:**
+    *   `state.json` 파일은 다음과 같은 구조를 가집니다.
+    ```json
+    {
+      "quizzes": [
+        {
+          "question": "파이썬의 창시자는 누구인가요?",
+          "choices": ["귀도 반 로섬", "리누스 토르발스", "제임스 고슬링", "브렌던 아이크"],
+          "answer": 1
+        },
+        // ... 다른 퀴즈들
+      ],
+      "best_score": 10,
+      "best_correct_count": 5,
+      "best_total_count": 5
+    }
+    ```
+    *   `load_state()`에서는 `json.load()`를, `save_state()`에서는 `json.dump()`를 사용합니다.
+
+#### 6.4 예외 처리
+
+*   **숫자 입력:** `prompt_number`와 같은 함수 내에서 `try-except ValueError`를 사용하여 `int()` 변환 오류를 처리합니다.
+*   **프로그램 종료:** `main.py`에서 `try-except (KeyboardInterrupt, EOFError)`를 사용하여 `Ctrl+C`나 `Ctrl+D` 입력 시 `game.save_state()`를 호출하고 안전하게 종료합니다.
+*   **파일/JSON 오류:** `load_state()`에서 `try-except (FileNotFoundError, json.JSONDecodeError)` 등을 사용하여 파일이 없거나 JSON 형식이 잘못되었을 경우를 처리하고 `_initialize_data()`를 호출합니다.
+
+---
 
 ### 7. 트러블슈팅 & 팁
 
-*   **JSON 파일이 없거나 손상되었을 때**:
-    *   **문제**: 프로그램 시작 시 `state.json` 파일을 찾지 못하거나, 파일 내용이 JSON 형식이 아닐 경우 `FileNotFoundError` 또는 `json.JSONDecodeError`가 발생하며 프로그램이 종료됩니다.
-    *   **해결/팁**: `load_state()` 메서드 내에서 `try-except` 블록을 사용하여 파일이 없을 경우 `FileNotFoundError`를 잡고, 기본 퀴즈 데이터를 생성하여 `self.quizzes`를 초기화하고 `save_state()`를 호출하여 `state.json` 파일을 생성합니다. 파일 내용이 손상되었을 경우 `json.JSONDecodeError`를 잡고 동일하게 처리합니다.
-    *   **예시 코드**:
-        ```python
-        import json
-        import os
+*   **정답 인덱스 처리:**
+    *   사용자 입력은 보통 1부터 시작하지만, Python 리스트 인덱스는 0부터 시작합니다. 정답 저장 시 0-based index로 저장하고, 사용자에게 보여줄 때는 1-based index로 변환하거나, 반대로 사용자 입력(1-based)을 받아 1을 빼서 0-based index로 처리하는 일관된 규칙을 정하는 것이 중요합니다. (jhkr1 수강생은 1-based index로 저장 후 `is_correct` 등에서 활용)
+*   **데이터 로드/저장 시 객체와 딕셔너리 변환:**
+    *   `Quiz` 객체를 `state.json`에 직접 저장할 수 없습니다. `save_state()` 메서드에서 `quizzes` 리스트의 각 `Quiz` 객체를 `to_dict()` 메서드를 통해 딕셔너리 형태로 변환한 후 JSON으로 저장해야 합니다.
+    *   `load_state()`에서는 JSON에서 읽어온 딕셔너리 리스트를 다시 `Quiz` 객체 리스트로 복원하는 과정이 필요합니다. `Quiz.from_dict()` 클래스 메서드를 활용하거나, 딕셔너리 데이터를 받아 `Quiz` 객체를 생성하는 별도의 함수를 사용할 수 있습니다.
+*   **랜덤 기능 활용:**
+    *   `random.shuffle(list)`: 리스트의 요소를 무작위로 섞습니다. (예: 선택지 순서 섞기)
+    *   `random.sample(population, k)`: 주어진 시퀀스에서 중복 없이 `k`개의 요소를 무작위로 선택합니다. (예: 퀴즈 풀이 시 문제 N개 선택)
+*   **메서드 vs 함수:**
+    *   "하나의 독립적인 동작"은 함수로, "특정 객체의 상태와 연관된 동작"은 해당 객체의 메서드로 구현하는 것이 객체지향 설계 원칙에 부합합니다. (jhkr1 수강생의 README 참고)
+*   **README의 중요성:**
+    *   자신의 코드와 학습 내용을 README에 상세히 기록하는 것은 매우 중요합니다. "왜 이렇게 구현했는지", "어떤 Python 개념을 이해했는지" 등을 기록하며 스스로 복습하고, 다른 사람에게 코드를 설명하는 좋은 연습이 됩니다. (jhkr1, sonjehyun123-maker, mov-hyun 수강생 모두 README를 잘 작성했습니다.)
+*   **Git 브랜치 활용:**
+    *   기능별로 새로운 브랜치를 만들어 작업하고, 완료 후 `main` 또는 `master` 브랜치에 병합하는 워크플로우는 코드의 안정성을 높이고 충돌을 줄이는 데 도움이 됩니다. (mov-hyun 수강생의 README 참고)
 
-        def load_state(self):
-            try:
-                if os.path.exists(self.state_path):
-                    with open(self.state_path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                        self.quizzes = [Quiz.from_dict(q_dict) for q_dict in data.get("quizzes", [])]
-                        self.best_score = data.get("best_score", 0)
-                else:
-                    self._initialize_default_data() # 파일이 없을 경우 기본 데이터 로드
-            except (FileNotFoundError, json.JSONDecodeError):
-                print("데이터 파일을 불러오는 중 오류가 발생했습니다. 기본 데이터로 초기화합니다.")
-                self._initialize_default_data() # 오류 발생 시 기본 데이터로 초기화
-        ```
-
-*   **`self` 참조 오류**:
-    *   **문제**: 클래스 메서드 내에서 `self.attribute`나 `self.method()`를 호출했는데 `AttributeError`가 발생하는 경우.
-    *   **해결/팁**: 해당 메서드가 제대로 `__init__`에서 인스턴스 변수로 초기화되었는지, 그리고 메서드 정의 시 `self`를 첫 번째 인자로 제대로 받았는지 확인하세요. `self`는 클래스 내부에서 인스턴스 자신을 참조하는 약속된 이름입니다.
-
-*   **퀴즈 추가 시 정답 입력 오류**:
-    *   **문제**: 사용자가 정답 번호를 잘못 입력하거나(예: 1~4 외의 숫자, 문자), 퀴즈의 선택지 개수와 다른 번호를 입력하는 경우.
-    *   **해결/팁**: `quiz_game.py`의 `add_quiz` 메서드 또는 별도의 입력 함수(`utils.py` 등)에서 입력받은 정답 번호가 1부터 `len(choices)` 범위 내에 있는지 확인하는 로직을 추가합니다. `try-except ValueError`를 사용하여 정수로 변환 가능한지 먼저 검사하는 것이 좋습니다.
-
-*   **데이터 저장 순서**:
-    *   **문제**: 게임 도중 `save_state()`를 호출하면 현재 상태가 즉시 저장되어야 하는데, 특정 기능 이후에 호출되지 않아 데이터가 유실되는 경우.
-    *   **해결/팁**: 퀴즈를 풀고 점수가 갱신되거나, 퀴즈가 추가/삭제되었을 때 `save_state()` 메서드를 호출하여 변경된 내용을 즉시 파일에 저장하도록 설계해야 합니다. `main.py`에서 `game.run()` 호출 후 `try-except`로 감싸 안전 종료 시에도 `save()`를 호출하는 것이 중요합니다.
-
-*   **가독성을 위한 코드 분리**:
-    *   **팁**: `quiz_game.py` 파일이 너무 길어진다면, 사용자 입력 값을 검증하는 함수(`get_int_input`, `get_string_input` 등)를 `utils.py` 파일로 분리하여 `quiz_game.py`에서 임포트하여 사용하는 것을 고려해보세요. 이는 `quiz_game.py`의 부담을 줄여주고 코드 관리를 용이하게 합니다.
-
-*   **Git 활용**:
-    *   **팁**: 기능 개발마다 `git branch`를 생성하고, 각 기능을 완료할 때마다 `git add`, `git commit`을 사용하여 변경 이력을 명확하게 기록하세요. `git log --oneline --graph` 명령어를 통해 브랜치 병합 과정을 시각적으로 확인하는 습관을 들이면 좋습니다.
+---
 
 ### 8. 추가 학습 자료
 
-*   **Python 공식 문서**:
-    *   [Classes](https://docs.python.org/ko/3/tutorial/classes.html): Python 클래스에 대한 자세한 설명
-    *   [Input and Output](https://docs.python.org/ko/3/tutorial/inputoutput.html): 파일 입출력 및 표준 입출력에 대한 설명
-    *   [Errors and Exceptions](https://docs.python.org/ko/3/tutorial/errors.html): Python 예외 처리에 대한 설명
-    *   [JSON encoder and decoder](https://docs.python.org/ko/3/library/json.html): Python의 `json` 모듈 공식 문서
-
-*   **JSON 형식**:
-    *   [JSON (JavaScript Object Notation)](https://www.json.org/json-en.html): JSON 형식의 공식 소개 페이지
-
-*   **Git 학습**:
-    *   [Git 공식 문서](https://git-scm.com/doc): Git 명령어 및 사용법에 대한 모든 정보
-    *   [ 생활코딩 Git강좌](https://opentutorials.org/course/1750): Git을 처음 접하는 학습자를 위한 쉽고 친절한 무료 강좌
-
----
-
-### 참고 레포 목록 (36명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| jhkr1 | [Codyssey_mission2](https://github.com/jhkr1/Codyssey_mission2) | 2026-04-11 | 21,412자 | 13개 | - |
-| sonjehyun123-maker | [Codyssey-w1-E2](https://github.com/sonjehyun123-maker/Codyssey-w1-E2) | 2026-04-10 | 14,548자 | 14개 | - |
-| mov-hyun | [e1-2-python-basics-quiz-game](https://github.com/mov-hyun/e1-2-python-basics-quiz-game) | 2026-04-12 | 14,272자 | 6개 | - |
-| junhnno | [Codyssey_WorkSpace_Week2](https://github.com/junhnno/Codyssey_WorkSpace_Week2) | 2026-04-11 | 13,221자 | 13개 | - |
-| kimch0612 | [Codyssey_Week2](https://github.com/kimch0612/Codyssey_Week2) | 2026-04-01 | 12,248자 | 15개 | 1건 (마크다운) |
-| sourcreamsource | [codysseyWeekTwo](https://github.com/sourcreamsource/codysseyWeekTwo) | 2026-04-12 | 10,463자 | 33개 | 3건 (마크다운, 분석보고서) |
-| JungSaeYoung | [codyssey_E1-2](https://github.com/JungSaeYoung/codyssey_E1-2) | 2026-04-06 | 9,957자 | 8개 | - |
-| mulloc1 | [codyssey_first_python](https://github.com/mulloc1/codyssey_first_python) | 2026-04-06 | 8,903자 | 17개 | 5건 (마크다운, 학습노트) |
-| clae-dev | [ia-codyssey-Python](https://github.com/clae-dev/ia-codyssey-Python) | 2026-04-08 | 7,552자 | 12개 | 2건 (마크다운) |
-| sangwoo-codyssey | [02-git-python-first-steps](https://github.com/sangwoo-codyssey/02-git-python-first-steps) | 2026-04-03 | 6,925자 | 18개 | 1건 (인프라설정) |
-| xifoxy-ru | [codyssey_week_02](https://github.com/xifoxy-ru/codyssey_week_02) | 2026-04-12 | 6,861자 | 8개 | - |
-| jhj9109 | [codyssey2](https://github.com/jhj9109/codyssey2) | 2026-04-07 | 6,685자 | 20개 | - |
-| 0-hu | [codyssey-e1-2](https://github.com/0-hu/codyssey-e1-2) | 2026-04-07 | 5,469자 | 10개 | 1건 (마크다운) |
-| coding-monkey-326 | [codyssey-e1-2](https://github.com/coding-monkey-326/codyssey-e1-2) | 2026-04-09 | 4,052자 | 10개 | - |
-| mulloc1 | [codyssey_python_with_npu](https://github.com/mulloc1/codyssey_python_with_npu) | 2026-04-12 | 3,917자 | 45개 | 10건 (마크다운, 학습노트) |
-| leehnmn | [codyssey_2026/project-2](https://github.com/leehnmn/codyssey_2026/tree/main/project-2) | 2026-04-08 | 3,830자 | 7개 | - |
-| yejoo0310 | [codyssey-m2](https://github.com/yejoo0310/codyssey-m2) | 2026-04-10 | 3,675자 | 32개 | 4건 (마크다운) |
-| LimJongHan | [Codyssey-E1-2](https://github.com/LimJongHan/Codyssey-E1-2) | 2026-04-09 | 3,384자 | 15개 | - |
-| yeowon083 | [quiz-game](https://github.com/yeowon083/quiz-game) | 2026-04-12 | 3,154자 | 11개 | - |
-| js910 | [Codyssey-Assignments/Assignment-2-Python](https://github.com/js910/Codyssey-Assignments/tree/main/Assignment-2-Python) | 2026-04-10 | 3,067자 | 13개 | - |
-| whitecy01 | [codyssey2](https://github.com/whitecy01/codyssey2) | 2026-04-08 | 3,062자 | 13개 | - |
-| wilderif | [codyssey-e1-2](https://github.com/wilderif/codyssey-e1-2) | 2026-04-07 | 2,229자 | 21개 | 1건 (인프라설정) |
-| waz6432 | [CodysseyE1-2](https://github.com/waz6432/CodysseyE1-2) | 2026-04-08 | 1,700자 | 14개 | - |
-| mackerel07 | [codyssey-workstation/assignment2](https://github.com/mackerel07/codyssey-workstation/tree/main/assignment2) | 2026-04-09 | 1,107자 | 4개 | - |
-| codewhite7777 | [codyssey_E-2](https://github.com/codewhite7777/codyssey_E-2) | 2026-04-02 | 1,032자 | 14개 | - |
-| Opdata | [codyssey-python-with-git](https://github.com/Opdata/codyssey-python-with-git) | 2026-04-11 | 308자 | 9개 | 1건 (마크다운) |
-| I-nkamanda | [codyssey2026/Problem2_Python_with_git](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git) | 2026-04-09 | 158자 | 2개 | 1건 (마크다운) |
-| yacheahobbang | [codyssey-E1-2](https://github.com/yacheahobbang/codyssey-E1-2) | 2026-04-08 | 125자 | 3개 | - |
-| sungho255 | [codyssey_2](https://github.com/sungho255/codyssey_2) | 2026-04-07 | 28자 | 2개 | - |
-| whdals006 | [Codyssey_E1-2](https://github.com/whdals006/Codyssey_E1-2) | 2026-04-07 | 없음 | 0개 | - |
-| park-soo-hyeon | [codyssey/2week](https://github.com/park-soo-hyeon/codyssey/tree/main/2week) | 2026-04-12 | 없음 | 4개 | - |
-| dldnsgkr | [codyssey/problem_2](https://github.com/dldnsgkr/codyssey/tree/main/problem_2) | 2026-04-08 | 없음 | 5개 | - |
-| ntt65 | [codyssey/e1_2](https://github.com/ntt65/codyssey/tree/main/e1_2) | 2026-04-12 | 없음 | 10개 | 3건 (마크다운) |
-| kwonhee1 | [ia-codyssey/2week](https://github.com/kwonhee1/ia-codyssey/tree/main/2week) | 2026-04-09 | 없음 | 5개 | 1건 (마크다운) |
-| kwung0206 | [ia-codyssey/mars_mission2](https://github.com/kwung0206/ia-codyssey/tree/main/mars_mission2) | 2026-04-09 | 없음 | 1개 | - |
-| sebin1103 | [codyssey-mission/mission2](https://github.com/sebin1103/codyssey-mission/tree/main/mission2) | 2026-04-09 | 없음 | 5개 | 1건 (마크다운) |
-
-**이 주차 추가 자료 현황**: 
-
-- 마크다운: 21건
-- 학습노트: 11건
-- 인프라설정: 2건
-- 분석보고서: 1건
+*   **Python 공식 문서:**
+    *   [JSON encoding and decoding](https://docs.python.org/ko/3/library/json.html)
+    *   [random — Pseudo-random number generator algorithms](https://docs.python.org/ko/3/library/random.html)
+*   **객체지향 프로그래밍 (OOP) 개념:**
+    *   [점프 투 파이썬 - 클래스와 객체](https://wikidocs.net/28)
+    *   [Real Python - Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
+*   **Git 학습:**
+    *   [Pro Git Book (한국어 번역판)](https://git-scm.com/book/ko/v2)
+    *   [생활코딩 - Git & GitHub](https://opentutorials.org/course/1653)
+*   **JSON 형식:**
+    *   [MDN Web Docs - JSON](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ---
 
-<a id="week-3"></a>
-## 3주차 과제
+본 학습 문서를 통해 2주차 미션에 대한 깊이 있는 이해를 얻으시길 바랍니다. 프로젝트를 완성하며 얻은 지식과 경험은 향후 AI/SW 개발 학습의 훌륭한 밑거름이 될 것입니다.
 
-## Codyssey AI/SW 교육 과정 - 3주차: Mini NPU Simulator 학습 문서
+#### 참여 수강생 및 자료
+| 수강생 | 레포 | 업데이트 | 추가 자료 |
+| --- | --- | --- | --- |
+| kimch0612 | [Codyssey_Week2](https://github.com/kimch0612/Codyssey_Week2) | 2026-04-01 | 마크다운 |
+| sonjehyun123-maker | [Codyssey-w1-E2](https://github.com/sonjehyun123-maker/Codyssey-w1-E2) | 2026-04-10 | - |
+| mulloc1 | [codyssey_first_python](https://github.com/mulloc1/codyssey_first_python) | 2026-04-06 | 학습노트, 마크다운 |
+| ntt65 | [codyssey/e1_2](https://github.com/ntt65/codyssey/tree/main/e1_2) | 2026-04-12 | 마크다운 |
+| codewhite7777 | [codyssey_E-2](https://github.com/codewhite7777/codyssey_E-2) | 2026-04-02 | - |
+| mov-hyun | [e1-2-python-basics-quiz-game](https://github.com/mov-hyun/e1-2-python-basics-quiz-game) | 2026-04-12 | - |
+| yeowon083 | [quiz-game](https://github.com/yeowon083/quiz-game) | 2026-04-12 | - |
+| jhkr1 | [Codyssey_mission2](https://github.com/jhkr1/Codyssey_mission2) | 2026-04-11 | - |
+| junhnno | [Codyssey_WorkSpace_Week2](https://github.com/junhnno/Codyssey_WorkSpace_Week2) | 2026-04-11 | - |
+| sungho255 | [codyssey_2](https://github.com/sungho255/codyssey_2) | 2026-04-07 | - |
+| yejoo0310 | [codyssey-m2](https://github.com/yejoo0310/codyssey-m2) | 2026-04-10 | 마크다운 |
+| yejibaek12 | [Python-Quiz-Game](https://github.com/yejibaek12/Python-Quiz-Game) | 2026-04-11 | - |
+| clae-dev | [ia-codyssey-Python](https://github.com/clae-dev/ia-codyssey-Python) | 2026-04-08 | 마크다운 |
+| leehnmn | [codyssey_2026/project-2](https://github.com/leehnmn/codyssey_2026/tree/main/project-2) | 2026-04-08 | - |
+| I-nkamanda | [codyssey2026/Problem2_Python_with_git](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git) | 2026-04-09 | 마크다운 |
+
+---
+
+### 3주차 과제 종합
+
+## Codyssey 3주차 과제 학습 문서: Mini NPU Simulator
 
 ### 1. 미션 개요
 
-본 주차 과제는 컴퓨터 비전 및 딥러닝 분야의 근간이 되는 **MAC(Multiply-Accumulate) 연산**을 직접 구현하고 시뮬레이션함으로써, 추상적인 AI 모델이 실제로는 어떤 기초 연산들로 이루어지는지 체험하는 것을 목표로 합니다. 이를 통해 패턴 인식의 기본 원리를 이해하고, 실무에서 AI 모델의 연산 효율성과 성능 분석의 중요성을 체감할 수 있습니다.
+본 미션은 사람이 시각적으로 인식하는 '십자가(Cross)'와 'X' 패턴을 컴퓨터가 숫자 연산을 통해 판별하는 원리를 구현해보는 **Python 콘솔 애플리케이션** 개발입니다. 단순한 패턴 인식이 아닌, **2차원 배열, 필터, MAC(Multiply-Accumulate) 연산, 라벨 정규화, 부동소수점 비교 정책, 시간 복잡도 분석** 등 AI/SW의 근간을 이루는 핵심 개념들을 직접 코드로 구현하고 이해하는 것을 목표로 합니다.
 
 ### 2. 학습 목표
 
-이 과제를 완료하면 다음 핵심 개념들을 설명할 수 있어야 합니다.
+이 과제를 성공적으로 완료하고 내재화했다면, 다음 내용을 스스로 설명하고 적용할 수 있어야 합니다.
 
-*   **MAC 연산의 정의 및 역할:** Multiply-Accumulate 연산이 무엇이며, 신호 처리 및 딥러닝에서 왜 중요한지 설명할 수 있습니다.
-*   **패턴 인식의 기본 원리:** 필터(Filter)와 입력 패턴 간의 MAC 연산을 통해 유사도를 측정하고 패턴을 판별하는 과정을 설명할 수 있습니다.
-*   **`data.json` 스키마 이해:** JSON 파일 내 데이터 구조, 키 규칙, 라벨 규칙을 해석하고 프로그램이 이를 어떻게 활용하는지 설명할 수 있습니다.
-*   **라벨 정규화의 필요성:** 다양한 형태의 라벨(예: `+`, `cross`, `x`)을 일관된 내부 표현(`Cross`, `X`)으로 변환하는 이유와 방법을 설명할 수 있습니다.
-*   **부동소수점 비교 정책:** MAC 연산 결과의 미세한 오차를 고려하여 동점(Undecided)을 처리하는 `epsilon` 기반 비교 방식의 필요성을 설명할 수 있습니다.
+1.  **MAC 연산의 정의 및 원리**: Multiply-Accumulate 연산이 무엇이며, 입력 패턴과 필터를 곱하고 더해 유사도를 구하는 과정을 설명할 수 있습니다.
+2.  **데이터 형식 이해**: `data.json` 파일의 키 규칙(필터, 패턴)과 라벨 규칙을 해석할 수 있습니다.
+3.  **라벨 정규화의 필요성**: 왜 라벨 정규화 과정이 필요한지, 그리고 이를 통해 얻는 이점을 설명할 수 있습니다.
+4.  **부동소수점 비교 정책**: `epsilon` 기반 비교가 왜 필요한지, 그리고 동점(tie) 상황을 어떻게 처리하는지 이해할 수 있습니다.
+5.  **시간 복잡도 분석**: 패턴 크기가 커질수록 연산량(`O(N^2)`)이 왜 증가하는지, 그리고 이는 실제 AI 하드웨어(NPU)의 동작 원리와 어떻게 연결되는지 설명할 수 있습니다.
+6.  **실패 케이스 진단**: 프로그램 실행 중 발생하는 실패를 데이터 문제, 스키마 문제, 로직 문제, 수치 비교 문제 등으로 분류하고 진단할 수 있습니다.
 
 ### 3. 기능 요구사항
 
-#### 필수 구현
-
-*   [x] **MAC 연산 함수 구현:** 두 N×N 2차원 배열을 입력받아 위치별 곱의 합을 반환하는 함수 (외부 라이브러리 없이 반복문 사용)
-*   [x] **데이터 구조 처리:** N×N 2차원 배열 저장 및 다양한 크기(3×3, 5×5, 13×13, 25×25) 처리
-*   [x] **모드 선택 메뉴:** 실행 시 사용자 입력 모드(1)와 `data.json` 분석 모드(2) 선택 기능
-*   [x] **모드 1: 사용자 입력 (3×3)**
-    *   [x] 필터 A, 필터 B, 패턴 3×3 배열을 사용자로부터 입력받기
-    *   [x] 입력값에 대한 행/열 수 불일치, 숫자 파싱 실패 등 오류 검증 및 재입력 유도
-    *   [x] MAC 연산 수행 및 A, B 점수 출력
-    *   [x] `epsilon` (1e-9) 기반 동점 처리 및 결과(`A`, `B`, `판정 불가`) 출력
-    *   [x] 10회 평균 연산 시간(ms 단위) 출력
-*   [x] **모드 2: `data.json` 분석**
-    *   [x] `data.json` 파일에서 필터 및 패턴 데이터 로드
-    *   [x] 패턴 키로부터 크기(`N`) 추출 및 해당 `size_N` 필터 자동 선택
-    *   [x] 라벨 정규화(`+`, `cross`, `x` -> `Cross`, `X`) 적용
-    *   [x] 필터/패턴 크기 불일치 등 스키마 검증 및 실패 시에도 프로그램 중단 없이 처리
-    *   [x] 각 패턴에 대해 `Cross` 점수, `X` 점수, 최종 판정(`Cross`, `X`, `UNDECIDED`) 출력
-    *   [x] 판정 결과와 `expected` 값 비교, `PASS`/`FAIL` 출력
-    *   [x] 전체/통과/실패 개수, 실패 케이스 식별자 및 사유 요약 출력
-*   [x] **성능 분석:** 각 크기별 MAC 연산 10회 반복 측정 및 평균 시간(ms), 연산 횟수(`N²`) 표 출력 (I/O 시간 제외)
-*   [x] **README.md 작성:** 실행 방법, 구현 요약, 결과 리포트(실패 원인 분석, O(N²) 시간 복잡도 분석 포함)
-
-#### 보너스 구현
-
-*   [x] **보너스 1: 1차원 배열 최적화**
-    *   [x] 2차원 배열을 1차원 배열로 변환하는 함수 구현
-    *   [x] 1차원 기반 MAC 연산 함수 구현
-    *   [x] 최적화 전/후 성능 비교 결과 출력
-*   [x] **보너스 2: 패턴 생성기**
-    *   [x] 크기 `N` 입력 시 `Cross` 패턴 자동 생성 (`make_cross`)
-    *   [x] 크기 `N` 입력 시 `X` 패턴 자동 생성 (`make_x`)
-    *   [x] 생성된 패턴을 모드 1 및 성능 분석에 활용
+*   **MAC 연산 구현**: 입력 패턴과 필터 간의 MAC 연산을 수행하여 유사도 점수를 계산합니다.
+*   **패턴 판별**: 계산된 MAC 점수를 기반으로 입력 패턴이 'Cross'인지 'X'인지 판별합니다.
+*   **라벨 정규화**: 다양한 형식의 라벨(예: '+', 'cross', 'x')을 내부 표준 라벨('Cross', 'X')로 통일합니다.
+*   **동점 처리**: 부동소수점 오차를 고려하여 `epsilon` 기반으로 동점(tie) 상황을 처리하고 'UNDECIDED' 또는 '판정 불가'로 표시합니다.
+*   **데이터 처리**: `data.json` 파일에서 필터와 패턴 데이터를 읽어와 일괄 처리합니다.
+*   **성능 분석**: 각 패턴별 MAC 연산 시간 측정 및 `O(N^2)`에 따른 연산량 변화를 측정하고 보고합니다.
+*   **결과 리포트**: 전체 테스트 수, 통과 수, 실패 수, 실패 케이스 목록을 요약하여 출력합니다.
+*   **예외 처리**: 잘못된 입력 데이터, 스키마 오류, 숫자 파싱 오류 등 다양한 예외 상황에 대해 프로그램이 비정상 종료되지 않고 명확한 오류 메시지를 출력하도록 합니다.
 
 ### 4. 핵심 기술 스택
 
-| 기술         | 용도                                                                      | 핵심 명령어/개념                                                                                                                            |
-| :----------- | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Python**   | 핵심 로직 구현, 데이터 처리, 입출력                                       | `list`, `dict`, `for`, `if`, `try-except`, `sys.exit()`, `json.loads()`, `time.time()`                                                        |
-| **2차원 배열** | 패턴 및 필터 데이터 표현                                                  | `list[list[float]]` 형태, 인덱싱 `matrix[row][col]`, 이중 반복문 (`for row in range(N): for col in range(N):`)                                    |
-| **MAC 연산** | 입력 패턴과 필터의 유사도 계산                                            | `result += pattern[i][j] * filter[i][j]` (이중 반복문 활용)                                                                                 |
-| **JSON**     | 필터 및 패턴 데이터 구조화 및 로딩                                        | `json` 모듈, `json.load()`, `json.loads()`, 키-값 쌍 접근 (`data['filters']['size_5']['cross']`)                                                |
-| **라벨 정규화** | 다양한 라벨 형식을 통일된 내부 표현으로 변환                              | 문자열 비교 및 치환 (예: `.lower()`, `.replace()`), 조건문 (`if-elif-else`)                                                              |
-| **Epsilon 비교** | 부동소수점 오차를 고려한 동점(Undecided) 처리                              | `abs(score1 - score2) < epsilon` (epsilon = 1e-9)                                                                                           |
-| **시간 복잡도**| 알고리즘 성능 분석 (MAC 연산의 경우 O(N²))                               | `O(N^2)`: N x N 배열에서 모든 요소를 한 번씩 접근하므로 연산량이 N의 제곱에 비례                                                             |
-| **가상 환경**| 프로젝트 종속성 관리 (선택 사항, 예: `uv` 사용)                           | `uv venv`, `source <venv>/bin/activate`                                                                                                    |
+*   **Python**: 프로그래밍 언어
+*   **JSON**: 데이터 형식 (필터 및 패턴 데이터 저장)
+*   **2차원 배열 (List of Lists)**: 패턴 및 필터 데이터 표현
+*   **Numpy (Optional)**: 행렬 연산 및 시간 측정 라이브러리 (본 과제에서는 외부 라이브러리 없이 구현하는 것을 권장)
+*   **Time Module**: 연산 시간 측정
+*   **Sys Module**: 프로그램 종료 및 인자 처리 (선택 사항)
+*   **Json Module**: JSON 파일 파싱
 
 ### 5. 권장 프로젝트 구조
 
-수강생들의 레포 구조를 종합하여 다음과 같은 구조를 권장합니다.
+수강생들의 레포지토리를 종합하여 다음과 같은 구조를 권장합니다. 이는 코드의 모듈화, 재사용성, 테스트 용이성을 높여줍니다.
 
-```text
-project_root/
+```
+your_repo_name/
 ├── .gitignore
-├── README.md
-├── data.json              # 실제 데이터 파일
-├── main.py                # 프로그램 실행 진입점, 모드 선택 로직
-├── core.py                # MAC 연산, 라벨 정규화 등 핵심 로직 함수 모음
-├── mode1.py               # 사용자 입력 모드 구현
-├── mode2.py               # data.json 분석 모드 구현
-├── benchmark.py           # 성능 측정 및 결과 출력 로직
-├── pattern_gen.py         # (보너스) 패턴 생성기 함수
-├── utils.py               # (선택) 공통 유틸리티 함수 (예: 데이터 파싱, 출력 포매팅)
-├── requirements.txt       # (선택) 필요한 외부 라이브러리 목록
-└── venv/                  # (선택) 가상 환경 디렉토리
+├── README.md              # 프로젝트 전반 설명, 실행 가이드, 학습 내용 요약
+├── data.json              # 필터 및 패턴 데이터 (JSON 형식)
+├── main.py                # 애플리케이션 진입점, 모드 선택 및 흐름 제어
+├── src/                   # 핵심 소스 코드
+│   ├── __init__.py
+│   ├── app/               # 콘솔 UI, 사용자 입력/출력, 메뉴 흐름 제어
+│   │   ├── __init__.py
+│   │   ├── console_flow.py   # 메인 메뉴 라우팅, 모드 선택 분기
+│   │   ├── user_input_3x3.py # 3x3 사용자 입력 모드 처리
+│   │   ├── data_json_mode.py # data.json 분석 모드 처리
+│   │   ├── report.py         # 결과 리포트 생성
+│   │   └── constants.py      # 앱 관련 상수 정의 (메뉴 번호 등)
+│   ├── npu/               # NPU 핵심 로직 (MAC, 판정, 벤치마크)
+│   │   ├── __init__.py
+│   │   ├── mac.py            # MAC 연산 구현, 입력 검증
+│   │   ├── judgement.py      # MAC 점수 기반 판정 로직 (epsilon 포함)
+│   │   ├── labels.py         # 라벨 정규화 로직
+│   │   ├── constants.py      # NPU 로직 관련 상수 (epsilon 값 등)
+│   │   └── benchmark.py      # 성능 측정 및 시간 복잡도 분석
+│   └── npu_io/            # 데이터 입출력 및 스키마 검증
+│       ├── __init__.py
+│       ├── json_loader.py    # data.json 파일 로딩
+│       ├── schema.py         # JSON 스키마 검증, 패턴/필터 매칭
+│       └── parse.py          # 콘솔 입력 등 문자열 파싱
+├── tests/                 # 단위 테스트 코드
+│   ├── __init__.py
+│   ├── app/
+│   ├── npu/
+│   └── npu_io/
+└── docs/                  # 과제 관련 문서
+    ├── subject.md         # 과제 요구사항
+    ├── commit_guidelines.md # Git 커밋 컨벤션
+    ├── implementation_checklist.md # 구현 체크리스트
+    └── insights/          # 학습 인사이트, 심층 개념 정리
+        ├── cpu_gpu_npu_deep_learning.md
+        ├── code_structure_principles_interview.md
+        └── ...
 ```
+
+**참고:**
+*   `src/` 하위의 `app`, `npu`, `npu_io`는 역할 기반 분리로, 실제 프로젝트에서는 더 세분화되거나 통합될 수 있습니다.
+*   `tests/` 폴더 구조는 `src/` 폴더 구조를 미러링하는 것이 테스트 관리 용이성을 높입니다.
 
 ### 6. 구현 핵심 포인트
 
-1.  **MAC 연산의 정확한 구현:**
-    *   **왜 중요한가:** 이 과제의 핵심이자 AI 연산의 기본이므로, 정확한 구현이 가장 중요합니다. 두 2차원 배열의 같은 위치에 있는 요소끼리만 곱하고, 그 결과를 모두 더해야 합니다.
-    *   **접근 방법:** 이중 반복문을 사용하여 `pattern[row][col]`과 `matrix[row][col]`을 곱한 값을 누적합니다. 외부 라이브러리(NumPy 등) 없이 순수 Python 반복문으로 구현해야 합니다.
+#### 6-1. MAC 연산 (`compute_mac`)
 
-2.  **강력한 입력 검증 및 예외 처리:**
-    *   **왜 중요한가:** 사용자 입력이나 외부 데이터(JSON)는 예측 불가능한 오류를 포함할 수 있습니다. 이러한 오류로 인해 프로그램이 비정상 종료되거나 잘못된 결과를 출력하는 것을 방지하기 위해 필요합니다.
-    *   **접근 방법:**
-        *   **모드 1 (사용자 입력):** 입력받은 각 줄의 길이를 확인하여 행/열 개수 일치 여부를 검사하고, 숫자로 변환 가능한지 `try-except` 구문을 사용하여 처리합니다. 오류 발생 시 사용자에게 명확한 메시지를 보여주고 해당 입력값을 다시 받도록 합니다.
-        *   **모드 2 (JSON):** `json.load()`/`loads()` 시 발생하는 `JSONDecodeError`, 접근 시 발생하는 `KeyError`, 데이터 타입 불일치 시 발생하는 `TypeError` 등을 `try-except`로 처리합니다. 스키마 검증 실패 시에도 프로그램이 종료되지 않고 해당 케이스에 대해 `FAIL` 처리 후 다음 케이스를 진행하도록 합니다.
+*   **입력**: `pattern` (2D list), `filter` (2D list), `size` (정사각형 한 변의 길이)
+*   **로직**:
+    ```python
+    total_score = 0.0
+    for r in range(size):
+        for c in range(size):
+            total_score += pattern[r][c] * filter[r][c]
+    return total_score
+    ```
+*   **주의**: 입력 패턴과 필터의 크기가 반드시 일치해야 합니다. `validate_mac_inputs` 함수 등에서 사전 검증이 필요합니다.
 
-3.  **라벨 정규화와 일관된 비교 정책:**
-    *   **왜 중요한가:** 입력되는 라벨(`+`, `cross`, `x`)과 필터 키(`cross`)가 다양할 수 있으므로, 이를 내부적으로 `Cross`, `X`와 같은 표준 형태로 통일해야 일관된 판정과 비교가 가능합니다.
-    *   **접근 방법:** `normalize_label(label)`과 같은 별도의 함수를 만들어, 입력받은 라벨을 소문자로 바꾸거나 특정 패턴을 대체하여 표준 라벨로 변환하는 로직을 중앙 집중화합니다. 이를 통해 `expected` 값, 필터 키, 그리고 최종 판정 로직에서 동일한 기준으로 비교할 수 있습니다.
+#### 6-2. 라벨 정규화 (`normalize_label`)
 
-4.  **`epsilon` 기반 동점 처리:**
-    *   **왜 중요한가:** MAC 연산 결과는 부동소수점 연산으로 인해 미세한 오차가 발생할 수 있습니다. 이 오차 때문에 실제로는 거의 동일한 점수임에도 불구하고 `>` 또는 `<` 비교에서 다른 결과가 나올 수 있습니다.
-    *   **접근 방법:** 두 점수의 차이(`abs(score_A - score_B)`)가 매우 작은 값(예: `1e-9`)보다 작으면 동점으로 간주합니다. 이 경우 판정 결과를 `UNDECIDED` 또는 `판정 불가`로 처리하여 실제와 같은 결과를 반영합니다.
+*   다양한 입력 라벨('+', 'cross', 'x', 'Cross', 'X' 등)을 내부적으로 사용할 표준 라벨('Cross', 'X')로 통일하는 함수입니다.
+*   **예시**:
+    ```python
+    def normalize_label(label):
+        label = label.lower().strip()
+        if label in ['+', 'cross', 'c']:
+            return 'Cross'
+        elif label in ['x', 'ex']:
+            return 'X'
+        else:
+            return label # 또는 오류 발생/None 반환
+    ```
+*   이 함수는 `data.json`의 `expected` 값, 필터 키(`size_N.cross` -> 'Cross') 등 다양한 곳에서 사용됩니다.
+
+#### 6-3. `epsilon` 기반 비교 (`is_close`, `decide_label`)
+
+*   부동소수점 연산의 오차 때문에 `score1 == score2` 와 같은 직접 비교는 지양해야 합니다.
+*   `abs(score1 - score2) < epsilon` (예: `epsilon = 1e-9`)을 사용하여 두 점수가 매우 가까우면 같은 것으로 간주합니다.
+*   **판정 로직**:
+    ```python
+    epsilon = 1e-9
+    if abs(score_cross - score_x) < epsilon:
+        return 'UNDECIDED'
+    elif score_cross > score_x:
+        return 'Cross'
+    else:
+        return 'X'
+    ```
+
+#### 6-4. `data.json` 스키마 검증
+
+*   **필터**: `filters` 객체 내부에 `size_<N>` 키를 가지며, 각 값은 `<N>x<N>` 2차원 배열이어야 합니다.
+*   **패턴**: `patterns` 객체는 `size_<N>_<idx>` 형식의 키를 가지며, 여기서 `<N>`은 패턴의 실제 크기와 일치해야 합니다. 패턴의 `input` 값 역시 `<N>x<N>` 2차원 배열이어야 합니다.
+*   **검증**: 패턴 키에서 `N`을 추출하고, 해당 `N`에 맞는 필터를 `filters`에서 찾습니다. 이후 패턴 `input`과 선택된 필터의 크기가 모두 `<N>x<N>`인지 확인합니다.
+
+#### 6-5. 시간 복잡도 분석 (`O(N^2)`)
+
+*   MAC 연산은 `N x N` 배열의 모든 요소를 순회하며 곱하고 더하므로, 연산 횟수는 `N * N = N^2`에 비례합니다.
+*   `benchmark.py` 등에서 크기별(`3x3`, `5x5`, `13x13`, `25x25` 등) MAC 연산을 반복 수행하고 평균 시간을 측정하여, `N`이 커짐에 따라 시간이 `N^2` 스케일로 증가함을 보여주어야 합니다.
+
+#### 6-6. 결과 리포트
+
+*   **요약**: 전체 테스트 수, 통과 수, 실패 수, 실패 케이스 목록(패턴 키, 실패 사유)을 명확하게 출력합니다.
+*   **실패 사유 분류**:
+    *   **데이터/스키마 오류**: `data.json` 형식 불량, 패턴 키 불일치, 크기 불일치 등.
+    *   **라벨 오류**: `expected` 라벨이 지원되지 않거나 정규화되지 않은 경우.
+    *   **수치/판정 오류**: MAC 점수 계산 오류, `epsilon` 미적용으로 인한 오판정, 동점 처리 미흡.
 
 ### 7. 트러블슈팅 & 팁
 
-*   **README에 실행 방법이 상세히 나와 있지 않은 경우:**
-    *   **팁:** `python main.py` 명령어를 기본으로 시도하고, 실행 시 나타나는 메뉴(`1`, `2`)에 따라 입력을 진행합니다. 사용자 입력 모드에서는 3줄씩 엔터를 치며 입력하고, JSON 모드는 별도 입력 없이 실행됩니다.
-*   **JSON 파일 구조 오류 발생 시:**
-    *   **에러 예시:** `KeyError: 'size_5'`, `json.JSONDecodeError: Expecting value`, `TypeError: list indices must be integers or slices, not str`
-    *   **원인:** `data.json` 파일의 구조가 예상과 다르거나, 키 이름이 잘못되었거나, 값이 올바른 형식이 아닐 때 발생합니다.
-    *   **해결:** JSON 파일의 구조를 꼼꼼히 확인하고, 프로그램 코드에서 사용하는 키 이름과 데이터 타입이 일치하는지 확인합니다. `try-except` 구문을 사용하여 예외를 처리하고, 실패 사유를 명확히 출력하도록 합니다.
-*   **MAC 연산 결과가 예상과 다른 경우:**
-    *   **원인:**
-        *   인덱싱 오류: `pattern[row][col]`과 `filter[row][col]`이 아닌 다른 위치의 값을 곱함.
-        *   곱셈/덧셈 오류: `*` 대신 `+`를 사용하거나, 누적합 과정에서 초기화 실수.
-        *   데이터 타입 오류: 정수와 실수가 혼합되어 예상치 못한 결과 발생.
-    *   **해결:** 이중 반복문의 인덱스가 올바르게 사용되고 있는지, `result += ...` 코드가 정확히 실행되는지 디버깅합니다. `print` 문을 중간중간 삽입하여 각 단계별 값을 확인하는 것이 효과적입니다.
-*   **사용자 입력 모드에서 '입력 검증' 실패 시 무한 루프 또는 잘못된 동작:**
-    *   **원인:** 입력 검증 로직이 불완전하거나, 오류 발생 시 `continue`나 `break` 문이 잘못 사용된 경우.
-    *   **팁:** 각 행 입력 시마다 길이를 확인하고, 숫자로 변환 가능한지 즉시 검증합니다. 오류가 발생하면 해당 줄만 다시 입력받도록 로직을 구성하고, 모든 검증을 통과한 후에만 다음 줄로 넘어가거나 연산을 진행하도록 합니다.
-*   **성능 측정 시 I/O 시간 포함 문제:**
-    *   **원인:** `time.time()` 함수 호출 구간이 파일 로딩이나 출력 부분까지 포함하고 있는 경우.
-    *   **해결:** 성능 측정 대상은 순수하게 MAC 연산 함수(또는 1차원 변환 후 MAC 연산)의 호출 구간만 포함하도록 `time.time()` 호출 위치를 신중하게 조정해야 합니다. `benchmark.py` 파일에서 측정 범위를 명확히 분리합니다.
-*   **보너스 1 (1차원 최적화) 구현 시 주의사항:**
-    *   **팁:** 2차원 배열 `matrix[row][col]`을 1차원 배열 `flat_array[row * N + col]`로 변환하는 인덱싱 로직을 정확하게 구현해야 합니다. 이 변환 함수(`flatten`)와 1차원 MAC 함수(`mac_1d`)를 별도로 구현하고, `benchmark.py`에서 두 방식의 실행 시간을 비교하여 성능 향상을 확인합니다.
-*   **라벨 정규화 시 새로운 라벨 추가 확장:**
-    *   **팁:** `normalize_label` 함수를 수정할 때는 `X`와 `Cross` 외에 새로운 라벨(`Circle` 등)이 추가된다고 가정하고, 코드를 더 일반화하는 방향으로 확장하는 연습을 합니다. (예: `if label == 'o' or label == 'circle': return 'Circle'`)
+*   **"JSON 파일이 로드되지 않아요"**:
+    *   `data.json` 파일이 코드와 같은 디렉토리에 있는지 확인하세요.
+    *   JSON 문법 오류(콤마 누락, 따옴표 오류 등)가 없는지 JSON 검증 도구를 사용해 확인하세요.
+*   **"패턴과 필터 크기가 안 맞아요"**:
+    *   `data.json`의 패턴 키(`size_<N>_<idx>`)에서 추출한 `N` 값이 실제 `input` 배열의 행/열 개수와 일치하는지 확인하세요.
+    *   `filters`에서 해당 `N`에 맞는 필터 묶음(`size_<N>`)을 제대로 선택했는지 확인하세요.
+*   **"MAC 점수가 이상하게 나와요"**:
+    *   `pattern`과 `filter`의 두중 반복문 인덱스가 `r`, `c`로 정확히 일치하는지 확인하세요.
+    *   2차원 배열에서 요소를 가져올 때 `matrix[r][c]` 형식이 올바른지 확인하세요.
+*   **"동일한 점수인데 Pass/Fail이 달라져요"**:
+    *   `epsilon` 값을 설정하고, `abs(score1 - score2) < epsilon` 조건을 사용하여 비교하는지 확인하세요.
+    *   `data.json`의 `expected` 라벨과 실제 판정 라벨이 `normalize_label` 함수를 통해 일관되게 처리되는지 확인하세요.
+*   **"시간 측정 결과가 예상과 달라요"**:
+    *   `time.time()` 또는 `time.perf_counter()`를 사용하여 연산 시작 전후 시간을 측정하고 차이를 계산하세요.
+    *   작은 크기에서는 측정 오차가 클 수 있으니, 여러 번 반복하여 평균 시간을 내는 것이 좋습니다.
+    *   MAC 연산만 측정하고 다른 로직(JSON 로딩, 라벨 정규화 등)은 제외했는지 확인하세요.
+*   **"모든 테스트를 `main.py`에서 하지 않고 분리하는 이유는 무엇인가요?"**:
+    *   `main.py`는 프로그램의 실행 흐름을 제어하는 역할만 하고, 실제 계산, 판정, 데이터 처리 로직은 별도의 모듈(`src/npu/mac.py`, `src/npu_io/json_loader.py` 등)로 분리하는 것이 좋습니다.
+    *   이는 각 기능의 **단일 책임 원칙**을 따르고, **테스트하기 쉽게** 만듭니다. `tests/` 폴더에 각 모듈별로 `test_*.py` 파일을 만들어 단위 테스트를 작성하면 코드의 안정성을 높일 수 있습니다.
 
 ### 8. 추가 학습 자료
 
-*   **MAC 연산:**
-    *   [Multiply-Accumulate Operation - Wikipedia](https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation)
-    *   AI 하드웨어(NPU, GPU)의 MAC 연산 처리 방식 검색
-*   **컨볼루션 신경망 (CNN):**
-    *   [Convolutional Neural Networks - DeepLearning.AI](https://www.deeplearning.ai/courses/convolutional-neural-networks/) (Coursera) - CNN의 핵심 연산인 컨볼루션이 MAC 연산과 어떻게 연결되는지 학습
-*   **Python 2D List(Array) 다루기:**
-    *   [Python Nested Lists Tutorial](https://www.programiz.com/python-programming/list-of-lists)
-    *   Python에서 다차원 배열을 다루는 기본적인 방법 학습
-*   **JSON 데이터 처리:**
-    *   [Python JSON module - W3Schools](https://www.w3schools.com/python/python_json.asp)
-    *   Python의 `json` 모듈 사용법 및 파일 입출력
-*   **시간 복잡도 (Big O Notation):**
-    *   [Big O Notation - GeeksforGeeks](https://www.geeksforgeeks.org/time-complexity-and-space-complexity-introduction/)
-    *   알고리즘의 성능을 분석하는 기본적인 방법 학습
+*   **MAC 연산**:
+    *   [Machine Learning & Deep Learning: What is MAC Operation?](https://www.youtube.com/watch?v=hOq_9t1x0bA) (영문 영상)
+    *   NPU 관련 문서에서 MAC 연산의 중요성에 대해 찾아보세요.
+*   **2차원 배열 및 행렬 연산**:
+    *   Python 공식 튜토리얼의 리스트 관련 섹션
+    *   Numpy 공식 문서 (행렬 연산, 슬라이싱)
+*   **JSON 데이터 형식**:
+    *   [JSON 공식 가이드](https://www.json.org/json-en.html)
+    *   Python `json` 모듈 사용법
+*   **시간 복잡도**:
+    *   알고리즘 관련 서적 또는 온라인 강의 (예: Coursera, edX)
+*   **AI 하드웨어 (NPU, GPU, CPU)**:
+    *   [AI 하드웨어 관련 블로그 글 및 논문](https://github.com/mulloc1/codyssey_python_with_npu/blob/main/docs/insights/cpu_gpu_npu_deep_learning.md) (수강생 레포에서 발췌)
+*   **코드 구조 및 설계 원칙**:
+    *   SOLID 원칙, 단일 책임 원칙 (SRP)
+    *   [수강생 레포의 코드 구조 인사이트](https://github.com/mulloc1/codyssey_python_with_npu/blob/main/docs/insights/code_structure_principles_interview.md) (수강생 레포에서 발췌)
 
-이 학습 문서를 통해 3주차 과제를 완벽히 이해하고, MAC 연산과 패턴 인식의 원리를 견고하게 내재화하시기를 바랍니다.
-
----
-
-### 참고 레포 목록 (13명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| JungSaeYoung | [codyssey_E1-3](https://github.com/JungSaeYoung/codyssey_E1-3) | 2026-04-12 | 35,513자 | 18개 | - |
-| jhkr1 | [Codyssey_mission3](https://github.com/jhkr1/Codyssey_mission3) | 2026-04-11 | 22,687자 | 5개 | - |
-| kimch0612 | [Codyssey_Week3](https://github.com/kimch0612/Codyssey_Week3) | 2026-04-09 | 10,408자 | 4개 | - |
-| jhj9109 | [codyssey3](https://github.com/jhj9109/codyssey3) | 2026-04-09 | 6,766자 | 12개 | - |
-| mackerel07 | [codyssey-workstation/assignment3](https://github.com/mackerel07/codyssey-workstation/tree/main/assignment3) | 2026-04-09 | 1,864자 | 5개 | - |
-| yejoo0310 | [codyssey-m3](https://github.com/yejoo0310/codyssey-m3) | 2026-04-12 | 13자 | 5개 | - |
-| I-nkamanda | [codyssey2026/Problem3_Mini_NPU_Simulator](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem3_Mini_NPU_Simulator) | 2026-04-09 | 없음 | 1개 | - |
-| 0-hu | [codyssey-e1-3](https://github.com/0-hu/codyssey-e1-3) | 2026-04-07 | 없음 | 1개 | 1건 (마크다운) |
-| park-soo-hyeon | [codyssey/3week](https://github.com/park-soo-hyeon/codyssey/tree/main/3week) | 2026-04-12 | 없음 | 2개 | - |
-| dldnsgkr | [codyssey/problem_3](https://github.com/dldnsgkr/codyssey/tree/main/problem_3) | 2026-04-08 | 없음 | 3개 | - |
-| kwonhee1 | [ia-codyssey/3week](https://github.com/kwonhee1/ia-codyssey/tree/main/3week) | 2026-04-09 | 없음 | 6개 | 1건 (마크다운) |
-| sebin1103 | [codyssey-mission/mission3](https://github.com/sebin1103/codyssey-mission/tree/main/mission3) | 2026-04-09 | 없음 | 2개 | - |
-| jyaniee | [codyssey-ai-sw/c01-p03-find-flammable-material](https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p03-find-flammable-material) | 2026-04-12 | 없음 | 6개 | 1건 (분석보고서) |
-
-**이 주차 추가 자료 현황**: 
-
-- 마크다운: 2건
-- 분석보고서: 1건
+#### 참여 수강생 및 자료
+| 수강생 | 레포 | 업데이트 | 추가 자료 |
+| --- | --- | --- | --- |
+| kimch0612 | [Codyssey_Week3](https://github.com/kimch0612/Codyssey_Week3) | 2026-04-09 | - |
+| mulloc1 | [codyssey_python_with_npu](https://github.com/mulloc1/codyssey_python_with_npu) | 2026-04-12 | 학습노트, 마크다운 |
+| jhkr1 | [Codyssey_mission3](https://github.com/jhkr1/Codyssey_mission3) | 2026-04-11 | - |
+| yejoo0310 | [codyssey-m3](https://github.com/yejoo0310/codyssey-m3) | 2026-04-12 | - |
+| I-nkamanda | [codyssey2026/Problem3_Mini_NPU_Simulator](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem3_Mini_NPU_Simulator) | 2026-04-09 | - |
 
 ---
 
-<a id="week-4"></a>
-## 4주차 과제
+## 2. 지문 기반 신규 발견 레포
+
+| 사용자 | 레포 | 점수 | 발견 증거 |
+| --- | --- | --- | --- |
+| impelfin | [neo](https://github.com/impelfin/neo) | 25 | [Tier1] data.json, [Tier2] main.py, [Tier2] requirements.txt, [Tier2] Dockerfile |
+| SuperNinjaCat5 | [music](https://github.com/SuperNinjaCat5/music) | 20 | [Tier1] quiz_game.py, [Tier2] requirements.txt, [Tier2] Dockerfile |
+| maheshjainckd | [Hacktoberfest2022-for-everyone](https://github.com/maheshjainckd/Hacktoberfest2022-for-everyone) | 15 | [Tier1] quiz_game.py, [Tier2] requirements.txt |
+| ChadwickyN | [Projects](https://github.com/ChadwickyN/Projects) | 15 | [Tier1] quiz_game.py, [Tier2] requirements.txt |
+| atr0z0z | [geo-wars](https://github.com/atr0z0z/geo-wars) | 15 | [Tier1] questions.json, [Tier2] requirements.txt |
+| moshe | [elasticsearch_loader](https://github.com/moshe/elasticsearch_loader) | 15 | [Tier1] data.json, [Tier2] Dockerfile |
+| researchlab | [gbp](https://github.com/researchlab/gbp) | 15 | [Tier1] data.json, [Tier2] Dockerfile |
+| Ritesh-456 | [awesome-python-project-ideas](https://github.com/Ritesh-456/awesome-python-project-ideas) | 13 | [Tier2] main.py, [Tier2] requirements.txt, [키워드] quiz game |
+| kavyakoli12 | [python-mini-projects](https://github.com/kavyakoli12/python-mini-projects) | 13 | [Tier1] quiz_game.py, [키워드] quiz game |
+| SaiAshish-Konchada | [Python-Projects-for-Beginners](https://github.com/SaiAshish-Konchada/Python-Projects-for-Beginners) | 10 | [Tier1] quiz_game.py |
+| pratikshayadav101010 | [MOTIONCUT_INTERNSHIP_PROJECTS](https://github.com/pratikshayadav101010/MOTIONCUT_INTERNSHIP_PROJECTS) | 10 | [Tier1] quiz_game.py |
+| Mtawarira | [quiz_game](https://github.com/Mtawarira/quiz_game) | 10 | [Tier1] quiz_game.py |
+| EesunMoon | [leetcode](https://github.com/EesunMoon/leetcode) | 10 | [Tier1] npu_simulator.py |
+| fabi1cazenave | [webL10n](https://github.com/fabi1cazenave/webL10n) | 10 | [Tier1] data.json |
+| alvaroferran | [MotioSuit](https://github.com/alvaroferran/MotioSuit) | 10 | [Tier1] data.json |
+| dovy | [Pedigree-Viewer](https://github.com/dovy/Pedigree-Viewer) | 10 | [Tier1] data.json |
 
-## Codyssey AI/SW 교육 과정 - 4주차 과제 학습 문서
-
-### 1. 미션 개요
-이번 주차 과제는 실제 센서 데이터를 시뮬레이션하는 `DummySensor` 클래스를 구현하고, 이를 테스트하는 과정을 통해 객체 지향 프로그래밍(OOP)의 핵심 개념과 파일 입출력, 예외 처리 등을 실습하는 것을 목표로 합니다. 이를 통해 개발자는 실제 환경과 유사한 데이터를 생성하고 관리하는 기술을 익혀, 다양한 서비스 개발 및 테스트 환경 구축에 활용할 수 있습니다.
-
-### 2. 학습 목표
-이 과제를 완료하면 다음 내용을 설명할 수 있어야 합니다.
-
-1.  **클래스(Class)와 객체(Object)의 개념 및 관계**: 클래스를 정의하고 이를 활용하여 객체를 생성하는 방법을 이해합니다.
-2.  **객체 지향 프로그래밍 (OOP) 원칙**: 캡슐화, 추상화 등 OOP의 기본 원칙을 코드 구현에 적용하는 방법을 이해합니다.
-3.  **데이터 구조 (Dictionary)**: 다양한 형태의 데이터를 효율적으로 저장하고 관리하기 위해 dictionary를 사용하는 방법을 익힙니다.
-4.  **파일 입출력 (File I/O)**: 텍스트 파일을 읽고 쓰는 기본적인 방법을 습득합니다.
-5.  **예외 처리 (Exception Handling)**: `try-except` 구문을 사용하여 프로그램 실행 중 발생할 수 있는 오류를 처리하는 방법을 배웁니다.
-
-### 3. 기능 요구사항
-과제에서 구현/수행해야 하는 항목은 다음과 같습니다.
-
-**필수 요구사항:**
-
-*   [ ] `DummySensor` 클래스 구현:
-    *   화성 기지 내부/외부 환경 데이터를 저장할 `env_values` 딕셔너리 변수 포함
-    *   `set_env()` 함수: `env_values`를 주어진 범위 내 랜덤 값으로 초기화
-        *   화성 기지 내부 온도 (18~30도)
-        *   화성 기지 외부 온도 (0~21도)
-        *   화성 기지 내부 습도 (50~60%)
-        *   화성 기지 외부 광량 (500~715 W/m2)
-        *   화성 기지 내부 이산화탄소 농도 (0.02~0.1%)
-        *   화성 기지 내부 산소 농도 (4%~7%)
-    *   `get_env()` 함수: `env_values` 딕셔너리 반환
-*   [ ] `DummySensor` 인스턴스 생성 및 테스트:
-    *   `DummySensor` 객체를 생성합니다.
-    *   `set_env()` 함수를 호출하여 환경 데이터를 설정합니다.
-    *   `get_env()` 함수를 호출하여 설정된 환경 데이터를 가져옵니다.
-    *   가져온 환경 데이터를 콘솔에 출력합니다.
-*   [ ] Python 코딩 스타일 가이드 준수: PEP 8 등 파이썬 코딩 컨벤션을 따릅니다.
-*   [ ] 문자열 사용: 작은따옴표(`'`) 사용을 우선하며, 불가피한 경우 큰따옴표(`"`) 사용합니다.
-*   [ ] 공백 규칙 준수: `=` 연산자 앞뒤에 공백을 둡니다 (예: `foo = (0,)`).
-*   [ ] 별도의 라이브러리/패키지 사용 제한: `random` 모듈 제외.
-*   [ ] Python 3.x 버전 사용.
-
-**보너스 요구사항:**
-
-*   [ ] `get_env()` 함수에 `env_values` 값을 파일에 로그로 남기는 기능 구현 (`log_env()` 함수 등 별도 구현)
-
-### 4. 핵심 기술 스택
-
-| 기술           | 용도
-
----
-
-### 참고 레포 목록 (4명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| kwonhee1 | [ia-codyssey/4week](https://github.com/kwonhee1/ia-codyssey/tree/main/4week) | 2026-04-09 | 2,363자 | 4개 | - |
-| park-soo-hyeon | [codyssey/4week](https://github.com/park-soo-hyeon/codyssey/tree/main/4week) | 2026-04-12 | 없음 | 1개 | - |
-| dldnsgkr | [codyssey/problem_4](https://github.com/dldnsgkr/codyssey/tree/main/problem_4) | 2026-04-08 | 없음 | 2개 | - |
-| sebin1103 | [codyssey-mission/mission4](https://github.com/sebin1103/codyssey-mission/tree/main/mission4) | 2026-04-09 | 없음 | 2개 | 1건 (마크다운) |
-
-**이 주차 추가 자료 현황**: 
-
-- 마크다운: 1건
-
----
-
-<a id="week-5"></a>
-## 5주차 과제
-
-## Codyssey AI/SW 교육 과정 - 5주차 과제 학습 자료
-
-### 1. 미션 개요
-
-이번 주차 과제는 **다중 스레드를 활용하여 복잡한 시스템을 설계하고 구현하는 능력**을 기르는 데 목적이 있습니다. 실제 임무 수행 시 발생할 수 있는 센서 데이터 수집, 데이터 처리, 시스템 제어 등 다양한 작업을 병렬적으로 처리해야 하는 상황을 시뮬레이션합니다. 이를 통해 실시간 데이터 처리 및 동시성 제어의 중요성을 이해하고, 실제 시스템 개발에 필요한 기본적인 설계 및 구현 역량을 함양할 수 있습니다.
-
-### 2. 학습 목표
-
-이 과제를 완료하면 다음 다섯 가지 핵심 개념을 설명할 수 있어야 합니다.
-
-1.  **쓰레드(Thread) 기반 비동기 작업 처리:** `threading` 모듈을 사용하여 독립적인 실행 흐름을 생성하고 관리하는 방법.
-2.  **작업 스케줄링 및 관리:** `Computer` 클래스를 통해 여러 작업을 예약하고, 시작, 중지, 재시작하며 관리하는 메커니즘.
-3.  **이벤트 기반 동기화:** `threading.Event` 객체를 활용하여 스레드 간의 신호 전달 및 동기화를 구현하는 방법.
-4.  **센서 데이터 수집 및 처리 파이프라인:** 센서로부터 데이터를 주기적으로 수집하고, 이를 가공하여 저장 및 분석하는 과정.
-5.  **재귀적 데이터 구조 및 직렬화:** 센서 데이터를 `dict` 형태로 저장하고 `json`으로 직렬화하여 처리하는 방법.
-
-### 3. 기능 요구사항
-
-| 항목                                                 | 필수 | 보너스 | 비고                                                                                                                                                                                                      |
-| :--------------------------------------------------- | :--: | :----: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Computer` 클래스 구현                               |  O   |        | `run`, `stop`, `restart`, `exit` 함수 포함. 작업 관리를 위한 내부 딕셔너리(`jobs`) 사용.                                                                                                                      |
-| `MissionComputer` 클래스 구현                          |  O   |        | `Computer` 상속. 센서 데이터 수집 및 평균 출력 기능 포함.                                                                                                                                                  |
-| `start_get_sensor` 함수 구현                         |  O   |        | 센서 데이터 수집 작업을 `Computer`에 등록하고 실행.                                                                                                                                                       |
-| `start_print_average` 함수 구현                      |  O   |        | 주기적으로 센서 데이터 평균을 계산하고 `json`으로 출력하는 작업 등록 및 실행.                                                                                                                              |
-| `get_sensor_data` 함수 구현                          |  O   |        | 센서 값을 읽고 `history`에 저장하며, `json` 형태로 출력.                                                                                                                                                   |
-| `stop` 함수 구현                                     |  O   |        | 모든 작업 스레드를 안전하게 종료하고 리소스 정리. 종료 메시지 출력.                                                                                                                                        |
-| `DummySensor` 및 `DummySensorStage` 클래스 사용        |  O   |        | 기존 제공 코드 유지.                                                                                                                                                                                      |
-| `FileReader` 및 `FileWriter` 클래스 활용 (선택 사항)   |  O   |        | (필수 아님) 필요시 파일 읽기/쓰기 기능 활용.                                                                                                                                                              |
-| `JsonMapper` 클래스 활용 (선택 사항)                   |  O   |        | (필수 아님) 필요시 `dict`를 `json` 문자열로 변환하는 기능 활용.                                                                                                                                            |
-| 센서 데이터 로그 파일 기록 (보너스)                   |      |   O    | `DummySensor`의 `log_env` 함수를 구현하여 센서 데이터를 파일에 기록.                                                                                                                                       |
-| `dummy_stage.txt` 파일 파싱 및 활용                  |  O   |        | 센서 값의 범위 설정.                                                                                                                                                                                      |
-| 표준 라이브러리(`threading`, `time`, `json`, `random`) 사용 |  O   |        | 외부 라이브러리 사용 금지.                                                                                                                                                                                |
-| `mars_mission_computer.py` 파일에 모든 코드 작성       |  O   |        | 단일 파일 관리.                                                                                                                                                                                           |
-
-### 4. 핵심 기술 스택
-
-| 기술             | 용도                                                                                                     | 핵심 명령어/개념                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| :--------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `threading`      | 멀티스레딩을 통한 동시 작업 실행                                                                         | `threading.Thread(target=함수, args=(인자,))`, `thread.start()`, `thread.join()`, `threading.Event()`, `event.set()`, `event.wait()`, `event.is_set()`, `event.clear()`                                                                                                                                                               |
-| `time`           | 시간 관련 함수 (딜레이, 현재 시간)                                                                       | `time.sleep(seconds)`, `time.time()`                                                                                                                                                                                                                                                                                                  |
-| `json`           | 데이터 직렬화 및 역직렬화 (JSON 형식)                                                                    | `json.dumps(dict)`, `json.loads(string)`                                                                                                                                                                                                                                                                                              |
-| `random`         | 난수 생성 (센서 값 시뮬레이션)                                                                           | `random.uniform(a, b)`, `random.randint(a, b)`                                                                                                                                                                                                                                                                                         |
-| `collections.deque` | (권장) 효율적인 양방향 큐                                                                                | `append()`, `popleft()` - `history`와 같이 데이터를 순차적으로 쌓고 오래된 데이터를 제거하는 데 유용합니다.                                                                                                                                                                                                                                  |
-| `KeyboardInterrupt` | 사용자 인터럽트 (Ctrl+C) 처리                                                                            | `try...except KeyboardInterrupt:` 블록을 사용하여 프로그램을 안전하게 종료할 수 있습니다.                                                                                                                                                                                                                                                |
-| `class`          | 객체 지향 프로그래밍 (코드 구조화, 재사용성)                                                             | `__init__(self, ...)` (생성자), `self` (인스턴스 참조), `class` 상속.                                                                                                                                                                                                                                                                 |
-
-### 5. 권장 프로젝트 구조
-
-```text
-프로젝트/
-├── mars_mission_computer.py
-├── dummy_stage.txt  # 센서 범위 설정을 위한 설정 파일
-└── env_log.txt      # (보너스) 센서 데이터 로그 파일
-```
-
-### 6. 구현 핵심 포인트
-
-1.  **`Computer` 클래스의 작업 관리 메커니즘:**
-    *   **중요성:** 여러 독립적인 작업을 효율적으로 생성, 실행, 중지, 재시작, 종료하는 핵심적인 관리 기능을 제공합니다. 각 작업은 고유한 ID로 식별되며, `jobs` 딕셔너리를 통해 관리됩니다.
-    *   **접근 방법:** `run` 함수에서 새로운 스레드를 생성하고 `threading.Event`를 사용하여 해당 스레드를 제어합니다. `stop` 함수에서는 이벤트 객체의 `set()` 메서드를 호출하여 스레드에게 종료 신호를 보내고, `join()`을 통해 스레드가 완전히 종료될 때까지 기다립니다. `exit` 함수는 `stop`과 유사하지만, 스레드 종료 후 `jobs` 딕셔너리에서 해당 작업을 제거하여 메모리를 정리합니다.
-
-2.  **`MissionComputer`의 센서 데이터 수집 및 평균 계산:**
-    *   **중요성:** 실제 시스템에서 주기적으로 데이터를 수집하고 분석하는 일반적인 시나리오를 구현합니다. `get_sensor_data`는 센서에서 데이터를 읽어 `history` 리스트에 저장하고, `start_print_average`는 일정 간격마다 `history`의 평균을 계산합니다.
-    *   **접근 방법:** `start_get_sensor`는 `Computer` 클래스의 `run` 함수를 호출하여 `get_sensor_data` 함수를 주기적으로 실행시킵니다. `get_sensor_data`는 `sensor.get_env()`를 호출하여 실제 센서 값을 가져오고, 이를 `self.history` 리스트에 추가합니다. `start_print_average`는 `Computer`에 등록되어 5분(300초)마다 실행되며, `history` 리스트의 평균을 계산하고 `json.dumps()`를 사용하여 JSON 형식으로 출력합니다. `history`의 크기가 무한정 커지는 것을 방지하기 위해 주기적인 오래된 데이터 제거 로직을 추가하는 것을 고려할 수 있습니다.
-
-3.  **`threading.Event`를 이용한 스레드 제어:**
-    *   **중요성:** 스레드 간의 안전한 통신 및 동기화를 가능하게 하여, 작업의 시작, 중지, 종료를 명확하게 제어할 수 있습니다. `Computer` 클래스에서 각 작업 스레드를 종료할 때 필수적으로 사용됩니다.
-    *   **접근 방법:** `Computer`의 `run` 메서드에서 각 작업 스레드마다 고유한 `threading.Event` 객체를 생성하여 `jobs` 딕셔너리에 저장합니다. 해당 스레드 내부의 반복 로직에서는 `while not stop_event.is_set():`과 같이 이벤트가 설정되지 않은 동안만 작업을 계속 수행하도록 구현합니다. `stop` 또는 `exit` 함수에서 `stop_event.set()`을 호출하면, 다음 반복에서 `is_set()`이 `True`가 되어 스레드가 종료됩니다.
-
-4.  **`dummy_stage.txt` 파싱 및 랜덤 값 생성:**
-    *   **중요성:** 외부 설정 파일(`dummy_stage.txt`)을 파싱하여 센서 값의 범위를 동적으로 설정하고, 이를 기반으로 실제와 유사한 랜덤 데이터를 생성하는 것은 시스템의 유연성과 테스트 용이성을 높입니다.
-    *   **접근 방법:** `DummySensorStage` 클래스는 `dummy_stage.txt` 파일의 각 줄을 파싱하여 센서 이름과 해당 센서의 최소/최대 범위를 딕셔너리 형태로 저장합니다. `DummySensor` 클래스의 `set_env` 함수는 `DummySensorStage`에서 제공하는 범위 정보를 바탕으로 `Random.random()` 함수를 사용하여 센서 값을 랜덤하게 생성합니다. `Random.random()` 함수는 입력된 `a`, `b`의 타입에 따라 `random_float` 또는 `random_int`를 호출하여 적절한 랜덤 값을 반환하도록 구현합니다.
-
-### 7. 트러블슈팅 & 팁
-
-*   **`KeyboardInterrupt` 처리:**
-    *   **문제:** Ctrl+C를 눌렀을 때 프로그램이 즉시 종료되지 않고 에러 메시지가 출력되거나, 스레드가 정리되지 않은 상태로 종료될 수 있습니다.
-    *   **해결/팁:** `main` 실행 부분에 `try...except KeyboardInterrupt:` 블록을 사용하여 `MissionComputer.stop()` 메서드를 호출하여 모든 스레드를 안전하게 종료하도록 합니다.
-    ```python
-    if __name__ == "__main__":
-        # ... (DummySensorStage, DummySensor, MissionComputer 생성) ...
-        try:
-            while True:
-                time.sleep(1) # 프로그램이 즉시 종료되지 않도록 유지
-        except KeyboardInterrupt:
-            print("[HH:MM:SS] [system] System stopping...")
-            mission_computer.stop()
-            print("[HH:MM:SS] [system] System stopped.")
-    ```
-
-*   **`join()` 사용 시 주의:**
-    *   **문제:** `stop()` 또는 `exit()` 메서드에서 스레드에 `stop_event.set()` 신호를 보낸 후 바로 `thread.join()`을 호출하면, 스레드가 아직 완전히 종료되기 전에 메인 스레드가 기다리게 되어 프로그램이 멈출 수 있습니다.
-    *   **해결/팁:** `join()` 호출 전에 `time.sleep()`을 사용하여 스레드가 종료 신호를 받고 처리할 시간을 충분히 주는 것이 좋습니다. 혹은 `join()`의 `timeout` 인자를 활용할 수도 있습니다.
-    ```python
-    def stop(self, job_id: int):
-        if job_id in self.jobs:
-            stop_event = self.jobs[job_id]['stop_event']
-            stop_event.set()
-            self.jobs[job_id]['worker_thread'].join(timeout=1) # 타임아웃 설정
-            del self.jobs[job_id]
-    ```
-
-*   **`history` 리스트 관리:**
-    *   **문제:** `get_sensor_data` 함수가 계속해서 `history` 리스트에 데이터를 추가하면 메모리가 무한정 늘어날 수 있습니다.
-    *   **팁:** `start_print_average` 함수에서 평균 계산 후, 가장 오래된 일정 개수의 데이터를 `history`에서 제거하는 로직을 추가하면 메모리 사용량을 효율적으로 관리할 수 있습니다. `collections.deque`를 사용하면 `popleft()`로 효율적으로 제거할 수 있습니다.
-
-*   **`Computer.run()`의 `executeJob` 인자:**
-    *   **문제:** `run` 메서드의 `executeJob` 인자는 콜백 함수로, 인자를 받지 않아야 합니다. `get_sensor_data`와 같이 `self`를 참조하는 함수를 전달할 때는 `lambda` 또는 `functools.partial`을 사용하여 `self`를 바인딩해야 합니다.
-    *   **팁:**
-    ```python
-    # MissionComputer 클래스 내에서
-    def start_get_sensor(self, interval: int = 5):
-        # self.sensor.get_env()를 호출하는 get_sensor_data 함수를 Computer에 등록
-        job_id = self.computer.run(lambda: self.get_sensor_data(), interval)
-        self.get_sensor_job_id = job_id
-    ```
-
-*   **`DummySensor`의 `log_env` 구현 (보너스):**
-    *   **팁:** `FileWriter.write` 메서드를 활용하여 `env_log.txt` 파일에 센서 값들을 지속적으로 기록합니다. 각 로그는 시간 정보와 함께 기록하는 것이 좋습니다.
-
-### 8. 추가 학습 자료
-
-*   **Python 공식 문서 - `threading` 모듈:**
-    *   [https://docs.python.org/ko/3/library/threading.html](https://docs.python.org/ko/3/library/threading.html)
-    *   스레드 생성, 동기화 프리미티브(`Event`, `Lock` 등)에 대한 자세한 설명을 참고하세요.
-
-*   **Python 공식 문서 - `json` 모듈:**
-    *   [https://docs.python.org/ko/3/library/json.html](https://docs.python.org/ko/3/library/json.html)
-    *   JSON 데이터의 직렬화 및 역직렬화 방법에 대해 학습할 수 있습니다.
-
-*   **`collections.deque` 소개:**
-    *   [https://docs.python.org/ko/3/library/collections.html#collections.deque](https://docs.python.org/ko/3/library/collections.html#collections.deque)
-    *   효율적인 큐 구현을 위한 `deque`의 사용법을 익혀보세요.
-
-*   **멀티스레딩 기본 개념:**
-    *   [https://www.geeksforgeeks.org/multithreading-in-python/](https://www.geeksforgeeks.org/multithreading-in-python/) (영어)
-    *   멀티스레딩의 기본 원리와 주의사항에 대해 이해하는 데 도움이 됩니다.
-
----
-
-### 참고 레포 목록 (2명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| kwonhee1 | [ia-codyssey/5week](https://github.com/kwonhee1/ia-codyssey/tree/main/5week) | 2026-04-09 | 4,137자 | 5개 | - |
-| park-soo-hyeon | [codyssey/5week](https://github.com/park-soo-hyeon/codyssey/tree/main/5week) | 2026-04-12 | 없음 | 2개 | - |
-
----
-
-<a id="week-6"></a>
-## 6주차 과제
-
-_이 주차에 README가 작성된 레포가 없습니다._
-
----
-
-### 참고 레포 목록 (1명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| jyaniee | [codyssey-ai-sw/c01-p06-mission-computer-returns](https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p06-mission-computer-returns) | 2026-04-12 | 없음 | 3개 | 1건 (분석보고서) |
-
-**이 주차 추가 자료 현황**: 
-
-- 분석보고서: 1건
-
----
-
-<a id="week-7"></a>
-## 7주차 과제
-
-_이 주차에 README가 작성된 레포가 없습니다._
-
----
-
-### 참고 레포 목록 (1명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| jyaniee | [codyssey-ai-sw/c01-p07-mission-computer-revived](https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p07-mission-computer-revived) | 2026-04-12 | 없음 | 2개 | 1건 (분석보고서) |
-
-**이 주차 추가 자료 현황**: 
-
-- 분석보고서: 1건
-
----
-
-<a id="week-8"></a>
-## 8주차 과제
-
-_이 주차에 README가 작성된 레포가 없습니다._
-
----
-
-### 참고 레포 목록 (1명)
-
-| 수강생 | 레포 | 최종 업데이트 | README 분량 | 파일 수 | 추가 자료 |
-|--------|------|:------------:|:-----------:|:-------:|:---------:|
-| jyaniee | [codyssey-ai-sw/c01-p08-unstable-mission-computer](https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p08-unstable-mission-computer) | 2026-04-12 | 없음 | 3개 | 1건 (분석보고서) |
-
-**이 주차 추가 자료 현황**: 
-
-- 분석보고서: 1건
-
----
-
-<a id="fingerprint-discovery"></a>
-## 지문 기반 신규 발견 레포
-
-아래 레포들은 후보 목록에 없지만, codyssey 과제 특유의 파일(지문)이 감지되어 자동 발견되었습니다.
-다음 수집 주기에 후보로 추가할지 검토가 필요합니다.
-
-| 사용자 | 레포 | 지문 점수 | 파일 수 | README | 증거 |
-|--------|------|:---------:|:-------:|:------:|------|
-| LTM0714 | [ia-codyssey](https://github.com/LTM0714/ia-codyssey) | 27 | 37개 | 2,168자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| NamJungHyeon | [ia-codessey](https://github.com/NamJungHyeon/ia-codessey) | 24 | 11개 | 1,985자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| heveloper | [ia-codyssey](https://github.com/heveloper/ia-codyssey) | 24 | 34개 | 411자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| kjunh972 | [Dongyang-Codyssey](https://github.com/kjunh972/Dongyang-Codyssey) | 24 | 72개 | 11,395자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| syjung64 | [codyssey-project](https://github.com/syjung64/codyssey-project) | 21 | 59개 | 572자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| jnjosjk0965 | [codyssey](https://github.com/jnjosjk0965/codyssey) | 21 | 38개 | 339자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| Yu-JeSeung | [Codyssey](https://github.com/Yu-JeSeung/Codyssey) | 21 | 81개 | 16자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| asy047 | [ia-codyssey](https://github.com/asy047/ia-codyssey) | 21 | 81개 | 65자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| main328 | [dmu_python_codyssey](https://github.com/main328/dmu_python_codyssey) | 21 | 127개 | 64자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| logg9715 | [codyssey_2025_1](https://github.com/logg9715/codyssey_2025_1) | 21 | 28개 | 208자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| Sansanamu | [SanCodyssey](https://github.com/Sansanamu/SanCodyssey) | 21 | 14개 | 24자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| MetaSonGi | [PYTHON-PBL01_01](https://github.com/MetaSonGi/PYTHON-PBL01_01) | 21 | 6개 | 1,043자 | [Tier1] mission_computer_main.log, [Tier2] main.py, [키워드] mission_computer |
-| Kang-hyejin | [codyssey](https://github.com/Kang-hyejin/codyssey) | 18 | 24개 | 10자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| schwarzhans37 | [Codyssey](https://github.com/schwarzhans37/Codyssey) | 18 | 232개 | 54자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| Danto7632 | [ia-codyssey](https://github.com/Danto7632/ia-codyssey) | 18 | 15개 | 60자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| syuh23 | [Codyssey](https://github.com/syuh23/Codyssey) | 18 | 20개 | 10자 | [Tier1] mars_mission_computer.py, [Tier1] mars_base_inventory_danger.csv, [Tier1] log_analysis.md |
-| ss0ng99 | [codyssey](https://github.com/ss0ng99/codyssey) | 18 | 100개 | 23자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| jiyeon0715 | [ia_codyssey](https://github.com/jiyeon0715/ia_codyssey) | 18 | 37개 | 16자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| myth0629 | [codyssey](https://github.com/myth0629/codyssey) | 18 | 16개 | 10자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-| lyler-lee | [dmu-codyssey](https://github.com/lyler-lee/dmu-codyssey) | 18 | 3372개 | 53자 | [Tier1] mars_mission_computer.py, [Tier1] mission_computer_main.log, [Tier1] mars_base_inventory_list.csv |
-
----

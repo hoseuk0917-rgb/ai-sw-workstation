@@ -1056,11 +1056,16 @@ def summarize_week(client, readmes: list[dict], week: str) -> str:
 - 트러블슈팅이나 팁이 README에 없으면 일반적으로 자주 발생하는 이슈를 추가하세요.
 """
 
-    result = call_genai(client, prompt)
-    if not result:
+    try:
+        result = call_genai(client, prompt)
+        if not result:
+            best = max(readmes, key=lambda r: len(r["readme"]))
+            return best["readme"][:2000] + "\n\n_*(AI 요약 실패 — 원문 일부)*_"
+        return result
+    except Exception as e:
+        print(f"  [오류] {week}주차 AI 요약 중 에러: {e}")
         best = max(readmes, key=lambda r: len(r["readme"]))
-        return best["readme"][:2000] + "\n\n_*(AI 요약 실패 — 원문 일부)*_"
-    return result
+        return best["readme"][:2000] + f"\n\n_*(AI 요약 중 치명적 에러: {e} — 원문 일부)*_"
 
 
 # ─── 수집 ─────────────────────────────────────────────────────────────────────
@@ -1182,16 +1187,20 @@ def collect() -> list:
         if not c.get("active", True):
             continue
 
-        if c.get("type") == "single_repo":
-            items = collect_single_repo(c)
-        else:
-            items = collect_multi_repo(c)
+        try:
+            if c.get("type") == "single_repo":
+                items = collect_single_repo(c)
+            else:
+                items = collect_multi_repo(c)
 
-        for item in items:
-            key = f"{item['username']}/{item['repo_name']}"
-            if key not in seen:
-                seen.add(key)
-                results.append(item)
+            for item in items:
+                key = f"{item['username']}/{item['repo_name']}"
+                if key not in seen:
+                    seen.add(key)
+                    results.append(item)
+        except Exception as e:
+            print(f"  [치명적 오류] 후보 {c['display_name']} 수집 중 에러 발생: {e}")
+            continue
 
     results.sort(key=lambda x: (int(x["week"]) if x["week"].isdigit() else 99, x["priority"]))
     return results

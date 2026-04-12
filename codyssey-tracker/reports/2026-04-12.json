@@ -1,0 +1,2326 @@
+{
+  "collected_at": "2026-04-12T21:45:24.564568+09:00",
+  "assignments": [
+    {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem1_AI_SW_Setup",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 1707,
+      "priority": 1,
+      "file_count": 49,
+      "artifact_count": 10,
+      "artifact_types": [
+        "인프라설정",
+        "마크다운",
+        "설정파일"
+      ]
+    },
+    {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-1",
+      "week": "1",
+      "updated_at": "2026-04-06",
+      "readme_length": 13870,
+      "priority": 1,
+      "file_count": 5,
+      "artifact_count": 3,
+      "artifact_types": [
+        "인프라설정",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "kimch0612",
+      "display_name": "kimch0612",
+      "repo_name": "Codyssey_Week1",
+      "repo_url": "https://github.com/kimch0612/Codyssey_Week1",
+      "week": "1",
+      "updated_at": "2026-03-31",
+      "readme_length": 7624,
+      "priority": 1,
+      "file_count": 15,
+      "artifact_count": 10,
+      "artifact_types": [
+        "인프라설정",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "JungSaeYoung",
+      "display_name": "JungSaeYoung",
+      "repo_name": "codyssey_E1-1",
+      "repo_url": "https://github.com/JungSaeYoung/codyssey_E1-1",
+      "week": "1",
+      "updated_at": "2026-04-04",
+      "readme_length": 17817,
+      "priority": 1,
+      "file_count": 11,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E1-3",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E1-3",
+      "week": "1",
+      "updated_at": "2026-04-06",
+      "readme_length": 2122,
+      "priority": 1,
+      "file_count": 3,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E-1",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E-1",
+      "week": "1",
+      "updated_at": "2026-03-30",
+      "readme_length": 28643,
+      "priority": 1,
+      "file_count": 9,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-1-workstation-setup",
+      "repo_url": "https://github.com/mov-hyun/e1-1-workstation-setup",
+      "week": "1",
+      "updated_at": "2026-04-05",
+      "readme_length": 28398,
+      "priority": 1,
+      "file_count": 9,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "sonjehyun123-maker",
+      "display_name": "sonjehyun123-maker",
+      "repo_name": "Codyssey-w1-E1",
+      "repo_url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 10846,
+      "priority": 1,
+      "file_count": 4,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "xifoxy-ru",
+      "display_name": "xifoxy-ru",
+      "repo_name": "codyssey_week_01",
+      "repo_url": "https://github.com/xifoxy-ru/codyssey_week_01",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 23802,
+      "priority": 2,
+      "file_count": 27,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정",
+        "설정파일"
+      ]
+    },
+    {
+      "username": "LimJongHan",
+      "display_name": "LimJongHan",
+      "repo_name": "Codyssey-E1-1",
+      "repo_url": "https://github.com/LimJongHan/Codyssey-E1-1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 34992,
+      "priority": 2,
+      "file_count": 8,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "sourcreamsource",
+      "display_name": "sourcreamsource",
+      "repo_name": "codysseyWeekOne",
+      "repo_url": "https://github.com/sourcreamsource/codysseyWeekOne",
+      "week": "1",
+      "updated_at": "2026-04-08",
+      "readme_length": 5289,
+      "priority": 2,
+      "file_count": 48,
+      "artifact_count": 10,
+      "artifact_types": [
+        "분석보고서",
+        "인프라설정",
+        "학습노트",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "coding-monkey-326",
+      "display_name": "coding-monkey-326",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/coding-monkey-326/codyssey-e1-1",
+      "week": "1",
+      "updated_at": "2026-03-31",
+      "readme_length": 17258,
+      "priority": 2,
+      "file_count": 4,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "Opdata",
+      "display_name": "Opdata",
+      "repo_name": "codyssey-workstation",
+      "repo_url": "https://github.com/Opdata/codyssey-workstation",
+      "week": "1",
+      "updated_at": "2026-04-11",
+      "readme_length": 19588,
+      "priority": 2,
+      "file_count": 8,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_workstation",
+      "repo_url": "https://github.com/mulloc1/codyssey_workstation",
+      "week": "1",
+      "updated_at": "2026-03-31",
+      "readme_length": 2092,
+      "priority": 2,
+      "file_count": 16,
+      "artifact_count": 10,
+      "artifact_types": [
+        "인프라설정",
+        "마크다운",
+        "학습노트"
+      ]
+    },
+    {
+      "username": "whdals006",
+      "display_name": "whdals006",
+      "repo_name": "Codyssey_E1-1",
+      "repo_url": "https://github.com/whdals006/Codyssey_E1-1",
+      "week": "1",
+      "updated_at": "2026-04-07",
+      "readme_length": 20211,
+      "priority": 2,
+      "file_count": 6,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "dolphin1404",
+      "display_name": "dolphin1404",
+      "repo_name": "Codyssey_E_1_2",
+      "repo_url": "https://github.com/dolphin1404/Codyssey_E_1_2",
+      "week": "1",
+      "updated_at": "2026-04-07",
+      "readme_length": 2038,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Docker",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Docker",
+      "week": "1",
+      "updated_at": "2026-04-02",
+      "readme_length": 17674,
+      "priority": 2,
+      "file_count": 18,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "waz6432",
+      "display_name": "waz6432",
+      "repo_name": "CodysseyE1-1",
+      "repo_url": "https://github.com/waz6432/CodysseyE1-1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 12437,
+      "priority": 2,
+      "file_count": 3,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "whitecy01",
+      "display_name": "whitecy01",
+      "repo_name": "codyssey1",
+      "repo_url": "https://github.com/whitecy01/codyssey1",
+      "week": "1",
+      "updated_at": "2026-04-02",
+      "readme_length": 21139,
+      "priority": 2,
+      "file_count": 7,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정",
+        "설정파일"
+      ]
+    },
+    {
+      "username": "wilderif",
+      "display_name": "wilderif",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/wilderif/codyssey-e1-1",
+      "week": "1",
+      "updated_at": "2026-04-03",
+      "readme_length": 957,
+      "priority": 2,
+      "file_count": 32,
+      "artifact_count": 10,
+      "artifact_types": [
+        "인프라설정",
+        "학습노트"
+      ]
+    },
+    {
+      "username": "jhkr1",
+      "display_name": "jhkr1",
+      "repo_name": "Codyssey_mission1",
+      "repo_url": "https://github.com/jhkr1/Codyssey_mission1",
+      "week": "1",
+      "updated_at": "2026-04-07",
+      "readme_length": 16206,
+      "priority": 2,
+      "file_count": 10,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "junhnno",
+      "display_name": "junhnno",
+      "repo_name": "Codyssey_WorkSpace_Week1",
+      "repo_url": "https://github.com/junhnno/Codyssey_WorkSpace_Week1",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 12329,
+      "priority": 2,
+      "file_count": 4,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "sungho255",
+      "display_name": "sungho255",
+      "repo_name": "codyssey_1",
+      "repo_url": "https://github.com/sungho255/codyssey_1",
+      "week": "1",
+      "updated_at": "2026-04-07",
+      "readme_length": 12027,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "yejoo0310",
+      "display_name": "yejoo0310",
+      "repo_name": "codyssey-m1",
+      "repo_url": "https://github.com/yejoo0310/codyssey-m1",
+      "week": "1",
+      "updated_at": "2026-04-05",
+      "readme_length": 36093,
+      "priority": 2,
+      "file_count": 9,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "peachily",
+      "display_name": "peachily",
+      "repo_name": "codyssey11-E1",
+      "repo_url": "https://github.com/peachily/codyssey11-E1",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 41,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "park-soo-hyeon",
+      "display_name": "park-soo-hyeon",
+      "repo_name": "codyssey/1week",
+      "repo_url": "https://github.com/park-soo-hyeon/codyssey/tree/main/1week",
+      "week": "1",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 4,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    },
+    {
+      "username": "dldnsgkr",
+      "display_name": "dldnsgkr",
+      "repo_name": "codyssey/problem_1",
+      "repo_url": "https://github.com/dldnsgkr/codyssey/tree/main/problem_1",
+      "week": "1",
+      "updated_at": "2026-04-08",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "ntt65",
+      "display_name": "ntt65",
+      "repo_name": "codyssey/e1_1",
+      "repo_url": "https://github.com/ntt65/codyssey/tree/main/e1_1",
+      "week": "1",
+      "updated_at": "2026-04-12",
+      "readme_length": 21218,
+      "priority": 2,
+      "file_count": 23,
+      "artifact_count": 9,
+      "artifact_types": [
+        "분석보고서",
+        "인프라설정",
+        "학습노트",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "sebin1103",
+      "display_name": "sebin1103",
+      "repo_name": "codyssey-mission/mission1",
+      "repo_url": "https://github.com/sebin1103/codyssey-mission/tree/main/mission1",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 4,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    },
+    {
+      "username": "jyaniee",
+      "display_name": "jyaniee",
+      "repo_name": "codyssey-ai-sw/c01-p01-mission-log-analysis",
+      "repo_url": "https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p01-mission-log-analysis",
+      "week": "1",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "js910",
+      "display_name": "js910",
+      "repo_name": "Codyssey-Assignments/Assignment-1-Docker",
+      "repo_url": "https://github.com/js910/Codyssey-Assignments/tree/main/Assignment-1-Docker",
+      "week": "1",
+      "updated_at": "2026-04-10",
+      "readme_length": 7689,
+      "priority": 2,
+      "file_count": 22,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "leehnmn",
+      "display_name": "leehnmn",
+      "repo_name": "codyssey_2026/project-1",
+      "repo_url": "https://github.com/leehnmn/codyssey_2026/tree/main/project-1",
+      "week": "1",
+      "updated_at": "2026-04-08",
+      "readme_length": 2029,
+      "priority": 2,
+      "file_count": 3,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "ikasoon",
+      "display_name": "ikasoon",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/ikasoon/codyssey-e1-1",
+      "week": "1",
+      "updated_at": "2026-04-06",
+      "readme_length": 1477,
+      "priority": 3,
+      "file_count": 12,
+      "artifact_count": 6,
+      "artifact_types": [
+        "인프라설정",
+        "마크다운",
+        "학습노트"
+      ]
+    },
+    {
+      "username": "mackerel07",
+      "display_name": "mackerel07",
+      "repo_name": "codyssey-workstation/assignment1",
+      "repo_url": "https://github.com/mackerel07/codyssey-workstation/tree/main/assignment1",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 14627,
+      "priority": 3,
+      "file_count": 3,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "gkrtod4477",
+      "display_name": "gkrtod4477",
+      "repo_name": "codyssey-project/curriculum",
+      "repo_url": "https://github.com/gkrtod4477/codyssey-project/tree/main/curriculum",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 3,
+      "file_count": 17,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    },
+    {
+      "username": "gkrtod4477",
+      "display_name": "gkrtod4477",
+      "repo_name": "codyssey-project/docker",
+      "repo_url": "https://github.com/gkrtod4477/codyssey-project/tree/main/docker",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 3,
+      "file_count": 1,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "gkrtod4477",
+      "display_name": "gkrtod4477",
+      "repo_name": "codyssey-project/scripts",
+      "repo_url": "https://github.com/gkrtod4477/codyssey-project/tree/main/scripts",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 3,
+      "file_count": 1,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "1anminJ",
+      "display_name": "1anminJ",
+      "repo_name": "Codyssey/essential-step-1",
+      "repo_url": "https://github.com/1anminJ/Codyssey/tree/main/essential-step-1",
+      "week": "1",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 3,
+      "file_count": 14,
+      "artifact_count": 2,
+      "artifact_types": [
+        "분석보고서",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "sangwoo-codyssey",
+      "display_name": "sangwoo-codyssey",
+      "repo_name": "01-infra-basics-study",
+      "repo_url": "https://github.com/sangwoo-codyssey/01-infra-basics-study",
+      "week": "1",
+      "updated_at": "2026-04-08",
+      "readme_length": 33034,
+      "priority": 3,
+      "file_count": 34,
+      "artifact_count": 2,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem2_Python_with_git",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 158,
+      "priority": 1,
+      "file_count": 2,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-2",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 5469,
+      "priority": 1,
+      "file_count": 10,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "kimch0612",
+      "display_name": "kimch0612",
+      "repo_name": "Codyssey_Week2",
+      "repo_url": "https://github.com/kimch0612/Codyssey_Week2",
+      "week": "2",
+      "updated_at": "2026-04-01",
+      "readme_length": 12248,
+      "priority": 1,
+      "file_count": 15,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "JungSaeYoung",
+      "display_name": "JungSaeYoung",
+      "repo_name": "codyssey_E1-2",
+      "repo_url": "https://github.com/JungSaeYoung/codyssey_E1-2",
+      "week": "2",
+      "updated_at": "2026-04-06",
+      "readme_length": 9957,
+      "priority": 1,
+      "file_count": 8,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E-2",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E-2",
+      "week": "2",
+      "updated_at": "2026-04-02",
+      "readme_length": 1032,
+      "priority": 1,
+      "file_count": 14,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-2-python-basics-quiz-game",
+      "repo_url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 14272,
+      "priority": 1,
+      "file_count": 6,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "sonjehyun123-maker",
+      "display_name": "sonjehyun123-maker",
+      "repo_name": "Codyssey-w1-E2",
+      "repo_url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E2",
+      "week": "2",
+      "updated_at": "2026-04-10",
+      "readme_length": 14548,
+      "priority": 1,
+      "file_count": 14,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "xifoxy-ru",
+      "display_name": "xifoxy-ru",
+      "repo_name": "codyssey_week_02",
+      "repo_url": "https://github.com/xifoxy-ru/codyssey_week_02",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 6861,
+      "priority": 2,
+      "file_count": 8,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "LimJongHan",
+      "display_name": "LimJongHan",
+      "repo_name": "Codyssey-E1-2",
+      "repo_url": "https://github.com/LimJongHan/Codyssey-E1-2",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 3384,
+      "priority": 2,
+      "file_count": 15,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "sourcreamsource",
+      "display_name": "sourcreamsource",
+      "repo_name": "codysseyWeekTwo",
+      "repo_url": "https://github.com/sourcreamsource/codysseyWeekTwo",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 10463,
+      "priority": 2,
+      "file_count": 33,
+      "artifact_count": 3,
+      "artifact_types": [
+        "분석보고서",
+        "마크다운"
+      ]
+    },
+    {
+      "username": "coding-monkey-326",
+      "display_name": "coding-monkey-326",
+      "repo_name": "codyssey-e1-2",
+      "repo_url": "https://github.com/coding-monkey-326/codyssey-e1-2",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 4052,
+      "priority": 2,
+      "file_count": 10,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "Opdata",
+      "display_name": "Opdata",
+      "repo_name": "codyssey-python-with-git",
+      "repo_url": "https://github.com/Opdata/codyssey-python-with-git",
+      "week": "2",
+      "updated_at": "2026-04-11",
+      "readme_length": 308,
+      "priority": 2,
+      "file_count": 9,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_python_with_npu",
+      "repo_url": "https://github.com/mulloc1/codyssey_python_with_npu",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 3917,
+      "priority": 2,
+      "file_count": 45,
+      "artifact_count": 10,
+      "artifact_types": [
+        "마크다운",
+        "학습노트"
+      ]
+    },
+    {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_first_python",
+      "repo_url": "https://github.com/mulloc1/codyssey_first_python",
+      "week": "2",
+      "updated_at": "2026-04-06",
+      "readme_length": 8903,
+      "priority": 2,
+      "file_count": 17,
+      "artifact_count": 5,
+      "artifact_types": [
+        "마크다운",
+        "학습노트"
+      ]
+    },
+    {
+      "username": "whdals006",
+      "display_name": "whdals006",
+      "repo_name": "Codyssey_E1-2",
+      "repo_url": "https://github.com/whdals006/Codyssey_E1-2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 0,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "yeowon083",
+      "display_name": "yeowon083",
+      "repo_name": "quiz-game",
+      "repo_url": "https://github.com/yeowon083/quiz-game",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 3154,
+      "priority": 2,
+      "file_count": 11,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Python",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Python",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 7552,
+      "priority": 2,
+      "file_count": 12,
+      "artifact_count": 2,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "jhj9109",
+      "display_name": "jhj9109",
+      "repo_name": "codyssey2",
+      "repo_url": "https://github.com/jhj9109/codyssey2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 6685,
+      "priority": 2,
+      "file_count": 20,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "waz6432",
+      "display_name": "waz6432",
+      "repo_name": "CodysseyE1-2",
+      "repo_url": "https://github.com/waz6432/CodysseyE1-2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 1700,
+      "priority": 2,
+      "file_count": 14,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "whitecy01",
+      "display_name": "whitecy01",
+      "repo_name": "codyssey2",
+      "repo_url": "https://github.com/whitecy01/codyssey2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 3062,
+      "priority": 2,
+      "file_count": 13,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "wilderif",
+      "display_name": "wilderif",
+      "repo_name": "codyssey-e1-2",
+      "repo_url": "https://github.com/wilderif/codyssey-e1-2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 2229,
+      "priority": 2,
+      "file_count": 21,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "yacheahobbang",
+      "display_name": "yacheahobbang",
+      "repo_name": "codyssey-E1-2",
+      "repo_url": "https://github.com/yacheahobbang/codyssey-E1-2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 125,
+      "priority": 2,
+      "file_count": 3,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "jhkr1",
+      "display_name": "jhkr1",
+      "repo_name": "Codyssey_mission2",
+      "repo_url": "https://github.com/jhkr1/Codyssey_mission2",
+      "week": "2",
+      "updated_at": "2026-04-11",
+      "readme_length": 21412,
+      "priority": 2,
+      "file_count": 13,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "junhnno",
+      "display_name": "junhnno",
+      "repo_name": "Codyssey_WorkSpace_Week2",
+      "repo_url": "https://github.com/junhnno/Codyssey_WorkSpace_Week2",
+      "week": "2",
+      "updated_at": "2026-04-11",
+      "readme_length": 13221,
+      "priority": 2,
+      "file_count": 13,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "sungho255",
+      "display_name": "sungho255",
+      "repo_name": "codyssey_2",
+      "repo_url": "https://github.com/sungho255/codyssey_2",
+      "week": "2",
+      "updated_at": "2026-04-07",
+      "readme_length": 28,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "yejoo0310",
+      "display_name": "yejoo0310",
+      "repo_name": "codyssey-m2",
+      "repo_url": "https://github.com/yejoo0310/codyssey-m2",
+      "week": "2",
+      "updated_at": "2026-04-10",
+      "readme_length": 3675,
+      "priority": 2,
+      "file_count": 32,
+      "artifact_count": 4,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "park-soo-hyeon",
+      "display_name": "park-soo-hyeon",
+      "repo_name": "codyssey/2week",
+      "repo_url": "https://github.com/park-soo-hyeon/codyssey/tree/main/2week",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 4,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "dldnsgkr",
+      "display_name": "dldnsgkr",
+      "repo_name": "codyssey/problem_2",
+      "repo_url": "https://github.com/dldnsgkr/codyssey/tree/main/problem_2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "ntt65",
+      "display_name": "ntt65",
+      "repo_name": "codyssey/e1_2",
+      "repo_url": "https://github.com/ntt65/codyssey/tree/main/e1_2",
+      "week": "2",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 10,
+      "artifact_count": 3,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "kwonhee1",
+      "display_name": "kwonhee1",
+      "repo_name": "ia-codyssey/2week",
+      "repo_url": "https://github.com/kwonhee1/ia-codyssey/tree/main/2week",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "kwung0206",
+      "display_name": "kwung0206",
+      "repo_name": "ia-codyssey/mars_mission2",
+      "repo_url": "https://github.com/kwung0206/ia-codyssey/tree/main/mars_mission2",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 1,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "sebin1103",
+      "display_name": "sebin1103",
+      "repo_name": "codyssey-mission/mission2",
+      "repo_url": "https://github.com/sebin1103/codyssey-mission/tree/main/mission2",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "js910",
+      "display_name": "js910",
+      "repo_name": "Codyssey-Assignments/Assignment-2-Python",
+      "repo_url": "https://github.com/js910/Codyssey-Assignments/tree/main/Assignment-2-Python",
+      "week": "2",
+      "updated_at": "2026-04-10",
+      "readme_length": 3067,
+      "priority": 2,
+      "file_count": 13,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "leehnmn",
+      "display_name": "leehnmn",
+      "repo_name": "codyssey_2026/project-2",
+      "repo_url": "https://github.com/leehnmn/codyssey_2026/tree/main/project-2",
+      "week": "2",
+      "updated_at": "2026-04-08",
+      "readme_length": 3830,
+      "priority": 2,
+      "file_count": 7,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "mackerel07",
+      "display_name": "mackerel07",
+      "repo_name": "codyssey-workstation/assignment2",
+      "repo_url": "https://github.com/mackerel07/codyssey-workstation/tree/main/assignment2",
+      "week": "2",
+      "updated_at": "2026-04-09",
+      "readme_length": 1107,
+      "priority": 3,
+      "file_count": 4,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "sangwoo-codyssey",
+      "display_name": "sangwoo-codyssey",
+      "repo_name": "02-git-python-first-steps",
+      "repo_url": "https://github.com/sangwoo-codyssey/02-git-python-first-steps",
+      "week": "2",
+      "updated_at": "2026-04-03",
+      "readme_length": 6925,
+      "priority": 3,
+      "file_count": 18,
+      "artifact_count": 1,
+      "artifact_types": [
+        "인프라설정"
+      ]
+    },
+    {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem3_Mini_NPU_Simulator",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem3_Mini_NPU_Simulator",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 1,
+      "file_count": 1,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-3",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-3",
+      "week": "3",
+      "updated_at": "2026-04-07",
+      "readme_length": 0,
+      "priority": 1,
+      "file_count": 1,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "kimch0612",
+      "display_name": "kimch0612",
+      "repo_name": "Codyssey_Week3",
+      "repo_url": "https://github.com/kimch0612/Codyssey_Week3",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 10408,
+      "priority": 1,
+      "file_count": 4,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "JungSaeYoung",
+      "display_name": "JungSaeYoung",
+      "repo_name": "codyssey_E1-3",
+      "repo_url": "https://github.com/JungSaeYoung/codyssey_E1-3",
+      "week": "3",
+      "updated_at": "2026-04-12",
+      "readme_length": 35513,
+      "priority": 1,
+      "file_count": 18,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "jhj9109",
+      "display_name": "jhj9109",
+      "repo_name": "codyssey3",
+      "repo_url": "https://github.com/jhj9109/codyssey3",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 6766,
+      "priority": 2,
+      "file_count": 12,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "jhkr1",
+      "display_name": "jhkr1",
+      "repo_name": "Codyssey_mission3",
+      "repo_url": "https://github.com/jhkr1/Codyssey_mission3",
+      "week": "3",
+      "updated_at": "2026-04-11",
+      "readme_length": 22687,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "yejoo0310",
+      "display_name": "yejoo0310",
+      "repo_name": "codyssey-m3",
+      "repo_url": "https://github.com/yejoo0310/codyssey-m3",
+      "week": "3",
+      "updated_at": "2026-04-12",
+      "readme_length": 13,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "park-soo-hyeon",
+      "display_name": "park-soo-hyeon",
+      "repo_name": "codyssey/3week",
+      "repo_url": "https://github.com/park-soo-hyeon/codyssey/tree/main/3week",
+      "week": "3",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "dldnsgkr",
+      "display_name": "dldnsgkr",
+      "repo_name": "codyssey/problem_3",
+      "repo_url": "https://github.com/dldnsgkr/codyssey/tree/main/problem_3",
+      "week": "3",
+      "updated_at": "2026-04-08",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 3,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "kwonhee1",
+      "display_name": "kwonhee1",
+      "repo_name": "ia-codyssey/3week",
+      "repo_url": "https://github.com/kwonhee1/ia-codyssey/tree/main/3week",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 6,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "sebin1103",
+      "display_name": "sebin1103",
+      "repo_name": "codyssey-mission/mission3",
+      "repo_url": "https://github.com/sebin1103/codyssey-mission/tree/main/mission3",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "jyaniee",
+      "display_name": "jyaniee",
+      "repo_name": "codyssey-ai-sw/c01-p03-find-flammable-material",
+      "repo_url": "https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p03-find-flammable-material",
+      "week": "3",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 6,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    },
+    {
+      "username": "mackerel07",
+      "display_name": "mackerel07",
+      "repo_name": "codyssey-workstation/assignment3",
+      "repo_url": "https://github.com/mackerel07/codyssey-workstation/tree/main/assignment3",
+      "week": "3",
+      "updated_at": "2026-04-09",
+      "readme_length": 1864,
+      "priority": 3,
+      "file_count": 5,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "park-soo-hyeon",
+      "display_name": "park-soo-hyeon",
+      "repo_name": "codyssey/4week",
+      "repo_url": "https://github.com/park-soo-hyeon/codyssey/tree/main/4week",
+      "week": "4",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 1,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "dldnsgkr",
+      "display_name": "dldnsgkr",
+      "repo_name": "codyssey/problem_4",
+      "repo_url": "https://github.com/dldnsgkr/codyssey/tree/main/problem_4",
+      "week": "4",
+      "updated_at": "2026-04-08",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "kwonhee1",
+      "display_name": "kwonhee1",
+      "repo_name": "ia-codyssey/4week",
+      "repo_url": "https://github.com/kwonhee1/ia-codyssey/tree/main/4week",
+      "week": "4",
+      "updated_at": "2026-04-09",
+      "readme_length": 2363,
+      "priority": 2,
+      "file_count": 4,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "sebin1103",
+      "display_name": "sebin1103",
+      "repo_name": "codyssey-mission/mission4",
+      "repo_url": "https://github.com/sebin1103/codyssey-mission/tree/main/mission4",
+      "week": "4",
+      "updated_at": "2026-04-09",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 1,
+      "artifact_types": [
+        "마크다운"
+      ]
+    },
+    {
+      "username": "park-soo-hyeon",
+      "display_name": "park-soo-hyeon",
+      "repo_name": "codyssey/5week",
+      "repo_url": "https://github.com/park-soo-hyeon/codyssey/tree/main/5week",
+      "week": "5",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "kwonhee1",
+      "display_name": "kwonhee1",
+      "repo_name": "ia-codyssey/5week",
+      "repo_url": "https://github.com/kwonhee1/ia-codyssey/tree/main/5week",
+      "week": "5",
+      "updated_at": "2026-04-09",
+      "readme_length": 4137,
+      "priority": 2,
+      "file_count": 5,
+      "artifact_count": 0,
+      "artifact_types": []
+    },
+    {
+      "username": "jyaniee",
+      "display_name": "jyaniee",
+      "repo_name": "codyssey-ai-sw/c01-p06-mission-computer-returns",
+      "repo_url": "https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p06-mission-computer-returns",
+      "week": "6",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 3,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    },
+    {
+      "username": "jyaniee",
+      "display_name": "jyaniee",
+      "repo_name": "codyssey-ai-sw/c01-p07-mission-computer-revived",
+      "repo_url": "https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p07-mission-computer-revived",
+      "week": "7",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 2,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    },
+    {
+      "username": "jyaniee",
+      "display_name": "jyaniee",
+      "repo_name": "codyssey-ai-sw/c01-p08-unstable-mission-computer",
+      "repo_url": "https://github.com/jyaniee/codyssey-ai-sw/tree/main/c01-p08-unstable-mission-computer",
+      "week": "8",
+      "updated_at": "2026-04-12",
+      "readme_length": 0,
+      "priority": 2,
+      "file_count": 3,
+      "artifact_count": 1,
+      "artifact_types": [
+        "분석보고서"
+      ]
+    }
+  ],
+  "discovered_repos": [
+    {
+      "username": "LTM0714",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/LTM0714/ia-codyssey",
+      "score": 27,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이",
+        "[키워드] 화성",
+        "[키워드] mars_base_inventory"
+      ],
+      "file_count": 37,
+      "readme_length": 2168
+    },
+    {
+      "username": "NamJungHyeon",
+      "repo_name": "ia-codessey",
+      "repo_url": "https://github.com/NamJungHyeon/ia-codessey",
+      "score": 24,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] 화성",
+        "[키워드] mars mission",
+        "[키워드] mission_computer"
+      ],
+      "file_count": 11,
+      "readme_length": 1985
+    },
+    {
+      "username": "heveloper",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/heveloper/ia-codyssey",
+      "score": 24,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] mission_computer",
+        "[키워드] log_analysis"
+      ],
+      "file_count": 34,
+      "readme_length": 411
+    },
+    {
+      "username": "kjunh972",
+      "repo_name": "Dongyang-Codyssey",
+      "repo_url": "https://github.com/kjunh972/Dongyang-Codyssey",
+      "score": 24,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 화성",
+        "[키워드] mission_computer"
+      ],
+      "file_count": 72,
+      "readme_length": 11395
+    },
+    {
+      "username": "syjung64",
+      "repo_name": "codyssey-project",
+      "repo_url": "https://github.com/syjung64/codyssey-project",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 59,
+      "readme_length": 572
+    },
+    {
+      "username": "jnjosjk0965",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/jnjosjk0965/codyssey",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 38,
+      "readme_length": 339
+    },
+    {
+      "username": "Yu-JeSeung",
+      "repo_name": "Codyssey",
+      "repo_url": "https://github.com/Yu-JeSeung/Codyssey",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 81,
+      "readme_length": 16
+    },
+    {
+      "username": "asy047",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/asy047/ia-codyssey",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 81,
+      "readme_length": 65
+    },
+    {
+      "username": "main328",
+      "repo_name": "dmu_python_codyssey",
+      "repo_url": "https://github.com/main328/dmu_python_codyssey",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 127,
+      "readme_length": 64
+    },
+    {
+      "username": "logg9715",
+      "repo_name": "codyssey_2025_1",
+      "repo_url": "https://github.com/logg9715/codyssey_2025_1",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 28,
+      "readme_length": 208
+    },
+    {
+      "username": "Sansanamu",
+      "repo_name": "SanCodyssey",
+      "repo_url": "https://github.com/Sansanamu/SanCodyssey",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 14,
+      "readme_length": 24
+    },
+    {
+      "username": "MetaSonGi",
+      "repo_name": "PYTHON-PBL01_01",
+      "repo_url": "https://github.com/MetaSonGi/PYTHON-PBL01_01",
+      "score": 21,
+      "evidence": [
+        "[Tier1] mission_computer_main.log",
+        "[Tier2] main.py",
+        "[키워드] mission_computer",
+        "[키워드] log_analysis"
+      ],
+      "file_count": 6,
+      "readme_length": 1043
+    },
+    {
+      "username": "Kang-hyejin",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/Kang-hyejin/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 24,
+      "readme_length": 10
+    },
+    {
+      "username": "schwarzhans37",
+      "repo_name": "Codyssey",
+      "repo_url": "https://github.com/schwarzhans37/Codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 232,
+      "readme_length": 54
+    },
+    {
+      "username": "Danto7632",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/Danto7632/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 15,
+      "readme_length": 60
+    },
+    {
+      "username": "syuh23",
+      "repo_name": "Codyssey",
+      "repo_url": "https://github.com/syuh23/Codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 20,
+      "readme_length": 10
+    },
+    {
+      "username": "ss0ng99",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/ss0ng99/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 100,
+      "readme_length": 23
+    },
+    {
+      "username": "jiyeon0715",
+      "repo_name": "ia_codyssey",
+      "repo_url": "https://github.com/jiyeon0715/ia_codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 37,
+      "readme_length": 16
+    },
+    {
+      "username": "myth0629",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/myth0629/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 16,
+      "readme_length": 10
+    },
+    {
+      "username": "lyler-lee",
+      "repo_name": "dmu-codyssey",
+      "repo_url": "https://github.com/lyler-lee/dmu-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 3372,
+      "readme_length": 53
+    },
+    {
+      "username": "haeul",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/haeul/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 33,
+      "readme_length": 56
+    },
+    {
+      "username": "LAMA-92",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/LAMA-92/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 17,
+      "readme_length": 11
+    },
+    {
+      "username": "apc126",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/apc126/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 21,
+      "readme_length": 27
+    },
+    {
+      "username": "Gun06",
+      "repo_name": "DMU_Codyssey",
+      "repo_url": "https://github.com/Gun06/DMU_Codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 97,
+      "readme_length": 132
+    },
+    {
+      "username": "junwon515",
+      "repo_name": "42-codyssey",
+      "repo_url": "https://github.com/junwon515/42-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 83,
+      "readme_length": 1671
+    },
+    {
+      "username": "JEON-SEUNGBHIN",
+      "repo_name": "ja-codyssey",
+      "repo_url": "https://github.com/JEON-SEUNGBHIN/ja-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 80,
+      "readme_length": 51
+    },
+    {
+      "username": "nownuu",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/nownuu/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 49,
+      "readme_length": 34
+    },
+    {
+      "username": "swsw12",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/swsw12/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 10,
+      "readme_length": 36
+    },
+    {
+      "username": "kyeongb-bin",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/kyeongb-bin/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 112,
+      "readme_length": 14
+    },
+    {
+      "username": "yechan9981",
+      "repo_name": "ia-codyseeay",
+      "repo_url": "https://github.com/yechan9981/ia-codyseeay",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] 코디세이"
+      ],
+      "file_count": 32,
+      "readme_length": 974
+    },
+    {
+      "username": "yoona0504",
+      "repo_name": "Codyssey_Project",
+      "repo_url": "https://github.com/yoona0504/Codyssey_Project",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 65,
+      "readme_length": 18
+    },
+    {
+      "username": "namerin14",
+      "repo_name": "DMU_codyssey",
+      "repo_url": "https://github.com/namerin14/DMU_codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 21,
+      "readme_length": 14
+    },
+    {
+      "username": "senakim7",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/senakim7/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 12,
+      "readme_length": 13
+    },
+    {
+      "username": "hamchanseok",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/hamchanseok/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 11801,
+      "readme_length": 37
+    },
+    {
+      "username": "Yeonkkuma",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/Yeonkkuma/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 15,
+      "readme_length": 61
+    },
+    {
+      "username": "ysw789",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/ysw789/codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 72,
+      "readme_length": 10
+    },
+    {
+      "username": "hongsh26",
+      "repo_name": "codyssey_hoseo",
+      "repo_url": "https://github.com/hongsh26/codyssey_hoseo",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 31,
+      "readme_length": 16
+    },
+    {
+      "username": "IA-hyunbok",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/IA-hyunbok/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 16,
+      "readme_length": 60
+    },
+    {
+      "username": "ckdduf138",
+      "repo_name": "lcy-codyssey",
+      "repo_url": "https://github.com/ckdduf138/lcy-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 52,
+      "readme_length": 14
+    },
+    {
+      "username": "dokyeong-Kim",
+      "repo_name": "david",
+      "repo_url": "https://github.com/dokyeong-Kim/david",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 75,
+      "readme_length": 313
+    },
+    {
+      "username": "WePung",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/WePung/ia-codyssey",
+      "score": 18,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier2] main.py",
+        "[키워드] codyssey"
+      ],
+      "file_count": 17,
+      "readme_length": 13
+    },
+    {
+      "username": "lostfoundfile",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/lostfoundfile/ia-codyssey",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 46,
+      "readme_length": 1
+    },
+    {
+      "username": "cauchy-P",
+      "repo_name": "david",
+      "repo_url": "https://github.com/cauchy-P/david",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 1744,
+      "readme_length": 274
+    },
+    {
+      "username": "shannonlee-dev",
+      "repo_name": "david",
+      "repo_url": "https://github.com/shannonlee-dev/david",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 379,
+      "readme_length": 271
+    },
+    {
+      "username": "khj050706",
+      "repo_name": "project-x",
+      "repo_url": "https://github.com/khj050706/project-x",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 22,
+      "readme_length": 0
+    },
+    {
+      "username": "moon9H",
+      "repo_name": "swpilotPyhon5",
+      "repo_url": "https://github.com/moon9H/swpilotPyhon5",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 205,
+      "readme_length": 71
+    },
+    {
+      "username": "innovation1427",
+      "repo_name": "Codessey01",
+      "repo_url": "https://github.com/innovation1427/Codessey01",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 36,
+      "readme_length": 0
+    },
+    {
+      "username": "cartman33",
+      "repo_name": "codyssey",
+      "repo_url": "https://github.com/cartman33/codyssey",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 20,
+      "readme_length": 1
+    },
+    {
+      "username": "parksungja",
+      "repo_name": "Codyssey",
+      "repo_url": "https://github.com/parksungja/Codyssey",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 36,
+      "readme_length": 76
+    },
+    {
+      "username": "seojeejee",
+      "repo_name": "-",
+      "repo_url": "https://github.com/seojeejee/-",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 17,
+      "readme_length": 0
+    },
+    {
+      "username": "Llite3253",
+      "repo_name": "ia-codyssey",
+      "repo_url": "https://github.com/Llite3253/ia-codyssey",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 28,
+      "readme_length": 0
+    },
+    {
+      "username": "joohyun7818",
+      "repo_name": "26_codyssey",
+      "repo_url": "https://github.com/joohyun7818/26_codyssey",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv",
+        "[Tier1] mars_base_inventory_list.bin",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 17,
+      "readme_length": 0
+    },
+    {
+      "username": "Eclop14",
+      "repo_name": "42Seoul",
+      "repo_url": "https://github.com/Eclop14/42Seoul",
+      "score": 15,
+      "evidence": [
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] log_analysis.md",
+        "[Tier2] main.py"
+      ],
+      "file_count": 5,
+      "readme_length": 0
+    },
+    {
+      "username": "GarnetKim",
+      "repo_name": "Codyssey",
+      "repo_url": "https://github.com/GarnetKim/Codyssey",
+      "score": 10,
+      "evidence": [
+        "[Tier1] mars_mission_computer.py",
+        "[Tier1] mission_computer_main.log",
+        "[Tier1] mars_base_inventory_list.csv",
+        "[Tier1] mars_base_inventory_danger.csv"
+      ],
+      "file_count": 90,
+      "readme_length": 0
+    }
+  ]
+}

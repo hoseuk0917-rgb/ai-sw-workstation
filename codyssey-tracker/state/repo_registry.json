@@ -20,7 +20,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-09"
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "kimch0612/Codyssey_Week2": {
       "username": "kimch0612",
@@ -40,7 +48,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-01"
+      "updated_at": "2026-04-01",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "kimch0612/Codyssey_Week1": {
       "username": "kimch0612",
@@ -59,7 +75,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-03-31"
+      "updated_at": "2026-03-31",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "sonjehyun123-maker/Codyssey-w1-E2": {
       "username": "sonjehyun123-maker",
@@ -79,7 +103,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-10"
+      "updated_at": "2026-04-10",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "sonjehyun123-maker/Codyssey-w1-E1": {
       "username": "sonjehyun123-maker",
@@ -98,7 +130,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-03"
+      "updated_at": "2026-04-03",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "mulloc1/codyssey_python_with_npu": {
       "username": "mulloc1",
@@ -118,7 +158,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-12"
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "mulloc1/codyssey_first_python": {
       "username": "mulloc1",
@@ -138,7 +186,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-06"
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "mulloc1/codyssey_workstation": {
       "username": "mulloc1",
@@ -158,7 +214,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-03-31"
+      "updated_at": "2026-03-31",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "ntt65/codyssey/e1_1": {
       "username": "ntt65",
@@ -177,7 +241,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-12"
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "ntt65/codyssey/e1_2": {
       "username": "ntt65",
@@ -195,7 +267,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-12"
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
     },
     "codewhite7777/codyssey_E1-3": {
       "username": "codewhite7777",
@@ -215,7 +295,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-06"
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
     },
     "codewhite7777/codyssey_E-2": {
       "username": "codewhite7777",
@@ -235,7 +323,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-02"
+      "updated_at": "2026-04-02",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "codewhite7777/codyssey_E-1": {
       "username": "codewhite7777",
@@ -255,7 +351,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-03-30"
+      "updated_at": "2026-03-30",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "mov-hyun/e1-2-python-basics-quiz-game": {
       "username": "mov-hyun",
@@ -275,7 +379,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-12"
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "mov-hyun/e1-1-workstation-setup": {
       "username": "mov-hyun",
@@ -295,7 +407,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-05"
+      "updated_at": "2026-04-05",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "yeowon083/quiz-game": {
       "username": "yeowon083",
@@ -315,7 +435,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-12"
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "jhkr1/Codyssey_mission3": {
       "username": "jhkr1",
@@ -335,7 +463,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-11"
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "jhkr1/Codyssey_mission2": {
       "username": "jhkr1",
@@ -355,7 +491,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-11"
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "jhkr1/Codyssey_mission1": {
       "username": "jhkr1",
@@ -375,7 +519,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-07"
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "junhnno/Codyssey_WorkSpace_Week2": {
       "username": "junhnno",
@@ -383,11 +535,12 @@
       "repo_name": "Codyssey_WorkSpace_Week2",
       "repo_url": "https://github.com/junhnno/Codyssey_WorkSpace_Week2",
       "week_guess": "2",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "confidence": 0.25,
-      "status": "candidate",
+      "course_guess": "course_2026_main",
+      "course_label": "2026 본과정",
+      "confidence": 0.74,
+      "status": "confirmed",
       "evidence": [
+        "rule:v5_1_week2_workspace_promote",
         "week-readme:quiz",
         "week-readme:state.json",
         "repo:codyssey",
@@ -395,7 +548,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-11"
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "junhnno/Codyssey_WorkSpace_Week1": {
       "username": "junhnno",
@@ -414,7 +575,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-09"
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "sungho255/codyssey_2": {
       "username": "sungho255",
@@ -432,7 +601,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-07"
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
     },
     "sungho255/codyssey_1": {
       "username": "sungho255",
@@ -452,7 +629,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-07"
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
     },
     "yejoo0310/codyssey-m3": {
       "username": "yejoo0310",
@@ -470,7 +655,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-12"
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "yejoo0310/codyssey-m2": {
       "username": "yejoo0310",
@@ -490,7 +683,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-10"
+      "updated_at": "2026-04-10",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "yejoo0310/codyssey-m1": {
       "username": "yejoo0310",
@@ -509,7 +710,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-05"
+      "updated_at": "2026-04-05",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "yejibaek12/Python-Quiz-Game": {
       "username": "yejibaek12",
@@ -529,7 +738,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-11"
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "clae-dev/ia-codyssey-Python": {
       "username": "clae-dev",
@@ -549,7 +766,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-08"
+      "updated_at": "2026-04-08",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "clae-dev/ia-codyssey-Docker": {
       "username": "clae-dev",
@@ -568,7 +793,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-02"
+      "updated_at": "2026-04-02",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "leehnmn/codyssey_2026/project-1": {
       "username": "leehnmn",
@@ -587,7 +820,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-08"
+      "updated_at": "2026-04-08",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "leehnmn/codyssey_2026/project-2": {
       "username": "leehnmn",
@@ -607,7 +848,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-08"
+      "updated_at": "2026-04-08",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "peachily/codyssey11-E1": {
       "username": "peachily",
@@ -615,18 +864,27 @@
       "repo_name": "codyssey11-E1",
       "repo_url": "https://github.com/peachily/codyssey11-E1",
       "week_guess": "1",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "confidence": 0.25,
-      "status": "candidate",
+      "course_guess": "course_2026_main",
+      "course_label": "2026 본과정",
+      "confidence": 0.7,
+      "status": "confirmed",
       "evidence": [
+        "rule:v5_1_e1_docker_promote",
         "repo:codyssey",
         "tier2:main.py",
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-09"
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup": {
       "username": "I-nkamanda",
@@ -646,7 +904,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-09"
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "I-nkamanda/codyssey2026/Problem2_Python_with_git": {
       "username": "I-nkamanda",
@@ -654,11 +920,12 @@
       "repo_name": "codyssey2026/Problem2_Python_with_git",
       "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git",
       "week_guess": "2",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "confidence": 0.25,
-      "status": "candidate",
+      "course_guess": "course_2026_main",
+      "course_label": "2026 본과정",
+      "confidence": 0.76,
+      "status": "confirmed",
       "evidence": [
+        "rule:v5_1_python_with_git_promote",
         "week-repo:python_with_git",
         "week-readme:state.json",
         "repo:codyssey",
@@ -666,7 +933,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-09"
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "I-nkamanda/codyssey2026/Problem3_Mini_NPU_Simulator": {
       "username": "I-nkamanda",
@@ -686,7 +961,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-09"
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "ikasoon/codyssey-e1-1": {
       "username": "ikasoon",
@@ -706,7 +989,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2026-04-06"
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
     },
     "doji-kr/codyssey_day1_bear1": {
       "username": "doji-kr",
@@ -724,7 +1015,15 @@
       ],
       "first_seen_at": "2026-04-13",
       "last_seen_at": "2026-04-13",
-      "updated_at": "2025-07-11"
+      "updated_at": "2025-07-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-13",
+          "status": "excluded",
+          "course_guess": "legacy_pre2026"
+        }
+      ]
     }
   }
 }

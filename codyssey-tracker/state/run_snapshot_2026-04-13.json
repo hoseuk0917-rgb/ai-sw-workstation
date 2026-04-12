@@ -1,6 +1,8 @@
 {
   "generated_at": "2026-04-13",
-  "candidate_pool_size": 37,
+  "candidate_pool_size": 44,
   "collected_count": 37,
-  "new_repo_count": 0
+  "new_repo_count": 0,
+  "watchlist_size": 4,
+  "discovered_count": 0
 }

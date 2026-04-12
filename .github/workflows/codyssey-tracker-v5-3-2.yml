@@ -3,7 +3,7 @@ name: Codyssey registry-backed collection v5.3.2
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 13 * * 0"
+    - cron: "0 12 * * 0"
 
 jobs:
   collect-v5-3-2:

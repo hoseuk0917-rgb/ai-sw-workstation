@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "Optional manual course overrides or validated mappings for repositories and folders.",
+  "repo_overrides": {},
+  "user_overrides": {}
+}

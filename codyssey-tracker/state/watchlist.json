@@ -3,26 +3,6 @@
   "description": "Repositories or users to re-check in future runs before promotion to confirmed course membership.",
   "watch": [
     {
-      "repo_key": "ntt65/codyssey/e1_2",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "status": "candidate",
-      "candidate": {
-        "username": "ntt65",
-        "display_name": "ntt65",
-        "type": "single_repo",
-        "priority": 6,
-        "repo_name": "codyssey",
-        "folder_pattern": "e1_2"
-      },
-      "evidence": [
-        "repo:codyssey",
-        "tier2:main.py"
-      ],
-      "last_seen_at": "2026-04-13",
-      "source": "classified-run"
-    },
-    {
       "repo_key": "codewhite7777/codyssey_E1-3",
       "course_guess": "unknown",
       "course_label": "미분류",
@@ -31,7 +11,7 @@
         "username": "codewhite7777",
         "display_name": "codewhite7777",
         "type": "multi_repo",
-        "priority": 6,
+        "priority": 7,
         "repo_patterns": [
           "codyssey_E1-3"
         ]
@@ -46,27 +26,6 @@
       "source": "classified-run"
     },
     {
-      "repo_key": "sungho255/codyssey_2",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "status": "candidate",
-      "candidate": {
-        "username": "sungho255",
-        "display_name": "sungho255",
-        "type": "multi_repo",
-        "priority": 6,
-        "repo_patterns": [
-          "codyssey_2"
-        ]
-      },
-      "evidence": [
-        "repo:codyssey",
-        "tier2:state.json"
-      ],
-      "last_seen_at": "2026-04-13",
-      "source": "classified-run"
-    },
-    {
       "repo_key": "sungho255/codyssey_1",
       "course_guess": "unknown",
       "course_label": "미분류",
@@ -75,7 +34,7 @@
         "username": "sungho255",
         "display_name": "sungho255",
         "type": "multi_repo",
-        "priority": 6,
+        "priority": 7,
         "repo_patterns": [
           "codyssey_1"
         ]

@@ -1,5 +1,46 @@
 {
   "version": 1,
   "description": "Archived low-signal or stale candidates removed from active watchlist but kept for audit and later revival.",
-  "archived": []
+  "archived": [
+    {
+      "repo_key": "ntt65/codyssey/e1_2",
+      "candidate": {
+        "username": "ntt65",
+        "display_name": "ntt65",
+        "type": "single_repo",
+        "repo_name": "codyssey",
+        "folder_pattern": "e1_2",
+        "repo_patterns": null,
+        "priority": 9
+      },
+      "reason": "low-signal-repeat",
+      "evidence": [
+        "repo:codyssey",
+        "tier2:main.py"
+      ],
+      "archived_at": "2026-04-13",
+      "seen_count": 2
+    },
+    {
+      "repo_key": "sungho255/codyssey_2",
+      "candidate": {
+        "username": "sungho255",
+        "display_name": "sungho255",
+        "type": "multi_repo",
+        "repo_name": null,
+        "folder_pattern": null,
+        "repo_patterns": [
+          "codyssey_2"
+        ],
+        "priority": 9
+      },
+      "reason": "low-signal-repeat",
+      "evidence": [
+        "repo:codyssey",
+        "tier2:state.json"
+      ],
+      "archived_at": "2026-04-13",
+      "seen_count": 2
+    }
+  ]
 }

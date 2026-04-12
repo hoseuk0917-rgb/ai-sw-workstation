@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Candidates found outside seed/watchlist flows. These are not auto-confirmed and should be reviewed or re-collected.",
+  "discovered": []
+}

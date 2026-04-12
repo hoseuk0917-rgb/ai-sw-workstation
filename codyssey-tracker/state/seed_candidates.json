@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Bootstrap seed candidates for Codyssey collection. If empty, collect_v5.py falls back to collect.py CANDIDATES.",
+  "seeds": []
+}

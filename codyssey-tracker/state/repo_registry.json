@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Persistent per-repository registry for course_guess, week_guess, status, and evidence history.",
+  "repos": {}
+}

@@ -2,15 +2,15 @@
   "generated_at": "2026-04-14",
   "totals": {
     "all_items": 38,
-    "candidate_pool_size": 37,
+    "candidate_pool_size": 39,
     "confirmed_main": 33,
     "excluded_legacy": 1,
-    "active_watch_items_shown": 2,
-    "watch_kept": 2,
+    "active_watch_items_shown": 4,
+    "watch_kept": 4,
     "archived_total": 2,
     "discovered_total": 0,
-    "overwrite_suspected": 7,
-    "external_materials": 0,
+    "overwrite_suspected": 0,
+    "external_materials": 62,
     "new_repos": 0
   },
   "items": [
@@ -33,14 +33,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.88,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "3",
+        "continuity_score": 0.04,
+        "confidence": 0.92,
         "status": "confirmed",
         "evidence": [
           "tier1:data.json",
           "tier2:main.py",
           "week-readme:npu",
-          "week-readme:mac"
+          "week-readme:mac",
+          "tier1:data.json"
         ]
       }
     },
@@ -80,14 +88,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.84,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.88,
         "status": "confirmed",
         "evidence": [
           "tier2:main.py",
           "tier2:state.json",
           "week-readme:quiz",
-          "week-readme:state.json"
+          "week-readme:state.json",
+          "tier2:main.py"
         ]
       }
     },
@@ -172,13 +188,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -211,14 +236,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.84,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.88,
         "status": "confirmed",
         "evidence": [
           "tier2:main.py",
           "tier2:state.json",
           "week-readme:quiz",
-          "week-readme:state.json"
+          "week-readme:state.json",
+          "tier2:main.py"
         ]
       }
     },
@@ -247,13 +280,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -366,14 +408,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.88,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "3",
+        "continuity_score": 0.04,
+        "confidence": 0.92,
         "status": "confirmed",
         "evidence": [
           "tier1:data.json",
           "tier2:main.py",
           "week-repo:npu",
-          "week-readme:mac"
+          "week-readme:mac",
+          "tier1:data.json"
         ]
       }
     },
@@ -435,14 +485,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.9,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.9400000000000001,
         "status": "confirmed",
         "evidence": [
           "tier1:quiz_game.py",
           "week-readme:quiz",
           "week-readme:quiz_game",
-          "readme:quiz"
+          "readme:quiz",
+          "tier1:quiz_game.py"
         ]
       }
     },
@@ -528,14 +586,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-repo:workstation",
           "week-readme:docker",
-          "repo:workstation"
+          "repo:workstation",
+          "tier2:Dockerfile"
         ]
       }
     },
@@ -623,13 +689,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -675,12 +750,22 @@
       "priority": 1,
       "course": {
         "course_id": "unknown",
-        "course_label": "미분류",
-        "confidence": 0.25,
+        "course_label": "unknown",
+        "cohort_id": "unknown_watch",
+        "cohort_label": "unknown_watch",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.29,
         "status": "candidate",
         "evidence": [
+          "tier2:main.py",
           "repo:codyssey",
-          "tier2:main.py"
+          "repo:codyssey",
+          "tier2:main.py",
+          "continuity:repo-codyssey"
         ]
       }
     },
@@ -702,14 +787,22 @@
       "priority": 1,
       "course": {
         "course_id": "unknown",
-        "course_label": "미분류",
-        "confidence": 0.25,
+        "course_label": "unknown",
+        "cohort_id": "unknown_watch",
+        "cohort_label": "unknown_watch",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.29,
         "status": "candidate",
         "evidence": [
+          "tier2:main.py",
+          "repo:codyssey",
           "repo:codyssey",
           "readme:npu",
-          "readme:mac",
-          "tier2:main.py"
+          "readme:mac"
         ]
       }
     },
@@ -742,14 +835,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.84,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.88,
         "status": "confirmed",
         "evidence": [
           "tier2:main.py",
           "tier2:state.json",
           "week-readme:quiz",
-          "week-readme:state.json"
+          "week-readme:state.json",
+          "tier2:main.py"
         ]
       }
     },
@@ -783,14 +884,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:workstation",
           "week-readme:docker",
-          "readme:workstation"
+          "readme:workstation",
+          "tier2:Dockerfile"
         ]
       }
     },
@@ -818,14 +927,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "3",
+        "continuity_score": 0.0,
         "confidence": 0.88,
         "status": "confirmed",
         "evidence": [
           "tier1:data.json",
           "tier2:main.py",
           "week-repo:npu",
-          "week-readme:mac"
+          "week-readme:mac",
+          "tier1:data.json"
         ]
       }
     },
@@ -850,14 +967,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.0,
         "confidence": 0.9,
         "status": "confirmed",
         "evidence": [
           "tier1:quiz_game.py",
           "week-repo:quiz",
           "week-readme:quiz_game",
-          "repo:quiz"
+          "repo:quiz",
+          "tier1:quiz_game.py"
         ]
       }
     },
@@ -896,14 +1021,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.0,
         "confidence": 0.82,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-repo:workstation",
           "week-readme:docker",
-          "repo:workstation"
+          "repo:workstation",
+          "tier2:Dockerfile"
         ]
       }
     },
@@ -933,14 +1066,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.0,
         "confidence": 0.84,
         "status": "confirmed",
         "evidence": [
           "tier2:main.py",
           "tier2:state.json",
           "week-repo:quiz",
-          "week-readme:state.json"
+          "week-readme:state.json",
+          "tier2:main.py"
         ]
       }
     },
@@ -964,14 +1105,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.88,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "3",
+        "continuity_score": 0.04,
+        "confidence": 0.92,
         "status": "confirmed",
         "evidence": [
           "tier1:data.json",
           "tier2:main.py",
           "week-readme:npu",
-          "week-readme:mac"
+          "week-readme:mac",
+          "tier1:data.json"
         ]
       }
     },
@@ -1003,14 +1152,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.84,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.88,
         "status": "confirmed",
         "evidence": [
           "tier2:main.py",
           "tier2:state.json",
           "week-readme:quiz",
-          "week-readme:state.json"
+          "week-readme:state.json",
+          "tier2:main.py"
         ]
       }
     },
@@ -1045,14 +1202,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:workstation",
           "week-readme:docker",
-          "readme:workstation"
+          "readme:workstation",
+          "tier2:Dockerfile"
         ]
       }
     },
@@ -1089,10 +1254,10 @@
         "status": "confirmed",
         "evidence": [
           "rule:v5_1_week2_workspace_promote",
-          "week-readme:quiz",
-          "week-readme:state.json",
+          "tier2:main.py",
           "repo:codyssey",
-          "readme:quiz"
+          "week-readme:quiz",
+          "week-readme:state.json"
         ]
       }
     },
@@ -1121,13 +1286,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -1148,12 +1322,22 @@
       "priority": 1,
       "course": {
         "course_id": "unknown",
-        "course_label": "미분류",
-        "confidence": 0.25,
+        "course_label": "unknown",
+        "cohort_id": "unknown_watch",
+        "cohort_label": "unknown_watch",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.29,
         "status": "candidate",
         "evidence": [
+          "tier2:state.json",
           "repo:codyssey",
-          "tier2:state.json"
+          "repo:codyssey",
+          "tier2:state.json",
+          "continuity:repo-codyssey"
         ]
       }
     },
@@ -1174,10 +1358,18 @@
       "priority": 1,
       "course": {
         "course_id": "unknown",
-        "course_label": "미분류",
-        "confidence": 0.25,
+        "course_label": "unknown",
+        "cohort_id": "unknown_watch",
+        "cohort_label": "unknown_watch",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.29,
         "status": "candidate",
         "evidence": [
+          "repo:codyssey",
           "week-readme:docker",
           "repo:codyssey",
           "readme:docker",
@@ -1207,11 +1399,21 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.9,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "3",
+        "continuity_score": 0.04,
+        "confidence": 0.9400000000000001,
         "status": "confirmed",
         "evidence": [
           "tier1:mini_npu_simulator.py",
+          "tier2:main.py",
+          "tier1:mini_npu_simulator.py",
+          "tier1:data.json",
           "tier2:main.py"
         ]
       }
@@ -1284,14 +1486,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.9,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.9400000000000001,
         "status": "confirmed",
         "evidence": [
           "tier1:quiz_game.py",
           "week-readme:quiz",
           "week-readme:quiz_game",
-          "readme:quiz"
+          "readme:quiz",
+          "tier1:quiz_game.py"
         ]
       }
     },
@@ -1325,13 +1535,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -1361,14 +1580,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.0,
         "confidence": 0.84,
         "status": "confirmed",
         "evidence": [
           "tier2:main.py",
           "tier2:state.json",
           "week-repo:quiz",
-          "week-readme:state.json"
+          "week-readme:state.json",
+          "tier2:main.py"
         ]
       }
     },
@@ -1410,14 +1637,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.9,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.9400000000000001,
         "status": "confirmed",
         "evidence": [
           "tier1:quiz_game.py",
           "week-readme:quiz",
           "week-readme:quiz_game",
-          "readme:quiz"
+          "readme:quiz",
+          "tier1:quiz_game.py"
         ]
       }
     },
@@ -1460,13 +1695,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-repo:docker",
-          "repo:docker"
+          "repo:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -1494,13 +1738,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile",
+          "repo:codyssey"
         ]
       }
     },
@@ -1526,14 +1779,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.9,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "2",
+        "continuity_score": 0.04,
+        "confidence": 0.9400000000000001,
         "status": "confirmed",
         "evidence": [
           "tier1:quiz_game.py",
           "week-readme:quiz",
           "week-readme:quiz_game",
-          "readme:quiz"
+          "readme:quiz",
+          "tier1:quiz_game.py"
         ]
       }
     },
@@ -1610,9 +1871,10 @@
         "status": "confirmed",
         "evidence": [
           "rule:v5_1_e1_docker_promote",
-          "repo:codyssey",
           "tier2:main.py",
-          "tier2:Dockerfile"
+          "tier2:Dockerfile",
+          "repo:codyssey",
+          "repo:codyssey"
         ]
       }
     },
@@ -1731,14 +1993,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:docker",
           "week-repo:setup",
-          "readme:docker"
+          "readme:docker",
+          "tier2:Dockerfile"
         ]
       }
     },
@@ -1777,10 +2047,10 @@
         "status": "confirmed",
         "evidence": [
           "rule:v5_1_python_with_git_promote",
-          "week-repo:python_with_git",
-          "week-readme:state.json",
           "repo:codyssey",
-          "repo:python_with_git"
+          "repo:python_with_git",
+          "week-repo:python_with_git",
+          "week-readme:state.json"
         ]
       }
     },
@@ -1800,14 +2070,22 @@
       "priority": 1,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.78,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "3",
+        "continuity_score": 0.04,
+        "confidence": 0.8200000000000001,
         "status": "confirmed",
         "evidence": [
           "week-repo:npu",
           "week-repo:npu_simulator",
           "week-repo:mini_npu",
-          "repo:npu"
+          "repo:npu",
+          "repo:codyssey"
         ]
       }
     },
@@ -1869,14 +2147,22 @@
       "priority": 3,
       "course": {
         "course_id": "course_2026_main",
-        "course_label": "2026 본과정",
-        "confidence": 0.82,
+        "course_label": "2026_main",
+        "cohort_id": "cohort_2026_current",
+        "cohort_label": "cohort_2026_current",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
+        "confidence": 0.86,
         "status": "confirmed",
         "evidence": [
           "tier2:Dockerfile",
           "week-readme:workstation",
           "week-readme:docker",
-          "readme:workstation"
+          "readme:workstation",
+          "tier2:Dockerfile"
         ]
       }
     },
@@ -1903,101 +2189,1243 @@
       "priority": 3,
       "course": {
         "course_id": "legacy_pre2026",
-        "course_label": "레거시(날짜 컷)",
+        "course_label": "legacy_pre2026",
+        "cohort_id": "legacy_pre2026",
+        "cohort_label": "legacy_pre2026",
+        "phase_id": "admission_bootcamp",
+        "phase_label": "admission_bootcamp",
+        "phase_confidence": 0.7,
+        "week_label": "1",
+        "continuity_score": 0.04,
         "confidence": 0.98,
         "status": "excluded",
         "evidence": [
           "updated_at:2025-07-11",
-          "rule:legacy-hard-cutoff"
+          "rule:legacy-hard-cutoff",
+          "repo:codyssey"
         ]
       }
     }
   ],
-  "overwritten_flags": [
+  "overwritten_flags": [],
+  "external_materials": [
     {
-      "repo_key": "mov-hyun/e1-2-python-basics-quiz-game",
-      "previous_week": "2",
-      "current_week": "2",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-12",
-      "current_updated_at": "2026-04-14",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://github.com/kimch0612",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "kimch0612/Codyssey_Week3",
+        "kimch0612/Codyssey_Week2",
+        "kimch0612/Codyssey_Week1"
+      ],
+      "linked_usernames": [
+        "kimch0612"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     },
     {
-      "repo_key": "yejoo0310/codyssey-m3",
-      "previous_week": "3",
-      "current_week": "3",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-12",
-      "current_updated_at": "2026-04-14",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://gist.github.com/kimch0612",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "kimch0612/Codyssey_Week3",
+        "kimch0612/Codyssey_Week2",
+        "kimch0612/Codyssey_Week1"
+      ],
+      "linked_usernames": [
+        "kimch0612"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     },
     {
-      "repo_key": "yejibaek12/Python-Quiz-Game",
-      "previous_week": "2",
-      "current_week": "2",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-11",
-      "current_updated_at": "2026-04-13",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E2",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "sonjehyun123-maker/Codyssey-w1-E2"
+      ],
+      "linked_usernames": [
+        "sonjehyun123-maker"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     },
     {
-      "repo_key": "leehnmn/codyssey_2026/project-2",
-      "previous_week": "2",
-      "current_week": "2",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-08",
-      "current_updated_at": "2026-04-14",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://github.com/sonjehyun123-maker",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "sonjehyun123-maker/Codyssey-w1-E2",
+        "sonjehyun123-maker/Codyssey-w1-E1"
+      ],
+      "linked_usernames": [
+        "sonjehyun123-maker"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     },
     {
-      "repo_key": "peachily/codyssey11-E1",
-      "previous_week": "1",
-      "current_week": "1",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-09",
-      "current_updated_at": "2026-04-13",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://gist.github.com/sonjehyun123-maker",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "sonjehyun123-maker/Codyssey-w1-E2",
+        "sonjehyun123-maker/Codyssey-w1-E1"
+      ],
+      "linked_usernames": [
+        "sonjehyun123-maker"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     },
     {
-      "repo_key": "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup",
-      "previous_week": "1",
-      "current_week": "1",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-09",
-      "current_updated_at": "2026-04-14",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://github.com/mulloc1",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "mulloc1/codyssey_python_with_npu",
+        "mulloc1/codyssey_first_python",
+        "mulloc1/codyssey_workstation"
+      ],
+      "linked_usernames": [
+        "mulloc1"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     },
     {
-      "repo_key": "I-nkamanda/codyssey2026/Problem2_Python_with_git",
-      "previous_week": "2",
-      "current_week": "2",
-      "previous_status": "confirmed",
-      "current_status": "confirmed",
-      "previous_updated_at": "2026-04-09",
-      "current_updated_at": "2026-04-14",
-      "signature_changed": true,
-      "updated_changed": true,
-      "reason": "same-repo-history-changed"
+      "url": "https://gist.github.com/mulloc1",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "mulloc1/codyssey_python_with_npu",
+        "mulloc1/codyssey_first_python",
+        "mulloc1/codyssey_workstation"
+      ],
+      "linked_usernames": [
+        "mulloc1"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mulloc1/codyssey_first_python"
+      ],
+      "linked_usernames": [
+        "mulloc1"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mulloc1/codyssey_first_python.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mulloc1/codyssey_first_python"
+      ],
+      "linked_usernames": [
+        "mulloc1"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mpegxx/내-저장소-이름.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "ntt65/codyssey/e1_1"
+      ],
+      "linked_usernames": [
+        "ntt65"
+      ],
+      "source_paths": [
+        "e1_1/README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/사용자이름/저장소이름.git",
+      "domain": "github.com",
+      "source_type": "artifact",
+      "source_types": [
+        "artifact"
+      ],
+      "linked_repo_keys": [
+        "ntt65/codyssey/e1_1"
+      ],
+      "linked_usernames": [
+        "ntt65"
+      ],
+      "source_paths": [
+        "e1_1/docs/git_study.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mpegdj/E1_1",
+      "domain": "github.com",
+      "source_type": "artifact",
+      "source_types": [
+        "artifact"
+      ],
+      "linked_repo_keys": [
+        "ntt65/codyssey/e1_1"
+      ],
+      "linked_usernames": [
+        "ntt65"
+      ],
+      "source_paths": [
+        "e1_1/docs/mission_ex.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/ntt65",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "ntt65/codyssey/e1_1",
+        "ntt65/codyssey/e1_2"
+      ],
+      "linked_usernames": [
+        "ntt65"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/ntt65",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "ntt65/codyssey/e1_1",
+        "ntt65/codyssey/e1_2"
+      ],
+      "linked_usernames": [
+        "ntt65"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/codewhite7777",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "codewhite7777/codyssey_E1-3",
+        "codewhite7777/codyssey_E-2",
+        "codewhite7777/codyssey_E-1"
+      ],
+      "linked_usernames": [
+        "codewhite7777"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/codewhite7777",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "codewhite7777/codyssey_E1-3",
+        "codewhite7777/codyssey_E-2",
+        "codewhite7777/codyssey_E-1"
+      ],
+      "linked_usernames": [
+        "codewhite7777"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/codewhite7777/codyssey_E-1.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "codewhite7777/codyssey_E-1"
+      ],
+      "linked_usernames": [
+        "codewhite7777"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/codewhite7777/git@github.com:codewhite7777/codyssey_E-1.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "codewhite7777/codyssey_E-1"
+      ],
+      "linked_usernames": [
+        "codewhite7777"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-3-mini-npu-simulator",
+        "mov-hyun/e1-2-python-basics-quiz-game",
+        "mov-hyun/e1-1-workstation-setup"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/mov-hyun",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-3-mini-npu-simulator",
+        "mov-hyun/e1-2-python-basics-quiz-game",
+        "mov-hyun/e1-1-workstation-setup"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-2-python-basics-quiz-game"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-2-python-basics-quiz-game"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game/pull/new/feature/delete-quiz",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-2-python-basics-quiz-game"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game/pull/new/feature/hint",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-2-python-basics-quiz-game"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game.git/",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-2-python-basics-quiz-game"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/mov-hyun/ia-codyssey.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "mov-hyun/e1-1-workstation-setup"
+      ],
+      "linked_usernames": [
+        "mov-hyun"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yeowon083",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "yeowon083/quiz-game"
+      ],
+      "linked_usernames": [
+        "yeowon083"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/yeowon083",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "yeowon083/quiz-game"
+      ],
+      "linked_usernames": [
+        "yeowon083"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/jhkr1",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "jhkr1/Codyssey_mission3",
+        "jhkr1/Codyssey_mission2",
+        "jhkr1/Codyssey_mission1"
+      ],
+      "linked_usernames": [
+        "jhkr1"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/jhkr1",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "jhkr1/Codyssey_mission3",
+        "jhkr1/Codyssey_mission2",
+        "jhkr1/Codyssey_mission1"
+      ],
+      "linked_usernames": [
+        "jhkr1"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/junhnno/Codyssey_WorkSpace_Week2",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "junhnno/Codyssey_WorkSpace_Week2"
+      ],
+      "linked_usernames": [
+        "junhnno"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/junhnno",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "junhnno/Codyssey_WorkSpace_Week2",
+        "junhnno/Codyssey_WorkSpace_Week1"
+      ],
+      "linked_usernames": [
+        "junhnno"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/junhnno",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "junhnno/Codyssey_WorkSpace_Week2",
+        "junhnno/Codyssey_WorkSpace_Week1"
+      ],
+      "linked_usernames": [
+        "junhnno"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/user-attachments/assets/cdd85d7a-f7b5-4341-b81c-0f5c3f5af47a",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "junhnno/Codyssey_WorkSpace_Week1"
+      ],
+      "linked_usernames": [
+        "junhnno"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/user-attachments/assets/db5baf35-8523-45e4-af9c-4c02df20483e",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "junhnno/Codyssey_WorkSpace_Week1"
+      ],
+      "linked_usernames": [
+        "junhnno"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/junhnno/Codyssey_WorkSpace",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "junhnno/Codyssey_WorkSpace_Week1"
+      ],
+      "linked_usernames": [
+        "junhnno"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/sungho255",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "sungho255/codyssey_2",
+        "sungho255/codyssey_1"
+      ],
+      "linked_usernames": [
+        "sungho255"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/sungho255",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "sungho255/codyssey_2",
+        "sungho255/codyssey_1"
+      ],
+      "linked_usernames": [
+        "sungho255"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yejoo0310",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "yejoo0310/codyssey-m3",
+        "yejoo0310/codyssey-m2",
+        "yejoo0310/codyssey-m1"
+      ],
+      "linked_usernames": [
+        "yejoo0310"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/yejoo0310",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "yejoo0310/codyssey-m3",
+        "yejoo0310/codyssey-m2",
+        "yejoo0310/codyssey-m1"
+      ],
+      "linked_usernames": [
+        "yejoo0310"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yejoo0310/codyssey-m2.git",
+      "domain": "github.com",
+      "source_type": "artifact",
+      "source_types": [
+        "artifact"
+      ],
+      "linked_repo_keys": [
+        "yejoo0310/codyssey-m2"
+      ],
+      "linked_usernames": [
+        "yejoo0310"
+      ],
+      "source_paths": [
+        "docs/clone.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yejoo0310/codyssey-m2",
+      "domain": "github.com",
+      "source_type": "artifact",
+      "source_types": [
+        "artifact"
+      ],
+      "linked_repo_keys": [
+        "yejoo0310/codyssey-m2"
+      ],
+      "linked_usernames": [
+        "yejoo0310"
+      ],
+      "source_paths": [
+        "docs/clone.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yejoo0310/codyssey-m1.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "yejoo0310/codyssey-m1"
+      ],
+      "linked_usernames": [
+        "yejoo0310"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yejibaek12/Python-Quiz-Game.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "yejibaek12/Python-Quiz-Game"
+      ],
+      "linked_usernames": [
+        "yejibaek12"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/yejibaek12",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "yejibaek12/Python-Quiz-Game"
+      ],
+      "linked_usernames": [
+        "yejibaek12"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/yejibaek12",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "yejibaek12/Python-Quiz-Game"
+      ],
+      "linked_usernames": [
+        "yejibaek12"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/clae-dev/ia-codyssey-Python",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "clae-dev/ia-codyssey-Python"
+      ],
+      "linked_usernames": [
+        "clae-dev"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/clae-dev/ia-codyssey-Python.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "clae-dev/ia-codyssey-Python"
+      ],
+      "linked_usernames": [
+        "clae-dev"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/clae-dev",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "clae-dev/ia-codyssey-Python",
+        "clae-dev/ia-codyssey-Docker"
+      ],
+      "linked_usernames": [
+        "clae-dev"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/clae-dev",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "clae-dev/ia-codyssey-Python",
+        "clae-dev/ia-codyssey-Docker"
+      ],
+      "linked_usernames": [
+        "clae-dev"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/leehnmn",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "leehnmn/codyssey_2026/project-1",
+        "leehnmn/codyssey_2026/project-2"
+      ],
+      "linked_usernames": [
+        "leehnmn"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/leehnmn",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "leehnmn/codyssey_2026/project-1",
+        "leehnmn/codyssey_2026/project-2"
+      ],
+      "linked_usernames": [
+        "leehnmn"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/leehnmn/codyssey_2026.git",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "leehnmn/codyssey_2026/project-2"
+      ],
+      "linked_usernames": [
+        "leehnmn"
+      ],
+      "source_paths": [
+        "project-2/README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/leehnmn/codyssey_2026",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "leehnmn/codyssey_2026/project-2"
+      ],
+      "linked_usernames": [
+        "leehnmn"
+      ],
+      "source_paths": [
+        "project-2/README.md"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/peachily",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "peachily/codyssey11-E1"
+      ],
+      "linked_usernames": [
+        "peachily"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/peachily",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "peachily/codyssey11-E1"
+      ],
+      "linked_usernames": [
+        "peachily"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/I-nkamanda",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup",
+        "I-nkamanda/codyssey2026/Problem2_Python_with_git",
+        "I-nkamanda/codyssey2026/Problem3_Mini_NPU_Simulator"
+      ],
+      "linked_usernames": [
+        "I-nkamanda"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/I-nkamanda",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup",
+        "I-nkamanda/codyssey2026/Problem2_Python_with_git",
+        "I-nkamanda/codyssey2026/Problem3_Mini_NPU_Simulator"
+      ],
+      "linked_usernames": [
+        "I-nkamanda"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/ikasoon",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "ikasoon/codyssey-e1-1"
+      ],
+      "linked_usernames": [
+        "ikasoon"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/ikasoon",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "ikasoon/codyssey-e1-1"
+      ],
+      "linked_usernames": [
+        "ikasoon"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://github.com/doji-kr",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "doji-kr/codyssey_day1_bear1"
+      ],
+      "linked_usernames": [
+        "doji-kr"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
+    },
+    {
+      "url": "https://gist.github.com/doji-kr",
+      "domain": "github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "doji-kr/codyssey_day1_bear1"
+      ],
+      "linked_usernames": [
+        "doji-kr"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-14",
+      "last_seen_at": "2026-04-14"
     }
-  ],
-  "external_materials": []
+  ]
 }

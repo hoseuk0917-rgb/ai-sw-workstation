@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import re
 from urllib.parse import urlparse
@@ -7,14 +7,10 @@ EXTERNAL_LINK_ALLOWED_DOMAINS = [
     "velog.io",
     "tistory.com",
     "github.io",
-    "github.com",
     "notion.so",
     "notion.site",
     "youtube.com",
     "youtu.be",
-    "blog.naver.com",
-    "brunch.co.kr",
-    "medium.com",
     "codyssey.kr",
     "codysseycampus.kr",
 ]
@@ -61,7 +57,6 @@ def collect_external_links_from_item(item: dict) -> list[dict]:
 
     readme = item.get("readme", "") or ""
     repo_name = item.get("repo_name", "") or ""
-    username = item.get("username", "") or ""
 
     for link in extract_external_links_from_text(readme):
         if link["url"] in seen:
@@ -86,27 +81,6 @@ def collect_external_links_from_item(item: dict) -> list[dict]:
                 "domain": link["domain"],
                 "source_type": "artifact",
                 "source_path": path,
-            })
-
-    if username:
-        profile_url = f"https://github.com/{username}"
-        if profile_url not in seen:
-            seen.add(profile_url)
-            external_links.append({
-                "url": profile_url,
-                "domain": "github.com",
-                "source_type": "profile",
-                "source_path": "github-profile",
-            })
-
-        gist_url = f"https://gist.github.com/{username}"
-        if gist_url not in seen:
-            seen.add(gist_url)
-            external_links.append({
-                "url": gist_url,
-                "domain": "github.com",
-                "source_type": "gist-profile",
-                "source_path": "github-gist-profile",
             })
 
     return external_links

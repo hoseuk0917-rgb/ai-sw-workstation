@@ -146,16 +146,10 @@ def update_external_materials(classified: list[dict]) -> dict:
             if src_path and src_path not in source_paths:
                 source_paths.append(src_path)
 
-            source_types = list(prev.get('source_types', []))
-            src_type = link.get('source_type')
-            if src_type and src_type not in source_types:
-                source_types.append(src_type)
-
             materials[url] = {
                 'url': url,
                 'domain': link.get('domain', ''),
                 'source_type': link.get('source_type', ''),
-                'source_types': source_types[-20:],
                 'linked_repo_keys': linked_repo_keys[-20:],
                 'linked_usernames': linked_usernames,
                 'source_paths': source_paths[-20:],
@@ -358,6 +352,5 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
 
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 from __future__ import annotations
 
 from collections import defaultdict
@@ -11,6 +11,7 @@ import collect_v5 as v5
 import collect_v5_1 as v5_1
 import collect_v5_2 as v5_2
 import collect_v5_3_1 as v5_3_1
+import external_materials as ext
 
 KST = base.KST
 ROOT = Path(__file__).resolve().parent
@@ -22,6 +23,7 @@ COURSE_MAP_PATH = STATE_DIR / 'course_map.json'
 DISCOVERED_PATH = STATE_DIR / 'discovered_candidates.json'
 ARCHIVE_PATH = STATE_DIR / 'archived_candidates.json'
 OBS_PATH = STATE_DIR / 'repo_observations.json'
+EXTERNAL_MATERIALS_PATH = STATE_DIR / 'external_materials.json'
 ENABLE_GLOBAL_DISCOVERY = __import__('os').environ.get('ENABLE_GLOBAL_DISCOVERY', '0') == '1'
 SIGNATURE_VERSION = 'v5.3.1'
 
@@ -118,7 +120,47 @@ def active_watch_repo_keys(watchlist: dict) -> set[str]:
     return {w.get('repo_key') for w in watchlist.get('watch', []) if isinstance(w, dict) and w.get('repo_key')}
 
 
-def build_report(all_items: list[dict], classified: list[dict], watchlist: dict, new_repos: list[dict], hygiene: dict, overwritten_flags: list[dict], candidate_pool_size: int) -> tuple[str, dict]:
+def update_external_materials(classified: list[dict]) -> dict:
+    store = load_json(EXTERNAL_MATERIALS_PATH, {'version': 1, 'materials': {}})
+    materials = store.setdefault('materials', {})
+    today = datetime.now(KST).strftime('%Y-%m-%d')
+
+    for item in classified:
+        repo_key = f"{item['username']}/{item['repo_name']}"
+        links = ext.collect_external_links_from_item(item)
+
+        for link in links:
+            url = link.get('url')
+            if not url:
+                continue
+
+            prev = materials.get(url, {})
+            linked_repo_keys = list(prev.get('linked_repo_keys', []))
+            if repo_key not in linked_repo_keys:
+                linked_repo_keys.append(repo_key)
+
+            linked_usernames = sorted(set(list(prev.get('linked_usernames', [])) + [item['username']]))
+
+            source_paths = list(prev.get('source_paths', []))
+            src_path = link.get('source_path')
+            if src_path and src_path not in source_paths:
+                source_paths.append(src_path)
+
+            materials[url] = {
+                'url': url,
+                'domain': link.get('domain', ''),
+                'source_type': link.get('source_type', ''),
+                'linked_repo_keys': linked_repo_keys[-20:],
+                'linked_usernames': linked_usernames,
+                'source_paths': source_paths[-20:],
+                'first_seen_at': prev.get('first_seen_at', today),
+                'last_seen_at': today,
+            }
+
+    return store
+
+
+def build_report(all_items: list[dict], classified: list[dict], watchlist: dict, new_repos: list[dict], hygiene: dict, overwritten_flags: list[dict], candidate_pool_size: int, external_store: dict) -> tuple[str, dict]:
     confirmed_main = [x for x in classified if x['course']['course_id'] == 'course_2026_main']
     excluded_legacy = [x for x in classified if x['course']['status'] == 'excluded']
     active_keys = active_watch_repo_keys(watchlist)
@@ -132,6 +174,7 @@ def build_report(all_items: list[dict], classified: list[dict], watchlist: dict,
 
     client = base.init_genai()
     date_str = datetime.now(KST).strftime('%Y-%m-%d')
+    external_items = list((external_store or {}).get('materials', {}).values())
     lines = []
     lines.append(f'# Codyssey registry-backed collection report v5.3.2 ({date_str})')
     lines.append('')
@@ -227,10 +270,12 @@ def build_report(all_items: list[dict], classified: list[dict], watchlist: dict,
             'archived_total': hygiene['archived_total'],
             'discovered_total': hygiene['discovered_total'],
             'overwrite_suspected': len(overwritten_flags),
+            'external_materials': len(external_items),
             'new_repos': len(new_repos),
         },
         'items': classified,
         'overwritten_flags': overwritten_flags,
+        'external_materials': external_items,
     }
     return '\n'.join(lines), payload
 
@@ -264,14 +309,25 @@ def main() -> None:
     registry, watchlist, discovered_store, archive_store, hygiene = v5_2.update_state(classified, new_repos)
     obs_store, overwritten_flags = update_observations(classified)
     registry = apply_overwrite_flags_to_registry(overwritten_flags)
+    external_store = update_external_materials(classified)
 
     save_json(REGISTRY_PATH, registry)
     save_json(WATCHLIST_PATH, watchlist)
     save_json(DISCOVERED_PATH, discovered_store)
     save_json(ARCHIVE_PATH, archive_store)
     save_json(OBS_PATH, obs_store)
+    save_json(EXTERNAL_MATERIALS_PATH, external_store)
 
-    report_text, payload = build_report(all_items, classified, watchlist, new_repos, hygiene, overwritten_flags, len(candidates))
+    report_text, payload = build_report(
+        all_items,
+        classified,
+        watchlist,
+        new_repos,
+        hygiene,
+        overwritten_flags,
+        len(candidates),
+        external_store,
+    )
     date_str = datetime.now(KST).strftime('%Y-%m-%d')
     save_json(REPORT_DIR / f'{date_str}.json', payload)
     (REPORT_DIR / f'{date_str}.md').write_text(report_text, encoding='utf-8')
@@ -296,3 +352,5 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
+

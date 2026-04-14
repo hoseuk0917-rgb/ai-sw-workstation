@@ -204,11 +204,19 @@ def build_report(all_items: list[dict], classified: list[dict], watchlist: dict,
         lines.append('')
         lines.append(v4.summarize_week_safe(client, by_week[week], week))
         lines.append('')
-        lines.append('| 수강생 | 레포 | 업데이트 | 판정 증거 |')
-        lines.append('| --- | --- | --- | --- |')
+        lines.append('| 수강생 | 레포 | 업데이트 | cohort | phase | week | continuity | 판정 증거 |')
+        lines.append('| --- | --- | --- | --- | --- | --- | --- | --- |')
         for item in sorted(by_week[week], key=lambda x: x['priority']):
-            ev = ', '.join(item['course']['evidence'][:4]) or '-'
-            lines.append(f"| {item['display_name']} | [{item['repo_name']}]({item['repo_url']}) | {item['updated_at']} | {ev} |")
+            course = item.get('course', {})
+            ev = ', '.join(course.get('evidence', [])[:4]) or '-'
+            cohort = course.get('cohort_label', '-') or '-'
+            phase = course.get('phase_label', '-') or '-'
+            week_label = course.get('week_label', str(item.get('week', ''))) or '-'
+            continuity = float(course.get('continuity_score', 0.0) or 0.0)
+            lines.append(
+                f"| {item['display_name']} | [{item['repo_name']}]({item['repo_url']}) | "
+                f"{item['updated_at']} | {cohort} | {phase} | {week_label} | {continuity:.2f} | {ev} |"
+            )
         lines.append('')
         lines.append('---')
         lines.append('')
@@ -234,11 +242,20 @@ def build_report(all_items: list[dict], classified: list[dict], watchlist: dict,
         for bucket, items in by_bucket.items():
             lines.append(f'### {bucket}')
             lines.append('')
-            lines.append('| 수강생 | 레포 | 업데이트 | 신뢰도 | 근거 |')
-            lines.append('| --- | --- | --- | --- | --- |')
+            lines.append('| 수강생 | 레포 | 업데이트 | cohort | phase | week | continuity | 신뢰도 | 근거 |')
+            lines.append('| --- | --- | --- | --- | --- | --- | --- | --- | --- |')
             for item in items:
-                ev = ', '.join(item['course']['evidence'][:5]) or '-'
-                lines.append(f"| {item['display_name']} | [{item['repo_name']}]({item['repo_url']}) | {item['updated_at']} | {item['course']['confidence']:.2f} | {ev} |")
+                course = item.get('course', {})
+                ev = ', '.join(course.get('evidence', [])[:5]) or '-'
+                cohort = course.get('cohort_label', '-') or '-'
+                phase = course.get('phase_label', '-') or '-'
+                week_label = course.get('week_label', str(item.get('week', ''))) or '-'
+                continuity = float(course.get('continuity_score', 0.0) or 0.0)
+                confidence = float(course.get('confidence', 0.0) or 0.0)
+                lines.append(
+                    f"| {item['display_name']} | [{item['repo_name']}]({item['repo_url']}) | "
+                    f"{item['updated_at']} | {cohort} | {phase} | {week_label} | {continuity:.2f} | {confidence:.2f} | {ev} |"
+                )
             lines.append('')
     else:
         lines.append('_actual active watchlist 기준 후보/검토 레포 없음._')

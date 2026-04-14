@@ -86,22 +86,22 @@ drwxr-xr-x    6 kim-yejoo  staff   192B Apr  1 09:41 codyssey-m1
 
 _*(API 키 없음 — 원문 일부)*_
 
-| 수강생 | 레포 | 업데이트 | 판정 증거 |
-| --- | --- | --- | --- |
-| kimch0612 | [Codyssey_Week1](https://github.com/kimch0612/Codyssey_Week1) | 2026-03-31 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
-| sonjehyun123-maker | [Codyssey-w1-E1](https://github.com/sonjehyun123-maker/Codyssey-w1-E1) | 2026-04-03 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
-| mulloc1 | [codyssey_workstation](https://github.com/mulloc1/codyssey_workstation) | 2026-03-31 | tier2:Dockerfile, week-repo:workstation, week-readme:docker, repo:workstation |
-| ntt65 | [codyssey/e1_1](https://github.com/ntt65/codyssey/tree/main/e1_1) | 2026-04-12 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
-| codewhite7777 | [codyssey_E-1](https://github.com/codewhite7777/codyssey_E-1) | 2026-03-30 | tier2:Dockerfile, week-readme:workstation, week-readme:docker, readme:workstation |
-| mov-hyun | [e1-1-workstation-setup](https://github.com/mov-hyun/e1-1-workstation-setup) | 2026-04-05 | tier2:Dockerfile, week-repo:workstation, week-readme:docker, repo:workstation |
-| jhkr1 | [Codyssey_mission1](https://github.com/jhkr1/Codyssey_mission1) | 2026-04-07 | tier2:Dockerfile, week-readme:workstation, week-readme:docker, readme:workstation |
-| junhnno | [Codyssey_WorkSpace_Week1](https://github.com/junhnno/Codyssey_WorkSpace_Week1) | 2026-04-09 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
-| yejoo0310 | [codyssey-m1](https://github.com/yejoo0310/codyssey-m1) | 2026-04-05 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
-| clae-dev | [ia-codyssey-Docker](https://github.com/clae-dev/ia-codyssey-Docker) | 2026-04-02 | tier2:Dockerfile, week-repo:docker, repo:docker, tier2:Dockerfile |
-| leehnmn | [codyssey_2026/project-1](https://github.com/leehnmn/codyssey_2026/tree/main/project-1) | 2026-04-14 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
-| I-nkamanda | [codyssey2026/Problem1_AI_SW_Setup](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup) | 2026-04-14 | tier2:Dockerfile, week-readme:docker, week-repo:setup, readme:docker |
-| peachily | [codyssey11-E1](https://github.com/peachily/codyssey11-E1) | 2026-04-13 | rule:v5_1_e1_docker_promote, tier2:main.py, tier2:Dockerfile, repo:codyssey |
-| ikasoon | [codyssey-e1-1](https://github.com/ikasoon/codyssey-e1-1) | 2026-04-06 | tier2:Dockerfile, week-readme:workstation, week-readme:docker, readme:workstation |
+| 수강생 | 레포 | 업데이트 | cohort | phase | week | continuity | 판정 증거 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| kimch0612 | [Codyssey_Week1](https://github.com/kimch0612/Codyssey_Week1) | 2026-03-31 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
+| sonjehyun123-maker | [Codyssey-w1-E1](https://github.com/sonjehyun123-maker/Codyssey-w1-E1) | 2026-04-03 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
+| mulloc1 | [codyssey_workstation](https://github.com/mulloc1/codyssey_workstation) | 2026-03-31 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-repo:workstation, week-readme:docker, repo:workstation |
+| ntt65 | [codyssey/e1_1](https://github.com/ntt65/codyssey/tree/main/e1_1) | 2026-04-12 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
+| codewhite7777 | [codyssey_E-1](https://github.com/codewhite7777/codyssey_E-1) | 2026-03-30 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:workstation, week-readme:docker, readme:workstation |
+| mov-hyun | [e1-1-workstation-setup](https://github.com/mov-hyun/e1-1-workstation-setup) | 2026-04-05 | cohort_2026_current | admission_bootcamp | 1 | 0.00 | tier2:Dockerfile, week-repo:workstation, week-readme:docker, repo:workstation |
+| jhkr1 | [Codyssey_mission1](https://github.com/jhkr1/Codyssey_mission1) | 2026-04-07 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:workstation, week-readme:docker, readme:workstation |
+| junhnno | [Codyssey_WorkSpace_Week1](https://github.com/junhnno/Codyssey_WorkSpace_Week1) | 2026-04-09 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
+| yejoo0310 | [codyssey-m1](https://github.com/yejoo0310/codyssey-m1) | 2026-04-05 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
+| clae-dev | [ia-codyssey-Docker](https://github.com/clae-dev/ia-codyssey-Docker) | 2026-04-02 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-repo:docker, repo:docker, tier2:Dockerfile |
+| leehnmn | [codyssey_2026/project-1](https://github.com/leehnmn/codyssey_2026/tree/main/project-1) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, readme:docker, tier2:Dockerfile |
+| I-nkamanda | [codyssey2026/Problem1_AI_SW_Setup](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:docker, week-repo:setup, readme:docker |
+| peachily | [codyssey11-E1](https://github.com/peachily/codyssey11-E1) | 2026-04-13 | - | - | 1 | 0.00 | rule:v5_1_e1_docker_promote, tier2:main.py, tier2:Dockerfile, repo:codyssey |
+| ikasoon | [codyssey-e1-1](https://github.com/ikasoon/codyssey-e1-1) | 2026-04-06 | cohort_2026_current | admission_bootcamp | 1 | 0.04 | tier2:Dockerfile, week-readme:workstation, week-readme:docker, readme:workstation |
 
 ---
 
@@ -209,21 +209,21 @@ Codyssey_mission2/
 
 _*(API 키 없음 — 원문 일부)*_
 
-| 수강생 | 레포 | 업데이트 | 판정 증거 |
-| --- | --- | --- | --- |
-| kimch0612 | [Codyssey_Week2](https://github.com/kimch0612/Codyssey_Week2) | 2026-04-01 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
-| sonjehyun123-maker | [Codyssey-w1-E2](https://github.com/sonjehyun123-maker/Codyssey-w1-E2) | 2026-04-10 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
-| mulloc1 | [codyssey_first_python](https://github.com/mulloc1/codyssey_first_python) | 2026-04-06 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
-| codewhite7777 | [codyssey_E-2](https://github.com/codewhite7777/codyssey_E-2) | 2026-04-02 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
-| mov-hyun | [e1-2-python-basics-quiz-game](https://github.com/mov-hyun/e1-2-python-basics-quiz-game) | 2026-04-14 | tier1:quiz_game.py, week-repo:quiz, week-readme:quiz_game, repo:quiz |
-| yeowon083 | [quiz-game](https://github.com/yeowon083/quiz-game) | 2026-04-14 | tier2:main.py, tier2:state.json, week-repo:quiz, week-readme:state.json |
-| jhkr1 | [Codyssey_mission2](https://github.com/jhkr1/Codyssey_mission2) | 2026-04-11 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
-| junhnno | [Codyssey_WorkSpace_Week2](https://github.com/junhnno/Codyssey_WorkSpace_Week2) | 2026-04-11 | rule:v5_1_week2_workspace_promote, tier2:main.py, repo:codyssey, week-readme:quiz |
-| yejoo0310 | [codyssey-m2](https://github.com/yejoo0310/codyssey-m2) | 2026-04-10 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
-| yejibaek12 | [Python-Quiz-Game](https://github.com/yejibaek12/Python-Quiz-Game) | 2026-04-13 | tier2:main.py, tier2:state.json, week-repo:quiz, week-readme:state.json |
-| clae-dev | [ia-codyssey-Python](https://github.com/clae-dev/ia-codyssey-Python) | 2026-04-08 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
-| leehnmn | [codyssey_2026/project-2](https://github.com/leehnmn/codyssey_2026/tree/main/project-2) | 2026-04-14 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
-| I-nkamanda | [codyssey2026/Problem2_Python_with_git](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git) | 2026-04-14 | rule:v5_1_python_with_git_promote, repo:codyssey, repo:python_with_git, week-repo:python_with_git |
+| 수강생 | 레포 | 업데이트 | cohort | phase | week | continuity | 판정 증거 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| kimch0612 | [Codyssey_Week2](https://github.com/kimch0612/Codyssey_Week2) | 2026-04-01 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
+| sonjehyun123-maker | [Codyssey-w1-E2](https://github.com/sonjehyun123-maker/Codyssey-w1-E2) | 2026-04-10 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
+| mulloc1 | [codyssey_first_python](https://github.com/mulloc1/codyssey_first_python) | 2026-04-06 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
+| codewhite7777 | [codyssey_E-2](https://github.com/codewhite7777/codyssey_E-2) | 2026-04-02 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
+| mov-hyun | [e1-2-python-basics-quiz-game](https://github.com/mov-hyun/e1-2-python-basics-quiz-game) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 2 | 0.00 | tier1:quiz_game.py, week-repo:quiz, week-readme:quiz_game, repo:quiz |
+| yeowon083 | [quiz-game](https://github.com/yeowon083/quiz-game) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 2 | 0.00 | tier2:main.py, tier2:state.json, week-repo:quiz, week-readme:state.json |
+| jhkr1 | [Codyssey_mission2](https://github.com/jhkr1/Codyssey_mission2) | 2026-04-11 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier2:main.py, tier2:state.json, week-readme:quiz, week-readme:state.json |
+| junhnno | [Codyssey_WorkSpace_Week2](https://github.com/junhnno/Codyssey_WorkSpace_Week2) | 2026-04-11 | - | - | 2 | 0.00 | rule:v5_1_week2_workspace_promote, tier2:main.py, repo:codyssey, week-readme:quiz |
+| yejoo0310 | [codyssey-m2](https://github.com/yejoo0310/codyssey-m2) | 2026-04-10 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
+| yejibaek12 | [Python-Quiz-Game](https://github.com/yejibaek12/Python-Quiz-Game) | 2026-04-13 | cohort_2026_current | admission_bootcamp | 2 | 0.00 | tier2:main.py, tier2:state.json, week-repo:quiz, week-readme:state.json |
+| clae-dev | [ia-codyssey-Python](https://github.com/clae-dev/ia-codyssey-Python) | 2026-04-08 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
+| leehnmn | [codyssey_2026/project-2](https://github.com/leehnmn/codyssey_2026/tree/main/project-2) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 2 | 0.04 | tier1:quiz_game.py, week-readme:quiz, week-readme:quiz_game, readme:quiz |
+| I-nkamanda | [codyssey2026/Problem2_Python_with_git](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem2_Python_with_git) | 2026-04-14 | - | - | 2 | 0.00 | rule:v5_1_python_with_git_promote, repo:codyssey, repo:python_with_git, week-repo:python_with_git |
 
 ---
 
@@ -309,14 +309,14 @@ NPU는 이런 MAC 연산을 병렬로 빠르게 수행하기 위해 설계된 �
 
 _*(API 키 없음 — 원문 일부)*_
 
-| 수강생 | 레포 | 업데이트 | 판정 증거 |
-| --- | --- | --- | --- |
-| kimch0612 | [Codyssey_Week3](https://github.com/kimch0612/Codyssey_Week3) | 2026-04-09 | tier1:data.json, tier2:main.py, week-readme:npu, week-readme:mac |
-| mulloc1 | [codyssey_python_with_npu](https://github.com/mulloc1/codyssey_python_with_npu) | 2026-04-13 | tier1:data.json, tier2:main.py, week-repo:npu, week-readme:mac |
-| mov-hyun | [e1-3-mini-npu-simulator](https://github.com/mov-hyun/e1-3-mini-npu-simulator) | 2026-04-14 | tier1:data.json, tier2:main.py, week-repo:npu, week-readme:mac |
-| jhkr1 | [Codyssey_mission3](https://github.com/jhkr1/Codyssey_mission3) | 2026-04-11 | tier1:data.json, tier2:main.py, week-readme:npu, week-readme:mac |
-| yejoo0310 | [codyssey-m3](https://github.com/yejoo0310/codyssey-m3) | 2026-04-14 | tier1:mini_npu_simulator.py, tier2:main.py, tier1:mini_npu_simulator.py, tier1:data.json |
-| I-nkamanda | [codyssey2026/Problem3_Mini_NPU_Simulator](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem3_Mini_NPU_Simulator) | 2026-04-14 | week-repo:npu, week-repo:npu_simulator, week-repo:mini_npu, repo:npu |
+| 수강생 | 레포 | 업데이트 | cohort | phase | week | continuity | 판정 증거 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| kimch0612 | [Codyssey_Week3](https://github.com/kimch0612/Codyssey_Week3) | 2026-04-09 | cohort_2026_current | admission_bootcamp | 3 | 0.04 | tier1:data.json, tier2:main.py, week-readme:npu, week-readme:mac |
+| mulloc1 | [codyssey_python_with_npu](https://github.com/mulloc1/codyssey_python_with_npu) | 2026-04-13 | cohort_2026_current | admission_bootcamp | 3 | 0.04 | tier1:data.json, tier2:main.py, week-repo:npu, week-readme:mac |
+| mov-hyun | [e1-3-mini-npu-simulator](https://github.com/mov-hyun/e1-3-mini-npu-simulator) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 3 | 0.00 | tier1:data.json, tier2:main.py, week-repo:npu, week-readme:mac |
+| jhkr1 | [Codyssey_mission3](https://github.com/jhkr1/Codyssey_mission3) | 2026-04-11 | cohort_2026_current | admission_bootcamp | 3 | 0.04 | tier1:data.json, tier2:main.py, week-readme:npu, week-readme:mac |
+| yejoo0310 | [codyssey-m3](https://github.com/yejoo0310/codyssey-m3) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 3 | 0.04 | tier1:mini_npu_simulator.py, tier2:main.py, tier1:mini_npu_simulator.py, tier1:data.json |
+| I-nkamanda | [codyssey2026/Problem3_Mini_NPU_Simulator](https://github.com/I-nkamanda/codyssey2026/tree/main/Problem3_Mini_NPU_Simulator) | 2026-04-14 | cohort_2026_current | admission_bootcamp | 3 | 0.04 | week-repo:npu, week-repo:npu_simulator, week-repo:mini_npu, repo:npu |
 
 ---
 
@@ -328,12 +328,12 @@ _이번 실행에서는 뚜렷한 덮어쓰기/변조 의심 레포가 없었습
 
 ### unknown
 
-| 수강생 | 레포 | 업데이트 | 신뢰도 | 근거 |
-| --- | --- | --- | --- | --- |
-| ntt65 | [codyssey/e1_2](https://github.com/ntt65/codyssey/tree/main/e1_2) | 2026-04-12 | 0.29 | tier2:main.py, repo:codyssey, repo:codyssey, tier2:main.py, continuity:repo-codyssey |
-| codewhite7777 | [codyssey_E1-3](https://github.com/codewhite7777/codyssey_E1-3) | 2026-04-06 | 0.29 | tier2:main.py, repo:codyssey, repo:codyssey, readme:npu, readme:mac |
-| sungho255 | [codyssey_2](https://github.com/sungho255/codyssey_2) | 2026-04-07 | 0.29 | tier2:state.json, repo:codyssey, repo:codyssey, tier2:state.json, continuity:repo-codyssey |
-| sungho255 | [codyssey_1](https://github.com/sungho255/codyssey_1) | 2026-04-07 | 0.29 | repo:codyssey, week-readme:docker, repo:codyssey, readme:docker, readme:mac |
+| 수강생 | 레포 | 업데이트 | cohort | phase | week | continuity | 신뢰도 | 근거 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ntt65 | [codyssey/e1_2](https://github.com/ntt65/codyssey/tree/main/e1_2) | 2026-04-12 | unknown_watch | admission_bootcamp | 2 | 0.04 | 0.29 | tier2:main.py, repo:codyssey, repo:codyssey, tier2:main.py, continuity:repo-codyssey |
+| codewhite7777 | [codyssey_E1-3](https://github.com/codewhite7777/codyssey_E1-3) | 2026-04-06 | unknown_watch | admission_bootcamp | 1 | 0.04 | 0.29 | tier2:main.py, repo:codyssey, repo:codyssey, readme:npu, readme:mac |
+| sungho255 | [codyssey_2](https://github.com/sungho255/codyssey_2) | 2026-04-07 | unknown_watch | admission_bootcamp | 2 | 0.04 | 0.29 | tier2:state.json, repo:codyssey, repo:codyssey, tier2:state.json, continuity:repo-codyssey |
+| sungho255 | [codyssey_1](https://github.com/sungho255/codyssey_1) | 2026-04-07 | unknown_watch | admission_bootcamp | 1 | 0.04 | 0.29 | repo:codyssey, week-readme:docker, repo:codyssey, readme:docker, readme:mac |
 
 ## 4. 후보풀 청소 요약
 

@@ -18,29 +18,28 @@
         "repo:codyssey",
         "tier2:main.py"
       ],
-      "archived_at": "2026-04-13",
+      "archived_at": "2026-04-19",
       "seen_count": 3
     },
     {
-      "repo_key": "sungho255/codyssey_2",
+      "repo_key": "codewhite7777/codyssey_E1-3",
       "candidate": {
-        "username": "sungho255",
-        "display_name": "sungho255",
+        "username": "codewhite7777",
+        "display_name": "codewhite7777",
         "type": "multi_repo",
-        "repo_name": null,
-        "folder_pattern": null,
+        "priority": 7,
         "repo_patterns": [
-          "codyssey_2"
-        ],
-        "priority": 9
+          "codyssey_E1-3"
+        ]
       },
-      "reason": "low-signal-repeat",
+      "reason": "per-user-watch-cap",
       "evidence": [
         "repo:codyssey",
-        "tier2:state.json"
+        "readme:npu",
+        "readme:mac",
+        "tier2:main.py"
       ],
-      "archived_at": "2026-04-13",
-      "seen_count": 3
+      "archived_at": "2026-04-19"
     }
   ]
 }

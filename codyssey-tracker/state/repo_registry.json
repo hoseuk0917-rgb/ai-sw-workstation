@@ -222,8 +222,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "3",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-12"
@@ -335,8 +335,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "1",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-12"
@@ -371,8 +371,8 @@
           "course_guess": "unknown"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "2",
       "previous_status": "candidate",
       "previous_updated_at": "2026-04-12"
@@ -523,8 +523,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "2",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-12"
@@ -599,8 +599,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "2",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-12"
@@ -637,8 +637,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "3",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-11"
@@ -825,8 +825,8 @@
           "course_guess": "unknown"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "2",
       "previous_status": "candidate",
       "previous_updated_at": "2026-04-07"
@@ -899,8 +899,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "3",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-12"
@@ -1012,8 +1012,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "2",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-11"
@@ -1162,8 +1162,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "2",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-08"
@@ -1200,8 +1200,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "1",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-09"
@@ -1238,8 +1238,8 @@
           "course_guess": "course_2026_main"
         }
       ],
-      "overwrite_suspected": false,
-      "overwrite_reason": "cleared-no-current-flag",
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
       "previous_week_guess": "1",
       "previous_status": "confirmed",
       "previous_updated_at": "2026-04-09"

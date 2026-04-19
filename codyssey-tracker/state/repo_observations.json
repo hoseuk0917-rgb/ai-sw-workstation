@@ -35,6 +35,23 @@
           "week-readme:npu",
           "week-readme:mac"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.88,
+        "updated_at": "2026-04-09",
+        "content_signature": "3f106944b76d0d9c8d0b",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:data.json",
+          "tier2:main.py",
+          "week-readme:npu",
+          "week-readme:mac"
+        ]
       }
     ],
     "kimch0612/Codyssey_Week2": [
@@ -70,6 +87,23 @@
           "week-readme:quiz",
           "week-readme:state.json"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.84,
+        "updated_at": "2026-04-01",
+        "content_signature": "540ef55a330f306a94cf",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:main.py",
+          "tier2:state.json",
+          "week-readme:quiz",
+          "week-readme:state.json"
+        ]
       }
     ],
     "kimch0612/Codyssey_Week1": [
@@ -90,6 +124,22 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-03-31",
+        "content_signature": "f6583085aad31db73bc7",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -138,6 +188,23 @@
           "week-readme:quiz",
           "week-readme:state.json"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.84,
+        "updated_at": "2026-04-10",
+        "content_signature": "b9b9fa4bb9b6a305c8b4",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:main.py",
+          "tier2:state.json",
+          "week-readme:quiz",
+          "week-readme:state.json"
+        ]
       }
     ],
     "sonjehyun123-maker/Codyssey-w1-E1": [
@@ -158,6 +225,22 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-03",
+        "content_signature": "c9ece85a2af769611e28",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -206,6 +289,23 @@
           "week-repo:npu",
           "week-readme:mac"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.88,
+        "updated_at": "2026-04-13",
+        "content_signature": "f3b21926ffcc9fc32bc3",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:data.json",
+          "tier2:main.py",
+          "week-repo:npu",
+          "week-readme:mac"
+        ]
       }
     ],
     "mulloc1/codyssey_first_python": [
@@ -227,6 +327,23 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-06",
+        "content_signature": "4a81edc8cadcc98489ca",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:quiz_game.py",
+          "week-readme:quiz",
+          "week-readme:quiz_game",
+          "readme:quiz"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "2",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -276,6 +393,23 @@
           "week-readme:docker",
           "repo:workstation"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-03-31",
+        "content_signature": "06a7e46b4b79f491816d",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-repo:workstation",
+          "week-readme:docker",
+          "repo:workstation"
+        ]
       }
     ],
     "ntt65/codyssey/e1_1": [
@@ -303,6 +437,22 @@
         "confidence": 0.82,
         "updated_at": "2026-04-12",
         "content_signature": "20e33ef1e595a39130c4",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-19",
+        "content_signature": "11cc908de21439630deb",
         "signature_version": "v5.3.1",
         "evidence": [
           "tier2:Dockerfile",
@@ -340,6 +490,21 @@
           "repo:codyssey",
           "tier2:main.py"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-19",
+        "content_signature": "381e1f2adea1db13d6bc",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "repo:codyssey",
+          "tier2:main.py"
+        ]
       }
     ],
     "codewhite7777/codyssey_E1-3": [
@@ -361,6 +526,23 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-06",
+        "content_signature": "b79b51a3aba84113e225",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "repo:codyssey",
+          "readme:npu",
+          "readme:mac",
+          "tier2:main.py"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "unknown",
         "course_label": "미분류",
@@ -480,6 +662,23 @@
           "week-readme:quiz_game",
           "repo:quiz"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-14",
+        "content_signature": "9b2634de00e59eafa3ff",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:quiz_game.py",
+          "week-repo:quiz",
+          "week-readme:quiz_game",
+          "repo:quiz"
+        ]
       }
     ],
     "mov-hyun/e1-1-workstation-setup": [
@@ -501,6 +700,23 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-05",
+        "content_signature": "9105617e3ad5367e53d5",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-repo:workstation",
+          "week-readme:docker",
+          "repo:workstation"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -550,6 +766,23 @@
           "week-repo:quiz",
           "week-readme:state.json"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-15",
+        "content_signature": "15bcab403e0948930aea",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:quiz_game.py",
+          "week-repo:quiz",
+          "week-readme:state.json",
+          "repo:quiz"
+        ]
       }
     ],
     "jhkr1/Codyssey_mission3": [
@@ -578,6 +811,23 @@
         "confidence": 0.88,
         "updated_at": "2026-04-11",
         "content_signature": "0a274e89a1fbd9139a3a",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:data.json",
+          "tier2:main.py",
+          "week-readme:npu",
+          "week-readme:mac"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.88,
+        "updated_at": "2026-04-16",
+        "content_signature": "1ce36340ac7057413c99",
         "signature_version": "v5.3.1",
         "evidence": [
           "tier1:data.json",
@@ -620,6 +870,23 @@
           "week-readme:quiz",
           "week-readme:state.json"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.84,
+        "updated_at": "2026-04-11",
+        "content_signature": "19c2c4843bcf1386a9dd",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:main.py",
+          "tier2:state.json",
+          "week-readme:quiz",
+          "week-readme:state.json"
+        ]
       }
     ],
     "jhkr1/Codyssey_mission1": [
@@ -641,6 +908,23 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-07",
+        "content_signature": "a396c5e19ebf6995c9df",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:workstation",
+          "week-readme:docker",
+          "readme:workstation"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -692,6 +976,24 @@
           "repo:codyssey",
           "readme:quiz"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.74,
+        "updated_at": "2026-04-11",
+        "content_signature": "8925a6711179d830fd97",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "rule:v5_1_week2_workspace_promote",
+          "week-readme:quiz",
+          "week-readme:state.json",
+          "repo:codyssey",
+          "readme:quiz"
+        ]
       }
     ],
     "junhnno/Codyssey_WorkSpace_Week1": [
@@ -712,6 +1014,22 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-09",
+        "content_signature": "182b1d6ab810bb93609c",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -756,6 +1074,23 @@
           "repo:codyssey",
           "tier2:state.json"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.84,
+        "updated_at": "2026-04-19",
+        "content_signature": "b7b53f50099b154b241e",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:main.py",
+          "tier2:state.json",
+          "week-readme:quiz",
+          "week-readme:state.json"
+        ]
       }
     ],
     "sungho255/codyssey_1": [
@@ -777,6 +1112,23 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-07",
+        "content_signature": "4e176731d250e732070e",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "week-readme:docker",
+          "repo:codyssey",
+          "readme:docker",
+          "readme:mac"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "unknown",
         "course_label": "미분류",
@@ -822,6 +1174,23 @@
           "tier1:mini_npu_simulator.py",
           "tier2:main.py"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-15",
+        "content_signature": "f63e29433f780dbef792",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:mini_npu_simulator.py",
+          "tier2:main.py",
+          "week-readme:npu",
+          "week-readme:npu_simulator"
+        ]
       }
     ],
     "yejoo0310/codyssey-m2": [
@@ -857,6 +1226,23 @@
           "week-readme:quiz_game",
           "readme:quiz"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-10",
+        "content_signature": "c9e386cf61f43073b51e",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:quiz_game.py",
+          "week-readme:quiz",
+          "week-readme:quiz_game",
+          "readme:quiz"
+        ]
       }
     ],
     "yejoo0310/codyssey-m1": [
@@ -877,6 +1263,22 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-05",
+        "content_signature": "bd71b3ba720ed3e46581",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "1",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -925,6 +1327,23 @@
           "week-repo:quiz",
           "week-readme:state.json"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.84,
+        "updated_at": "2026-04-19",
+        "content_signature": "81870540be29e948f300",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:main.py",
+          "tier2:state.json",
+          "week-repo:quiz",
+          "week-readme:state.json"
+        ]
       }
     ],
     "clae-dev/ia-codyssey-Python": [
@@ -946,6 +1365,23 @@
       },
       {
         "date": "2026-04-13",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-08",
+        "content_signature": "ebf30f485f722f7c6b23",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:quiz_game.py",
+          "week-readme:quiz",
+          "week-readme:quiz_game",
+          "readme:quiz"
+        ]
+      },
+      {
+        "date": "2026-04-19",
         "week_guess": "2",
         "course_guess": "course_2026_main",
         "course_label": "2026 본과정",
@@ -993,6 +1429,22 @@
           "week-repo:docker",
           "repo:docker"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-02",
+        "content_signature": "dc15829b950e321219b2",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-repo:docker",
+          "repo:docker"
+        ]
       }
     ],
     "leehnmn/codyssey_2026/project-1": [
@@ -1019,6 +1471,22 @@
         "status": "confirmed",
         "confidence": 0.82,
         "updated_at": "2026-04-08",
+        "content_signature": "8d52e9da0ea800241dcd",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-14",
         "content_signature": "8d52e9da0ea800241dcd",
         "signature_version": "v5.3.1",
         "evidence": [
@@ -1061,6 +1529,23 @@
           "week-readme:quiz_game",
           "readme:quiz"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.9,
+        "updated_at": "2026-04-14",
+        "content_signature": "7b953de7937883310561",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:quiz_game.py",
+          "week-readme:quiz",
+          "week-readme:quiz_game",
+          "readme:quiz"
+        ]
       }
     ],
     "peachily/codyssey11-E1": [
@@ -1096,6 +1581,23 @@
           "tier2:main.py",
           "tier2:Dockerfile"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.7,
+        "updated_at": "2026-04-16",
+        "content_signature": "032f5dcdf4f9250d0688",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "rule:v5_1_e1_docker_promote",
+          "repo:codyssey",
+          "tier2:main.py",
+          "tier2:Dockerfile"
+        ]
       }
     ],
     "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup": [
@@ -1124,6 +1626,23 @@
         "confidence": 0.82,
         "updated_at": "2026-04-09",
         "content_signature": "a1738af7addb2aeb85ea",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:docker",
+          "week-repo:setup",
+          "readme:docker"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-15",
+        "content_signature": "c00c36f8f038c2d10375",
         "signature_version": "v5.3.1",
         "evidence": [
           "tier2:Dockerfile",
@@ -1238,6 +1757,23 @@
           "week-readme:docker",
           "readme:workstation"
         ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-06",
+        "content_signature": "9c56464e5925cd9767e3",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:workstation",
+          "week-readme:docker",
+          "readme:workstation"
+        ]
       }
     ],
     "doji-kr/codyssey_day1_bear1": [
@@ -1268,6 +1804,146 @@
         "evidence": [
           "updated_at:2025-07-11",
           "rule:legacy-hard-cutoff"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "legacy_pre2026",
+        "course_label": "레거시(날짜 컷)",
+        "status": "excluded",
+        "confidence": 0.98,
+        "updated_at": "2025-07-11",
+        "content_signature": "9bfcd2b812ff8454a897",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "updated_at:2025-07-11",
+          "rule:legacy-hard-cutoff"
+        ]
+      }
+    ],
+    "ntt65/codyssey/e1_3": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-19",
+        "content_signature": "296e730dd200f6666975",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "repo:codyssey",
+          "tier2:main.py"
+        ]
+      }
+    ],
+    "ntt65/codyssey/e1_4": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "4",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-19",
+        "content_signature": "e04c0c354179116f8d14",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "repo:codyssey"
+        ]
+      }
+    ],
+    "codewhite7777/codyssey_E2-1": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "2",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-19",
+        "content_signature": "bc0fe8c27c41423e3ccd",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "repo:codyssey"
+        ]
+      }
+    ],
+    "codewhite7777/codyssey_E1-1": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.82,
+        "updated_at": "2026-04-18",
+        "content_signature": "ada5c4f7f6140a32c32f",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier2:Dockerfile",
+          "week-readme:workstation",
+          "week-readme:docker",
+          "readme:workstation"
+        ]
+      }
+    ],
+    "codewhite7777/codyssey_E1-2": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "1",
+        "course_guess": "unknown",
+        "course_label": "미분류",
+        "status": "candidate",
+        "confidence": 0.25,
+        "updated_at": "2026-04-18",
+        "content_signature": "28d017d3745086991450",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "repo:codyssey",
+          "readme:quiz",
+          "tier2:main.py",
+          "tier2:state.json"
+        ]
+      }
+    ],
+    "mov-hyun/e1-3-mini-npu-simulator": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.88,
+        "updated_at": "2026-04-17",
+        "content_signature": "d266f967e66e60b83e8e",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:data.json",
+          "tier2:main.py",
+          "week-repo:npu",
+          "week-readme:mac"
+        ]
+      }
+    ],
+    "junhnno/Codyssey_WorkSpace_Week3": [
+      {
+        "date": "2026-04-19",
+        "week_guess": "3",
+        "course_guess": "course_2026_main",
+        "course_label": "2026 본과정",
+        "status": "confirmed",
+        "confidence": 0.88,
+        "updated_at": "2026-04-18",
+        "content_signature": "6f4bf1f4b21cc74b80b9",
+        "signature_version": "v5.3.1",
+        "evidence": [
+          "tier1:data.json",
+          "tier2:main.py",
+          "week-readme:npu",
+          "week-readme:mac"
         ]
       }
     ]

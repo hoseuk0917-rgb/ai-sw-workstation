@@ -36,6 +36,172 @@ def save_json(path: Path, payload: dict) -> None:
     v5.save_json(path, payload)
 
 
+DISCOVERY_KEYWORDS_PATH = STATE_DIR / 'discovery_keywords.json'
+
+
+def load_discovery_keywords() -> dict:
+    return load_json(DISCOVERY_KEYWORDS_PATH, {'version': 1, 'tracks': {}})
+
+
+def _flatten_item_text(item: dict) -> str:
+    parts = []
+    for key in ['repo_name', 'repo_url', 'description', 'readme', 'readme_text', 'display_name']:
+        val = item.get(key)
+        if isinstance(val, str) and val.strip():
+            parts.append(val.strip())
+
+    file_tree = item.get('file_tree', []) or []
+    if isinstance(file_tree, list):
+        for x in file_tree:
+            if isinstance(x, str) and x.strip():
+                parts.append(x.strip())
+            elif isinstance(x, dict):
+                for k in ['path', 'name']:
+                    v = x.get(k)
+                    if isinstance(v, str) and v.strip():
+                        parts.append(v.strip())
+
+    return '\n'.join(parts).lower()
+
+
+def _flatten_file_names(item: dict) -> set[str]:
+    out = set()
+    file_tree = item.get('file_tree', []) or []
+    if not isinstance(file_tree, list):
+        return out
+
+    for x in file_tree:
+        if isinstance(x, str):
+            name = x.replace('\\', '/').split('/')[-1].strip().lower()
+            if name:
+                out.add(name)
+        elif isinstance(x, dict):
+            for k in ['path', 'name']:
+                v = x.get(k)
+                if isinstance(v, str):
+                    name = v.replace('\\', '/').split('/')[-1].strip().lower()
+                    if name:
+                        out.add(name)
+    return out
+
+
+def _literal_pattern_score(repo_name_l: str, patterns: list[str]) -> tuple[float, list[str]]:
+    hits = []
+    score = 0.0
+
+    for pat in patterns or []:
+        if not isinstance(pat, str):
+            continue
+        p = pat.strip().lower()
+        if not p:
+            continue
+
+        if any(ch in p for ch in ['[', ']', '(', ')', '?', '^', '$', '*', '+', '\\']):
+            continue
+
+        if p == repo_name_l:
+            score += 3.0
+            hits.append(f'repo:{p}')
+        elif p in repo_name_l:
+            score += 1.5
+            hits.append(f'repo~:{p}')
+
+    return score, hits
+
+
+def apply_discovery_overlay(item: dict, meta: dict, discovery_rules: dict) -> dict:
+    if meta.get('status') in {'confirmed', 'excluded'}:
+        return meta
+
+    repo_name_l = str(item.get('repo_name', '') or '').strip().lower()
+    text_l = _flatten_item_text(item)
+    file_names = _flatten_file_names(item)
+
+    best_track = None
+    best_course_id = None
+    best_score = 0.0
+    best_hits = []
+
+    tracks = (discovery_rules.get('tracks') or {})
+    for track_id, track_obj in tracks.items():
+        courses = (track_obj.get('courses') or {})
+        for course_id, course_obj in courses.items():
+            score = 0.0
+            hits = []
+
+            official = course_obj.get('official_rule', {}) or {}
+            observed = course_obj.get('observed_rule', {}) or {}
+
+            s, h = _literal_pattern_score(repo_name_l, observed.get('repo_patterns', []) or [])
+            score += s
+            hits.extend(h)
+
+            s, h = _literal_pattern_score(repo_name_l, official.get('repo_patterns', []) or [])
+            score += s
+            hits.extend(h)
+
+            for tok in official.get('readme_tokens', []) or []:
+                if isinstance(tok, str) and tok.strip() and tok.lower() in text_l:
+                    score += 1.2
+                    hits.append(f'text:{tok}')
+
+            for tok in observed.get('readme_tokens', []) or []:
+                if isinstance(tok, str) and tok.strip() and tok.lower() in text_l:
+                    score += 0.8
+                    hits.append(f'text~:{tok}')
+
+            for tok in official.get('file_tokens', []) or []:
+                if isinstance(tok, str) and tok.strip().lower() in file_names:
+                    score += 1.6
+                    hits.append(f'file:{tok}')
+
+            for tok in observed.get('file_tokens', []) or []:
+                if isinstance(tok, str) and tok.strip().lower() in file_names:
+                    score += 1.0
+                    hits.append(f'file~:{tok}')
+
+            if score > best_score:
+                best_track = track_id
+                best_course_id = course_id
+                best_score = score
+                best_hits = hits[:5]
+
+    if not best_course_id or best_score < 3.5:
+        return meta
+
+    patched = dict(meta)
+
+    best_track_obj = (tracks.get(best_track) or {})
+    best_course_obj = ((best_track_obj.get('courses') or {}).get(best_course_id) or {})
+
+    phase_id = (
+        best_course_obj.get('phase_id')
+        or best_track_obj.get('phase_id')
+        or ('admission_bootcamp' if best_track == 'all_in_one' else (meta.get('phase_id') or 'unknown'))
+    )
+    phase_label = (
+        best_course_obj.get('phase_label')
+        or best_track_obj.get('phase_label')
+        or phase_id
+    )
+
+    patched['course_id'] = best_course_id
+    patched['course_label'] = best_course_id
+    patched['cohort_id'] = 'cohort_2026_current'
+    patched['cohort_label'] = 'cohort_2026_current'
+    patched['phase_id'] = phase_id
+    patched['phase_label'] = phase_label
+    patched['track_id'] = best_track
+    patched['track_label'] = best_track
+    patched['status'] = 'review' if best_score >= 6.0 else 'candidate'
+    patched['confidence'] = max(float(meta.get('confidence', 0.0) or 0.0), min(0.89, 0.40 + best_score * 0.06))
+
+    ev = list(meta.get('evidence', []))
+    ev = [f'bridge:{best_track}:{best_course_id}', f'bridge_score:{best_score:.1f}'] + best_hits + ev
+    patched['evidence'] = ev[:5]
+    return patched
+
+
 def update_observations(classified: list[dict]) -> tuple[dict, list[dict]]:
     store = load_json(OBS_PATH, {'version': 1, 'observations': {}})
     obs_map = store.setdefault('observations', {})
@@ -97,8 +263,7 @@ def update_observations(classified: list[dict]) -> tuple[dict, list[dict]]:
     return store, overwritten_flags
 
 
-def apply_overwrite_flags_to_registry(overwritten_flags: list[dict]) -> dict:
-    registry = load_json(REGISTRY_PATH, {'version': 1, 'repos': {}})
+def apply_overwrite_flags_to_registry(registry: dict, overwritten_flags: list[dict]) -> dict:
     repo_map = registry.setdefault('repos', {})
     flagged_keys = {f['repo_key'] for f in overwritten_flags}
     for repo_key, repo_state in repo_map.items():
@@ -320,10 +485,12 @@ def main() -> None:
         new_repos = base.discover_new_repos(known_users)
 
     course_map = load_json(COURSE_MAP_PATH, {'repo_overrides': {}, 'user_overrides': {}})
+    discovery_rules = load_discovery_keywords()
     classified = []
     for item in all_items:
         meta = v4.classify_course(item)
         meta = v5_1.maybe_promote_candidate(item, meta)
+        meta = apply_discovery_overlay(item, meta, discovery_rules)
         meta = v5.apply_manual_overrides(item, meta, course_map)
         merged = dict(item)
         merged['course'] = meta
@@ -331,7 +498,7 @@ def main() -> None:
 
     registry, watchlist, discovered_store, archive_store, hygiene = v5_2.update_state(classified, new_repos)
     obs_store, overwritten_flags = update_observations(classified)
-    registry = apply_overwrite_flags_to_registry(overwritten_flags)
+    registry = apply_overwrite_flags_to_registry(registry, overwritten_flags)
     external_store = update_external_materials(classified)
 
     save_json(REGISTRY_PATH, registry)

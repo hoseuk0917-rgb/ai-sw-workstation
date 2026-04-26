@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 from __future__ import annotations
 
 from collections import defaultdict
@@ -200,6 +200,317 @@ def apply_discovery_overlay(item: dict, meta: dict, discovery_rules: dict) -> di
     ev = [f'bridge:{best_track}:{best_course_id}', f'bridge_score:{best_score:.1f}'] + best_hits + ev
     patched['evidence'] = ev[:5]
     return patched
+
+
+
+def _append_unique_text(values: list[str], value: str, limit: int = 80) -> None:
+    value = str(value or '').strip()
+    if not value:
+        return
+    if value not in values and len(values) < limit:
+        values.append(value)
+
+
+def build_global_discovery_queries(discovery_rules: dict) -> list[dict]:
+    """
+    discovery_keywords.json의 track/course 힌트를 GitHub search query 후보로 변환한다.
+    너무 일반적인 단어는 단독 검색하지 않고 codyssey/native 등 course identity와 결합한다.
+    """
+    queries: list[dict] = []
+
+    global_obj = discovery_rules.get('global') or {}
+    common_tokens = [
+        x for x in (global_obj.get('common_positive_tokens') or [])
+        if isinstance(x, str) and x.strip()
+    ]
+
+    # course identity / program-level seed
+    identity_tokens = [
+        'codyssey',
+        '코디세이',
+        'ai native',
+        'ai-native',
+        '네이티브',
+    ]
+    for tok in common_tokens:
+        if tok.lower() in {'codyssey', 'mission', 'workspace'}:
+            _append_unique_text(identity_tokens, tok)
+
+    def add_query(q: str, source: str, track_id: str = '', course_id: str = '', kind: str = 'keyword') -> None:
+        q = ' '.join(str(q or '').split())
+        if not q:
+            return
+        if len(q) < 3:
+            return
+        key = q.lower()
+        for old in queries:
+            if old.get('q', '').lower() == key:
+                return
+        queries.append({
+            'q': q,
+            'source': source,
+            'track_id': track_id,
+            'course_id': course_id,
+            'kind': kind,
+        })
+
+    # 기본 repo/code 검색: 너무 넓은 것은 줄이고 course 정체성을 섞는다.
+    base_file_queries = [
+        'filename:README.md codyssey',
+        'filename:README.md "코디세이"',
+        'filename:README.md "ai native"',
+        'filename:README.md "네이티브"',
+        'filename:Dockerfile codyssey',
+        'filename:docker-compose.yml codyssey',
+        'filename:requirements.txt codyssey',
+        'filename:package.json codyssey',
+        'filename:app.py codyssey',
+        'filename:main.py codyssey',
+    ]
+    for q in base_file_queries:
+        add_query(q, 'base', kind='base')
+
+    tracks = discovery_rules.get('tracks') or {}
+    for track_id, track_obj in tracks.items():
+        if not isinstance(track_obj, dict):
+            continue
+
+        track_name = str(track_obj.get('display_name') or track_id).strip()
+        if track_name:
+            add_query(f'filename:README.md "{track_name}"', 'track_display_name', track_id=track_id, kind='readme')
+
+        for topic in track_obj.get('official_topics', []) or []:
+            if isinstance(topic, str) and topic.strip():
+                topic_s = topic.strip()
+                add_query(f'filename:README.md "{topic_s}"', 'official_topic', track_id=track_id, kind='readme')
+                # course identity 결합형
+                for ident in identity_tokens[:3]:
+                    add_query(f'"{topic_s}" "{ident}"', 'official_topic_identity', track_id=track_id, kind='keyword')
+
+        courses = track_obj.get('courses') or {}
+        for course_id, course_obj in courses.items():
+            if not isinstance(course_obj, dict):
+                continue
+
+            display = str(course_obj.get('display_name') or '').strip()
+            if display:
+                add_query(f'filename:README.md "{display}"', 'course_display_name', track_id=track_id, course_id=course_id, kind='readme')
+                add_query(f'"{display}" codyssey', 'course_display_identity', track_id=track_id, course_id=course_id, kind='keyword')
+
+            for bucket_name in ['official_rule', 'observed_rule', 'expansion_rule']:
+                rule = course_obj.get(bucket_name) or {}
+
+                for kw in rule.get('official_keywords', []) or []:
+                    if isinstance(kw, str) and kw.strip():
+                        add_query(f'filename:README.md "{kw.strip()}"', f'{bucket_name}.official_keywords', track_id=track_id, course_id=course_id, kind='readme')
+
+                for tok in rule.get('readme_tokens', []) or []:
+                    if isinstance(tok, str) and tok.strip():
+                        tok_s = tok.strip()
+                        # 일반 토큰은 codyssey와 결합, 구체 토큰은 README 검색
+                        if len(tok_s) >= 8 or ' ' in tok_s or '-' in tok_s:
+                            add_query(f'filename:README.md "{tok_s}"', f'{bucket_name}.readme_tokens', track_id=track_id, course_id=course_id, kind='readme')
+                        add_query(f'"{tok_s}" codyssey', f'{bucket_name}.readme_tokens_identity', track_id=track_id, course_id=course_id, kind='keyword')
+
+                for tok in rule.get('file_tokens', []) or []:
+                    if isinstance(tok, str) and tok.strip():
+                        file_tok = tok.strip().replace('\\', '/').split('/')[-1]
+                        if file_tok and '.' in file_tok:
+                            add_query(f'filename:{file_tok} codyssey', f'{bucket_name}.file_tokens', track_id=track_id, course_id=course_id, kind='file')
+
+                # repo_patterns는 GitHub search query 문법과 regex 문법이 다르므로
+                # regex 특수문자 많은 것은 제외하고 literal에 가까운 것만 사용
+                for pat in rule.get('repo_patterns', []) or []:
+                    if not isinstance(pat, str):
+                        continue
+                    p = pat.strip()
+                    if not p:
+                        continue
+                    if any(ch in p for ch in ['[', ']', '(', ')', '?', '^', '$', '*', '+', '\\']):
+                        continue
+                    p = p.replace('[_ -]', ' ').replace('[-_ ]', ' ').strip()
+                    if len(p) >= 4:
+                        add_query(f'{p} codyssey', f'{bucket_name}.repo_patterns', track_id=track_id, course_id=course_id, kind='repo')
+
+    # 과도한 API 사용 방지. 매주 cron에서 돌릴 수 있는 수준으로 제한.
+    return queries[:60]
+
+
+def _github_search_code_items(query: str, per_page: int = 20) -> list[dict]:
+    url = 'https://api.github.com/search/code'
+    params = {'q': query, 'per_page': per_page}
+    try:
+        r = base.requests.get(url, headers=base.github_headers(), params=params, timeout=20)
+        if r.status_code != 200:
+            print(f"  [global-discovery] search skipped status={r.status_code} q={query}")
+            return []
+        return r.json().get('items', []) or []
+    except Exception as e:
+        print(f"  [global-discovery] search error q={query}: {e}")
+        return []
+
+
+def _discovery_score_from_rules(repo_name: str, file_tree: list, readme: str, discovery_rules: dict) -> tuple[float, list[str], str, str]:
+    probe = {
+        'repo_name': repo_name,
+        'repo_url': '',
+        'description': '',
+        'readme': readme or '',
+        'readme_text': readme or '',
+        'display_name': '',
+        'file_tree': file_tree or [],
+    }
+    base_meta = {
+        'status': 'candidate',
+        'confidence': 0.0,
+        'course_id': 'unclassified',
+        'course_label': 'unclassified',
+        'evidence': [],
+    }
+    patched = apply_discovery_overlay(probe, base_meta, discovery_rules)
+    evidence = list(patched.get('evidence', []) or [])
+    score = 0.0
+    for ev in evidence:
+        if isinstance(ev, str) and ev.startswith('bridge_score:'):
+            try:
+                score = float(ev.split(':', 1)[1])
+            except Exception:
+                score = 0.0
+    return score, evidence, str(patched.get('track_id') or ''), str(patched.get('course_id') or '')
+
+
+def discover_new_repos_expanded(known_users: set, discovery_rules: dict) -> tuple[list[dict], dict]:
+    """
+    discovery_keywords.json 기반 전역 신규탐색.
+    기존 후보풀 밖의 repo만 찾되, 코디세이/과정 정체성 신호가 있는 후보만 채택한다.
+    """
+    discovered: dict[str, dict] = {}
+    seen_repos: set[str] = set()
+
+    excluded_owners = {
+        'hoseuk0917-rgb',
+    }
+    excluded_repos = {
+        'hoseuk0917-rgb/ai-sw-workstation',
+    }
+
+    required_identity_tokens = {
+        'codyssey',
+        '코디세이',
+        'ia-codyssey',
+        'codyssey2026',
+        'rookieq',
+        'ai-sw',
+        'ai sw',
+        '입학연수',
+        'e1-1',
+        'e1_1',
+        'e1-2',
+        'e1_2',
+        'e1-3',
+        'e1_3',
+    }
+
+    stats = {
+        'enabled': True,
+        'query_count': 0,
+        'raw_hits': 0,
+        'unique_repos_seen': 0,
+        'accepted': 0,
+        'queries': [],
+    }
+
+    queries = build_global_discovery_queries(discovery_rules)
+    print(f"[global-discovery] expanded query count = {len(queries)}")
+
+    for qobj in queries:
+        q = qobj['q']
+        stats['query_count'] += 1
+        items = _github_search_code_items(q, per_page=20)
+        stats['raw_hits'] += len(items)
+        stats['queries'].append({
+            'q': q,
+            'hits': len(items),
+            'source': qobj.get('source', ''),
+            'track_id': qobj.get('track_id', ''),
+            'course_id': qobj.get('course_id', ''),
+        })
+
+        for item in items:
+            repo_full = item.get('repository', {}).get('full_name', '')
+            if not repo_full or '/' not in repo_full:
+                continue
+
+            username, repo_name = repo_full.split('/', 1)
+            repo_full_l = repo_full.lower()
+            username_l = username.lower()
+
+            if username_l in excluded_owners:
+                continue
+            if repo_full_l in excluded_repos:
+                continue
+            if username_l in known_users:
+                continue
+            if repo_full_l in seen_repos:
+                continue
+
+            seen_repos.add(repo_full_l)
+            stats['unique_repos_seen'] += 1
+
+            file_tree = base.get_repo_tree(username, repo_name)
+            readme = base.get_readme(username, repo_name)
+
+            identity_text = ' '.join([
+                repo_full_l,
+                repo_name.lower(),
+                str(readme or '').lower(),
+                ' '.join([str(p).lower() for p in (file_tree or [])[:200]]),
+            ])
+            has_required_identity = any(tok in identity_text for tok in required_identity_tokens)
+            if not has_required_identity:
+                continue
+
+            base_score = base.compute_fingerprint_score(file_tree, readme)
+            bridge_score, bridge_evidence, track_id, course_id = _discovery_score_from_rules(
+                repo_name=repo_name,
+                file_tree=file_tree,
+                readme=readme,
+                discovery_rules=discovery_rules,
+            )
+
+            combined_score = float(base_score) + float(bridge_score) * 2.0
+
+            if not track_id or not course_id or course_id == 'unclassified':
+                continue
+
+            if combined_score < 18.0:
+                continue
+
+            evidence = []
+            if base_score:
+                evidence.append(f'legacy_fingerprint:{base_score}')
+            evidence.extend(bridge_evidence[:5])
+            evidence.append(f'query:{q[:80]}')
+
+            discovered[repo_full] = {
+                'username': username,
+                'repo_name': repo_name,
+                'repo_url': f'https://github.com/{repo_full}',
+                'score': combined_score,
+                'evidence': evidence[:8],
+                'file_count': len(file_tree),
+                'readme_length': len(readme or ''),
+                'track_id': track_id,
+                'course_id': course_id,
+                'discovery_source': 'expanded-global-discovery',
+            }
+            print(f"  [expanded-discovery] {repo_full} score={combined_score:.1f} track={track_id} course={course_id}")
+
+        __import__('time').sleep(1)
+
+    out = sorted(discovered.values(), key=lambda x: -float(x.get('score', 0.0)))
+    stats['accepted'] = len(out)
+    return out, stats
 
 
 def update_observations(classified: list[dict]) -> tuple[dict, list[dict]]:
@@ -479,13 +790,21 @@ def main() -> None:
     all_items = v5.collect_from_pool(candidates)
     print(f"총 {len(all_items)}건 수집 완료")
 
-    new_repos = []
-    if ENABLE_GLOBAL_DISCOVERY:
-        known_users = {c['username'].lower() for c in candidates if c.get('username')}
-        new_repos = base.discover_new_repos(known_users)
-
     course_map = load_json(COURSE_MAP_PATH, {'repo_overrides': {}, 'user_overrides': {}})
     discovery_rules = load_discovery_keywords()
+
+    new_repos = []
+    discovery_stats = {
+        'enabled': False,
+        'query_count': 0,
+        'raw_hits': 0,
+        'unique_repos_seen': 0,
+        'accepted': 0,
+        'queries': [],
+    }
+    if ENABLE_GLOBAL_DISCOVERY:
+        known_users = {c['username'].lower() for c in candidates if c.get('username')}
+        new_repos, discovery_stats = discover_new_repos_expanded(known_users, discovery_rules)
     classified = []
     for item in all_items:
         meta = v4.classify_course(item)
@@ -528,6 +847,7 @@ def main() -> None:
         'candidate_pool_size': len(candidates),
         'collected_count': len(all_items),
         'new_repo_count': len(new_repos),
+        'global_discovery': discovery_stats,
         'watchlist_size': hygiene['watch_kept'],
         'archived_total': hygiene['archived_total'],
         'discovered_total': hygiene['discovered_total'],
@@ -542,6 +862,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-
-

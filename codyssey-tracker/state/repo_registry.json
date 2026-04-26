@@ -1,4 +1,2147 @@
 {
   "version": 1,
-  "repos": {}
+  "repos": {
+    "sonjehyun123-maker/Codyssey-w1-E1": {
+      "username": "sonjehyun123-maker",
+      "display_name": "sonjehyun123-maker",
+      "repo_name": "Codyssey-w1-E1",
+      "repo_url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-20",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "1",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-03"
+    },
+    "sonjehyun123-maker/Codyssey-w1-E2": {
+      "username": "sonjehyun123-maker",
+      "display_name": "sonjehyun123-maker",
+      "repo_name": "Codyssey-w1-E2",
+      "repo_url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:main.py",
+        "tier2:state.json",
+        "week-readme:quiz",
+        "week-readme:state.json",
+        "tier2:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-10",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "mulloc1/codyssey_python_with_npu": {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_python_with_npu",
+      "repo_url": "https://github.com/mulloc1/codyssey_python_with_npu",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-repo:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-13",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "mulloc1/codyssey_first_python": {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_first_python",
+      "repo_url": "https://github.com/mulloc1/codyssey_first_python",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "mulloc1/codyssey_workstation": {
+      "username": "mulloc1",
+      "display_name": "mulloc1",
+      "repo_name": "codyssey_workstation",
+      "repo_url": "https://github.com/mulloc1/codyssey_workstation",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-repo:workstation",
+        "week-readme:docker",
+        "repo:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-03-31",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "ntt65/codyssey/e1_1": {
+      "username": "ntt65",
+      "display_name": "ntt65",
+      "repo_name": "codyssey/e1_1",
+      "repo_url": "https://github.com/ntt65/codyssey/tree/main/e1_1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-21",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "1",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-12"
+    },
+    "ntt65/codyssey/e1_2": {
+      "username": "ntt65",
+      "display_name": "ntt65",
+      "repo_name": "codyssey/e1_2",
+      "repo_url": "https://github.com/ntt65/codyssey/tree/main/e1_2",
+      "week_guess": "2",
+      "course_guess": "aio_week2_python_git_quiz",
+      "course_label": "aio_week2_python_git_quiz",
+      "confidence": 0.784,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week2_python_git_quiz",
+        "bridge_score:6.4",
+        "text:quizgame",
+        "file:main.py",
+        "file:quiz.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-21",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "2",
+      "previous_status": "candidate",
+      "previous_updated_at": "2026-04-12"
+    },
+    "ntt65/codyssey/e1_3": {
+      "username": "ntt65",
+      "display_name": "ntt65",
+      "repo_name": "codyssey/e1_3",
+      "repo_url": "https://github.com/ntt65/codyssey/tree/main/e1_3",
+      "week_guess": "3",
+      "course_guess": "unknown",
+      "course_label": "unknown",
+      "confidence": 0.29,
+      "status": "candidate",
+      "evidence": [
+        "tier2:main.py",
+        "repo:codyssey",
+        "repo:codyssey",
+        "tier2:main.py",
+        "continuity:repo-codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-21",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
+    },
+    "ntt65/codyssey/e1_4": {
+      "username": "ntt65",
+      "display_name": "ntt65",
+      "repo_name": "codyssey/e1_4",
+      "repo_url": "https://github.com/ntt65/codyssey/tree/main/e1_4",
+      "week_guess": "4",
+      "course_guess": "unknown",
+      "course_label": "unknown",
+      "confidence": 0.29,
+      "status": "candidate",
+      "evidence": [
+        "repo:codyssey",
+        "repo:codyssey",
+        "continuity:repo-codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-21",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
+    },
+    "codewhite7777/codyssey_E2-1": {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E2-1",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E2-1",
+      "week_guess": "2",
+      "course_guess": "unknown",
+      "course_label": "unknown",
+      "confidence": 0.29,
+      "status": "candidate",
+      "evidence": [
+        "repo:codyssey",
+        "repo:codyssey",
+        "continuity:repo-codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-24",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
+    },
+    "codewhite7777/codyssey_E1-1": {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E1-1",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:workstation",
+        "week-readme:docker",
+        "readme:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-18",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "codewhite7777/codyssey_E1-2": {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E1-2",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E1-2",
+      "week_guess": "1",
+      "course_guess": "aio_week2_python_git_quiz",
+      "course_label": "aio_week2_python_git_quiz",
+      "confidence": 0.89,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week2_python_git_quiz",
+        "bridge_score:9.5",
+        "repo~:e1-2",
+        "text:quizgame",
+        "text:state.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-18",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        }
+      ]
+    },
+    "codewhite7777/codyssey_E1-3": {
+      "username": "codewhite7777",
+      "display_name": "codewhite7777",
+      "repo_name": "codyssey_E1-3",
+      "repo_url": "https://github.com/codewhite7777/codyssey_E1-3",
+      "week_guess": "1",
+      "course_guess": "aio_week3_mini_npu",
+      "course_label": "aio_week3_mini_npu",
+      "confidence": 0.89,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week3_mini_npu",
+        "bridge_score:14.4",
+        "repo:codyssey_e1-3",
+        "text:mac",
+        "text:epsilon"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week3_mini_npu"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "1",
+      "previous_status": "candidate",
+      "previous_updated_at": "2026-04-06"
+    },
+    "mov-hyun/e1-3-mini-npu-simulator-2": {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-3-mini-npu-simulator-2",
+      "repo_url": "https://github.com/mov-hyun/e1-3-mini-npu-simulator-2",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-repo:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-22",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "mov-hyun/e1-3-mini-npu-simulator": {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-3-mini-npu-simulator",
+      "repo_url": "https://github.com/mov-hyun/e1-3-mini-npu-simulator",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-repo:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-17",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "mov-hyun/e1-2-python-basics-quiz-game": {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-2-python-basics-quiz-game",
+      "repo_url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-repo:quiz",
+        "week-readme:quiz_game",
+        "repo:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-14",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "mov-hyun/e1-1-workstation-setup": {
+      "username": "mov-hyun",
+      "display_name": "mov-hyun",
+      "repo_name": "e1-1-workstation-setup",
+      "repo_url": "https://github.com/mov-hyun/e1-1-workstation-setup",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-repo:workstation",
+        "week-readme:docker",
+        "repo:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-05",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "yeowon083/quiz-game": {
+      "username": "yeowon083",
+      "display_name": "yeowon083",
+      "repo_name": "quiz-game",
+      "repo_url": "https://github.com/yeowon083/quiz-game",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-repo:quiz",
+        "week-readme:state.json",
+        "repo:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-15",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "2",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-14"
+    },
+    "jhkr1/Codyssey_mission3": {
+      "username": "jhkr1",
+      "display_name": "jhkr1",
+      "repo_name": "Codyssey_mission3",
+      "repo_url": "https://github.com/jhkr1/Codyssey_mission3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-16",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "3",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-11"
+    },
+    "jhkr1/Codyssey_mission2": {
+      "username": "jhkr1",
+      "display_name": "jhkr1",
+      "repo_name": "Codyssey_mission2",
+      "repo_url": "https://github.com/jhkr1/Codyssey_mission2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:main.py",
+        "tier2:state.json",
+        "week-readme:quiz",
+        "week-readme:state.json",
+        "tier2:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "jhkr1/Codyssey_mission1": {
+      "username": "jhkr1",
+      "display_name": "jhkr1",
+      "repo_name": "Codyssey_mission1",
+      "repo_url": "https://github.com/jhkr1/Codyssey_mission1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:workstation",
+        "week-readme:docker",
+        "readme:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "junhnno/Codyssey_WorkSpace_Week3": {
+      "username": "junhnno",
+      "display_name": "junhnno",
+      "repo_name": "Codyssey_WorkSpace_Week3",
+      "repo_url": "https://github.com/junhnno/Codyssey_WorkSpace_Week3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-18",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "junhnno/Codyssey_WorkSpace_Week2": {
+      "username": "junhnno",
+      "display_name": "junhnno",
+      "repo_name": "Codyssey_WorkSpace_Week2",
+      "repo_url": "https://github.com/junhnno/Codyssey_WorkSpace_Week2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026 본과정",
+      "confidence": 0.74,
+      "status": "confirmed",
+      "evidence": [
+        "rule:v5_1_week2_workspace_promote",
+        "tier2:main.py",
+        "repo:codyssey",
+        "week-readme:quiz",
+        "week-readme:state.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "junhnno/Codyssey_WorkSpace_Week1": {
+      "username": "junhnno",
+      "display_name": "junhnno",
+      "repo_name": "Codyssey_WorkSpace_Week1",
+      "repo_url": "https://github.com/junhnno/Codyssey_WorkSpace_Week1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "sungho255/codyssey_2": {
+      "username": "sungho255",
+      "display_name": "sungho255",
+      "repo_name": "codyssey_2",
+      "repo_url": "https://github.com/sungho255/codyssey_2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:main.py",
+        "tier2:state.json",
+        "week-readme:quiz",
+        "week-readme:state.json",
+        "tier2:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-19",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "2",
+      "previous_status": "candidate",
+      "previous_updated_at": "2026-04-07"
+    },
+    "sungho255/codyssey_1": {
+      "username": "sungho255",
+      "display_name": "sungho255",
+      "repo_name": "codyssey_1",
+      "repo_url": "https://github.com/sungho255/codyssey_1",
+      "week_guess": "1",
+      "course_guess": "aio_week1_workstation",
+      "course_label": "aio_week1_workstation",
+      "confidence": 0.89,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week1_workstation",
+        "bridge_score:14.2",
+        "repo:codyssey_1",
+        "text:docker",
+        "text:dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week1_workstation"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "1",
+      "previous_status": "candidate",
+      "previous_updated_at": "2026-04-07"
+    },
+    "yejoo0310/codyssey-m3": {
+      "username": "yejoo0310",
+      "display_name": "yejoo0310",
+      "repo_name": "codyssey-m3",
+      "repo_url": "https://github.com/yejoo0310/codyssey-m3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:mini_npu_simulator.py",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:npu_simulator",
+        "tier1:mini_npu_simulator.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-15",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "3",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-14"
+    },
+    "yejoo0310/codyssey-m2": {
+      "username": "yejoo0310",
+      "display_name": "yejoo0310",
+      "repo_name": "codyssey-m2",
+      "repo_url": "https://github.com/yejoo0310/codyssey-m2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-10",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "yejoo0310/codyssey-m1": {
+      "username": "yejoo0310",
+      "display_name": "yejoo0310",
+      "repo_name": "codyssey-m1",
+      "repo_url": "https://github.com/yejoo0310/codyssey-m1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-05",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "yejibaek12/Python-Quiz-Game": {
+      "username": "yejibaek12",
+      "display_name": "yejibaek12",
+      "repo_name": "Python-Quiz-Game",
+      "repo_url": "https://github.com/yejibaek12/Python-Quiz-Game",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.84,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:main.py",
+        "tier2:state.json",
+        "week-repo:quiz",
+        "week-readme:state.json",
+        "tier2:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-21",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "2",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-13"
+    },
+    "clae-dev/ia-codyssey-Python2": {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Python2",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Python2",
+      "week_guess": "2",
+      "course_guess": "aio_week3_mini_npu",
+      "course_label": "aio_week3_mini_npu",
+      "confidence": 0.89,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week3_mini_npu",
+        "bridge_score:11.2",
+        "text:mac",
+        "text:epsilon",
+        "text:cross"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-23",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week3_mini_npu"
+        }
+      ]
+    },
+    "clae-dev/ia-codyssey-Python": {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Python",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Python",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-08",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "clae-dev/ia-codyssey-Docker": {
+      "username": "clae-dev",
+      "display_name": "clae-dev",
+      "repo_name": "ia-codyssey-Docker",
+      "repo_url": "https://github.com/clae-dev/ia-codyssey-Docker",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-repo:docker",
+        "repo:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-02",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "leehnmn/codyssey_2026/project-1": {
+      "username": "leehnmn",
+      "display_name": "leehnmn",
+      "repo_name": "codyssey_2026/project-1",
+      "repo_url": "https://github.com/leehnmn/codyssey_2026/tree/main/project-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-14",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "leehnmn/codyssey_2026/project-2": {
+      "username": "leehnmn",
+      "display_name": "leehnmn",
+      "repo_name": "codyssey_2026/project-2",
+      "repo_url": "https://github.com/leehnmn/codyssey_2026/tree/main/project-2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-14",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "peachily/codyssey11-E1": {
+      "username": "peachily",
+      "display_name": "peachily",
+      "repo_name": "codyssey11-E1",
+      "repo_url": "https://github.com/peachily/codyssey11-E1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026 본과정",
+      "confidence": 0.7,
+      "status": "confirmed",
+      "evidence": [
+        "rule:v5_1_e1_docker_promote",
+        "tier1:data.json",
+        "tier2:main.py",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-24",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "1",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-13"
+    },
+    "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup": {
+      "username": "I-nkamanda",
+      "display_name": "I-nkamanda",
+      "repo_name": "codyssey2026/Problem1_AI_SW_Setup",
+      "repo_url": "https://github.com/I-nkamanda/codyssey2026/tree/main/Problem1_AI_SW_Setup",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "week-repo:setup",
+        "readme:docker",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-15",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ],
+      "overwrite_suspected": true,
+      "overwrite_reason": "same-repo-history-changed",
+      "previous_week_guess": "1",
+      "previous_status": "confirmed",
+      "previous_updated_at": "2026-04-14"
+    },
+    "0-hu/codyssey-e1-3": {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-3",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-22",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "0-hu/codyssey-e1-2": {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-2",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "0-hu/codyssey-e1-1": {
+      "username": "0-hu",
+      "display_name": "0-hu",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/0-hu/codyssey-e1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "1sup1/quiz-game": {
+      "username": "1sup1",
+      "display_name": "1sup1",
+      "repo_name": "quiz-game",
+      "repo_url": "https://github.com/1sup1/quiz-game",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-repo:quiz",
+        "week-readme:quiz_game",
+        "repo:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-11",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "1sup1/npu-simulator": {
+      "username": "1sup1",
+      "display_name": "1sup1",
+      "repo_name": "npu-simulator",
+      "repo_url": "https://github.com/1sup1/npu-simulator",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-repo:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-02",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "chunRam/week1_workstation-mission": {
+      "username": "chunRam",
+      "display_name": "chunRam",
+      "repo_name": "week1_workstation-mission",
+      "repo_url": "https://github.com/chunRam/week1_workstation-mission",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-repo:workstation",
+        "week-readme:docker",
+        "repo:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-20",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "chunRam/workstation-mission_2": {
+      "username": "chunRam",
+      "display_name": "chunRam",
+      "repo_name": "workstation-mission_2",
+      "repo_url": "https://github.com/chunRam/workstation-mission_2",
+      "week_guess": "1",
+      "course_guess": "unknown",
+      "course_label": "unknown",
+      "confidence": 0.25,
+      "status": "candidate",
+      "evidence": [
+        "repo:workstation",
+        "week-repo:workstation",
+        "repo:workstation"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-04",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        }
+      ]
+    },
+    "chunRam/workstation-mission": {
+      "username": "chunRam",
+      "display_name": "chunRam",
+      "repo_name": "workstation-mission",
+      "repo_url": "https://github.com/chunRam/workstation-mission",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-repo:workstation",
+        "week-readme:docker",
+        "repo:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-04",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "Daeung-03/Codyssey_rookieQ3": {
+      "username": "Daeung-03",
+      "display_name": "Daeung-03",
+      "repo_name": "Codyssey_rookieQ3",
+      "repo_url": "https://github.com/Daeung-03/Codyssey_rookieQ3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-19",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "Daeung-03/Codyssey_rookieQ2": {
+      "username": "Daeung-03",
+      "display_name": "Daeung-03",
+      "repo_name": "Codyssey_rookieQ2",
+      "repo_url": "https://github.com/Daeung-03/Codyssey_rookieQ2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "Daeung-03/Codyssey_rookieQ1": {
+      "username": "Daeung-03",
+      "display_name": "Daeung-03",
+      "repo_name": "Codyssey_rookieQ1",
+      "repo_url": "https://github.com/Daeung-03/Codyssey_rookieQ1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-04",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "dolphin1404/Codyssey_E_1_3": {
+      "username": "dolphin1404",
+      "display_name": "dolphin1404",
+      "repo_name": "Codyssey_E_1_3",
+      "repo_url": "https://github.com/dolphin1404/Codyssey_E_1_3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-18",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "dolphin1404/Codyssey_E_1_2": {
+      "username": "dolphin1404",
+      "display_name": "dolphin1404",
+      "repo_name": "Codyssey_E_1_2",
+      "repo_url": "https://github.com/dolphin1404/Codyssey_E_1_2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-13",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "heejeong13/codyssey_npu": {
+      "username": "heejeong13",
+      "display_name": "heejeong13",
+      "repo_name": "codyssey_npu",
+      "repo_url": "https://github.com/heejeong13/codyssey_npu",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-repo:npu",
+        "tier1:data.json",
+        "tier2:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-16",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "ikasoon/codyssey-e1-1": {
+      "username": "ikasoon",
+      "display_name": "ikasoon",
+      "repo_name": "codyssey-e1-1",
+      "repo_url": "https://github.com/ikasoon/codyssey-e1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:workstation",
+        "week-readme:docker",
+        "readme:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "jhj9109/codyssey3": {
+      "username": "jhj9109",
+      "display_name": "jhj9109",
+      "repo_name": "codyssey3",
+      "repo_url": "https://github.com/jhj9109/codyssey3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-23",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "jhj9109/codyssey2": {
+      "username": "jhj9109",
+      "display_name": "jhj9109",
+      "repo_name": "codyssey2",
+      "repo_url": "https://github.com/jhj9109/codyssey2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:main.py",
+        "tier2:state.json",
+        "week-readme:quiz",
+        "week-readme:state.json",
+        "tier2:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-07",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "LimJongHan/Codyssey-E1-2": {
+      "username": "LimJongHan",
+      "display_name": "LimJongHan",
+      "repo_name": "Codyssey-E1-2",
+      "repo_url": "https://github.com/LimJongHan/Codyssey-E1-2",
+      "week_guess": "2",
+      "course_guess": "aio_week2_python_git_quiz",
+      "course_label": "aio_week2_python_git_quiz",
+      "confidence": 0.89,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week2_python_git_quiz",
+        "bridge_score:11.3",
+        "repo:codyssey-e1-2",
+        "repo~:e1-2",
+        "text:quizgame"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        }
+      ]
+    },
+    "LimJongHan/Codyssey-E1-1": {
+      "username": "LimJongHan",
+      "display_name": "LimJongHan",
+      "repo_name": "Codyssey-E1-1",
+      "repo_url": "https://github.com/LimJongHan/Codyssey-E1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-03",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "MetaStudy999/python-quiz-game": {
+      "username": "MetaStudy999",
+      "display_name": "MetaStudy999",
+      "repo_name": "python-quiz-game",
+      "repo_url": "https://github.com/MetaStudy999/python-quiz-game",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-repo:quiz",
+        "week-readme:quiz_game",
+        "repo:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-23",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "PaKoo03/Codyssey_03": {
+      "username": "PaKoo03",
+      "display_name": "PaKoo03",
+      "repo_name": "Codyssey_03",
+      "repo_url": "https://github.com/PaKoo03/Codyssey_03",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-16",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "PaKoo03/Codyssey_01": {
+      "username": "PaKoo03",
+      "display_name": "PaKoo03",
+      "repo_name": "Codyssey_01",
+      "repo_url": "https://github.com/PaKoo03/Codyssey_01",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-08",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "request10hour/python-quiz-game": {
+      "username": "request10hour",
+      "display_name": "request10hour",
+      "repo_name": "python-quiz-game",
+      "repo_url": "https://github.com/request10hour/python-quiz-game",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-repo:quiz",
+        "week-readme:quiz_game",
+        "repo:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "shannonlee-dev/mini-npu-simulator": {
+      "username": "shannonlee-dev",
+      "display_name": "shannonlee-dev",
+      "repo_name": "mini-npu-simulator",
+      "repo_url": "https://github.com/shannonlee-dev/mini-npu-simulator",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-repo:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-15",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "shannonlee-dev/python-quiz-game-mission": {
+      "username": "shannonlee-dev",
+      "display_name": "shannonlee-dev",
+      "repo_name": "python-quiz-game-mission",
+      "repo_url": "https://github.com/shannonlee-dev/python-quiz-game-mission",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-repo:quiz",
+        "week-readme:quiz_game",
+        "repo:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-01",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "star-candy/codyssey1-3": {
+      "username": "star-candy",
+      "display_name": "star-candy",
+      "repo_name": "codyssey1-3",
+      "repo_url": "https://github.com/star-candy/codyssey1-3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-04",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "star-candy/codyssey1-2": {
+      "username": "star-candy",
+      "display_name": "star-candy",
+      "repo_name": "codyssey1-2",
+      "repo_url": "https://github.com/star-candy/codyssey1-2",
+      "week_guess": "2",
+      "course_guess": "aio_week2_python_git_quiz",
+      "course_label": "aio_week2_python_git_quiz",
+      "confidence": 0.89,
+      "status": "review",
+      "evidence": [
+        "bridge:all_in_one:aio_week2_python_git_quiz",
+        "bridge_score:9.2",
+        "text:quizgame",
+        "text:state.json",
+        "text:branch"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-04",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        }
+      ]
+    },
+    "star-candy/codyssey1-1": {
+      "username": "star-candy",
+      "display_name": "star-candy",
+      "repo_name": "codyssey1-1",
+      "repo_url": "https://github.com/star-candy/codyssey1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-03",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "xifoxy-ru/codyssey_week_03": {
+      "username": "xifoxy-ru",
+      "display_name": "xifoxy-ru",
+      "repo_name": "codyssey_week_03",
+      "repo_url": "https://github.com/xifoxy-ru/codyssey_week_03",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-21",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "xifoxy-ru/codyssey_week_02": {
+      "username": "xifoxy-ru",
+      "display_name": "xifoxy-ru",
+      "repo_name": "codyssey_week_02",
+      "repo_url": "https://github.com/xifoxy-ru/codyssey_week_02",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.9400000000000001,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:quiz_game.py",
+        "week-readme:quiz",
+        "week-readme:quiz_game",
+        "readme:quiz",
+        "tier1:quiz_game.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "xifoxy-ru/codyssey_week_01": {
+      "username": "xifoxy-ru",
+      "display_name": "xifoxy-ru",
+      "repo_name": "codyssey_week_01",
+      "repo_url": "https://github.com/xifoxy-ru/codyssey_week_01",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:workstation",
+        "week-readme:docker",
+        "readme:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "yun-lim/codyssey-week3": {
+      "username": "yun-lim",
+      "display_name": "yun-lim",
+      "repo_name": "codyssey-week3",
+      "repo_url": "https://github.com/yun-lim/codyssey-week3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-23",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "yun-lim/codyssey-week2": {
+      "username": "yun-lim",
+      "display_name": "yun-lim",
+      "repo_name": "codyssey-week2",
+      "repo_url": "https://github.com/yun-lim/codyssey-week2",
+      "week_guess": "2",
+      "course_guess": "course_2026_main",
+      "course_label": "2026 본과정",
+      "confidence": 0.74,
+      "status": "confirmed",
+      "evidence": [
+        "rule:v5_1_week2_workspace_promote",
+        "tier2:main.py",
+        "repo:codyssey",
+        "week-readme:quiz",
+        "week-readme:state.json"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-16",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "yun-lim/codyssey-w2": {
+      "username": "yun-lim",
+      "display_name": "yun-lim",
+      "repo_name": "codyssey-w2",
+      "repo_url": "https://github.com/yun-lim/codyssey-w2",
+      "week_guess": "2",
+      "course_guess": "aio_week2_python_git_quiz",
+      "course_label": "aio_week2_python_git_quiz",
+      "confidence": 0.736,
+      "status": "candidate",
+      "evidence": [
+        "bridge:all_in_one:aio_week2_python_git_quiz",
+        "bridge_score:5.6",
+        "text:quizgame",
+        "text:state.json",
+        "file:main.py"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-10",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "aio_week2_python_git_quiz"
+        }
+      ]
+    },
+    "yun-lim/codyssey-w1": {
+      "username": "yun-lim",
+      "display_name": "yun-lim",
+      "repo_name": "codyssey-w1",
+      "repo_url": "https://github.com/yun-lim/codyssey-w1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-04-27",
+      "last_seen_at": "2026-04-27",
+      "updated_at": "2026-04-06",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    }
+  }
 }

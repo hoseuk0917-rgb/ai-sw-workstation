@@ -22,25 +22,41 @@
       "seen_count": 3
     },
     {
-      "repo_key": "sungho255/codyssey_2",
+      "repo_key": "ntt65/codyssey/e1_4",
       "candidate": {
-        "username": "sungho255",
-        "display_name": "sungho255",
-        "type": "multi_repo",
-        "repo_name": null,
-        "folder_pattern": null,
-        "repo_patterns": [
-          "codyssey_2"
-        ],
-        "priority": 9
+        "username": "ntt65",
+        "display_name": "ntt65",
+        "type": "single_repo",
+        "priority": 6,
+        "repo_name": "codyssey",
+        "folder_pattern": "e1_4"
       },
-      "reason": "low-signal-repeat",
+      "reason": "per-user-watch-cap",
       "evidence": [
         "repo:codyssey",
-        "tier2:state.json"
+        "repo:codyssey",
+        "continuity:repo-codyssey"
       ],
-      "archived_at": "2026-04-14",
-      "seen_count": 3
+      "archived_at": "2026-04-27"
+    },
+    {
+      "repo_key": "codewhite7777/codyssey_E2-1",
+      "candidate": {
+        "username": "codewhite7777",
+        "display_name": "codewhite7777",
+        "type": "multi_repo",
+        "priority": 6,
+        "repo_patterns": [
+          "codyssey_E2-1"
+        ]
+      },
+      "reason": "per-user-watch-cap",
+      "evidence": [
+        "repo:codyssey",
+        "repo:codyssey",
+        "continuity:repo-codyssey"
+      ],
+      "archived_at": "2026-04-27"
     }
   ]
 }

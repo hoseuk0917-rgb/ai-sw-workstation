@@ -3,9 +3,9 @@
   "description": "Repositories or users to re-check in future runs before promotion to confirmed course membership.",
   "watch": [
     {
-      "repo_key": "ntt65/codyssey/e1_3",
+      "repo_key": "ntt65/codyssey/e1_2",
       "course_guess": "unknown",
-      "course_label": "미분류",
+      "course_label": "unknown",
       "status": "candidate",
       "candidate": {
         "username": "ntt65",
@@ -13,61 +13,22 @@
         "type": "single_repo",
         "priority": 6,
         "repo_name": "codyssey",
-        "folder_pattern": "e1_3"
+        "folder_pattern": "e1_2"
       },
       "evidence": [
-        "repo:codyssey",
-        "tier2:main.py"
-      ],
-      "last_seen_at": "2026-04-19",
-      "source": "classified-run"
-    },
-    {
-      "repo_key": "ntt65/codyssey/e1_4",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "status": "candidate",
-      "candidate": {
-        "username": "ntt65",
-        "display_name": "ntt65",
-        "type": "single_repo",
-        "priority": 6,
-        "repo_name": "codyssey",
-        "folder_pattern": "e1_4"
-      },
-      "evidence": [
-        "repo:codyssey"
-      ],
-      "last_seen_at": "2026-04-19",
-      "source": "classified-run"
-    },
-    {
-      "repo_key": "codewhite7777/codyssey_E1-2",
-      "course_guess": "unknown",
-      "course_label": "미분류",
-      "status": "candidate",
-      "candidate": {
-        "username": "codewhite7777",
-        "display_name": "codewhite7777",
-        "type": "multi_repo",
-        "priority": 6,
-        "repo_patterns": [
-          "codyssey_E1-2"
-        ]
-      },
-      "evidence": [
-        "repo:codyssey",
-        "readme:quiz",
         "tier2:main.py",
-        "tier2:state.json"
+        "repo:codyssey",
+        "repo:codyssey",
+        "tier2:main.py",
+        "continuity:repo-codyssey"
       ],
-      "last_seen_at": "2026-04-19",
+      "last_seen_at": "2026-04-14",
       "source": "classified-run"
     },
     {
-      "repo_key": "codewhite7777/codyssey_E2-1",
+      "repo_key": "codewhite7777/codyssey_E1-3",
       "course_guess": "unknown",
-      "course_label": "미분류",
+      "course_label": "unknown",
       "status": "candidate",
       "candidate": {
         "username": "codewhite7777",
@@ -75,36 +36,65 @@
         "type": "multi_repo",
         "priority": 6,
         "repo_patterns": [
-          "codyssey_E2-1"
+          "codyssey_E1-3"
         ]
       },
       "evidence": [
-        "repo:codyssey"
+        "tier2:main.py",
+        "repo:codyssey",
+        "repo:codyssey",
+        "readme:npu",
+        "readme:mac"
       ],
-      "last_seen_at": "2026-04-19",
+      "last_seen_at": "2026-04-14",
       "source": "classified-run"
     },
     {
-      "repo_key": "sungho255/codyssey_1",
+      "repo_key": "sungho255/codyssey_2",
       "course_guess": "unknown",
-      "course_label": "미분류",
+      "course_label": "unknown",
       "status": "candidate",
       "candidate": {
         "username": "sungho255",
         "display_name": "sungho255",
         "type": "multi_repo",
-        "priority": 7,
+        "priority": 6,
+        "repo_patterns": [
+          "codyssey_2"
+        ]
+      },
+      "evidence": [
+        "tier2:state.json",
+        "repo:codyssey",
+        "repo:codyssey",
+        "tier2:state.json",
+        "continuity:repo-codyssey"
+      ],
+      "last_seen_at": "2026-04-14",
+      "source": "classified-run"
+    },
+    {
+      "repo_key": "sungho255/codyssey_1",
+      "course_guess": "unknown",
+      "course_label": "unknown",
+      "status": "candidate",
+      "candidate": {
+        "username": "sungho255",
+        "display_name": "sungho255",
+        "type": "multi_repo",
+        "priority": 6,
         "repo_patterns": [
           "codyssey_1"
         ]
       },
       "evidence": [
+        "repo:codyssey",
         "week-readme:docker",
         "repo:codyssey",
         "readme:docker",
         "readme:mac"
       ],
-      "last_seen_at": "2026-04-19",
+      "last_seen_at": "2026-04-14",
       "source": "classified-run"
     }
   ]

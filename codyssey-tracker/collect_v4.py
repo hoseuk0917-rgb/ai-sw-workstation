@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Codyssey 과정 분리형 수집기 v4
 - v3의 레거시 컷/오염 방지를 유지
@@ -187,6 +187,44 @@ def week_specific_confirm(item: dict, tier_ev: list[str], hint_ev: list[str], we
     return False, 0.0, []
 
 
+def detect_phase(item: dict, tier_ev: list, hint_ev: list) -> tuple[str, float, list[str]]:
+    text = ((item.get('readme', '') or '') + '\n' + ' '.join(item.get('file_tree', []) or [])).lower()
+    term_hits = []
+    for kw in [
+        'term project', 'team project', '아이디어톤', '7개 도메인',
+        'service plan', '서비스 기획서', '발표 자료', 'ppt', 'pdf',
+        '문제 정의', '타겟 사용자', '서비스 개요', 'ai 기술 적용', '기대 효과', '향후 발전 방향', '팀 역할 분담',
+        'ai mobility', 'ai energy', 'ai robotics', 'ai smart factory', 'ai healthcare', 'ai fintech', 'ai e-commerce'
+    ]:
+        if kw in text:
+            term_hits.append(kw)
+
+    if len(term_hits) >= 2:
+        return 'term_project', 0.72 + min(0.18, 0.03 * max(0, len(term_hits) - 2)), [f'term:{x}' for x in term_hits[:5]]
+
+    boot_hits = [x for x in (tier_ev + hint_ev) if str(x).startswith('tier') or str(x).startswith('week-') or str(x).startswith('repo:')]
+    if boot_hits:
+        return 'admission_bootcamp', 0.70, boot_hits[:5]
+
+    return 'unknown', 0.25, []
+
+
+def continuity_boost(item: dict, phase: str) -> tuple[float, list[str]]:
+    repo_name = (item.get('repo_name', '') or '').lower()
+    ev = []
+    bonus = 0.0
+
+    if 'codyssey' in repo_name:
+        bonus += 0.04
+        ev.append('continuity:repo-codyssey')
+
+    if phase == 'term_project':
+        bonus += 0.03
+        ev.append('continuity:term-phase')
+
+    return bonus, ev
+
+
 def classify_course(item: dict) -> dict:
     updated_at = safe_date(item.get('updated_at', ''))
     blacklist_text = text_for_blacklist(item)
@@ -195,32 +233,55 @@ def classify_course(item: dict) -> dict:
     tier_ev = tier_evidence_from_file_tree(item.get('file_tree', []) or [])
     hint_ev = generic_hint_evidence(item)
     week_score, week_ev = week_consistency(item)
+    phase, phase_conf, phase_ev = detect_phase(item, tier_ev, hint_ev)
+    cont_bonus, cont_ev = continuity_boost(item, phase)
 
     if updated_at and updated_at < LEGACY_HARD_CUTOFF:
         return {
             'course_id': 'legacy_pre2026',
-            'course_label': '레거시(날짜 컷)',
+            'course_label': 'legacy_pre2026',
+            'cohort_id': 'legacy_pre2026',
+            'cohort_label': 'legacy_pre2026',
+            'phase_id': phase,
+            'phase_label': phase,
+            'phase_confidence': phase_conf,
+            'week_label': str(item.get('week', '')),
+            'continuity_score': cont_bonus,
             'confidence': 0.98,
             'status': 'excluded',
-            'evidence': [f'updated_at:{updated_at}', 'rule:legacy-hard-cutoff'],
+            'evidence': [f'updated_at:{updated_at}', 'rule:legacy-hard-cutoff'] + phase_ev[:3],
         }
 
     if pilot_hits and not any(x.startswith('tier1:') for x in tier_ev):
         return {
             'course_id': 'legacy_2025_pilot',
-            'course_label': '2025 파일럿',
+            'course_label': 'legacy_2025_pilot',
+            'cohort_id': 'legacy_2025_pilot',
+            'cohort_label': 'legacy_2025_pilot',
+            'phase_id': phase,
+            'phase_label': phase,
+            'phase_confidence': phase_conf,
+            'week_label': str(item.get('week', '')),
+            'continuity_score': cont_bonus,
             'confidence': 0.95,
             'status': 'excluded',
-            'evidence': [f'pilot:{x}' for x in pilot_hits[:4]],
+            'evidence': [f'pilot:{x}' for x in pilot_hits[:4]] + phase_ev[:2],
         }
 
     if native_hits and week_score == 0 and not any(x.startswith('tier1:') for x in tier_ev):
         return {
             'course_id': 'course_2026_native_candidate',
-            'course_label': '2026 네이티브(후보)',
-            'confidence': 0.65,
+            'course_label': 'course_2026_native_candidate',
+            'cohort_id': 'cohort_2026_current',
+            'cohort_label': 'cohort_2026_current',
+            'phase_id': phase,
+            'phase_label': phase,
+            'phase_confidence': phase_conf,
+            'week_label': str(item.get('week', '')),
+            'continuity_score': cont_bonus,
+            'confidence': 0.65 + cont_bonus,
             'status': 'candidate',
-            'evidence': [f'native:{x}' for x in native_hits[:3]],
+            'evidence': [f'native:{x}' for x in native_hits[:3]] + phase_ev[:2] + cont_ev[:1],
         }
 
     if updated_at >= CURRENT_MAIN_START:
@@ -228,47 +289,81 @@ def classify_course(item: dict) -> dict:
         if ok:
             return {
                 'course_id': 'course_2026_main',
-                'course_label': '2026 본과정',
-                'confidence': conf,
+                'course_label': '2026_main',
+                'cohort_id': 'cohort_2026_current',
+                'cohort_label': 'cohort_2026_current',
+                'phase_id': phase,
+                'phase_label': phase,
+                'phase_confidence': phase_conf,
+                'week_label': str(item.get('week', '')),
+                'continuity_score': cont_bonus,
+                'confidence': min(0.99, conf + cont_bonus),
                 'status': 'confirmed',
-                'evidence': ev[:5],
+                'evidence': (ev + phase_ev + cont_ev)[:5],
             }
 
-        # 주차 특정 규칙 외 범용 확정 규칙
         strong_tier1 = any(x.startswith('tier1:') for x in tier_ev)
         strong_tier2 = sum(1 for x in tier_ev if x.startswith('tier2:'))
         if strong_tier1 and week_score >= 1:
             return {
                 'course_id': 'course_2026_main',
-                'course_label': '2026 본과정',
-                'confidence': 0.86,
+                'course_label': '2026_main',
+                'cohort_id': 'cohort_2026_current',
+                'cohort_label': 'cohort_2026_current',
+                'phase_id': phase,
+                'phase_label': phase,
+                'phase_confidence': phase_conf,
+                'week_label': str(item.get('week', '')),
+                'continuity_score': cont_bonus,
+                'confidence': min(0.99, 0.86 + cont_bonus),
                 'status': 'confirmed',
-                'evidence': (tier_ev + week_ev + hint_ev)[:5],
+                'evidence': (tier_ev + week_ev + hint_ev + phase_ev + cont_ev)[:5],
             }
         if strong_tier2 >= 2 and week_score >= 2:
             return {
                 'course_id': 'course_2026_main',
-                'course_label': '2026 본과정',
-                'confidence': 0.78,
+                'course_label': '2026_main',
+                'cohort_id': 'cohort_2026_current',
+                'cohort_label': 'cohort_2026_current',
+                'phase_id': phase,
+                'phase_label': phase,
+                'phase_confidence': phase_conf,
+                'week_label': str(item.get('week', '')),
+                'continuity_score': cont_bonus,
+                'confidence': min(0.99, 0.78 + cont_bonus),
                 'status': 'confirmed',
-                'evidence': (tier_ev + week_ev + hint_ev)[:5],
+                'evidence': (tier_ev + week_ev + hint_ev + phase_ev + cont_ev)[:5],
             }
 
     if pilot_hits and (tier_ev or hint_ev):
         return {
             'course_id': 'mixed_or_legacy',
-            'course_label': '혼합/검토 필요',
+            'course_label': 'mixed_or_legacy',
+            'cohort_id': 'unknown_watch',
+            'cohort_label': 'unknown_watch',
+            'phase_id': phase,
+            'phase_label': phase,
+            'phase_confidence': phase_conf,
+            'week_label': str(item.get('week', '')),
+            'continuity_score': cont_bonus,
             'confidence': 0.45,
             'status': 'review',
-            'evidence': ([f'pilot:{x}' for x in pilot_hits[:2]] + tier_ev + week_ev + hint_ev)[:5],
+            'evidence': ([f'pilot:{x}' for x in pilot_hits[:2]] + tier_ev + week_ev + hint_ev + phase_ev + cont_ev)[:5],
         }
 
     return {
         'course_id': 'unknown',
-        'course_label': '미분류',
-        'confidence': 0.25,
+        'course_label': 'unknown',
+        'cohort_id': 'unknown_watch',
+        'cohort_label': 'unknown_watch',
+        'phase_id': phase,
+        'phase_label': phase,
+        'phase_confidence': phase_conf,
+        'week_label': str(item.get('week', '')),
+        'continuity_score': cont_bonus,
+        'confidence': min(0.60, 0.25 + cont_bonus + (0.10 if phase == 'term_project' else 0.0)),
         'status': 'candidate',
-        'evidence': (week_ev + hint_ev + tier_ev)[:4] or ['insufficient-signal'],
+        'evidence': (phase_ev + week_ev + hint_ev + tier_ev + cont_ev)[:5] or ['insufficient-signal'],
     }
 
 
@@ -416,3 +511,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+

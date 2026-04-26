@@ -3,8 +3,8 @@ name: Codyssey Tracker
 on:
   workflow_dispatch:
   schedule:
-    # Sunday 21:00 KST = Sunday 12:00 UTC
-    - cron: "0 12 * * 0"
+    # Sunday 21:17 KST = Sunday 12:17 UTC
+    - cron: "17 12 * * 0"
 
 permissions:
   contents: write
@@ -36,6 +36,7 @@ jobs:
       - name: Run collector
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENABLE_GLOBAL_DISCOVERY: "1"
         run: |
           python ./codyssey-tracker/collect_v5_3_2.py
 

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-19",
+  "generated_at": "2026-04-14",
   "candidate_pool_size": 39,
-  "collected_count": 40,
+  "collected_count": 38,
   "new_repo_count": 0,
-  "watchlist_size": 5,
+  "watchlist_size": 4,
   "archived_total": 2,
   "discovered_total": 0,
-  "overwrite_suspected": 12,
+  "overwrite_suspected": 0,
   "signature_version": "v5.3.1"
 }

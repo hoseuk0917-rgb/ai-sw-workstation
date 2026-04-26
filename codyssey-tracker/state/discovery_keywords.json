@@ -1,0 +1,618 @@
+{
+  "version": 1,
+  "updated_at": "2026-04-16",
+  "notes": [
+    "official_rule > observed_rule > expansion_rule 순으로 가중치를 준다.",
+    "repo명만으로 확정하지 않는다. README/파일/시기/사용자 연속성까지 합산한다.",
+    "native 계열 일반 단어는 노이즈가 크므로 단독 확정 금지."
+  ],
+  "global": {
+    "exclude_tokens": [
+      "tutorial",
+      "practice",
+      "toy",
+      "sample",
+      "forked from",
+      "leetcode",
+      "baekjoon",
+      "boj",
+      "test-repo",
+      "hello-world",
+      "school-assignment",
+      "personal-blog",
+      "portfolio-site"
+    ],
+    "exclude_repo_patterns": [
+      ".*leetcode.*",
+      ".*baekjoon.*",
+      ".*algorithm.*",
+      ".*toy.*",
+      ".*practice.*"
+    ],
+    "common_positive_tokens": [
+      "codyssey",
+      "mission",
+      "workspace",
+      "docker",
+      "readme",
+      "requirements.txt",
+      "package.json"
+    ],
+    "time_decay": {
+      "recent_days_full": 45,
+      "recent_days_soft": 120
+    }
+  },
+  "tracks": {
+    "all_in_one": {
+      "display_name": "AI 올인원",
+      "official_topics": [
+        "workstation setup",
+        "python/git quiz",
+        "mini npu simulator",
+        "ideathon"
+      ],
+      "courses": {
+        "aio_week1_workstation": {
+          "display_name": "Week1 Workstation Setup",
+          "stage": "week1",
+          "official_rule": {
+            "repo_patterns": [
+              "codyssey[-_ ]?e1[-_ ]?1",
+              "^e1[-_ ]?1$",
+              "first[_ -]?mission[_ -]?setup",
+              "workstation"
+            ],
+            "readme_tokens": [
+              "docker",
+              "dockerfile",
+              "port mapping",
+              "volume",
+              "git config",
+              "workspace setup"
+            ],
+            "file_tokens": [
+              "Dockerfile",
+              "docker-compose.yml",
+              ".gitignore",
+              "README.md"
+            ],
+            "official_keywords": [
+              "first mission setup",
+              "workstation setup"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "codyssey[_-]?e1[-_ ]?1",
+              "e1-1",
+              "first_mission_setup",
+              "codyssey_1",
+              "mission1",
+              "mission 1-1"
+            ],
+            "readme_tokens": [
+              "container",
+              "image build",
+              "run container",
+              "hello-world",
+              "bind mount",
+              "volume persistence",
+              "재현 가능한 표준 개발 환경",
+              "바인드 마운트",
+              "볼륨 영속성",
+              "github 연동"
+            ],
+            "file_tokens": [
+              ".devcontainer",
+              "compose.yaml"
+            ]
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "mission statement",
+            "first mission church"
+          ]
+        },
+        "aio_week2_python_git_quiz": {
+          "display_name": "Week2 Python Git Quiz",
+          "stage": "week2",
+          "official_rule": {
+            "repo_patterns": [
+              "codyssey[-_ ]?e1[-_ ]?2",
+              "^e1[-_ ]?2$",
+              "quiz",
+              "quizgame"
+            ],
+            "readme_tokens": [
+              "quizgame",
+              "state.json",
+              "branch",
+              "merge",
+              "commit",
+              "git quiz"
+            ],
+            "file_tokens": [
+              "state.json",
+              "main.py",
+              "quiz.py"
+            ],
+            "official_keywords": [
+              "python git quiz",
+              "quiz game"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "codyssey-e1-2",
+              "e1-2",
+              "codyssey_2",
+              "mission2"
+            ],
+            "readme_tokens": [
+              "branch strategy",
+              "merge conflict"
+            ],
+            "file_tokens": [
+              "game.py",
+              "exam.py",
+              "eval2.md"
+            ]
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "personality quiz",
+            "game jam quiz"
+          ]
+        },
+        "aio_week3_mini_npu": {
+          "display_name": "Week3 Mini NPU Simulator",
+          "stage": "week3",
+          "official_rule": {
+            "repo_patterns": [
+              "codyssey[-_ ]?e1[-_ ]?3",
+              "^e1[-_ ]?3$",
+              "mini[_ -]?npu[_ -]?simulator",
+              "npu"
+            ],
+            "readme_tokens": [
+              "mac",
+              "epsilon",
+              "cross",
+              "mini npu",
+              "simulator",
+              "data.json"
+            ],
+            "file_tokens": [
+              "data.json",
+              "main.py",
+              "simulator.py"
+            ],
+            "official_keywords": [
+              "mini npu simulator"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "codyssey-e1-3",
+              "mini_npu_simulator",
+              "codyssey_e1-3",
+              "mission3"
+            ],
+            "readme_tokens": [
+              "multiply accumulate",
+              "x matrix",
+              "undecided",
+              "label normalization",
+              "data_v2.json"
+            ],
+            "file_tokens": [
+              "model.json",
+              "data_v2.json"
+            ]
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "npu driver",
+            "mobile npu benchmark"
+          ]
+        },
+        "aio_week4_ideathon": {
+          "display_name": "Week4 Ideathon",
+          "stage": "week4",
+          "official_rule": {
+            "repo_patterns": [
+              "ideathon",
+              "idea",
+              "final"
+            ],
+            "readme_tokens": [
+              "problem definition",
+              "solution",
+              "proposal",
+              "demo"
+            ],
+            "file_tokens": [
+              "pptx",
+              "slides",
+              "proposal.pdf"
+            ],
+            "official_keywords": [
+              "ideathon"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [],
+          "phase_id": "post_bootcamp_ideathon",
+          "phase_label": "post_bootcamp_ideathon"
+        }
+      }
+    },
+    "ai_native": {
+      "display_name": "AI 네이티브",
+      "official_topics": [
+        "llm automation",
+        "multimodal content",
+        "brand identity",
+        "ai news trend analysis",
+        "review sentiment",
+        "ai assistant",
+        "travel agent",
+        "long-memory counselor",
+        "webtoon fairy tale platform"
+      ],
+      "courses": {
+        "native_tool_llm_automation": {
+          "display_name": "LLM 기반 업무 자동화",
+          "stage": "tool",
+          "official_rule": {
+            "repo_patterns": [
+              "llm.*automation",
+              "workflow.*automation",
+              "office.*ai"
+            ],
+            "readme_tokens": [
+              "llm",
+              "automation",
+              "workflow",
+              "email draft",
+              "document automation"
+            ],
+            "file_tokens": [
+              "app.py",
+              "requirements.txt",
+              "prompt.py"
+            ],
+            "official_keywords": [
+              "llm 기반 업무 자동화"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "home automation",
+            "factory automation"
+          ]
+        },
+        "native_tool_multimodal_content": {
+          "display_name": "멀티모달 콘텐츠 제작",
+          "stage": "tool",
+          "official_rule": {
+            "repo_patterns": [
+              "multimodal",
+              "content.*generator",
+              "image.*story"
+            ],
+            "readme_tokens": [
+              "multimodal",
+              "image",
+              "voice",
+              "storyboard",
+              "content generation"
+            ],
+            "file_tokens": [
+              "streamlit_app.py",
+              "gradio_app.py",
+              "requirements.txt"
+            ],
+            "official_keywords": [
+              "멀티모달 콘텐츠 제작"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": []
+        },
+        "native_applied_brand_identity": {
+          "display_name": "브랜드 아이덴티티 생성기",
+          "stage": "applied",
+          "official_rule": {
+            "repo_patterns": [
+              "brand[_ -]?identity",
+              "identity[_ -]?generator",
+              "branding"
+            ],
+            "readme_tokens": [
+              "brand identity",
+              "logo",
+              "slogan",
+              "persona",
+              "branding"
+            ],
+            "file_tokens": [
+              "app.py",
+              "streamlit_app.py",
+              "requirements.txt"
+            ],
+            "official_keywords": [
+              "브랜드 아이덴티티 생성기"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "brand-identity-generator"
+            ],
+            "readme_tokens": [
+              "brand persona",
+              "tone and manner"
+            ],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "company branding page",
+            "css brand page"
+          ]
+        },
+        "native_applied_review_sentiment": {
+          "display_name": "고객 리뷰 감정 분석",
+          "stage": "applied",
+          "official_rule": {
+            "repo_patterns": [
+              "review[_ -]?sentiment",
+              "sentiment[_ -]?analysis",
+              "review[_ -]?analyzer"
+            ],
+            "readme_tokens": [
+              "customer review",
+              "sentiment",
+              "positive negative neutral",
+              "classification"
+            ],
+            "file_tokens": [
+              "app.py",
+              "model.py",
+              "requirements.txt"
+            ],
+            "official_keywords": [
+              "고객 리뷰 감정 분석"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "review-sentiment"
+            ],
+            "readme_tokens": [
+              "review classifier"
+            ],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "movie review sentiment benchmark",
+            "imdb sentiment tutorial"
+          ]
+        },
+        "native_advanced_ai_assistant": {
+          "display_name": "AI 비서",
+          "stage": "advanced",
+          "official_rule": {
+            "repo_patterns": [
+              "ai[_ -]?assistant",
+              "assistant",
+              "copilot"
+            ],
+            "readme_tokens": [
+              "assistant",
+              "chat memory",
+              "task planning",
+              "agent"
+            ],
+            "file_tokens": [
+              "app.py",
+              "agent.py",
+              "memory.py"
+            ],
+            "official_keywords": [
+              "ai 비서"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "ai-assistant"
+            ],
+            "readme_tokens": [
+              "personal assistant"
+            ],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "assistant professor",
+            "teaching assistant"
+          ]
+        },
+        "native_advanced_travel_agent": {
+          "display_name": "여행 계획 수립 AI 에이전트",
+          "stage": "advanced",
+          "official_rule": {
+            "repo_patterns": [
+              "travel[_ -]?agent",
+              "trip[_ -]?planner",
+              "travel[_ -]?planner"
+            ],
+            "readme_tokens": [
+              "travel plan",
+              "itinerary",
+              "trip planner",
+              "agent",
+              "destination recommendation"
+            ],
+            "file_tokens": [
+              "app.py",
+              "agent.py",
+              "requirements.txt"
+            ],
+            "official_keywords": [
+              "여행 계획 수립 ai 에이전트"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [
+              "travel-agent"
+            ],
+            "readme_tokens": [
+              "itinerary generator"
+            ],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "travel agency website",
+            "tour booking clone"
+          ]
+        },
+        "native_advanced_counselor": {
+          "display_name": "장기 기억 AI 카운슬러",
+          "stage": "advanced",
+          "official_rule": {
+            "repo_patterns": [
+              "counselor",
+              "therapy",
+              "long[_ -]?memory",
+              "memory[_ -]?agent"
+            ],
+            "readme_tokens": [
+              "long-term memory",
+              "counselor",
+              "conversation memory",
+              "empathetic response"
+            ],
+            "file_tokens": [
+              "memory.py",
+              "chat_history.json",
+              "app.py"
+            ],
+            "official_keywords": [
+              "장기 기억 ai 카운슬러"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [
+            "school counselor"
+          ]
+        },
+        "native_final_project": {
+          "display_name": "최종 프로젝트",
+          "stage": "final",
+          "official_rule": {
+            "repo_patterns": [
+              "final",
+              "capstone",
+              "demo"
+            ],
+            "readme_tokens": [
+              "final project",
+              "demo video",
+              "architecture",
+              "deployment"
+            ],
+            "file_tokens": [
+              "README.md",
+              "requirements.txt",
+              "package.json"
+            ],
+            "official_keywords": [
+              "최종 프로젝트"
+            ]
+          },
+          "observed_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "expansion_rule": {
+            "repo_patterns": [],
+            "readme_tokens": [],
+            "file_tokens": []
+          },
+          "negative_patterns": [],
+          "phase_id": "post_bootcamp_final_project",
+          "phase_label": "post_bootcamp_final_project"
+        }
+      }
+    }
+  }
+}

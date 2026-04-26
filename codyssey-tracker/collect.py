@@ -142,24 +142,8 @@ CANDIDATES = [
     # ══════════════════════════════════════════════════════════════════════
     # ── 판별 불가 / 잠재적 후보 (18명) ──
     # ══════════════════════════════════════════════════════════════════════
-    {"username": "Ahn-Jeongmin", "display_name": "Ahn-Jeongmin", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "Jeonghui96", "display_name": "Jeonghui96", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "Seoyeon-Baek", "display_name": "Seoyeon-Baek", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "HyeonJeong519", "display_name": "HyeonJeong519", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "LeeJeongHwi", "display_name": "LeeJeongHwi", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "Yun024", "display_name": "Yun024", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "ikasoon", "display_name": "ikasoon", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "doji-kr", "display_name": "doji-kr", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "Jeon-Yoojin", "display_name": "Jeon-Yoojin", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "seongjin-an", "display_name": "seongjin-an", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "Eomhyein", "display_name": "Eomhyein", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "Jeongseonil", "display_name": "Jeongseonil", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "seokhwan-an", "display_name": "seokhwan-an", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "kimmjen", "display_name": "kimmjen", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "KIMJW04", "display_name": "KIMJW04", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "dev-9hee", "display_name": "dev-9hee", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "YunDaeHyeon", "display_name": "YunDaeHyeon", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
-    {"username": "leesanghyeok523", "display_name": "leesanghyeok523", "type": "multi_repo", "repo_patterns": [r"codyssey.*(\d+)"], "priority": 3},
+    # broad codyssey.* fallback block removed
+    # reason: expanded/watch/external candidate paths now cover current cohort better with less noise
 ]
 
 WORD_TO_NUM = {

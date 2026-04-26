@@ -47,30 +47,60 @@ def bootstrap_seed_candidates() -> list[dict]:
 def normalize_candidate(c: dict) -> dict | None:
     if not isinstance(c, dict):
         return None
-    username = c.get('username')
+
+    username = str(c.get('username', '') or '').strip()
     if not username:
         return None
+
     out = dict(c)
+    out['username'] = username
     out.setdefault('display_name', username)
     out.setdefault('priority', 5)
-    if out.get('type') not in {'single_repo', 'multi_repo'}:
-        if 'repo_name' in out:
+
+    ctype = out.get('type')
+    if ctype not in {'single_repo', 'multi_repo'}:
+        if out.get('repo_name'):
             out['type'] = 'single_repo'
         else:
             out['type'] = 'multi_repo'
+
+    if out['type'] == 'single_repo':
+        repo_name = str(out.get('repo_name', '') or '').strip()
+        if not repo_name:
+            return None
+        out['repo_name'] = repo_name
+        if 'folder_pattern' in out and out.get('folder_pattern') is not None:
+            out['folder_pattern'] = str(out.get('folder_pattern', '') or '').strip() or None
+        out.pop('repo_patterns', None)
+    else:
+        pats = out.get('repo_patterns', []) or []
+        if not isinstance(pats, list):
+            return None
+        pats = [str(x).strip() for x in pats if str(x).strip()]
+        if not pats:
+            return None
+        out['repo_patterns'] = pats
+        out.pop('repo_name', None)
+        out.pop('folder_pattern', None)
+
     return out
 
 
 def build_candidate_pool() -> list[dict]:
     seeds = [normalize_candidate(c) for c in bootstrap_seed_candidates()]
     seeds = [c for c in seeds if c]
+
     watch = load_json(WATCHLIST_PATH, {'watch': []}).get('watch', [])
     watched = [normalize_candidate(c.get('candidate', c)) for c in watch if isinstance(c, dict)]
     watched = [c for c in watched if c]
 
     merged = {}
     for c in seeds + watched:
-        key = f"{c.get('username')}::{c.get('repo_name', '')}::{c.get('type')}::{c.get('folder_pattern', '')}::{','.join(c.get('repo_patterns', [])) if isinstance(c.get('repo_patterns'), list) else ''}"
+        key = (
+            f"{c.get('username')}::{c.get('repo_name', '')}::{c.get('type')}::"
+            f"{c.get('folder_pattern', '')}::"
+            f"{','.join(c.get('repo_patterns', [])) if isinstance(c.get('repo_patterns'), list) else ''}"
+        )
         merged[key] = c
     return list(merged.values())
 
@@ -80,14 +110,32 @@ def collect_from_pool(candidates: list[dict]) -> list[dict]:
     seen = set()
     for c in candidates:
         try:
-            items = base.collect_single_repo(c) if c.get('type') == 'single_repo' else base.collect_multi_repo(c)
+            ctype = c.get('type')
+            uname = c.get('username')
+            label = c.get('repo_name') or c.get('folder_pattern') or (
+                ','.join(c.get('repo_patterns', [])) if isinstance(c.get('repo_patterns'), list) else ''
+            )
+
+            items = base.collect_single_repo(c) if ctype == 'single_repo' else base.collect_multi_repo(c)
+
+            if not items:
+                print(f"[debug:empty] type={ctype} user={uname} target={label}")
+                continue
+
+            print(f"[debug:hit] type={ctype} user={uname} target={label} count={len(items)}")
+
             for item in items:
                 key = f"{item['username']}/{item['repo_name']}"
                 if key not in seen:
                     seen.add(key)
                     results.append(item)
         except Exception as e:
-            print(f"[오류] candidate collect failed: {c.get('username')} - {e}")
+            print(
+                f"[candidate collect failed] "
+                f"type={c.get('type')} user={c.get('username')} "
+                f"repo={c.get('repo_name')} folder={c.get('folder_pattern')} "
+                f"patterns={c.get('repo_patterns')} - {e}"
+            )
     return results
 
 
@@ -98,10 +146,12 @@ def apply_manual_overrides(item: dict, meta: dict, course_map: dict) -> dict:
     override = repo_override or user_override
     if not override:
         return meta
+
     patched = dict(meta)
     for k in ['course_id', 'course_label', 'status', 'confidence']:
         if k in override:
             patched[k] = override[k]
+
     ev = list(patched.get('evidence', []))
     ev.insert(0, 'manual-override')
     patched['evidence'] = ev[:5]
@@ -134,6 +184,7 @@ def update_registry_and_watchlist(classified: list[dict]) -> tuple[dict, dict]:
             'last_seen_at': now_str,
             'updated_at': item.get('updated_at', ''),
         }
+
         if course.get('status') in {'candidate', 'review'}:
             cand = {
                 'username': item['username'],
@@ -142,12 +193,12 @@ def update_registry_and_watchlist(classified: list[dict]) -> tuple[dict, dict]:
                 'priority': 6,
             }
             if '/' in item['repo_name']:
-                # folder-in-repo style items stay as single_repo candidates only if original repo name is clear
                 root_repo = item['repo_name'].split('/')[0]
                 cand['repo_name'] = root_repo
                 cand['folder_pattern'] = item['repo_name'].split('/', 1)[1]
             else:
                 cand['repo_patterns'] = [item['repo_name']]
+
             watch_entries.append({
                 'repo_key': repo_key,
                 'course_guess': course.get('course_id'),
@@ -168,9 +219,11 @@ def build_report(all_items: list[dict], classified: list[dict], new_repos: list[
     confirmed_main = [x for x in classified if x['course']['course_id'] == 'course_2026_main']
     excluded_legacy = [x for x in classified if x['course']['status'] == 'excluded']
     review_items = [x for x in classified if x['course']['status'] in {'candidate', 'review'}]
+
     by_week = defaultdict(list)
     for item in confirmed_main:
         by_week[item['week']].append(item)
+
     by_bucket = defaultdict(list)
     for item in review_items:
         by_bucket[item['course']['course_label']].append(item)
@@ -186,6 +239,7 @@ def build_report(all_items: list[dict], classified: list[dict], new_repos: list[
     lines.append(f'- 후보/검토 필요: {len(review_items)}건')
     lines.append(f"- 전역 신규 탐색 활성화: {'ON' if ENABLE_GLOBAL_DISCOVERY else 'OFF'}")
     lines.append('')
+
     lines.append('## 1. 2026 본과정 확정 자료')
     lines.append('')
     if by_week:

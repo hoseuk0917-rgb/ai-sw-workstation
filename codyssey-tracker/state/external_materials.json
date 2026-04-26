@@ -19,12 +19,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-20"
     },
     "https://gist.github.com/kimch0612": {
       "url": "https://gist.github.com/kimch0612",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -40,8 +40,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-20"
     },
     "https://github.com/sonjehyun123-maker/Codyssey-w1-E2": {
       "url": "https://github.com/sonjehyun123-maker/Codyssey-w1-E2",
@@ -59,8 +59,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/sonjehyun123-maker": {
       "url": "https://github.com/sonjehyun123-maker",
@@ -79,12 +79,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/sonjehyun123-maker": {
       "url": "https://gist.github.com/sonjehyun123-maker",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -99,8 +99,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/mulloc1": {
       "url": "https://github.com/mulloc1",
@@ -120,12 +120,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/mulloc1": {
       "url": "https://gist.github.com/mulloc1",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -141,11 +141,11 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/": {
-      "url": "https://github.com/",
+    "https://github.com/mulloc1/codyssey_first_python": {
+      "url": "https://github.com/mulloc1/codyssey_first_python",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
@@ -160,30 +160,11 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/mulloc1/codyssey_first_python.git": {
-      "url": "https://github.com/mulloc1/codyssey_first_python.git",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "mulloc1/codyssey_first_python"
-      ],
-      "linked_usernames": [
-        "mulloc1"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/mpegxx/내-저장소-이름.git": {
-      "url": "https://github.com/mpegxx/내-저장소-이름.git",
+    "https://github.com/mpegxx/내-저장소-이름": {
+      "url": "https://github.com/mpegxx/내-저장소-이름",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
@@ -198,11 +179,11 @@
       "source_paths": [
         "e1_1/README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/사용자이름/저장소이름.git": {
-      "url": "https://github.com/사용자이름/저장소이름.git",
+    "https://github.com/사용자이름/저장소이름": {
+      "url": "https://github.com/사용자이름/저장소이름",
       "domain": "github.com",
       "source_type": "artifact",
       "source_types": [
@@ -217,8 +198,8 @@
       "source_paths": [
         "e1_1/docs/git_study.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/mpegdj/E1_1": {
       "url": "https://github.com/mpegdj/E1_1",
@@ -236,8 +217,8 @@
       "source_paths": [
         "e1_1/docs/mission_ex.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/ntt65": {
       "url": "https://github.com/ntt65",
@@ -248,7 +229,9 @@
       ],
       "linked_repo_keys": [
         "ntt65/codyssey/e1_1",
-        "ntt65/codyssey/e1_2"
+        "ntt65/codyssey/e1_2",
+        "ntt65/codyssey/e1_3",
+        "ntt65/codyssey/e1_4"
       ],
       "linked_usernames": [
         "ntt65"
@@ -256,19 +239,21 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/ntt65": {
       "url": "https://gist.github.com/ntt65",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
       ],
       "linked_repo_keys": [
         "ntt65/codyssey/e1_1",
-        "ntt65/codyssey/e1_2"
+        "ntt65/codyssey/e1_2",
+        "ntt65/codyssey/e1_3",
+        "ntt65/codyssey/e1_4"
       ],
       "linked_usernames": [
         "ntt65"
@@ -276,8 +261,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/codewhite7777": {
       "url": "https://github.com/codewhite7777",
@@ -289,7 +274,10 @@
       "linked_repo_keys": [
         "codewhite7777/codyssey_E1-3",
         "codewhite7777/codyssey_E-2",
-        "codewhite7777/codyssey_E-1"
+        "codewhite7777/codyssey_E-1",
+        "codewhite7777/codyssey_E2-1",
+        "codewhite7777/codyssey_E1-1",
+        "codewhite7777/codyssey_E1-2"
       ],
       "linked_usernames": [
         "codewhite7777"
@@ -297,12 +285,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/codewhite7777": {
       "url": "https://gist.github.com/codewhite7777",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -310,7 +298,10 @@
       "linked_repo_keys": [
         "codewhite7777/codyssey_E1-3",
         "codewhite7777/codyssey_E-2",
-        "codewhite7777/codyssey_E-1"
+        "codewhite7777/codyssey_E-1",
+        "codewhite7777/codyssey_E2-1",
+        "codewhite7777/codyssey_E1-1",
+        "codewhite7777/codyssey_E1-2"
       ],
       "linked_usernames": [
         "codewhite7777"
@@ -318,18 +309,19 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/codewhite7777/codyssey_E-1.git": {
-      "url": "https://github.com/codewhite7777/codyssey_E-1.git",
+    "https://github.com/codewhite7777/codyssey_E-1": {
+      "url": "https://github.com/codewhite7777/codyssey_E-1",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
         "readme"
       ],
       "linked_repo_keys": [
-        "codewhite7777/codyssey_E-1"
+        "codewhite7777/codyssey_E-1",
+        "codewhite7777/codyssey_E1-1"
       ],
       "linked_usernames": [
         "codewhite7777"
@@ -337,18 +329,19 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/codewhite7777/git@github.com:codewhite7777/codyssey_E-1.git": {
-      "url": "https://github.com/codewhite7777/git@github.com:codewhite7777/codyssey_E-1.git",
+    "https://github.com/codewhite7777/git@github.com:codewhite7777": {
+      "url": "https://github.com/codewhite7777/git@github.com:codewhite7777",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
         "readme"
       ],
       "linked_repo_keys": [
-        "codewhite7777/codyssey_E-1"
+        "codewhite7777/codyssey_E-1",
+        "codewhite7777/codyssey_E1-1"
       ],
       "linked_usernames": [
         "codewhite7777"
@@ -356,8 +349,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/mov-hyun": {
       "url": "https://github.com/mov-hyun",
@@ -369,7 +362,8 @@
       "linked_repo_keys": [
         "mov-hyun/e1-3-mini-npu-simulator",
         "mov-hyun/e1-2-python-basics-quiz-game",
-        "mov-hyun/e1-1-workstation-setup"
+        "mov-hyun/e1-1-workstation-setup",
+        "mov-hyun/e1-3-mini-npu-simulator-2"
       ],
       "linked_usernames": [
         "mov-hyun"
@@ -377,12 +371,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/mov-hyun": {
       "url": "https://gist.github.com/mov-hyun",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -390,7 +384,8 @@
       "linked_repo_keys": [
         "mov-hyun/e1-3-mini-npu-simulator",
         "mov-hyun/e1-2-python-basics-quiz-game",
-        "mov-hyun/e1-1-workstation-setup"
+        "mov-hyun/e1-1-workstation-setup",
+        "mov-hyun/e1-3-mini-npu-simulator-2"
       ],
       "linked_usernames": [
         "mov-hyun"
@@ -398,27 +393,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/mov-hyun/e1-2-python-basics-quiz-game.git": {
-      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game.git",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "mov-hyun/e1-2-python-basics-quiz-game"
-      ],
-      "linked_usernames": [
-        "mov-hyun"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/mov-hyun/e1-2-python-basics-quiz-game": {
       "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game",
@@ -436,68 +412,11 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/mov-hyun/e1-2-python-basics-quiz-game/pull/new/feature/delete-quiz": {
-      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game/pull/new/feature/delete-quiz",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "mov-hyun/e1-2-python-basics-quiz-game"
-      ],
-      "linked_usernames": [
-        "mov-hyun"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/mov-hyun/e1-2-python-basics-quiz-game/pull/new/feature/hint": {
-      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game/pull/new/feature/hint",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "mov-hyun/e1-2-python-basics-quiz-game"
-      ],
-      "linked_usernames": [
-        "mov-hyun"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/mov-hyun/e1-2-python-basics-quiz-game.git/": {
-      "url": "https://github.com/mov-hyun/e1-2-python-basics-quiz-game.git/",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "mov-hyun/e1-2-python-basics-quiz-game"
-      ],
-      "linked_usernames": [
-        "mov-hyun"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/mov-hyun/ia-codyssey.git": {
-      "url": "https://github.com/mov-hyun/ia-codyssey.git",
+    "https://github.com/mov-hyun/ia-codyssey": {
+      "url": "https://github.com/mov-hyun/ia-codyssey",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
@@ -512,8 +431,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/yeowon083": {
       "url": "https://github.com/yeowon083",
@@ -531,12 +450,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/yeowon083": {
       "url": "https://gist.github.com/yeowon083",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -550,8 +469,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/jhkr1": {
       "url": "https://github.com/jhkr1",
@@ -571,12 +490,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/jhkr1": {
       "url": "https://gist.github.com/jhkr1",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -592,8 +511,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/junhnno/Codyssey_WorkSpace_Week2": {
       "url": "https://github.com/junhnno/Codyssey_WorkSpace_Week2",
@@ -611,8 +530,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/junhnno": {
       "url": "https://github.com/junhnno",
@@ -623,7 +542,8 @@
       ],
       "linked_repo_keys": [
         "junhnno/Codyssey_WorkSpace_Week2",
-        "junhnno/Codyssey_WorkSpace_Week1"
+        "junhnno/Codyssey_WorkSpace_Week1",
+        "junhnno/Codyssey_WorkSpace_Week3"
       ],
       "linked_usernames": [
         "junhnno"
@@ -631,19 +551,20 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/junhnno": {
       "url": "https://gist.github.com/junhnno",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
       ],
       "linked_repo_keys": [
         "junhnno/Codyssey_WorkSpace_Week2",
-        "junhnno/Codyssey_WorkSpace_Week1"
+        "junhnno/Codyssey_WorkSpace_Week1",
+        "junhnno/Codyssey_WorkSpace_Week3"
       ],
       "linked_usernames": [
         "junhnno"
@@ -651,46 +572,29 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/user-attachments/assets/cdd85d7a-f7b5-4341-b81c-0f5c3f5af47a": {
-      "url": "https://github.com/user-attachments/assets/cdd85d7a-f7b5-4341-b81c-0f5c3f5af47a",
+    "https://github.com/user-attachments/assets": {
+      "url": "https://github.com/user-attachments/assets",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
         "readme"
       ],
       "linked_repo_keys": [
-        "junhnno/Codyssey_WorkSpace_Week1"
+        "junhnno/Codyssey_WorkSpace_Week1",
+        "dolphin1404/Codyssey_E_1_2"
       ],
       "linked_usernames": [
+        "dolphin1404",
         "junhnno"
       ],
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/user-attachments/assets/db5baf35-8523-45e4-af9c-4c02df20483e": {
-      "url": "https://github.com/user-attachments/assets/db5baf35-8523-45e4-af9c-4c02df20483e",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "junhnno/Codyssey_WorkSpace_Week1"
-      ],
-      "linked_usernames": [
-        "junhnno"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/junhnno/Codyssey_WorkSpace": {
       "url": "https://github.com/junhnno/Codyssey_WorkSpace",
@@ -708,8 +612,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/sungho255": {
       "url": "https://github.com/sungho255",
@@ -728,12 +632,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/sungho255": {
       "url": "https://gist.github.com/sungho255",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -748,8 +652,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/yejoo0310": {
       "url": "https://github.com/yejoo0310",
@@ -769,12 +673,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/yejoo0310": {
       "url": "https://gist.github.com/yejoo0310",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -790,27 +694,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/yejoo0310/codyssey-m2.git": {
-      "url": "https://github.com/yejoo0310/codyssey-m2.git",
-      "domain": "github.com",
-      "source_type": "artifact",
-      "source_types": [
-        "artifact"
-      ],
-      "linked_repo_keys": [
-        "yejoo0310/codyssey-m2"
-      ],
-      "linked_usernames": [
-        "yejoo0310"
-      ],
-      "source_paths": [
-        "docs/clone.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/yejoo0310/codyssey-m2": {
       "url": "https://github.com/yejoo0310/codyssey-m2",
@@ -828,11 +713,11 @@
       "source_paths": [
         "docs/clone.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/yejoo0310/codyssey-m1.git": {
-      "url": "https://github.com/yejoo0310/codyssey-m1.git",
+    "https://github.com/yejoo0310/codyssey-m1": {
+      "url": "https://github.com/yejoo0310/codyssey-m1",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
@@ -847,11 +732,11 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
-    "https://github.com/yejibaek12/Python-Quiz-Game.git": {
-      "url": "https://github.com/yejibaek12/Python-Quiz-Game.git",
+    "https://github.com/yejibaek12/Python-Quiz-Game": {
+      "url": "https://github.com/yejibaek12/Python-Quiz-Game",
       "domain": "github.com",
       "source_type": "readme",
       "source_types": [
@@ -866,8 +751,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/yejibaek12": {
       "url": "https://github.com/yejibaek12",
@@ -885,12 +770,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/yejibaek12": {
       "url": "https://gist.github.com/yejibaek12",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -904,8 +789,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/clae-dev/ia-codyssey-Python": {
       "url": "https://github.com/clae-dev/ia-codyssey-Python",
@@ -923,27 +808,8 @@
       "source_paths": [
         "README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/clae-dev/ia-codyssey-Python.git": {
-      "url": "https://github.com/clae-dev/ia-codyssey-Python.git",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "clae-dev/ia-codyssey-Python"
-      ],
-      "linked_usernames": [
-        "clae-dev"
-      ],
-      "source_paths": [
-        "README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/clae-dev": {
       "url": "https://github.com/clae-dev",
@@ -954,7 +820,8 @@
       ],
       "linked_repo_keys": [
         "clae-dev/ia-codyssey-Python",
-        "clae-dev/ia-codyssey-Docker"
+        "clae-dev/ia-codyssey-Docker",
+        "clae-dev/ia-codyssey-Python2"
       ],
       "linked_usernames": [
         "clae-dev"
@@ -962,19 +829,20 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/clae-dev": {
       "url": "https://gist.github.com/clae-dev",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
       ],
       "linked_repo_keys": [
         "clae-dev/ia-codyssey-Python",
-        "clae-dev/ia-codyssey-Docker"
+        "clae-dev/ia-codyssey-Docker",
+        "clae-dev/ia-codyssey-Python2"
       ],
       "linked_usernames": [
         "clae-dev"
@@ -982,8 +850,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/leehnmn": {
       "url": "https://github.com/leehnmn",
@@ -1002,12 +870,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/leehnmn": {
       "url": "https://gist.github.com/leehnmn",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -1022,27 +890,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
-    },
-    "https://github.com/leehnmn/codyssey_2026.git": {
-      "url": "https://github.com/leehnmn/codyssey_2026.git",
-      "domain": "github.com",
-      "source_type": "readme",
-      "source_types": [
-        "readme"
-      ],
-      "linked_repo_keys": [
-        "leehnmn/codyssey_2026/project-2"
-      ],
-      "linked_usernames": [
-        "leehnmn"
-      ],
-      "source_paths": [
-        "project-2/README.md"
-      ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/leehnmn/codyssey_2026": {
       "url": "https://github.com/leehnmn/codyssey_2026",
@@ -1060,8 +909,8 @@
       "source_paths": [
         "project-2/README.md"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/peachily": {
       "url": "https://github.com/peachily",
@@ -1079,12 +928,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/peachily": {
       "url": "https://gist.github.com/peachily",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -1098,8 +947,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/I-nkamanda": {
       "url": "https://github.com/I-nkamanda",
@@ -1119,12 +968,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/I-nkamanda": {
       "url": "https://gist.github.com/I-nkamanda",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -1140,8 +989,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/ikasoon": {
       "url": "https://github.com/ikasoon",
@@ -1159,12 +1008,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://gist.github.com/ikasoon": {
       "url": "https://gist.github.com/ikasoon",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -1178,8 +1027,8 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-27"
     },
     "https://github.com/doji-kr": {
       "url": "https://github.com/doji-kr",
@@ -1197,12 +1046,12 @@
       "source_paths": [
         "github-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-16"
     },
     "https://gist.github.com/doji-kr": {
       "url": "https://gist.github.com/doji-kr",
-      "domain": "github.com",
+      "domain": "gist.github.com",
       "source_type": "gist-profile",
       "source_types": [
         "gist-profile"
@@ -1216,8 +1065,1280 @@
       "source_paths": [
         "github-gist-profile"
       ],
-      "first_seen_at": "2026-04-14",
-      "last_seen_at": "2026-04-14"
+      "first_seen_at": "2026-04-15",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://github.com/﻿0-hu": {
+      "url": "https://github.com/﻿0-hu",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "﻿0-hu/codyssey-e1-3",
+        "﻿0-hu/codyssey-e1-2",
+        "﻿0-hu/codyssey-e1-1"
+      ],
+      "linked_usernames": [
+        "﻿0-hu"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://gist.github.com/﻿0-hu": {
+      "url": "https://gist.github.com/﻿0-hu",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "﻿0-hu/codyssey-e1-3",
+        "﻿0-hu/codyssey-e1-2",
+        "﻿0-hu/codyssey-e1-1"
+      ],
+      "linked_usernames": [
+        "﻿0-hu"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://github.com/1sup1/quiz-game": {
+      "url": "https://github.com/1sup1/quiz-game",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "1sup1/quiz-game"
+      ],
+      "linked_usernames": [
+        "1sup1"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/1sup1": {
+      "url": "https://github.com/1sup1",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "1sup1/quiz-game",
+        "1sup1/npu-simulator",
+        "1sup1/dev-workstation"
+      ],
+      "linked_usernames": [
+        "1sup1"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/1sup1": {
+      "url": "https://gist.github.com/1sup1",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "1sup1/quiz-game",
+        "1sup1/npu-simulator",
+        "1sup1/dev-workstation"
+      ],
+      "linked_usernames": [
+        "1sup1"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/chunRam": {
+      "url": "https://github.com/chunRam",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "chunRam/workstation-mission_2",
+        "chunRam/workstation-mission",
+        "chunRam/week1_workstation-mission"
+      ],
+      "linked_usernames": [
+        "chunRam"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/chunRam": {
+      "url": "https://gist.github.com/chunRam",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "chunRam/workstation-mission_2",
+        "chunRam/workstation-mission",
+        "chunRam/week1_workstation-mission"
+      ],
+      "linked_usernames": [
+        "chunRam"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/chunRam/workstation-mission": {
+      "url": "https://github.com/chunRam/workstation-mission",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "chunRam/workstation-mission"
+      ],
+      "linked_usernames": [
+        "chunRam"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/Daeung-03": {
+      "url": "https://github.com/Daeung-03",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "Daeung-03/Codyssey_rookieQ3",
+        "Daeung-03/Codyssey_rookieQ2",
+        "Daeung-03/Codyssey_rookieQ1"
+      ],
+      "linked_usernames": [
+        "Daeung-03"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/Daeung-03": {
+      "url": "https://gist.github.com/Daeung-03",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "Daeung-03/Codyssey_rookieQ3",
+        "Daeung-03/Codyssey_rookieQ2",
+        "Daeung-03/Codyssey_rookieQ1"
+      ],
+      "linked_usernames": [
+        "Daeung-03"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/Daeung-03/Codyssey_rookieQ1": {
+      "url": "https://github.com/Daeung-03/Codyssey_rookieQ1",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "Daeung-03/Codyssey_rookieQ1"
+      ],
+      "linked_usernames": [
+        "Daeung-03"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/dolphin1404": {
+      "url": "https://github.com/dolphin1404",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "dolphin1404/Codyssey_E_1_3",
+        "dolphin1404/Codyssey_E_1_2"
+      ],
+      "linked_usernames": [
+        "dolphin1404"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/dolphin1404": {
+      "url": "https://gist.github.com/dolphin1404",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "dolphin1404/Codyssey_E_1_3",
+        "dolphin1404/Codyssey_E_1_2"
+      ],
+      "linked_usernames": [
+        "dolphin1404"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/heejeong13": {
+      "url": "https://github.com/heejeong13",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "heejeong13/codyssey_npu"
+      ],
+      "linked_usernames": [
+        "heejeong13"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/heejeong13": {
+      "url": "https://gist.github.com/heejeong13",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "heejeong13/codyssey_npu"
+      ],
+      "linked_usernames": [
+        "heejeong13"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/jhj9109": {
+      "url": "https://github.com/jhj9109",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "jhj9109/codyssey3",
+        "jhj9109/codyssey2"
+      ],
+      "linked_usernames": [
+        "jhj9109"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/jhj9109": {
+      "url": "https://gist.github.com/jhj9109",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "jhj9109/codyssey3",
+        "jhj9109/codyssey2"
+      ],
+      "linked_usernames": [
+        "jhj9109"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/jhj9109/codyssey2": {
+      "url": "https://github.com/jhj9109/codyssey2",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "jhj9109/codyssey2"
+      ],
+      "linked_usernames": [
+        "jhj9109"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/jhj9109/codyssey2.git`": {
+      "url": "https://github.com/jhj9109/codyssey2.git`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "jhj9109/codyssey2"
+      ],
+      "linked_usernames": [
+        "jhj9109"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/LimJongHan": {
+      "url": "https://github.com/LimJongHan",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "LimJongHan/Codyssey-E1-2",
+        "LimJongHan/Codyssey-E1-1"
+      ],
+      "linked_usernames": [
+        "LimJongHan"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/LimJongHan": {
+      "url": "https://gist.github.com/LimJongHan",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "LimJongHan/Codyssey-E1-2",
+        "LimJongHan/Codyssey-E1-1"
+      ],
+      "linked_usernames": [
+        "LimJongHan"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/LimJongHan/Codyssey-E1-1": {
+      "url": "https://github.com/LimJongHan/Codyssey-E1-1",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "LimJongHan/Codyssey-E1-1"
+      ],
+      "linked_usernames": [
+        "LimJongHan"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/MetaStudy999/python-quiz-game.git`": {
+      "url": "https://github.com/MetaStudy999/python-quiz-game.git`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "MetaStudy999/python-quiz-game"
+      ],
+      "linked_usernames": [
+        "MetaStudy999"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/MetaStudy999/python-quiz-game": {
+      "url": "https://github.com/MetaStudy999/python-quiz-game",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "MetaStudy999/python-quiz-game"
+      ],
+      "linked_usernames": [
+        "MetaStudy999"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/MetaStudy999": {
+      "url": "https://github.com/MetaStudy999",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "MetaStudy999/python-quiz-game",
+        "MetaStudy999/ai-sw-workstation",
+        "MetaStudy999/ICT_Project_2nd"
+      ],
+      "linked_usernames": [
+        "MetaStudy999"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/MetaStudy999": {
+      "url": "https://gist.github.com/MetaStudy999",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "MetaStudy999/python-quiz-game",
+        "MetaStudy999/ai-sw-workstation",
+        "MetaStudy999/ICT_Project_2nd"
+      ],
+      "linked_usernames": [
+        "MetaStudy999"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/metastudy999/ai-sw-workstation`": {
+      "url": "https://github.com/metastudy999/ai-sw-workstation`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "MetaStudy999/ai-sw-workstation"
+      ],
+      "linked_usernames": [
+        "MetaStudy999"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://github.com/metastudy999/ai-sw-workstation": {
+      "url": "https://github.com/metastudy999/ai-sw-workstation",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "MetaStudy999/ai-sw-workstation"
+      ],
+      "linked_usernames": [
+        "MetaStudy999"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://github.com/NiceTry3675/E1-2.git`": {
+      "url": "https://github.com/NiceTry3675/E1-2.git`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "NiceTry3675/E1-2"
+      ],
+      "linked_usernames": [
+        "NiceTry3675"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/NiceTry3675": {
+      "url": "https://github.com/NiceTry3675",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "NiceTry3675/E1-2",
+        "NiceTry3675/E1-1"
+      ],
+      "linked_usernames": [
+        "NiceTry3675"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/NiceTry3675": {
+      "url": "https://gist.github.com/NiceTry3675",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "NiceTry3675/E1-2",
+        "NiceTry3675/E1-1"
+      ],
+      "linked_usernames": [
+        "NiceTry3675"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/NiceTry3675/E1-1`": {
+      "url": "https://github.com/NiceTry3675/E1-1`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "NiceTry3675/E1-1"
+      ],
+      "linked_usernames": [
+        "NiceTry3675"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/PaKoo03": {
+      "url": "https://github.com/PaKoo03",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "PaKoo03/Codyssey_03",
+        "PaKoo03/Codyssey_01"
+      ],
+      "linked_usernames": [
+        "PaKoo03"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/PaKoo03": {
+      "url": "https://gist.github.com/PaKoo03",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "PaKoo03/Codyssey_03",
+        "PaKoo03/Codyssey_01"
+      ],
+      "linked_usernames": [
+        "PaKoo03"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/PaKoo03/repository-name": {
+      "url": "https://github.com/PaKoo03/repository-name",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "PaKoo03/Codyssey_01"
+      ],
+      "linked_usernames": [
+        "PaKoo03"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/[Git_HUB_ID]/Codyssey_01": {
+      "url": "https://github.com/[Git_HUB_ID]/Codyssey_01",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "PaKoo03/Codyssey_01"
+      ],
+      "linked_usernames": [
+        "PaKoo03"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/request10hour": {
+      "url": "https://github.com/request10hour",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "request10hour/python-quiz-game",
+        "request10hour/dev-workstation-setup"
+      ],
+      "linked_usernames": [
+        "request10hour"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/request10hour": {
+      "url": "https://gist.github.com/request10hour",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "request10hour/python-quiz-game",
+        "request10hour/dev-workstation-setup"
+      ],
+      "linked_usernames": [
+        "request10hour"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/request10hour/dev-workstation-setup.git`": {
+      "url": "https://github.com/request10hour/dev-workstation-setup.git`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "request10hour/dev-workstation-setup"
+      ],
+      "linked_usernames": [
+        "request10hour"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://api.github.com/repos/request10hour/dev-workstation-setup": {
+      "url": "https://api.github.com/repos/request10hour/dev-workstation-setup",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "request10hour/dev-workstation-setup"
+      ],
+      "linked_usernames": [
+        "request10hour"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://github.com/shannonlee-dev/Codyssey2026": {
+      "url": "https://github.com/shannonlee-dev/Codyssey2026",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "shannonlee-dev/Codyssey2026"
+      ],
+      "linked_usernames": [
+        "shannonlee-dev"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-16"
+    },
+    "https://github.com/shannonlee-dev": {
+      "url": "https://github.com/shannonlee-dev",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "shannonlee-dev/Codyssey2026",
+        "shannonlee-dev/mini-npu-simulator",
+        "shannonlee-dev/python-quiz-game-mission"
+      ],
+      "linked_usernames": [
+        "shannonlee-dev"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/shannonlee-dev": {
+      "url": "https://gist.github.com/shannonlee-dev",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "shannonlee-dev/Codyssey2026",
+        "shannonlee-dev/mini-npu-simulator",
+        "shannonlee-dev/python-quiz-game-mission"
+      ],
+      "linked_usernames": [
+        "shannonlee-dev"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/shannonlee-dev/python-quiz-game-mission": {
+      "url": "https://github.com/shannonlee-dev/python-quiz-game-mission",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "shannonlee-dev/python-quiz-game-mission"
+      ],
+      "linked_usernames": [
+        "shannonlee-dev"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/shannonlee-dev/python-quiz-game-mission`": {
+      "url": "https://github.com/shannonlee-dev/python-quiz-game-mission`",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "shannonlee-dev/python-quiz-game-mission"
+      ],
+      "linked_usernames": [
+        "shannonlee-dev"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/skskwn": {
+      "url": "https://github.com/skskwn",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "skskwn/AI-SW-Building-a-workstation"
+      ],
+      "linked_usernames": [
+        "skskwn"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/skskwn": {
+      "url": "https://gist.github.com/skskwn",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "skskwn/AI-SW-Building-a-workstation"
+      ],
+      "linked_usernames": [
+        "skskwn"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/solbao-dev": {
+      "url": "https://github.com/solbao-dev",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "solbao-dev/Mission3_NPU",
+        "solbao-dev/2nd_mission_quizgame"
+      ],
+      "linked_usernames": [
+        "solbao-dev"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-20"
+    },
+    "https://gist.github.com/solbao-dev": {
+      "url": "https://gist.github.com/solbao-dev",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "solbao-dev/Mission3_NPU",
+        "solbao-dev/2nd_mission_quizgame"
+      ],
+      "linked_usernames": [
+        "solbao-dev"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-20"
+    },
+    "https://github.com/solbao-dev/2nd_mission_quizgame": {
+      "url": "https://github.com/solbao-dev/2nd_mission_quizgame",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "solbao-dev/2nd_mission_quizgame"
+      ],
+      "linked_usernames": [
+        "solbao-dev"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-20"
+    },
+    "https://github.com/star-candy": {
+      "url": "https://github.com/star-candy",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "star-candy/codyssey1-3",
+        "star-candy/codyssey1-2",
+        "star-candy/codyssey1-1"
+      ],
+      "linked_usernames": [
+        "star-candy"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/star-candy": {
+      "url": "https://gist.github.com/star-candy",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "star-candy/codyssey1-3",
+        "star-candy/codyssey1-2",
+        "star-candy/codyssey1-1"
+      ],
+      "linked_usernames": [
+        "star-candy"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/star-candy/codyssey1-2": {
+      "url": "https://github.com/star-candy/codyssey1-2",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "star-candy/codyssey1-2"
+      ],
+      "linked_usernames": [
+        "star-candy"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/star-candy/codyssey": {
+      "url": "https://github.com/star-candy/codyssey",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "star-candy/codyssey1-1"
+      ],
+      "linked_usernames": [
+        "star-candy"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/xifoxy-ru": {
+      "url": "https://github.com/xifoxy-ru",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "xifoxy-ru/codyssey_week_03",
+        "xifoxy-ru/codyssey_week_02",
+        "xifoxy-ru/codyssey_week_01"
+      ],
+      "linked_usernames": [
+        "xifoxy-ru"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/xifoxy-ru": {
+      "url": "https://gist.github.com/xifoxy-ru",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "xifoxy-ru/codyssey_week_03",
+        "xifoxy-ru/codyssey_week_02",
+        "xifoxy-ru/codyssey_week_01"
+      ],
+      "linked_usernames": [
+        "xifoxy-ru"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/yun-lim": {
+      "url": "https://github.com/yun-lim",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "yun-lim/codyssey-week3",
+        "yun-lim/codyssey-week2",
+        "yun-lim/codyssey-w2",
+        "yun-lim/codyssey-w1"
+      ],
+      "linked_usernames": [
+        "yun-lim"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/yun-lim": {
+      "url": "https://gist.github.com/yun-lim",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "yun-lim/codyssey-week3",
+        "yun-lim/codyssey-week2",
+        "yun-lim/codyssey-w2",
+        "yun-lim/codyssey-w1"
+      ],
+      "linked_usernames": [
+        "yun-lim"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/yun-lim/codyssey-week2": {
+      "url": "https://github.com/yun-lim/codyssey-week2",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "yun-lim/codyssey-week2"
+      ],
+      "linked_usernames": [
+        "yun-lim"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/yun-lim/codyssey": {
+      "url": "https://github.com/yun-lim/codyssey",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "yun-lim/codyssey-w1"
+      ],
+      "linked_usernames": [
+        "yun-lim"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/0-hu/codyssey-e1-2": {
+      "url": "https://github.com/0-hu/codyssey-e1-2",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "0-hu/codyssey-e1-2"
+      ],
+      "linked_usernames": [
+        "0-hu"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/0-hu": {
+      "url": "https://github.com/0-hu",
+      "domain": "github.com",
+      "source_type": "profile",
+      "source_types": [
+        "profile"
+      ],
+      "linked_repo_keys": [
+        "0-hu/codyssey-e1-2",
+        "0-hu/codyssey-e1-3",
+        "0-hu/codyssey-e1-1"
+      ],
+      "linked_usernames": [
+        "0-hu"
+      ],
+      "source_paths": [
+        "github-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://gist.github.com/0-hu": {
+      "url": "https://gist.github.com/0-hu",
+      "domain": "gist.github.com",
+      "source_type": "gist-profile",
+      "source_types": [
+        "gist-profile"
+      ],
+      "linked_repo_keys": [
+        "0-hu/codyssey-e1-2",
+        "0-hu/codyssey-e1-3",
+        "0-hu/codyssey-e1-1"
+      ],
+      "linked_usernames": [
+        "0-hu"
+      ],
+      "source_paths": [
+        "github-gist-profile"
+      ],
+      "first_seen_at": "2026-04-16",
+      "last_seen_at": "2026-04-27"
+    },
+    "https://github.com/username/quiz-game": {
+      "url": "https://github.com/username/quiz-game",
+      "domain": "github.com",
+      "source_type": "readme",
+      "source_types": [
+        "readme"
+      ],
+      "linked_repo_keys": [
+        "sungho255/codyssey_2"
+      ],
+      "linked_usernames": [
+        "sungho255"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "first_seen_at": "2026-04-20",
+      "last_seen_at": "2026-04-27"
     }
   }
 }

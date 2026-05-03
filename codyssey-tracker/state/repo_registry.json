@@ -19,21 +19,21 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-20",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "1",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-03"
+      ]
     },
     "sonjehyun123-maker/Codyssey-w1-E2": {
       "username": "sonjehyun123-maker",
@@ -53,12 +53,17 @@
         "tier2:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-10",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -82,12 +87,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-13",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -111,12 +121,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-06",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -140,12 +155,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-03-31",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -169,21 +189,21 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-21",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "1",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-12"
+      ]
     },
     "ntt65/codyssey/e1_2": {
       "username": "ntt65",
@@ -203,21 +223,21 @@
         "file:quiz.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-21",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "review",
           "course_guess": "aio_week2_python_git_quiz"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "2",
-      "previous_status": "candidate",
-      "previous_updated_at": "2026-04-12"
+      ]
     },
     "ntt65/codyssey/e1_3": {
       "username": "ntt65",
@@ -237,12 +257,17 @@
         "continuity:repo-codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-21",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        },
+        {
+          "date": "2026-05-03",
           "status": "candidate",
           "course_guess": "unknown"
         }
@@ -264,12 +289,17 @@
         "continuity:repo-codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-21",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        },
+        {
+          "date": "2026-05-03",
           "status": "candidate",
           "course_guess": "unknown"
         }
@@ -291,12 +321,17 @@
         "continuity:repo-codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-24",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        },
+        {
+          "date": "2026-05-03",
           "status": "candidate",
           "course_guess": "unknown"
         }
@@ -320,12 +355,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-18",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -349,12 +389,17 @@
         "text:state.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-18",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        },
+        {
+          "date": "2026-05-03",
           "status": "review",
           "course_guess": "aio_week2_python_git_quiz"
         }
@@ -378,21 +423,21 @@
         "text:epsilon"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-06",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "review",
           "course_guess": "aio_week3_mini_npu"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "review",
+          "course_guess": "aio_week3_mini_npu"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "1",
-      "previous_status": "candidate",
-      "previous_updated_at": "2026-04-06"
+      ]
     },
     "mov-hyun/e1-3-mini-npu-simulator-2": {
       "username": "mov-hyun",
@@ -412,12 +457,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-22",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -441,12 +491,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-17",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -470,12 +525,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-14",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -499,12 +559,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-05",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -528,21 +593,21 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-15",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "2",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-14"
+      ]
     },
     "jhkr1/Codyssey_mission3": {
       "username": "jhkr1",
@@ -562,21 +627,21 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-16",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "3",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-11"
+      ]
     },
     "jhkr1/Codyssey_mission2": {
       "username": "jhkr1",
@@ -596,12 +661,17 @@
         "tier2:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-11",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -625,12 +695,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-07",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -654,12 +729,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-18",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -683,12 +763,17 @@
         "week-readme:state.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-11",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -712,12 +797,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-09",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -741,21 +831,21 @@
         "tier2:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-19",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "2",
-      "previous_status": "candidate",
-      "previous_updated_at": "2026-04-07"
+      ]
     },
     "sungho255/codyssey_1": {
       "username": "sungho255",
@@ -775,21 +865,21 @@
         "text:dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-07",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "review",
           "course_guess": "aio_week1_workstation"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "review",
+          "course_guess": "aio_week1_workstation"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "1",
-      "previous_status": "candidate",
-      "previous_updated_at": "2026-04-07"
+      ]
     },
     "yejoo0310/codyssey-m3": {
       "username": "yejoo0310",
@@ -809,21 +899,21 @@
         "tier1:mini_npu_simulator.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-15",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "3",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-14"
+      ]
     },
     "yejoo0310/codyssey-m2": {
       "username": "yejoo0310",
@@ -843,12 +933,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-10",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -872,12 +967,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-05",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -901,21 +1001,21 @@
         "tier2:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-21",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "2",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-13"
+      ]
     },
     "clae-dev/ia-codyssey-Python2": {
       "username": "clae-dev",
@@ -935,12 +1035,17 @@
         "text:cross"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-23",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week3_mini_npu"
+        },
+        {
+          "date": "2026-05-03",
           "status": "review",
           "course_guess": "aio_week3_mini_npu"
         }
@@ -964,12 +1069,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-08",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -993,12 +1103,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-02",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1022,12 +1137,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-14",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1051,12 +1171,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-14",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1080,21 +1205,21 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-24",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "1",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-13"
+      ]
     },
     "I-nkamanda/codyssey2026/Problem1_AI_SW_Setup": {
       "username": "I-nkamanda",
@@ -1114,21 +1239,21 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-15",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
         }
-      ],
-      "overwrite_suspected": true,
-      "overwrite_reason": "same-repo-history-changed",
-      "previous_week_guess": "1",
-      "previous_status": "confirmed",
-      "previous_updated_at": "2026-04-14"
+      ]
     },
     "0-hu/codyssey-e1-3": {
       "username": "0-hu",
@@ -1148,12 +1273,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-22",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1177,12 +1307,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-07",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1206,12 +1341,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-06",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1293,12 +1433,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-20",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1320,12 +1465,17 @@
         "repo:workstation"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-04",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "unknown"
+        },
+        {
+          "date": "2026-05-03",
           "status": "candidate",
           "course_guess": "unknown"
         }
@@ -1349,12 +1499,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-04",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1378,12 +1533,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-19",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1407,12 +1567,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-12",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1436,12 +1601,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-04",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1465,12 +1635,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-18",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1494,12 +1669,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-13",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1523,12 +1703,17 @@
         "tier2:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-16",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1552,12 +1737,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-06",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1581,12 +1771,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-23",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1610,12 +1805,17 @@
         "tier2:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-07",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1639,12 +1839,17 @@
         "text:quizgame"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-09",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        },
+        {
+          "date": "2026-05-03",
           "status": "review",
           "course_guess": "aio_week2_python_git_quiz"
         }
@@ -1668,12 +1873,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-03",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1697,12 +1907,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-23",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1726,12 +1941,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-16",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1755,12 +1975,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-08",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1784,12 +2009,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-06",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1813,12 +2043,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-15",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1842,12 +2077,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-01",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1871,12 +2111,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-04",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1900,12 +2145,17 @@
         "text:branch"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-04",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "review",
+          "course_guess": "aio_week2_python_git_quiz"
+        },
+        {
+          "date": "2026-05-03",
           "status": "review",
           "course_guess": "aio_week2_python_git_quiz"
         }
@@ -1929,12 +2179,17 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-03",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1958,12 +2213,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-21",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -1987,12 +2247,17 @@
         "tier1:quiz_game.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-12",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -2016,12 +2281,17 @@
         "tier2:Dockerfile"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-09",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -2045,12 +2315,17 @@
         "tier1:data.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-23",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -2074,12 +2349,17 @@
         "week-readme:state.json"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-16",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
           "status": "confirmed",
           "course_guess": "course_2026_main"
         }
@@ -2103,12 +2383,17 @@
         "file:main.py"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-10",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
+          "status": "candidate",
+          "course_guess": "aio_week2_python_git_quiz"
+        },
+        {
+          "date": "2026-05-03",
           "status": "candidate",
           "course_guess": "aio_week2_python_git_quiz"
         }
@@ -2132,14 +2417,336 @@
         "repo:codyssey"
       ],
       "first_seen_at": "2026-04-27",
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "updated_at": "2026-04-06",
-      "seen_count": 1,
+      "seen_count": 2,
       "status_history": [
         {
           "date": "2026-04-27",
           "status": "confirmed",
           "course_guess": "course_2026_main"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "NiceTry3675/E1-1": {
+      "username": "NiceTry3675",
+      "display_name": "NiceTry3675",
+      "repo_name": "E1-1",
+      "repo_url": "https://github.com/NiceTry3675/E1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:workstation",
+        "week-readme:docker",
+        "readme:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-09",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "chanpago/Codyssey3": {
+      "username": "chanpago",
+      "display_name": "chanpago",
+      "repo_name": "Codyssey3",
+      "repo_url": "https://github.com/chanpago/Codyssey3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-22",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "nansu0425/E1-1": {
+      "username": "nansu0425",
+      "display_name": "nansu0425",
+      "repo_name": "E1-1",
+      "repo_url": "https://github.com/nansu0425/E1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "week-readme:setup",
+        "readme:docker",
+        "tier2:requirements.txt"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-01",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "nansu0425/E1-3": {
+      "username": "nansu0425",
+      "display_name": "nansu0425",
+      "repo_name": "E1-3",
+      "repo_url": "https://github.com/nansu0425/E1-3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-15",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "dlwognsdc610-maker/codyssey_week3": {
+      "username": "dlwognsdc610-maker",
+      "display_name": "dlwognsdc610-maker",
+      "repo_name": "codyssey_week3",
+      "repo_url": "https://github.com/dlwognsdc610-maker/codyssey_week3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.92,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-19",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "Im-Jongseok/E1-3": {
+      "username": "Im-Jongseok",
+      "display_name": "Im-Jongseok",
+      "repo_name": "E1-3",
+      "repo_url": "https://github.com/Im-Jongseok/E1-3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-12",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "jongekim/E1-3": {
+      "username": "jongekim",
+      "display_name": "jongekim",
+      "repo_name": "E1-3",
+      "repo_url": "https://github.com/jongekim/E1-3",
+      "week_guess": "3",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.88,
+      "status": "confirmed",
+      "evidence": [
+        "tier1:data.json",
+        "tier2:main.py",
+        "week-readme:npu",
+        "week-readme:mac",
+        "tier1:data.json"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-23",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "jongekim/E1-1": {
+      "username": "jongekim",
+      "display_name": "jongekim",
+      "repo_name": "E1-1",
+      "repo_url": "https://github.com/jongekim/E1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:docker",
+        "readme:docker",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-14",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "skskwn/AI-SW-Building-a-workstation": {
+      "username": "skskwn",
+      "display_name": "skskwn",
+      "repo_name": "AI-SW-Building-a-workstation",
+      "repo_url": "https://github.com/skskwn/AI-SW-Building-a-workstation",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.82,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-repo:workstation",
+        "week-readme:docker",
+        "repo:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-03",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "bjw0922/Codyssey1-1": {
+      "username": "bjw0922",
+      "display_name": "bjw0922",
+      "repo_name": "Codyssey1-1",
+      "repo_url": "https://github.com/bjw0922/Codyssey1-1",
+      "week_guess": "1",
+      "course_guess": "course_2026_main",
+      "course_label": "2026_main",
+      "confidence": 0.86,
+      "status": "confirmed",
+      "evidence": [
+        "tier2:Dockerfile",
+        "week-readme:workstation",
+        "week-readme:docker",
+        "readme:workstation",
+        "tier2:Dockerfile"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2026-04-22",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "confirmed",
+          "course_guess": "course_2026_main"
+        }
+      ]
+    },
+    "logg9715/codyssey_2025_1": {
+      "username": "logg9715",
+      "display_name": "logg9715",
+      "repo_name": "codyssey_2025_1",
+      "repo_url": "https://github.com/logg9715/codyssey_2025_1",
+      "week_guess": "1",
+      "course_guess": "legacy_pre2026",
+      "course_label": "legacy_pre2026",
+      "confidence": 0.98,
+      "status": "excluded",
+      "evidence": [
+        "updated_at:2025-09-22",
+        "rule:legacy-hard-cutoff",
+        "tier2:main.py",
+        "repo:codyssey"
+      ],
+      "first_seen_at": "2026-05-03",
+      "last_seen_at": "2026-05-03",
+      "updated_at": "2025-09-22",
+      "seen_count": 1,
+      "status_history": [
+        {
+          "date": "2026-05-03",
+          "status": "excluded",
+          "course_guess": "legacy_pre2026"
         }
       ]
     }

@@ -1,0 +1,440 @@
+{
+  "generated_at": "2026-05-03",
+  "candidate_pool_size": 66,
+  "collected_count": 81,
+  "new_repo_count": 0,
+  "global_discovery": {
+    "enabled": true,
+    "query_count": 60,
+    "raw_hits": 278,
+    "unique_repos_seen": 134,
+    "accepted": 0,
+    "queries": [
+      {
+        "q": "filename:README.md codyssey",
+        "hits": 20,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"코디세이\"",
+        "hits": 20,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"ai native\"",
+        "hits": 20,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"네이티브\"",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:Dockerfile codyssey",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:docker-compose.yml codyssey",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:requirements.txt codyssey",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:package.json codyssey",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:app.py codyssey",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:main.py codyssey",
+        "hits": 0,
+        "source": "base",
+        "track_id": "",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"AI 올인원\"",
+        "hits": 0,
+        "source": "track_display_name",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"workstation setup\"",
+        "hits": 0,
+        "source": "official_topic",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"workstation setup\" \"codyssey\"",
+        "hits": 2,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"workstation setup\" \"코디세이\"",
+        "hits": 0,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"workstation setup\" \"ai native\"",
+        "hits": 0,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"python/git quiz\"",
+        "hits": 0,
+        "source": "official_topic",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"python/git quiz\" \"codyssey\"",
+        "hits": 2,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"python/git quiz\" \"코디세이\"",
+        "hits": 1,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"python/git quiz\" \"ai native\"",
+        "hits": 1,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"mini npu simulator\"",
+        "hits": 20,
+        "source": "official_topic",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"mini npu simulator\" \"codyssey\"",
+        "hits": 20,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"mini npu simulator\" \"코디세이\"",
+        "hits": 8,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"mini npu simulator\" \"ai native\"",
+        "hits": 1,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"ideathon\"",
+        "hits": 20,
+        "source": "official_topic",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"ideathon\" \"codyssey\"",
+        "hits": 2,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"ideathon\" \"코디세이\"",
+        "hits": 1,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "\"ideathon\" \"ai native\"",
+        "hits": 0,
+        "source": "official_topic_identity",
+        "track_id": "all_in_one",
+        "course_id": ""
+      },
+      {
+        "q": "filename:README.md \"Week1 Workstation Setup\"",
+        "hits": 0,
+        "source": "course_display_name",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"Week1 Workstation Setup\" codyssey",
+        "hits": 0,
+        "source": "course_display_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"first mission setup\"",
+        "hits": 0,
+        "source": "official_rule.official_keywords",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"docker\" codyssey",
+        "hits": 0,
+        "source": "official_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"dockerfile\"",
+        "hits": 0,
+        "source": "official_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"dockerfile\" codyssey",
+        "hits": 0,
+        "source": "official_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"port mapping\"",
+        "hits": 0,
+        "source": "official_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"port mapping\" codyssey",
+        "hits": 0,
+        "source": "official_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"volume\" codyssey",
+        "hits": 0,
+        "source": "official_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"git config\"",
+        "hits": 0,
+        "source": "official_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"git config\" codyssey",
+        "hits": 0,
+        "source": "official_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"workspace setup\"",
+        "hits": 0,
+        "source": "official_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"workspace setup\" codyssey",
+        "hits": 0,
+        "source": "official_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:.gitignore codyssey",
+        "hits": 0,
+        "source": "official_rule.file_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "workstation codyssey",
+        "hits": 0,
+        "source": "official_rule.repo_patterns",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"container\"",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"container\" codyssey",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"image build\"",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"image build\" codyssey",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"run container\"",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"run container\" codyssey",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"hello-world\"",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"hello-world\" codyssey",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"bind mount\"",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"bind mount\" codyssey",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"volume persistence\"",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"volume persistence\" codyssey",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"재현 가능한 표준 개발 환경\"",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"재현 가능한 표준 개발 환경\" codyssey",
+        "hits": 0,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"바인드 마운트\"",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"바인드 마운트\" codyssey",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "filename:README.md \"볼륨 영속성\"",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      },
+      {
+        "q": "\"볼륨 영속성\" codyssey",
+        "hits": 20,
+        "source": "observed_rule.readme_tokens_identity",
+        "track_id": "all_in_one",
+        "course_id": "aio_week1_workstation"
+      }
+    ]
+  },
+  "watchlist_size": 10,
+  "archived_total": 3,
+  "discovered_total": 21,
+  "overwrite_suspected": 0,
+  "signature_version": "v5.3.1"
+}

@@ -27,7 +27,7 @@
         "username": "ntt65",
         "display_name": "ntt65",
         "type": "single_repo",
-        "priority": 6,
+        "priority": 7,
         "repo_name": "codyssey",
         "folder_pattern": "e1_4"
       },
@@ -37,7 +37,7 @@
         "repo:codyssey",
         "continuity:repo-codyssey"
       ],
-      "archived_at": "2026-04-27"
+      "archived_at": "2026-05-03"
     },
     {
       "repo_key": "codewhite7777/codyssey_E2-1",
@@ -45,7 +45,7 @@
         "username": "codewhite7777",
         "display_name": "codewhite7777",
         "type": "multi_repo",
-        "priority": 6,
+        "priority": 7,
         "repo_patterns": [
           "codyssey_E2-1"
         ]
@@ -56,7 +56,7 @@
         "repo:codyssey",
         "continuity:repo-codyssey"
       ],
-      "archived_at": "2026-04-27"
+      "archived_at": "2026-05-03"
     }
   ]
 }

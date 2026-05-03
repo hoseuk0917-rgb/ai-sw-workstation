@@ -22,7 +22,7 @@
         "file:main.py",
         "file:quiz.py"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -34,7 +34,7 @@
         "username": "ntt65",
         "display_name": "ntt65",
         "type": "single_repo",
-        "priority": 6,
+        "priority": 7,
         "repo_name": "codyssey",
         "folder_pattern": "e1_3"
       },
@@ -45,7 +45,7 @@
         "tier2:main.py",
         "continuity:repo-codyssey"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -69,7 +69,7 @@
         "text:quizgame",
         "text:state.json"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -93,7 +93,7 @@
         "text:mac",
         "text:epsilon"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -117,7 +117,7 @@
         "text:docker",
         "text:dockerfile"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -141,7 +141,7 @@
         "text:epsilon",
         "text:cross"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -153,7 +153,7 @@
         "username": "chunRam",
         "display_name": "chunRam",
         "type": "multi_repo",
-        "priority": 6,
+        "priority": 7,
         "repo_patterns": [
           "workstation-mission_2"
         ]
@@ -163,7 +163,7 @@
         "week-repo:workstation",
         "repo:workstation"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -187,7 +187,7 @@
         "repo~:e1-2",
         "text:quizgame"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -211,7 +211,7 @@
         "text:state.json",
         "text:branch"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
     },
     {
@@ -235,512 +235,8 @@
         "text:state.json",
         "file:main.py"
       ],
-      "last_seen_at": "2026-04-27",
+      "last_seen_at": "2026-05-03",
       "source": "classified-run"
-    },
-    {
-      "repo_key": "NiceTry3675/E1-1",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "NiceTry3675",
-        "display_name": "NiceTry3675",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "E1-1"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:11",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:18.4",
-        "repo:e1-1",
-        "text:docker"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "chanpago/Codyssey3",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "chanpago",
-        "display_name": "chanpago",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "Codyssey3"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:24",
-        "bridge:all_in_one:aio_week3_mini_npu",
-        "bridge_score:11.2",
-        "text:mac",
-        "text:epsilon"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "nansu0425/E1-1",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "nansu0425",
-        "display_name": "nansu0425",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "E1-1"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:13",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:16.2",
-        "repo:e1-1",
-        "text:docker"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "nansu0425/E1-3",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "nansu0425",
-        "display_name": "nansu0425",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "E1-3"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:21",
-        "bridge:all_in_one:aio_week3_mini_npu",
-        "bridge_score:11.2",
-        "text:mac",
-        "text:epsilon"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "clowcat/ia-codyssey",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "clowcat",
-        "display_name": "clowcat",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "ia-codyssey"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:25",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:9.6",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "dlwognsdc610-maker/codyssey_week3",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "dlwognsdc610-maker",
-        "display_name": "dlwognsdc610-maker",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "codyssey_week3"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:21",
-        "bridge:all_in_one:aio_week3_mini_npu",
-        "bridge_score:11.2",
-        "text:mac",
-        "text:epsilon"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "Im-Jongseok/E1-3",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "Im-Jongseok",
-        "display_name": "Im-Jongseok",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "E1-3"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:21",
-        "bridge:all_in_one:aio_week3_mini_npu",
-        "bridge_score:11.2",
-        "text:mac",
-        "text:epsilon"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "jongekim/E1-3",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "jongekim",
-        "display_name": "jongekim",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "E1-3"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:21",
-        "bridge:all_in_one:aio_week3_mini_npu",
-        "bridge_score:11.2",
-        "text:mac",
-        "text:epsilon"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "jongekim/E1-1",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "jongekim",
-        "display_name": "jongekim",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "E1-1"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:8",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:15.8",
-        "repo:e1-1",
-        "text:docker"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "SometimesThinks/codessey",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "SometimesThinks",
-        "display_name": "SometimesThinks",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "codessey"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:25",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:8.8",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "KANGSIK-SEO/ineedwater",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "KANGSIK-SEO",
-        "display_name": "KANGSIK-SEO",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "ineedwater"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:16",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:12.8",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "skskwn/AI-SW-Building-a-workstation",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "skskwn",
-        "display_name": "skskwn",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "AI-SW-Building-a-workstation"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:11",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:15.1",
-        "repo~:workstation",
-        "text:docker"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "bjw0922/Codyssey1-1",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "bjw0922",
-        "display_name": "bjw0922",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "Codyssey1-1"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:11",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:14.4",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "eajnoeyeel/codyssey",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "eajnoeyeel",
-        "display_name": "eajnoeyeel",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "codyssey"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:11",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:14.4",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "kyowon1108/2026_Codyssey_Pre_Session",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "kyowon1108",
-        "display_name": "kyowon1108",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "2026_Codyssey_Pre_Session"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:21",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:8.4",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "0802222/Codyssey",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "0802222",
-        "display_name": "0802222",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "Codyssey"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:16",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:9.2",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "YangYuS8/codyssey",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "YangYuS8",
-        "display_name": "YangYuS8",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "codyssey"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:13",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:8.8",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "Get-Your-Eon/Backend_Server",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "Get-Your-Eon",
-        "display_name": "Get-Your-Eon",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "Backend_Server"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:13",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:8.8",
-        "text:docker",
-        "text:dockerfile"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "c1vera/2025-dmu-codyssey",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "c1vera",
-        "display_name": "c1vera",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "2025-dmu-codyssey"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:18",
-        "bridge:all_in_one:aio_week1_workstation",
-        "bridge_score:4.0",
-        "text~:container",
-        "file:.gitignore"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "htaquita/Codyssey-Topicos",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "htaquita",
-        "display_name": "htaquita",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "Codyssey-Topicos"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:13",
-        "bridge:ai_native:native_final_project",
-        "bridge_score:4.8",
-        "file:README.md",
-        "file:requirements.txt"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
-    },
-    {
-      "repo_key": "logg9715/codyssey_2025_1",
-      "course_guess": "unseen_discovered",
-      "course_label": "전역 발견 후보",
-      "status": "candidate",
-      "candidate": {
-        "username": "logg9715",
-        "display_name": "logg9715",
-        "type": "multi_repo",
-        "repo_patterns": [
-          "codyssey_2025_1"
-        ],
-        "priority": 7
-      },
-      "evidence": [
-        "legacy_fingerprint:11",
-        "bridge:all_in_one:aio_week2_python_git_quiz",
-        "bridge_score:4.3",
-        "repo~:codyssey_2",
-        "text:merge"
-      ],
-      "last_seen_at": "2026-04-27",
-      "source": "global-discovery"
     }
   ]
 }
